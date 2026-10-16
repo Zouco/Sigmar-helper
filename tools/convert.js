@@ -34,6 +34,7 @@ function convert(p) {
   const timing = ch(p, "Timing"), tl = timing.toLowerCase();
   const text = [ch(p, "Declare"), ch(p, "Effect")].filter(Boolean).join(" ");
   const ab = { name: clean(p["@_name"]), text, kind };
+  if (kind === "command") ab.cost = Number(ch(p, "Cost")) || 1;
   if (kind === "spell" && ch(p, "Casting Value")) ab.text = "Casting value " + ch(p, "Casting Value") + ". " + text;
   if (kind === "prayer" && ch(p, "Chanting Value")) ab.text = "Chanting value " + ch(p, "Chanting Value") + ". " + text;
   if (/once per battle round/.test(tl)) ab.limit = "round";

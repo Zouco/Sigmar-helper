@@ -10,6 +10,8 @@ let state = load() || {
 state.enh = state.enh || [];
 state.summons = state.summons || [];   // manifestations summoned during the battle: {name, n}
 state.sumN = state.sumN || 0;
+state.cp = state.cp ?? 4;               // command points this battle round (4 per round, unspent are lost)
+state.cpBonus = state.cpBonus || 0;     // +1 when you are the underdog
 state.pledges = state.pledges || {};   // Slaves to Darkness: "Unit#i" -> god
 state.units = (state.units || []).filter((u) => u && u.name);
 state.filter = "";
@@ -142,6 +144,8 @@ function playView() {
     <button data-round="-1">‹</button><b>Battle round ${state.round}</b><button data-round="1">›</button>
     <button class="turn ${state.turn}" id="turn">${state.turn === "mine" ? "Your turn" : "Enemy turn"}</button>
   </div>
+  <div class="cpbar"><span>Command points</span><button data-cp="-1">−</button><b class="cpnum">${state.cp}</b><button data-cp="1">+</button>
+    <button class="chip ${state.cpBonus ? "on" : ""}" data-under="1">Underdog +1</button></div>
   <div class="phases">${PHASES.map((p, i) => `<button data-phase="${i}" class="${i === state.phase ? "on" : ""}">${p.name}</button>`).join("")}</div>
   ${pledgePanel()}
   <h2>${ph.name} phase</h2>
@@ -149,11 +153,19 @@ function playView() {
     ? `<details class="lore"><summary>${esc(src)} · ${list.length} spells (open if you have a wizard)</summary>${list.map(card).join("")}</details>`
     : `<div class="group"><div class="src">${esc(src)}</div>${list.map(card).join("")}</div>`).join("")}
   ${alwaysOn()}
+  ${commandPanel()}
   ${summonPanel()}
   <div class="nextrow">
     <button data-step="-1">‹ Back</button>
     <button class="big" data-step="1">${state.phase === PHASES.length - 1 ? "Next turn ›" : "Next phase ›"}</button>
   </div>`;
+}
+
+function commandPanel() {
+  const list = allAbilities().filter((ab) => ab.kind === "command");
+  const groups = {};
+  list.forEach((ab) => (groups[ab.src] = groups[ab.src] || []).push(ab));
+  return `<details class="always"><summary>Your army's commands (${list.length})</summary>${list.length ? Object.entries(groups).map(([src, l]) => `<div class="src">${esc(src)}</div>${l.map(card).join("")}`).join("") : '<p class="muted">No army-specific commands for the units you picked.</p>'}</details>`;
 }
 
 function summonPanel() {
@@ -177,7 +189,8 @@ function card(ab) {
   return `<div class="card ${ab.kind || "passive"} ${used ? "used" : ""}">
     <div class="ctop"><span class="tag">${esc(ab.kind || "passive")}${ab.when === "theirs" ? " · enemy turn" : ""}</span>
     ${ab.limit ? `<label><input type="checkbox" data-used="${esc(k)}" ${used ? "checked" : ""}> used (${ab.limit})</label>` : ""}</div>
-    <div class="name">${esc(ab.name)}</div><div class="txt">${esc(ab.text)}</div>
+    <div class="name">${esc(ab.name)}</div>${ab.kind === "command" ? `<div class="cmdmeta">${esc(ab.timing || "")} · ${ab.cost} CP</div>` : ""}<div class="txt">${esc(ab.text)}</div>
+    ${ab.kind === "command" ? `<button class="spend" data-spend="${ab.cost}" ${state.cp < ab.cost ? "disabled" : ""}>Use: spend ${ab.cost} CP</button>` : ""}
     ${ab.applies ? `<div class="applies">Applies to: ${esc(ab.applies)}</div>` : ""}</div>`;
 }
 
@@ -228,8 +241,11 @@ function bind() {
   on("[data-summon]", (b) => b.onclick = () => { state.sumN++; state.summons.push({ name: b.dataset.summon, n: state.sumN }); render(); });
   on("[data-unsummon]", (b) => b.onclick = () => { state.summons = state.summons.filter((s) => s.n !== +b.dataset.unsummon); render(); });
   on("[data-go]", (b) => b.onclick = () => { state.view = "play"; render(); });
-  const reset = $("#reset"); if (reset) reset.onclick = () => { state.round = 1; state.turn = "mine"; state.phase = 0; state.used = {}; state.summons = []; state.pledges = {}; render(); };
-  on("[data-round]", (b) => b.onclick = () => { state.round = Math.max(1, state.round + +b.dataset.round); render(); });
+  const reset = $("#reset"); if (reset) reset.onclick = () => { state.round = 1; state.turn = "mine"; state.phase = 0; state.used = {}; state.cp = 4; state.cpBonus = 0; state.summons = []; state.pledges = {}; render(); };
+  on("[data-round]", (b) => b.onclick = () => { state.round = Math.max(1, state.round + +b.dataset.round); state.cp = 4 + state.cpBonus; render(); });
+  on("[data-cp]", (b) => b.onclick = () => { state.cp = Math.max(0, state.cp + +b.dataset.cp); render(); });
+  on("[data-under]", (b) => b.onclick = () => { state.cpBonus = state.cpBonus ? 0 : 1; state.cp = Math.max(0, state.cp + (state.cpBonus ? 1 : -1)); render(); });
+  on("[data-spend]", (b) => b.onclick = () => { state.cp = Math.max(0, state.cp - +b.dataset.spend); render(); });
   const turn = $("#turn"); if (turn) turn.onclick = () => { state.turn = state.turn === "mine" ? "theirs" : "mine"; state.phase = 0; render(); };
   on("[data-phase]", (b) => b.onclick = () => { state.phase = +b.dataset.phase; render(); });
   on("[data-step]", (b) => b.onclick = () => {
@@ -237,7 +253,7 @@ function bind() {
     state.phase += d;
     if (state.phase >= PHASES.length) { // turn over: swap sides; new round after both have gone
       state.phase = 0;
-      if (state.turn === "theirs") state.round++;
+      if (state.turn === "theirs") { state.round++; state.cp = 4 + state.cpBonus; }
       state.turn = state.turn === "mine" ? "theirs" : "mine";
     } else if (state.phase < 0) state.phase = 0;
     render(); scrollTo(0, 0);

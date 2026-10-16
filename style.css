@@ -61,3 +61,9 @@ header #sym{margin-left:auto;color:var(--gold);display:flex}
 .god{padding:6px 10px;font-size:13px}
 .god.on{background:var(--gold);color:var(--on);border:0;font-weight:700}
 .pledgesum{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:8px;padding:8px 12px;margin-top:12px;font-size:14px}.pledgesum b{color:var(--gold)}
+.cpbar{display:flex;align-items:center;gap:8px;margin-top:10px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 10px}
+.cpbar span{flex:1;color:var(--muted);font-size:13px;text-transform:uppercase}
+.cpnum{font-size:22px;min-width:28px;text-align:center;color:var(--gold)}
+.chip.on{background:var(--gold);color:var(--on);border:0;font-weight:700}
+.cmdmeta{font-size:12px;color:var(--muted)}
+.spend{margin-top:8px;font-size:14px}.spend:disabled{opacity:.4}
