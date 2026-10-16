@@ -22,11 +22,11 @@ const army = () => ARMIES[state.armyIdx] || ARMIES[0];
 // Collect every ability the player has, tagged with its source.
 function allAbilities() {
   const a = army(), out = [];
-  const add = (src, list, id) => (list || []).forEach((ab, i) => out.push({ ...ab, src, uid: id + ":" + i }));
+  const add = (src, list, id, extra) => (list || []).forEach((ab, i) => out.push({ ...ab, ...extra, src, uid: id + ":" + i }));
   add("Army: " + a.name, a.abilities, "army" + state.armyIdx);
   const f = a.formations[state.formation];
   if (f) add("Formation: " + f.name, f.abilities, "form" + state.armyIdx + "_" + state.formation);
-  a.enhancements.forEach((e) => { if (state.enh.includes(enhKey(e))) add(e.group.split(" / ").pop() + ": " + e.name, e.abilities, "enh" + state.armyIdx + "_" + enhKey(e)); });
+  a.enhancements.forEach((e) => { if (state.enh.includes(enhKey(e))) add(e.group.split(" / ").pop() + ": " + e.name, e.abilities, "enh" + state.armyIdx + "_" + enhKey(e), { lore: /Lore/i.test(e.group) && !/Manifestation/i.test(e.group) }); });
   state.units.forEach((u, n) => {
     const def = a.units.find((x) => x.name === u.name);
     if (def) add(u.name + (u.count > 1 ? " x" + u.count : ""), def.abilities, "unit" + state.armyIdx + "_" + u.name);
@@ -120,8 +120,9 @@ function playView() {
   </div>
   <div class="phases">${PHASES.map((p, i) => `<button data-phase="${i}" class="${i === state.phase ? "on" : ""}">${p.name}</button>`).join("")}</div>
   <h2>${ph.name} phase</h2>
-  ${abs.length === 0 ? `<p class="muted">Nothing from your army this phase.</p>` : Object.entries(groups).map(([src, list]) => `
-    <div class="group"><div class="src">${esc(src)}</div>${list.map(card).join("")}</div>`).join("")}
+  ${abs.length === 0 ? `<p class="muted">Nothing from your army this phase.</p>` : Object.entries(groups).map(([src, list]) => list[0].lore
+    ? `<details class="lore"><summary>${esc(src)} · ${list.length} spells (open if you have a wizard)</summary>${list.map(card).join("")}</details>`
+    : `<div class="group"><div class="src">${esc(src)}</div>${list.map(card).join("")}</div>`).join("")}
   ${alwaysOn()}
   ${summonPanel()}
   <div class="nextrow">

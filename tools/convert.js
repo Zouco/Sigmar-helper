@@ -14,7 +14,7 @@ const parse = (f) => parser.parse(fs.readFileSync(path.join(DIR, f), "utf8")).ca
 
 const ABILITY = { "Ability (Activated)": "active", "Ability (Passive)": "passive", "Ability (Spell)": "spell", "Ability (Command)": "command", "Ability (Prayer)": "prayer" };
 const clean = (s) => String(s ?? "").replace(/\^\^/g, "").replace(/\*\*/g, "").replace(/\s+/g, " ").trim();
-const ch = (p, name) => { const c = (p.characteristics?.characteristic || []).find((x) => x["@_name"] === name); return clean(c?.["#t"] ?? c ?? ""); };
+const ch = (p, name) => { const c = (p.characteristics?.characteristic || []).find((x) => x["@_name"] === name); return clean(typeof c?.["#t"] === "string" || typeof c?.["#t"] === "number" ? c["#t"] : ""); };
 
 const PHASE_WORDS = { hero: "hero", movement: "move", shooting: "shoot", charge: "charge", combat: "combat" };
 function infer(text) { // phases from rules text, for passives without timing
@@ -44,9 +44,23 @@ function convert(p) {
     phases.add(PHASE_WORDS[m[2]]); if (m[1] === "your") mine = true; else if (m[1] === "enemy") theirs = true; else { mine = theirs = true; }
   }
   for (const m of tl.matchAll(/end of (your|enemy|any|the)? ?turn/g)) { phases.add("end"); if (m[1] === "your") mine = true; else if (m[1] === "enemy") theirs = true; else mine = theirs = true; }
+  if (/deployment phase/.test(tl)) { phases.add("start"); mine = true; ab.rounds = [1]; ab.text = "(Deployment, before round 1) " + ab.text; }
   if (/start of (the )?(battle round|your turn|any turn)/.test(tl)) { phases.add("start"); mine = theirs = true; }
-  if (/reaction/.test(tl)) { ab.kind = "reaction"; if (!phases.size) infer(timing + " " + text).forEach((x) => phases.add(x)); mine = theirs = true; }
-  if (!phases.size) { // passives etc: guess from text; empty means "always on"
+  if (/reaction/.test(tl)) {
+    // The trigger decides the phase, never the effect text (e.g. "fly" in the effect must not add Movement).
+    ab.kind = "reaction";
+    const trig = tl.replace(/^.*?reaction:?/, "");
+    if (/charge ability/.test(trig)) phases.add("charge");
+    else if (/shoot ability/.test(trig)) phases.add("shoot");
+    else if (/fight ability|pile.in/.test(trig)) phases.add("combat");
+    else if (/spell|chanting roll|casting roll|unbind/.test(trig)) phases.add("hero");
+    else if (/redeploy|move ability|\brun\b|retreat/.test(trig)) phases.add("move");
+    // anything else (commands, destroyed units...) stays "always on" so it is never hidden
+    const theirTurn = /opponent|enemy/.test(trig), fight = phases.has("combat");
+    mine = !theirTurn || fight; theirs = theirTurn || fight;
+    if (!theirTurn && !fight) { mine = true; theirs = false; }
+  }
+  if (!phases.size && ab.kind !== "reaction") { // passives etc: guess from text; empty means "always on"
     infer(text).forEach((x) => phases.add(x));
     if (!phases.size && /^(your|enemy)/.test(tl)) { /* turn-only timing, keep always */ }
     mine = theirs = true;
