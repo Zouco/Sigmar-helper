@@ -1,0 +1,181 @@
+// Age of Sigmar Helper: state + rendering
+const KEY = "aos-helper-v1";
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+let state = load() || {
+  view: "setup", armyIdx: 0, formation: 0, units: [], custom: [],
+  round: 1, turn: "mine", phase: 0, used: {},
+};
+state.enh = state.enh || [];
+state.filter = "";
+if (!ARMIES[state.armyIdx]) state.armyIdx = 0;
+const enhKey = (e) => e.group + "|" + e.name;
+
+function load() { try { return JSON.parse(localStorage.getItem(KEY)); } catch { return null; } }
+function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch {} }
+const army = () => ARMIES[state.armyIdx] || ARMIES[0];
+
+// Collect every ability the player has, tagged with its source.
+function allAbilities() {
+  const a = army(), out = [];
+  const add = (src, list, id) => (list || []).forEach((ab, i) => out.push({ ...ab, src, uid: id + ":" + i }));
+  add("Army: " + a.name, a.abilities, "army" + state.armyIdx);
+  const f = a.formations[state.formation];
+  if (f) add("Formation: " + f.name, f.abilities, "form" + state.armyIdx + "_" + state.formation);
+  a.enhancements.forEach((e) => { if (state.enh.includes(enhKey(e))) add(e.group.split(" / ").pop() + ": " + e.name, e.abilities, "enh" + state.armyIdx + "_" + enhKey(e)); });
+  state.units.forEach((u, n) => {
+    const def = a.units.find((x) => x.name === u.name);
+    if (def) add(u.name + (u.count > 1 ? " x" + u.count : ""), def.abilities, "unit" + state.armyIdx + "_" + u.name);
+  });
+  state.custom.forEach((c, i) => out.push({ ...c, src: "Custom", uid: "cust:" + i }));
+  return out;
+}
+
+// Does this ability show now? turn = whose turn it is.
+function relevant(ab, phaseId) {
+  if (!ab.phases.includes(phaseId)) return false;
+  return turnOk(ab);
+}
+function turnOk(ab) {
+  if (ab.when === "mine" && state.turn !== "mine") return false;
+  if (ab.when === "theirs" && state.turn !== "theirs") return false;
+  if (ab.rounds && !ab.rounds.includes(state.round)) return false;
+  return true;
+}
+
+// "used" key encodes the reset scope.
+function usedKey(ab) {
+  const scope = ab.limit === "battle" ? "" : ab.limit === "round" ? "r" + state.round : "r" + state.round + state.turn;
+  return ab.uid + "|" + scope;
+}
+
+function render() {
+  save();
+  document.querySelectorAll("nav button").forEach((b) => b.classList.toggle("on", b.dataset.v === state.view));
+  const m = $("#main");
+  m.innerHTML = state.view === "setup" ? setupView() : state.view === "play" ? playView() : customView();
+  bind();
+}
+
+function setupView() {
+  const a = army();
+  return `
+  <h2>Army</h2>
+  <select id="army">${ARMIES.map((x, i) => `<option value="${i}" ${i === state.armyIdx ? "selected" : ""}>${esc(x.name)}</option>`).join("")}</select>
+  <h2>Formation</h2>
+  <select id="form">${a.formations.map((x, i) => `<option value="${i}" ${i === state.formation ? "selected" : ""}>${esc(x.name)}</option>`).join("")}</select>
+  <h2>Your units${state.units.length ? " (" + state.units.length + ")" : ""}</h2>
+  <input id="filter" placeholder="Search units" value="${esc(state.filter)}">
+  <div class="chips">${a.units.filter((u) => u.name.toLowerCase().includes(state.filter.toLowerCase()) || state.units.some((x) => x.name === u.name)).map((u) => {
+    const sel = state.units.find((x) => x.name === u.name);
+    return `<div class="unit ${sel ? "sel" : ""}"><button data-unit="${esc(u.name)}">${esc(u.name)}<small>${esc(u.stats)}</small></button>
+      ${sel ? `<span class="cnt"><button data-dec="${esc(u.name)}">-</button>${sel.count}<button data-inc="${esc(u.name)}">+</button></span>` : ""}</div>`;
+  }).join("")}</div>
+  <h2>Enhancements, lores, traits${state.enh.length ? " (" + state.enh.length + ")" : ""}</h2>
+  ${[...new Set(a.enhancements.map((e) => e.group))].map((g) => `<details><summary>${esc(g)}</summary>${a.enhancements.filter((e) => e.group === g).map((e) =>
+    `<label class="enh"><input type="checkbox" data-enh="${esc(enhKey(e))}" ${state.enh.includes(enhKey(e)) ? "checked" : ""}> ${esc(e.name)}</label>`).join("")}</details>`).join("")}
+  <button class="big" data-go="play">Start battle</button>
+  <button class="link" id="reset">Reset game</button>`;
+}
+
+function playView() {
+  const ph = PHASES[state.phase];
+  const abs = allAbilities().filter((ab) => relevant(ab, ph.id));
+  const groups = {};
+  abs.forEach((ab) => (groups[ab.src] = groups[ab.src] || []).push(ab));
+  return `
+  <div class="bar">
+    <button data-round="-1">‹</button><b>Battle round ${state.round}</b><button data-round="1">›</button>
+    <button class="turn ${state.turn}" id="turn">${state.turn === "mine" ? "Your turn" : "Enemy turn"}</button>
+  </div>
+  <div class="phases">${PHASES.map((p, i) => `<button data-phase="${i}" class="${i === state.phase ? "on" : ""}">${p.name}</button>`).join("")}</div>
+  <h2>${ph.name} phase</h2>
+  ${abs.length === 0 ? `<p class="muted">Nothing from your army this phase.</p>` : Object.entries(groups).map(([src, list]) => `
+    <div class="group"><div class="src">${esc(src)}</div>${list.map(card).join("")}</div>`).join("")}
+  ${alwaysOn()}
+  <div class="nextrow">
+    <button data-step="-1">‹ Back</button>
+    <button class="big" data-step="1">${state.phase === PHASES.length - 1 ? "Next turn ›" : "Next phase ›"}</button>
+  </div>`;
+}
+
+function alwaysOn() {
+  const list = allAbilities().filter((ab) => !ab.phases.length && turnOk(ab));
+  if (!list.length) return "";
+  const groups = {};
+  list.forEach((ab) => (groups[ab.src] = groups[ab.src] || []).push(ab));
+  return `<details class="always"><summary>Always on / no fixed phase (${list.length})</summary>${Object.entries(groups).map(([src, l]) =>
+    `<div class="src">${esc(src)}</div>${l.map(card).join("")}`).join("")}</details>`;
+}
+
+function card(ab) {
+  const k = usedKey(ab), used = !!state.used[k];
+  return `<div class="card ${ab.kind || "passive"} ${used ? "used" : ""}">
+    <div class="ctop"><span class="tag">${esc(ab.kind || "passive")}${ab.when === "theirs" ? " · enemy turn" : ""}</span>
+    ${ab.limit ? `<label><input type="checkbox" data-used="${esc(k)}" ${used ? "checked" : ""}> used (${ab.limit})</label>` : ""}</div>
+    <div class="name">${esc(ab.name)}</div><div class="txt">${esc(ab.text)}</div></div>`;
+}
+
+function customView() {
+  return `
+  <h2>Add a custom ability</h2>
+  <p class="muted">For anything not in the built-in data: type it in once and it appears in the right phases.</p>
+  <form id="cf">
+    <input name="name" placeholder="Name" required>
+    <textarea name="text" placeholder="Rules text" rows="3"></textarea>
+    <div class="label">Phases</div>
+    <div class="chk">${PHASES.map((p) => `<label><input type="checkbox" name="ph" value="${p.id}"> ${p.name}</label>`).join("")}</div>
+    <select name="when"><option value="mine">Your turn</option><option value="theirs">Enemy turn</option><option value="any">Any turn</option></select>
+    <select name="kind"><option>passive</option><option>active</option><option>reaction</option><option>spell</option></select>
+    <select name="limit"><option value="">No limit</option><option value="turn">Once per turn</option><option value="round">Once per round</option><option value="battle">Once per battle</option></select>
+    <button class="big">Add</button>
+  </form>
+  <h2>Your custom abilities</h2>
+  ${state.custom.length ? state.custom.map((c, i) => `<div class="card"><div class="name">${esc(c.name)}</div><div class="txt">${esc(c.text)}</div>
+    <button class="link" data-del="${i}">Delete</button></div>`).join("") : `<p class="muted">None yet.</p>`}`;
+}
+
+function bind() {
+  const on = (sel, fn) => document.querySelectorAll(sel).forEach(fn);
+  const flt = $("#filter"); if (flt) flt.oninput = () => { state.filter = flt.value; const p = flt.selectionStart; render(); const f = $("#filter"); f.focus(); f.setSelectionRange(p, p); };
+  on("[data-enh]", (c) => c.onchange = () => { const k = c.dataset.enh, i = state.enh.indexOf(k); if (i >= 0) state.enh.splice(i, 1); else state.enh.push(k); save(); });
+  const army_ = $("#army"); if (army_) army_.onchange = () => { state.armyIdx = +army_.value; state.formation = 0; state.units = []; state.enh = []; render(); };
+  const form = $("#form"); if (form) form.onchange = () => { state.formation = +form.value; render(); };
+  on("[data-unit]", (b) => b.onclick = () => {
+    const n = b.dataset.unit, i = state.units.findIndex((u) => u.name === n);
+    if (i >= 0) state.units.splice(i, 1); else state.units.push({ name: n, count: 1 });
+    render();
+  });
+  on("[data-inc]", (b) => b.onclick = () => { state.units.find((u) => u.name === b.dataset.inc).count++; render(); });
+  on("[data-dec]", (b) => b.onclick = () => { const u = state.units.find((u) => u.name === b.dataset.dec); u.count = Math.max(1, u.count - 1); render(); });
+  on("[data-go]", (b) => b.onclick = () => { state.view = "play"; render(); });
+  const reset = $("#reset"); if (reset) reset.onclick = () => { state.round = 1; state.turn = "mine"; state.phase = 0; state.used = {}; render(); };
+  on("[data-round]", (b) => b.onclick = () => { state.round = Math.max(1, state.round + +b.dataset.round); render(); });
+  const turn = $("#turn"); if (turn) turn.onclick = () => { state.turn = state.turn === "mine" ? "theirs" : "mine"; state.phase = 0; render(); };
+  on("[data-phase]", (b) => b.onclick = () => { state.phase = +b.dataset.phase; render(); });
+  on("[data-step]", (b) => b.onclick = () => {
+    const d = +b.dataset.step;
+    state.phase += d;
+    if (state.phase >= PHASES.length) { // turn over: swap sides; new round after both have gone
+      state.phase = 0;
+      if (state.turn === "theirs") state.round++;
+      state.turn = state.turn === "mine" ? "theirs" : "mine";
+    } else if (state.phase < 0) state.phase = 0;
+    render(); scrollTo(0, 0);
+  });
+  on("[data-used]", (c) => c.onchange = () => { state.used[c.dataset.used] = c.checked; render(); });
+  const cf = $("#cf");
+  if (cf) cf.onsubmit = (e) => {
+    e.preventDefault();
+    const f = new FormData(cf), phases = f.getAll("ph");
+    if (!phases.length) return alert("Pick at least one phase");
+    state.custom.push({ name: f.get("name"), text: f.get("text"), phases, when: f.get("when"), kind: f.get("kind"), limit: f.get("limit") || undefined });
+    render();
+  };
+  on("[data-del]", (b) => b.onclick = () => { state.custom.splice(+b.dataset.del, 1); render(); });
+}
+
+document.querySelectorAll("nav button").forEach((b) => b.onclick = () => { state.view = b.dataset.v; render(); });
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+render();

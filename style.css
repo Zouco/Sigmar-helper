@@ -1,0 +1,43 @@
+:root{--bg:#14110f;--panel:#201b17;--line:#3a322b;--text:#efe6d8;--muted:#9a8f80;--gold:#d4a73c;--red:#c0503c;--blue:#4a8fc7;--green:#5fa05f;--purple:#9a6bc7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.4 system-ui,sans-serif;padding-bottom:70px}
+header{padding:14px 16px;font-weight:700;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line)}
+main{padding:0 16px 16px;max-width:640px;margin:auto}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:20px 0 8px}
+button{font:inherit;color:var(--text);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px;cursor:pointer}
+button.big{width:100%;background:var(--gold);color:#1a1408;font-weight:700;border:0;margin-top:14px;padding:14px}
+button.link{background:none;border:0;color:var(--muted);text-decoration:underline;margin-top:8px}
+select,input:not([type=checkbox]),textarea{width:100%;font:inherit;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:10px;margin-bottom:8px}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--panel);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+nav button{flex:1;border:0;border-radius:0;background:none;padding:16px}
+nav button.on{color:var(--gold);font-weight:700}
+.chips{display:flex;flex-direction:column;gap:8px}
+.unit{display:flex;gap:8px;align-items:center}
+.unit>button{flex:1;text-align:left}
+.unit.sel>button{border-color:var(--gold);color:var(--gold)}
+.cnt{display:flex;align-items:center;gap:10px}
+.bar{display:flex;gap:10px;align-items:center;margin-top:14px}
+.bar b{flex:1;text-align:center}
+.turn.mine{background:var(--green);color:#0b1a0b;border:0;font-weight:700}
+.turn.theirs{background:var(--red);color:#fff;border:0;font-weight:700}
+.phases{display:flex;gap:6px;overflow-x:auto;margin-top:12px;padding-bottom:4px}
+.phases button{white-space:nowrap;padding:8px 12px}
+.phases button.on{background:var(--gold);color:#1a1408;font-weight:700;border:0}
+.src{font-size:12px;color:var(--muted);text-transform:uppercase;margin:14px 0 6px}
+.card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--muted);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+.card.active{border-left-color:var(--gold)}.card.spell{border-left-color:var(--purple)}.card.reaction{border-left-color:var(--blue)}.card.passive{border-left-color:var(--green)}
+.card.used{opacity:.4}
+.ctop{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);text-transform:uppercase}
+.ctop input{margin-right:4px;width:18px;height:18px;vertical-align:middle}
+.name{font-weight:700;margin-top:2px}.txt{color:#cfc4b4;font-size:15px}
+.muted{color:var(--muted)}
+.nextrow{display:flex;gap:10px;margin-top:10px}.nextrow .big{flex:1}
+.label{font-size:12px;color:var(--muted);text-transform:uppercase}
+.chk{display:flex;flex-wrap:wrap;gap:6px 14px;margin:6px 0 10px}
+.unit>button small{display:block;color:var(--muted);font-size:12px}
+.card.command{border-left-color:var(--red)}.card.prayer{border-left-color:#e0c060}
+details{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin-bottom:8px}
+summary{cursor:pointer;color:var(--gold)}
+.enh{display:block;padding:8px 0;border-top:1px solid var(--line)}
+.enh input{width:18px;height:18px;vertical-align:middle;margin-right:6px}
+details.always{margin-top:16px}
