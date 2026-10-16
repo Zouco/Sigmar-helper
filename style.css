@@ -55,3 +55,9 @@ header #sym{margin-left:auto;color:var(--gold);display:flex}
 .armies button span{color:var(--text);font-size:14px}
 .armies button.sel{border-color:var(--c);box-shadow:0 0 0 1px var(--c)}
 .uname small{display:block;color:var(--muted);font-size:12px}
+.applies{margin-top:6px;font-size:13px;color:var(--gold)}
+.pl{border-top:1px solid var(--line);padding:8px 0}
+.gods{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.god{padding:6px 10px;font-size:13px}
+.god.on{background:var(--gold);color:var(--on);border:0;font-weight:700}
+.pledgesum{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:8px;padding:8px 12px;margin-top:12px;font-size:14px}.pledgesum b{color:var(--gold)}

@@ -144,7 +144,9 @@ for (const name of ARMY_NAMES) {
             const links = e.categoryLinks?.categoryLink || [];
             const cat = clean((Array.isArray(links) ? links : [links]).find((l) => l["@_primary"] === "true")?.["@_name"] || "OTHER");
             const tags = (Array.isArray(links) ? links : [links]).map((l) => clean(l["@_name"])).filter((n) => /^(WIZARD|PRIEST|UNIQUE)/.test(n));
-            army.units.push({ name: clean(e["@_name"]), cat, tags, size: unitSize(e), stats: stat, abilities });
+            // units that start with a Pledge keyword (Slaves to Darkness)
+            const gods = (Array.isArray(links) ? links : [links]).map((l) => /^PLEDGED TO (\w+)/i.exec(clean(l["@_name"]))?.[1]).filter(Boolean).map((g) => g[0] + g.slice(1).toLowerCase());
+            army.units.push({ name: clean(e["@_name"]), cat, tags, gods, size: unitSize(e), stats: stat, abilities });
           }
         }
         walkUnits(e);

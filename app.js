@@ -10,6 +10,7 @@ let state = load() || {
 state.enh = state.enh || [];
 state.summons = state.summons || [];   // manifestations summoned during the battle: {name, n}
 state.sumN = state.sumN || 0;
+state.pledges = state.pledges || {};   // Slaves to Darkness: "Unit#i" -> god
 state.units = (state.units || []).filter((u) => u && u.name);
 state.filter = "";
 if (!ARMIES[state.armyIdx]) state.armyIdx = 0;
@@ -19,17 +20,40 @@ function load() { try { return JSON.parse(localStorage.getItem(KEY)); } catch { 
 function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch {} }
 const army = () => ARMIES[state.armyIdx] || ARMIES[0];
 
+const GODS = ["Khorne", "Tzeentch", "Nurgle", "Slaanesh"];
+const hasPledgeRule = () => army().abilities.some((x) => x.name === "Pledge to Chaos");
+// every unit in the army as its own instance (a count of 2 = two units)
+function instances() {
+  const out = [];
+  state.units.forEach((u) => {
+    const def = army().units.find((x) => x.name === u.name);
+    if (def) for (let i = 0; i < u.count; i++) out.push({ key: u.name + "#" + i, label: u.name + (u.count > 1 ? " #" + (i + 1) : ""), def });
+  });
+  return out;
+}
+const godOf = (inst) => inst.def.gods?.[0] || state.pledges[inst.key] || "";
+
 // Collect every ability the player has, tagged with its source.
 function allAbilities() {
   const a = army(), out = [];
-  const add = (src, list, id, extra) => (list || []).forEach((ab, i) => out.push({ ...ab, ...extra, src, uid: id + ":" + i }));
-  add("Army: " + a.name, a.abilities, "army" + state.armyIdx);
+  const add = (src, list, id, extra) => (list || []).forEach((ab, i) => out.push({ ...ab, ...extra, src, uid: id + ":" + (ab.idx ?? i) }));
+  // "Pledged to X" buffs only matter when some unit actually holds that keyword
+  const armyAbs = a.abilities.map((ab, idx) => ({ ...ab, idx })).filter((ab) => {
+    const m = /^Pledged to (\w+)$/.exec(ab.name);
+    if (!m || !hasPledgeRule()) return true;
+    const holders = instances().filter((u) => godOf(u) === m[1]);
+    if (!holders.length) return false;
+    ab.applies = holders.map((u) => u.label).join(", ");
+    return true;
+  });
+  add("Army: " + a.name, armyAbs, "army" + state.armyIdx);
   const f = a.formations[state.formation];
   if (f) add("Formation: " + f.name, f.abilities, "form" + state.armyIdx + "_" + state.formation);
   a.enhancements.forEach((e) => { if (state.enh.includes(enhKey(e))) add(e.group.split(" / ").pop() + ": " + e.name, e.abilities, "enh" + state.armyIdx + "_" + enhKey(e), { lore: /Lore/i.test(e.group) && !/Manifestation/i.test(e.group) }); });
   state.units.forEach((u, n) => {
     const def = a.units.find((x) => x.name === u.name);
-    if (def) add(u.name + (u.count > 1 ? " x" + u.count : ""), def.abilities, "unit" + state.armyIdx + "_" + u.name);
+    const pl = hasPledgeRule() ? instances().filter((i) => i.def === def && godOf(i)).map((i) => (u.count > 1 ? "#" + (+i.key.split("#")[1] + 1) + " " : "") + godOf(i)) : [];
+    if (def) add(u.name + (u.count > 1 ? " x" + u.count : "") + (pl.length ? " · Pledged: " + pl.join(", ") : ""), def.abilities, "unit" + state.armyIdx + "_" + u.name);
   });
   state.summons.forEach((s) => {
     const def = (a.manifestations || []).find((x) => x.name === s.name);
@@ -119,6 +143,7 @@ function playView() {
     <button class="turn ${state.turn}" id="turn">${state.turn === "mine" ? "Your turn" : "Enemy turn"}</button>
   </div>
   <div class="phases">${PHASES.map((p, i) => `<button data-phase="${i}" class="${i === state.phase ? "on" : ""}">${p.name}</button>`).join("")}</div>
+  ${pledgePanel()}
   <h2>${ph.name} phase</h2>
   ${abs.length === 0 ? `<p class="muted">Nothing from your army this phase.</p>` : Object.entries(groups).map(([src, list]) => list[0].lore
     ? `<details class="lore"><summary>${esc(src)} · ${list.length} spells (open if you have a wizard)</summary>${list.map(card).join("")}</details>`
@@ -152,7 +177,22 @@ function card(ab) {
   return `<div class="card ${ab.kind || "passive"} ${used ? "used" : ""}">
     <div class="ctop"><span class="tag">${esc(ab.kind || "passive")}${ab.when === "theirs" ? " · enemy turn" : ""}</span>
     ${ab.limit ? `<label><input type="checkbox" data-used="${esc(k)}" ${used ? "checked" : ""}> used (${ab.limit})</label>` : ""}</div>
-    <div class="name">${esc(ab.name)}</div><div class="txt">${esc(ab.text)}</div></div>`;
+    <div class="name">${esc(ab.name)}</div><div class="txt">${esc(ab.text)}</div>
+    ${ab.applies ? `<div class="applies">Applies to: ${esc(ab.applies)}</div>` : ""}</div>`;
+}
+
+function pledgePanel() {
+  if (!hasPledgeRule()) return "";
+  const list = instances().filter((u) => !(u.def.cat === "FACTION TERRAIN"));
+  const n = list.filter((u) => godOf(u)).length;
+  const sum = GODS.map((g) => [g, list.filter((u) => godOf(u) === g).map((u) => u.label)]).filter(([, l]) => l.length);
+  return `${sum.length ? `<div class="pledgesum">${sum.map(([g, l]) => `<div><b>${g}:</b> ${esc(l.join(", "))}</div>`).join("")}</div>` : ""}
+  <details class="always" ${state.phase === 1 ? "open" : ""}><summary>Pledges to Chaos (${n} of ${list.length} units pledged)</summary>
+    <p class="muted">Pledge to Chaos: once per turn in your Hero phase, pick one non-Unique unit to gain a keyword for the rest of the battle. Units that start with one are locked.</p>
+    ${list.map((u) => { const innate = u.def.gods?.[0], cur = godOf(u), unique = (u.def.tags || []).includes("UNIQUE");
+      return `<div class="pl"><div class="uname">${esc(u.label)}${innate ? `<small>Always Pledged to ${innate}</small>` : unique ? `<small>Unique: cannot be pledged</small>` : ""}</div>
+      ${innate || unique ? "" : `<div class="gods">${GODS.map((g) => `<button class="god ${cur === g ? "on" : ""}" data-pledge="${esc(u.key)}|${g}">${g}</button>`).join("")}</div>`}</div>`; }).join("") || `<p class="muted">Add units on the Army tab first.</p>`}
+  </details>`;
 }
 
 function customView() {
@@ -178,16 +218,17 @@ function bind() {
   const on = (sel, fn) => document.querySelectorAll(sel).forEach(fn);
   const flt = $("#filter"); if (flt) flt.oninput = () => { state.filter = flt.value; const p = flt.selectionStart; render(); const f = $("#filter"); f.focus(); f.setSelectionRange(p, p); };
   on("[data-enh]", (c) => c.onchange = () => { const k = c.dataset.enh, i = state.enh.indexOf(k); if (i >= 0) state.enh.splice(i, 1); else state.enh.push(k); save(); });
-  on("[data-army]", (b) => b.onclick = () => { const i = +b.dataset.army; if (i === state.armyIdx) return; state.armyIdx = i; state.formation = -1; state.units = []; state.enh = []; state.summons = []; render(); });
+  on("[data-army]", (b) => b.onclick = () => { const i = +b.dataset.army; if (i === state.armyIdx) return; state.armyIdx = i; state.formation = -1; state.units = []; state.enh = []; state.summons = []; state.pledges = {}; render(); });
   on("[data-form]", (d) => d.onclick = () => { state.formation = state.formation === +d.dataset.form ? -1 : +d.dataset.form; render(); });
   on("[data-unit]", (b) => b.onclick = () => { state.units.push({ name: b.dataset.unit, count: 1 }); state.filter = ""; render(); });
   on("[data-inc]", (b) => b.onclick = () => { state.units.find((u) => u.name === b.dataset.inc).count++; render(); });
   on("[data-dec]", (b) => b.onclick = () => { const u = state.units.find((u) => u.name === b.dataset.dec); if (--u.count < 1) state.units = state.units.filter((x) => x !== u); render(); });
   on("[data-rm]", (b) => b.onclick = () => { state.units = state.units.filter((u) => u.name !== b.dataset.rm); render(); });
+  on("[data-pledge]", (b) => b.onclick = () => { const [k, g] = b.dataset.pledge.split("|"); if (state.pledges[k] === g) delete state.pledges[k]; else state.pledges[k] = g; render(); });
   on("[data-summon]", (b) => b.onclick = () => { state.sumN++; state.summons.push({ name: b.dataset.summon, n: state.sumN }); render(); });
   on("[data-unsummon]", (b) => b.onclick = () => { state.summons = state.summons.filter((s) => s.n !== +b.dataset.unsummon); render(); });
   on("[data-go]", (b) => b.onclick = () => { state.view = "play"; render(); });
-  const reset = $("#reset"); if (reset) reset.onclick = () => { state.round = 1; state.turn = "mine"; state.phase = 0; state.used = {}; state.summons = []; render(); };
+  const reset = $("#reset"); if (reset) reset.onclick = () => { state.round = 1; state.turn = "mine"; state.phase = 0; state.used = {}; state.summons = []; state.pledges = {}; render(); };
   on("[data-round]", (b) => b.onclick = () => { state.round = Math.max(1, state.round + +b.dataset.round); render(); });
   const turn = $("#turn"); if (turn) turn.onclick = () => { state.turn = state.turn === "mine" ? "theirs" : "mine"; state.phase = 0; render(); };
   on("[data-phase]", (b) => b.onclick = () => { state.phase = +b.dataset.phase; render(); });
