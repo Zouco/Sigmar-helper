@@ -41,3 +41,9 @@ summary{cursor:pointer;color:var(--gold)}
 .enh{display:block;padding:8px 0;border-top:1px solid var(--line)}
 .enh input{width:18px;height:18px;vertical-align:middle;margin-right:6px}
 details.always{margin-top:16px}
+.forms{display:flex;flex-direction:column;gap:8px}
+.form{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px;cursor:pointer}
+.form.sel{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+.fab{margin-top:6px;font-size:14px}.fab i{color:var(--muted)}
+.uname{flex:1;padding:10px 0}
+.cnt button{padding:6px 10px}

@@ -1,7 +1,10 @@
 // Converts BSData age-of-sigmar-4th catalogues into armies.js for the app.
 const fs = require("fs"), path = require("path");
 const { XMLParser } = require("fast-xml-parser");
-const DIR = "C:/bs/data";
+const DIR = process.env.BSDATA || "C:/bs/data";
+const removed = []; // superseded content skipped: hidden-by-default entries, Legends
+const LEGENDS_PUB = "9dee-a6b2-4b42-bfee";
+const skip = (e, army) => { const bad = e["@_hidden"] === "true" || e["@_publicationId"] === LEGENDS_PUB || /LEGENDS/i.test(e["@_name"] || ""); if (bad) removed.push(army + ": " + e["@_name"]); return bad; };
 const OUT = process.argv[2];
 const ARMY_NAMES = ["Slaves to Darkness", "Stormcast Eternals", "Sylvaneth", "Seraphon", "Skaven"];
 
@@ -56,11 +59,24 @@ function convert(p) {
 }
 
 // Gather abilities under an entry (not into nested selectionEntries of type unit), resolving infoLinks via map.
-function collect(node, profMap, out = [], depth = 0) {
+const byId = {}; // shared selectionEntry / selectionEntryGroup by id (for lore links)
+function indexShared(n) {
+  if (!n || typeof n !== "object") return;
+  if (Array.isArray(n)) return n.forEach(indexShared);
+  for (const k of ["selectionEntry", "selectionEntryGroup"]) for (const x of (k === "selectionEntry" ? n.selectionEntries?.selectionEntry : n.selectionEntryGroups?.selectionEntryGroup) || []) if (x["@_id"]) byId[x["@_id"]] = x;
+  for (const x of n.sharedSelectionEntries?.selectionEntry || []) if (x["@_id"]) byId[x["@_id"]] = x;
+  for (const x of n.sharedSelectionEntryGroups?.selectionEntryGroup || []) if (x["@_id"]) byId[x["@_id"]] = x;
+  for (const k of Object.keys(n)) if (!k.startsWith("@_") && k !== "profiles") indexShared(n[k]);
+}
+function collect(node, profMap, out = [], depth = 0, follow = false) {
+  if (follow && depth < 6) for (const l of node.entryLinks?.entryLink || []) {
+    const t = byId[l["@_targetId"]];
+    if (t && l["@_hidden"] !== "true" && t["@_hidden"] !== "true" && t["@_type"] !== "unit" && t["@_publicationId"] !== LEGENDS_PUB) collect(t, profMap, out, depth + 1, true);
+  }
   for (const p of node.profiles?.profile || []) { const a = convert(p); if (a) out.push(a); }
   for (const l of node.infoLinks?.infoLink || []) { if (l["@_type"] === "profile" && profMap[l["@_targetId"]]) { const a = convert(profMap[l["@_targetId"]]); if (a) out.push(a); } }
-  for (const e of node.selectionEntries?.selectionEntry || []) if (e["@_type"] !== "unit") collect(e, profMap, out, depth + 1);
-  for (const g of node.selectionEntryGroups?.selectionEntryGroup || []) collect(g, profMap, out, depth + 1);
+  for (const e of node.selectionEntries?.selectionEntry || []) if (e["@_type"] !== "unit" && e["@_hidden"] !== "true") collect(e, profMap, out, depth + 1, follow);
+  for (const g of node.selectionEntryGroups?.selectionEntryGroup || []) if (g["@_hidden"] !== "true") collect(g, profMap, out, depth + 1, follow);
   return out;
 }
 function dedupe(list) { const seen = new Set(); return list.filter((a) => { const k = a.name + "|" + a.text; if (seen.has(k)) return false; seen.add(k); return true; }); }
@@ -77,22 +93,28 @@ function allProfiles(node, map) {
 
 const armies = [];
 const stats = {};
+indexShared(parse("Lores.cat"));
+for (const n of ARMY_NAMES) for (const f of [n + ".cat", n + " - Library.cat"]) if (fs.existsSync(path.join(DIR, f))) indexShared(parse(f));
 for (const name of ARMY_NAMES) {
   const files = [name + ".cat", name + " - Library.cat"].filter((f) => fs.existsSync(path.join(DIR, f)));
   const cats = files.map(parse);
   const profMap = {};
   cats.forEach((c) => allProfiles(c, profMap));
   // include the game system's shared profiles too
-  const army = { name, abilities: [], formations: [], enhancements: [], units: [] };
+  const army = { name, abilities: [], formations: [], enhancements: [], units: [], manifestations: [] };
   for (const c of cats) {
     // units
     const walkUnits = (node) => {
       for (const e of node.selectionEntries?.selectionEntry || []) {
-        if (e["@_type"] === "unit") {
+        if (e["@_type"] === "unit" && !skip(e, name)) {
           const unitProf = (e.profiles?.profile || []).find((p) => p["@_typeName"] === "Unit");
           const abilities = dedupe(collect(e, profMap));
           const stat = unitProf ? `Move ${ch(unitProf, "Move")} · Health ${ch(unitProf, "Health")} · Save ${ch(unitProf, "Save")} · Control ${ch(unitProf, "Control")}` : "";
-          if (!army.units.find((u) => u.name === clean(e["@_name"])))
+          const manProf = (e.profiles?.profile || []).find((p) => p["@_typeName"] === "Manifestation");
+          if (manProf) {
+            if (!army.manifestations.find((u) => u.name === clean(e["@_name"])))
+              army.manifestations.push({ name: clean(e["@_name"]), stats: `Move ${ch(manProf, "Move")} · Health ${ch(manProf, "Health")} · Save ${ch(manProf, "Save")} · Banishment ${ch(manProf, "Banishment")}`, abilities });
+          } else if (!army.units.find((u) => u.name === clean(e["@_name"])))
             army.units.push({ name: clean(e["@_name"]), stats: stat, abilities });
         }
         walkUnits(e);
@@ -103,18 +125,19 @@ for (const name of ARMY_NAMES) {
     walkUnits({ selectionEntries: c.selectionEntries, selectionEntryGroups: c.selectionEntryGroups });
     // army-level: battle traits, formations, enhancements
     for (const e of c.sharedSelectionEntries?.selectionEntry || []) {
-      if (/^Battle Traits/i.test(e["@_name"])) army.abilities.push(...dedupe(collect(e, profMap)));
+      if (/^Battle Traits/i.test(e["@_name"]) && !skip(e, name)) army.abilities.push(...dedupe(collect(e, profMap)));
     }
     const walkGroups = (groups, parent) => {
       for (const g of groups || []) {
+        if (skip(g, name)) continue;
         const gname = clean(g["@_name"]);
         if (/Battle Formations/i.test(gname) || /Battle Formations/i.test(parent || "")) {
-          for (const e of g.selectionEntries?.selectionEntry || []) army.formations.push({ name: clean(e["@_name"]), abilities: dedupe(collect(e, profMap)) });
+          for (const e of (g.selectionEntries?.selectionEntry || []).filter((x) => !skip(x, name))) army.formations.push({ name: clean(e["@_name"]), abilities: dedupe(collect(e, profMap)) });
           walkGroups(g.selectionEntryGroups?.selectionEntryGroup, gname);
         } else if (/Battle Wounds|Paths$|^Scars/i.test(gname)) {
         } else {
-          for (const e of g.selectionEntries?.selectionEntry || []) {
-            const abs = dedupe(collect(e, profMap));
+          for (const e of (g.selectionEntries?.selectionEntry || []).filter((x) => !skip(x, name))) {
+            const abs = dedupe(collect(e, profMap, [], 0, /Lore/i.test(gname) && !/Manifestation/i.test(gname)));
             if (abs.length) army.enhancements.push({ group: parent && parent !== gname ? parent + " / " + gname : gname, name: clean(e["@_name"]), abilities: abs });
           }
           walkGroups(g.selectionEntryGroups?.selectionEntryGroup, gname);
@@ -133,3 +156,5 @@ for (const name of ARMY_NAMES) {
 const strip = (a) => JSON.stringify(a);
 fs.writeFileSync(OUT, "// GENERATED from BSData age-of-sigmar-4th by convert.js. Do not edit by hand.\nconst ARMIES = " + JSON.stringify(armies) + ";\n");
 console.table(stats);
+console.log("Skipped as hidden/legends (" + removed.length + "):\n" + [...new Set(removed)].join("\n"));
+console.log(armies.map((a) => a.name + " manifestations: " + a.manifestations.map((m) => m.name).join(", ")).join("\n"));

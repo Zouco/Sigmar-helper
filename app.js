@@ -4,10 +4,13 @@ const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
 let state = load() || {
-  view: "setup", armyIdx: 0, formation: 0, units: [], custom: [],
+  view: "setup", armyIdx: 0, formation: -1, units: [], custom: [],
   round: 1, turn: "mine", phase: 0, used: {},
 };
 state.enh = state.enh || [];
+state.summons = state.summons || [];   // manifestations summoned during the battle: {name, n}
+state.sumN = state.sumN || 0;
+state.units = (state.units || []).filter((u) => u && u.name);
 state.filter = "";
 if (!ARMIES[state.armyIdx]) state.armyIdx = 0;
 const enhKey = (e) => e.group + "|" + e.name;
@@ -27,6 +30,10 @@ function allAbilities() {
   state.units.forEach((u, n) => {
     const def = a.units.find((x) => x.name === u.name);
     if (def) add(u.name + (u.count > 1 ? " x" + u.count : ""), def.abilities, "unit" + state.armyIdx + "_" + u.name);
+  });
+  state.summons.forEach((s) => {
+    const def = (a.manifestations || []).find((x) => x.name === s.name);
+    if (def) add("Summoned: " + s.name + " #" + s.n, def.abilities, "sum" + s.n);
   });
   state.custom.forEach((c, i) => out.push({ ...c, src: "Custom", uid: "cust:" + i }));
   return out;
@@ -64,14 +71,15 @@ function setupView() {
   <h2>Army</h2>
   <select id="army">${ARMIES.map((x, i) => `<option value="${i}" ${i === state.armyIdx ? "selected" : ""}>${esc(x.name)}</option>`).join("")}</select>
   <h2>Formation</h2>
-  <select id="form">${a.formations.map((x, i) => `<option value="${i}" ${i === state.formation ? "selected" : ""}>${esc(x.name)}</option>`).join("")}</select>
-  <h2>Your units${state.units.length ? " (" + state.units.length + ")" : ""}</h2>
+  <div class="forms">${a.formations.map((x, i) => `<div class="form ${i === state.formation ? "sel" : ""}" data-form="${i}">
+    <div class="name">${esc(x.name)}</div>${x.abilities.map((ab) => `<div class="fab"><b>${esc(ab.name)}</b>${ab.timing ? ` <i>(${esc(ab.timing)})</i>` : ""}<div class="txt">${esc(ab.text)}</div></div>`).join("") || `<div class="txt muted">No ability text.</div>`}</div>`).join("")}</div>
+  <h2>Your army${state.units.length ? " (" + state.units.reduce((n, u) => n + u.count, 0) + " units)" : ""}</h2>
+  ${state.units.length ? `<div class="chips">${state.units.map((u) => `<div class="unit sel"><span class="uname">${esc(u.name)}</span>
+    <span class="cnt"><button data-dec="${esc(u.name)}">-</button>${u.count}<button data-inc="${esc(u.name)}">+</button><button data-rm="${esc(u.name)}" title="Remove">✕</button></span></div>`).join("")}</div>` : `<p class="muted">No units yet. Search below and tap to add.</p>`}
+  <h2>Add units</h2>
   <input id="filter" placeholder="Search units" value="${esc(state.filter)}">
-  <div class="chips">${a.units.filter((u) => u.name.toLowerCase().includes(state.filter.toLowerCase()) || state.units.some((x) => x.name === u.name)).map((u) => {
-    const sel = state.units.find((x) => x.name === u.name);
-    return `<div class="unit ${sel ? "sel" : ""}"><button data-unit="${esc(u.name)}">${esc(u.name)}<small>${esc(u.stats)}</small></button>
-      ${sel ? `<span class="cnt"><button data-dec="${esc(u.name)}">-</button>${sel.count}<button data-inc="${esc(u.name)}">+</button></span>` : ""}</div>`;
-  }).join("")}</div>
+  <div class="chips">${a.units.filter((u) => u.name.toLowerCase().includes(state.filter.toLowerCase()) && !state.units.some((x) => x.name === u.name)).map((u) =>
+    `<div class="unit"><button data-unit="${esc(u.name)}">${esc(u.name)}<small>${esc(u.stats)}</small></button></div>`).join("")}</div>
   <h2>Enhancements, lores, traits${state.enh.length ? " (" + state.enh.length + ")" : ""}</h2>
   ${[...new Set(a.enhancements.map((e) => e.group))].map((g) => `<details><summary>${esc(g)}</summary>${a.enhancements.filter((e) => e.group === g).map((e) =>
     `<label class="enh"><input type="checkbox" data-enh="${esc(enhKey(e))}" ${state.enh.includes(enhKey(e)) ? "checked" : ""}> ${esc(e.name)}</label>`).join("")}</details>`).join("")}
@@ -94,10 +102,18 @@ function playView() {
   ${abs.length === 0 ? `<p class="muted">Nothing from your army this phase.</p>` : Object.entries(groups).map(([src, list]) => `
     <div class="group"><div class="src">${esc(src)}</div>${list.map(card).join("")}</div>`).join("")}
   ${alwaysOn()}
+  ${summonPanel()}
   <div class="nextrow">
     <button data-step="-1">‹ Back</button>
     <button class="big" data-step="1">${state.phase === PHASES.length - 1 ? "Next turn ›" : "Next phase ›"}</button>
   </div>`;
+}
+
+function summonPanel() {
+  const man = army().manifestations || [];
+  return `<details class="always"><summary>Summoned manifestations (${state.summons.length})</summary>
+    ${state.summons.map((s) => `<div class="unit sel"><span class="uname">${esc(s.name)} #${s.n}</span><button data-unsummon="${s.n}">Banished ✕</button></div>`).join("")}
+    ${man.length ? `<div class="src">Summon one</div>` + man.map((m) => `<div class="unit"><button data-summon="${esc(m.name)}">+ ${esc(m.name)}<small>${esc(m.stats)}</small></button></div>`).join("") : `<p class="muted">This army has no manifestations in the data.</p>`}</details>`;
 }
 
 function alwaysOn() {
@@ -140,17 +156,16 @@ function bind() {
   const on = (sel, fn) => document.querySelectorAll(sel).forEach(fn);
   const flt = $("#filter"); if (flt) flt.oninput = () => { state.filter = flt.value; const p = flt.selectionStart; render(); const f = $("#filter"); f.focus(); f.setSelectionRange(p, p); };
   on("[data-enh]", (c) => c.onchange = () => { const k = c.dataset.enh, i = state.enh.indexOf(k); if (i >= 0) state.enh.splice(i, 1); else state.enh.push(k); save(); });
-  const army_ = $("#army"); if (army_) army_.onchange = () => { state.armyIdx = +army_.value; state.formation = 0; state.units = []; state.enh = []; render(); };
-  const form = $("#form"); if (form) form.onchange = () => { state.formation = +form.value; render(); };
-  on("[data-unit]", (b) => b.onclick = () => {
-    const n = b.dataset.unit, i = state.units.findIndex((u) => u.name === n);
-    if (i >= 0) state.units.splice(i, 1); else state.units.push({ name: n, count: 1 });
-    render();
-  });
+  const army_ = $("#army"); if (army_) army_.onchange = () => { state.armyIdx = +army_.value; state.formation = -1; state.units = []; state.enh = []; state.summons = []; render(); };
+  on("[data-form]", (d) => d.onclick = () => { state.formation = state.formation === +d.dataset.form ? -1 : +d.dataset.form; render(); });
+  on("[data-unit]", (b) => b.onclick = () => { state.units.push({ name: b.dataset.unit, count: 1 }); state.filter = ""; render(); });
   on("[data-inc]", (b) => b.onclick = () => { state.units.find((u) => u.name === b.dataset.inc).count++; render(); });
-  on("[data-dec]", (b) => b.onclick = () => { const u = state.units.find((u) => u.name === b.dataset.dec); u.count = Math.max(1, u.count - 1); render(); });
+  on("[data-dec]", (b) => b.onclick = () => { const u = state.units.find((u) => u.name === b.dataset.dec); if (--u.count < 1) state.units = state.units.filter((x) => x !== u); render(); });
+  on("[data-rm]", (b) => b.onclick = () => { state.units = state.units.filter((u) => u.name !== b.dataset.rm); render(); });
+  on("[data-summon]", (b) => b.onclick = () => { state.sumN++; state.summons.push({ name: b.dataset.summon, n: state.sumN }); render(); });
+  on("[data-unsummon]", (b) => b.onclick = () => { state.summons = state.summons.filter((s) => s.n !== +b.dataset.unsummon); render(); });
   on("[data-go]", (b) => b.onclick = () => { state.view = "play"; render(); });
-  const reset = $("#reset"); if (reset) reset.onclick = () => { state.round = 1; state.turn = "mine"; state.phase = 0; state.used = {}; render(); };
+  const reset = $("#reset"); if (reset) reset.onclick = () => { state.round = 1; state.turn = "mine"; state.phase = 0; state.used = {}; state.summons = []; render(); };
   on("[data-round]", (b) => b.onclick = () => { state.round = Math.max(1, state.round + +b.dataset.round); render(); });
   const turn = $("#turn"); if (turn) turn.onclick = () => { state.turn = state.turn === "mine" ? "theirs" : "mine"; state.phase = 0; render(); };
   on("[data-phase]", (b) => b.onclick = () => { state.phase = +b.dataset.phase; render(); });
