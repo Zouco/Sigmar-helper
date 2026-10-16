@@ -114,8 +114,12 @@ for (const name of ARMY_NAMES) {
           if (manProf) {
             if (!army.manifestations.find((u) => u.name === clean(e["@_name"])))
               army.manifestations.push({ name: clean(e["@_name"]), stats: `Move ${ch(manProf, "Move")} · Health ${ch(manProf, "Health")} · Save ${ch(manProf, "Save")} · Banishment ${ch(manProf, "Banishment")}`, abilities });
-          } else if (!army.units.find((u) => u.name === clean(e["@_name"])))
-            army.units.push({ name: clean(e["@_name"]), stats: stat, abilities });
+          } else if (!army.units.find((u) => u.name === clean(e["@_name"]))) {
+            const links = e.categoryLinks?.categoryLink || [];
+            const cat = clean((Array.isArray(links) ? links : [links]).find((l) => l["@_primary"] === "true")?.["@_name"] || "OTHER");
+            const tags = (Array.isArray(links) ? links : [links]).map((l) => clean(l["@_name"])).filter((n) => /^(WIZARD|PRIEST|UNIQUE)/.test(n));
+            army.units.push({ name: clean(e["@_name"]), cat, tags, stats: stat, abilities });
+          }
         }
         walkUnits(e);
       }

@@ -65,6 +65,17 @@ function render() {
   bind();
 }
 
+const CATS = [["HERO", "Heroes"], ["INFANTRY", "Infantry"], ["CAVALRY", "Cavalry"], ["BEAST", "Beasts"], ["MONSTER", "Monsters"], ["WAR MACHINE", "War machines"], ["FACTION TERRAIN", "Faction terrain"]];
+function unitGroups(a) {
+  const q = state.filter.toLowerCase();
+  const avail = a.units.filter((u) => u.name.toLowerCase().includes(q) && !state.units.some((x) => x.name === u.name));
+  const known = CATS.map((c) => c[0]);
+  const groups = [...CATS, ["OTHER", "Other"]].map(([key, label]) => [label, avail.filter((u) => (known.includes(u.cat) ? u.cat : "OTHER") === key)]).filter(([, l]) => l.length);
+  if (!groups.length) return `<p class="muted">No units found.</p>`;
+  return groups.map(([label, list]) => `<details ${q || groups.length === 1 ? "open" : ""}><summary>${label} (${list.length})</summary><div class="chips">${list.map((u) =>
+    `<div class="unit"><button data-unit="${esc(u.name)}">${esc(u.name)}<small>${esc([...(u.tags || []), u.stats].filter(Boolean).join(" · "))}</small></button></div>`).join("")}</div></details>`).join("");
+}
+
 function setupView() {
   const a = army();
   return `
@@ -78,8 +89,7 @@ function setupView() {
     <span class="cnt"><button data-dec="${esc(u.name)}">-</button>${u.count}<button data-inc="${esc(u.name)}">+</button><button data-rm="${esc(u.name)}" title="Remove">✕</button></span></div>`).join("")}</div>` : `<p class="muted">No units yet. Search below and tap to add.</p>`}
   <h2>Add units</h2>
   <input id="filter" placeholder="Search units" value="${esc(state.filter)}">
-  <div class="chips">${a.units.filter((u) => u.name.toLowerCase().includes(state.filter.toLowerCase()) && !state.units.some((x) => x.name === u.name)).map((u) =>
-    `<div class="unit"><button data-unit="${esc(u.name)}">${esc(u.name)}<small>${esc(u.stats)}</small></button></div>`).join("")}</div>
+  ${unitGroups(a)}
   <h2>Enhancements, lores, traits${state.enh.length ? " (" + state.enh.length + ")" : ""}</h2>
   ${[...new Set(a.enhancements.map((e) => e.group))].map((g) => `<details><summary>${esc(g)}</summary>${a.enhancements.filter((e) => e.group === g).map((e) =>
     `<label class="enh"><input type="checkbox" data-enh="${esc(enhKey(e))}" ${state.enh.includes(enhKey(e)) ? "checked" : ""}> ${esc(e.name)}</label>`).join("")}</details>`).join("")}
