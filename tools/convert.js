@@ -4,7 +4,7 @@ const { XMLParser } = require("fast-xml-parser");
 const DIR = process.env.BSDATA || "C:/bs/data";
 const removed = []; // superseded content skipped: hidden-by-default entries, Legends
 const LEGENDS_PUB = "9dee-a6b2-4b42-bfee";
-const skip = (e, army) => { const bad = e["@_hidden"] === "true" || e["@_publicationId"] === LEGENDS_PUB || /LEGENDS/i.test(e["@_name"] || ""); if (bad) removed.push(army + ": " + e["@_name"]); return bad; };
+const skip = (e, army) => { const bad = e["@_hidden"] === "true" || e["@_publicationId"] === LEGENDS_PUB || /LEGENDS|\(Scourge of/i.test(e["@_name"] || ""); if (bad) removed.push(army + ": " + e["@_name"]); return bad; };
 const OUT = process.argv[2];
 const ARMY_NAMES = ["Slaves to Darkness", "Stormcast Eternals", "Sylvaneth", "Seraphon", "Skaven"];
 
@@ -59,6 +59,18 @@ function convert(p) {
 }
 
 // Gather abilities under an entry (not into nested selectionEntries of type unit), resolving infoLinks via map.
+// Minimum models in one unit = sum of the minimum counts of its model entries (1 if the data gives none).
+function unitSize(e) {
+  let total = 0;
+  const models = (n) => [...(n.selectionEntries?.selectionEntry || []), ...(n.selectionEntryGroups?.selectionEntryGroup || []).flatMap(models)];
+  for (const m of models(e)) {
+    if (m["@_type"] !== "model" || m["@_hidden"] === "true") continue;
+    const cons = m.constraints?.constraint || [];
+    const c = (Array.isArray(cons) ? cons : [cons]).find((x) => x["@_type"] === "min" && x["@_field"] === "selections" && x["@_scope"] === "parent");
+    total += c ? Number(c["@_value"]) || 0 : 0;
+  }
+  return Math.max(1, total);
+}
 const byId = {}; // shared selectionEntry / selectionEntryGroup by id (for lore links)
 function indexShared(n) {
   if (!n || typeof n !== "object") return;
@@ -118,7 +130,7 @@ for (const name of ARMY_NAMES) {
             const links = e.categoryLinks?.categoryLink || [];
             const cat = clean((Array.isArray(links) ? links : [links]).find((l) => l["@_primary"] === "true")?.["@_name"] || "OTHER");
             const tags = (Array.isArray(links) ? links : [links]).map((l) => clean(l["@_name"])).filter((n) => /^(WIZARD|PRIEST|UNIQUE)/.test(n));
-            army.units.push({ name: clean(e["@_name"]), cat, tags, stats: stat, abilities });
+            army.units.push({ name: clean(e["@_name"]), cat, tags, size: unitSize(e), stats: stat, abilities });
           }
         }
         walkUnits(e);

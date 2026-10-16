@@ -57,8 +57,19 @@ function usedKey(ab) {
   return ab.uid + "|" + scope;
 }
 
+const sizeOf = (name) => army().units.find((x) => x.name === name)?.size || 1;
+
+function applyTheme() {
+  const t = themeOf(army()), root = document.documentElement;
+  root.style.setProperty("--gold", t.color);
+  root.style.setProperty("--on", t.on);
+  const sym = $("#sym"); if (sym) sym.innerHTML = symbolSvg(army(), 22);
+  const meta = document.querySelector('meta[name="theme-color"]'); if (meta) meta.setAttribute("content", "#14110f");
+}
+
 function render() {
   save();
+  applyTheme();
   document.querySelectorAll("nav button").forEach((b) => b.classList.toggle("on", b.dataset.v === state.view));
   const m = $("#main");
   m.innerHTML = state.view === "setup" ? setupView() : state.view === "play" ? playView() : customView();
@@ -73,20 +84,20 @@ function unitGroups(a) {
   const groups = [...CATS, ["OTHER", "Other"]].map(([key, label]) => [label, avail.filter((u) => (known.includes(u.cat) ? u.cat : "OTHER") === key)]).filter(([, l]) => l.length);
   if (!groups.length) return `<p class="muted">No units found.</p>`;
   return groups.map(([label, list]) => `<details ${q || groups.length === 1 ? "open" : ""}><summary>${label} (${list.length})</summary><div class="chips">${list.map((u) =>
-    `<div class="unit"><button data-unit="${esc(u.name)}">${esc(u.name)}<small>${esc([...(u.tags || []), u.stats].filter(Boolean).join(" · "))}</small></button></div>`).join("")}</div></details>`).join("");
+    `<div class="unit"><button data-unit="${esc(u.name)}">${esc(u.name)}<small>${esc([u.size > 1 ? u.size + " models" : "", ...(u.tags || []), u.stats].filter(Boolean).join(" · "))}</small></button></div>`).join("")}</div></details>`).join("");
 }
 
 function setupView() {
   const a = army();
   return `
   <h2>Army</h2>
-  <select id="army">${ARMIES.map((x, i) => `<option value="${i}" ${i === state.armyIdx ? "selected" : ""}>${esc(x.name)}</option>`).join("")}</select>
+  <div class="armies">${ARMIES.map((x, i) => `<button data-army="${i}" class="${i === state.armyIdx ? "sel" : ""}" style="--c:${themeOf(x).color}">${symbolSvg(x, 28)}<span>${esc(x.name)}</span></button>`).join("")}</div>
   <h2>Formation</h2>
   <div class="forms">${a.formations.map((x, i) => `<div class="form ${i === state.formation ? "sel" : ""}" data-form="${i}">
     <div class="name">${esc(x.name)}</div>${x.abilities.map((ab) => `<div class="fab"><b>${esc(ab.name)}</b>${ab.timing ? ` <i>(${esc(ab.timing)})</i>` : ""}<div class="txt">${esc(ab.text)}</div></div>`).join("") || `<div class="txt muted">No ability text.</div>`}</div>`).join("")}</div>
   <h2>Your army${state.units.length ? " (" + state.units.reduce((n, u) => n + u.count, 0) + " units)" : ""}</h2>
-  ${state.units.length ? `<div class="chips">${state.units.map((u) => `<div class="unit sel"><span class="uname">${esc(u.name)}</span>
-    <span class="cnt"><button data-dec="${esc(u.name)}">-</button>${u.count}<button data-inc="${esc(u.name)}">+</button><button data-rm="${esc(u.name)}" title="Remove">✕</button></span></div>`).join("")}</div>` : `<p class="muted">No units yet. Search below and tap to add.</p>`}
+  ${state.units.length ? `<div class="chips">${state.units.map((u) => { const sz = sizeOf(u.name); return `<div class="unit sel"><span class="uname">${esc(u.name)}<small>${sz > 1 ? u.count * sz + " models" : u.count > 1 ? "x" + u.count : ""}</small></span>
+    <span class="cnt"><button data-dec="${esc(u.name)}">−${sz > 1 ? sz : ""}</button><button data-inc="${esc(u.name)}">+${sz > 1 ? sz : ""}</button><button data-rm="${esc(u.name)}" title="Remove">✕</button></span></div>`; }).join("")}</div>` : `<p class="muted">No units yet. Search below and tap to add.</p>`}
   <h2>Add units</h2>
   <input id="filter" placeholder="Search units" value="${esc(state.filter)}">
   ${unitGroups(a)}
@@ -166,7 +177,7 @@ function bind() {
   const on = (sel, fn) => document.querySelectorAll(sel).forEach(fn);
   const flt = $("#filter"); if (flt) flt.oninput = () => { state.filter = flt.value; const p = flt.selectionStart; render(); const f = $("#filter"); f.focus(); f.setSelectionRange(p, p); };
   on("[data-enh]", (c) => c.onchange = () => { const k = c.dataset.enh, i = state.enh.indexOf(k); if (i >= 0) state.enh.splice(i, 1); else state.enh.push(k); save(); });
-  const army_ = $("#army"); if (army_) army_.onchange = () => { state.armyIdx = +army_.value; state.formation = -1; state.units = []; state.enh = []; state.summons = []; render(); };
+  on("[data-army]", (b) => b.onclick = () => { const i = +b.dataset.army; if (i === state.armyIdx) return; state.armyIdx = i; state.formation = -1; state.units = []; state.enh = []; state.summons = []; render(); });
   on("[data-form]", (d) => d.onclick = () => { state.formation = state.formation === +d.dataset.form ? -1 : +d.dataset.form; render(); });
   on("[data-unit]", (b) => b.onclick = () => { state.units.push({ name: b.dataset.unit, count: 1 }); state.filter = ""; render(); });
   on("[data-inc]", (b) => b.onclick = () => { state.units.find((u) => u.name === b.dataset.inc).count++; render(); });
