@@ -6,7 +6,7 @@ const removed = []; // superseded content skipped: hidden-by-default entries, Le
 const LEGENDS_PUB = "9dee-a6b2-4b42-bfee";
 const skip = (e, army) => { const bad = e["@_hidden"] === "true" || e["@_publicationId"] === LEGENDS_PUB || /LEGENDS|\(Scourge of/i.test(e["@_name"] || ""); if (bad) removed.push(army + ": " + e["@_name"]); return bad; };
 const OUT = process.argv[2];
-const ARMY_NAMES = ["Slaves to Darkness", "Stormcast Eternals", "Sylvaneth", "Seraphon", "Skaven"];
+const ARMY_NAMES = ["Slaves to Darkness", "Stormcast Eternals", "Sylvaneth", "Seraphon", "Skaven", "Idoneth Deepkin"];
 
 const arrTags = new Set(["selectionEntry", "selectionEntryGroup", "profile", "characteristic", "attribute", "entryLink", "infoLink"]);
 const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: "@_", textNodeName: "#t", isArray: (n) => arrTags.has(n), processEntities: true });
