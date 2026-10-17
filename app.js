@@ -7,7 +7,8 @@ let state = load() || {
   view: "setup", armyIdx: 0, formation: -1, units: [], custom: [],
   round: 1, turn: "mine", phase: 0, used: {},
 };
-state.enh = state.enh || [];
+state.enh = state.enh || [];           // army-wide lores (spell / prayer)
+state.attach = state.attach || {};     // hero/unit enhancements: "Unit#i" -> { "Artefacts of Power": enhKey, ... }
 state.summons = state.summons || [];   // manifestations summoned during the battle: {name, n}
 state.sumN = state.sumN || 0;
 state.cp = state.cp ?? 4;               // command points this battle round (4 per round, unspent are lost)
@@ -33,6 +34,13 @@ function instances() {
   });
   return out;
 }
+// Lores belong to the army; artefacts, heroic traits and similar are given to a specific unit.
+const isLore = (g) => /Lore/i.test(g) && !/Manifestation/i.test(g);
+const topGroup = (e) => e.group.split(" / ")[0];
+const attachables = () => army().enhancements.filter((e) => !isLore(e.group) && !/Manifestation/i.test(e.group));
+// which enhancement groups a unit can receive: traits and artefacts go to Heroes, anything else (banners...) to other units
+const groupsFor = (inst) => [...new Set(attachables().map(topGroup))].filter((g) =>
+  /Heroic Traits|Artefacts of Power/i.test(g) ? inst.def.cat === "HERO" : inst.def.cat !== "HERO" && inst.def.cat !== "FACTION TERRAIN");
 const godOf = (inst) => inst.def.gods?.[0] || state.pledges[inst.key] || "";
 
 // Collect every ability the player has, tagged with its source.
@@ -51,7 +59,11 @@ function allAbilities() {
   add("Army: " + a.name, armyAbs, "army" + state.armyIdx);
   const f = a.formations[state.formation];
   if (f) add("Formation: " + f.name, f.abilities, "form" + state.armyIdx + "_" + state.formation);
-  a.enhancements.forEach((e) => { if (state.enh.includes(enhKey(e))) add(e.group.split(" / ").pop() + ": " + e.name, e.abilities, "enh" + state.armyIdx + "_" + enhKey(e), { lore: /Lore/i.test(e.group) && !/Manifestation/i.test(e.group) }); });
+  a.enhancements.forEach((e) => { if (isLore(e.group) && state.enh.includes(enhKey(e))) add(e.group.split(" / ").pop() + ": " + e.name, e.abilities, "enh" + state.armyIdx + "_" + enhKey(e), { lore: true }); });
+  instances().forEach((inst) => {
+    const chosen = state.attach[inst.key] || {};
+    attachables().forEach((e) => { if (chosen[topGroup(e)] === enhKey(e)) add(inst.label + " · " + topGroup(e) + ": " + e.name, e.abilities, "att" + state.armyIdx + "_" + inst.key + "_" + enhKey(e)); });
+  });
   state.units.forEach((u, n) => {
     const def = a.units.find((x) => x.name === u.name);
     const pl = hasPledgeRule() ? instances().filter((i) => i.def === def && godOf(i)).map((i) => (u.count > 1 ? "#" + (+i.key.split("#")[1] + 1) + " " : "") + godOf(i)) : [];
@@ -113,6 +125,22 @@ function unitGroups(a) {
     `<div class="unit"><button data-unit="${esc(u.name)}">${esc(u.name)}<small>${esc([u.size > 1 ? u.size + " models" : "", ...(u.tags || []), u.stats].filter(Boolean).join(" · "))}</small></button></div>`).join("")}</div></details>`).join("");
 }
 
+// Per-unit enhancement pickers (artefact, heroic trait...) shown under each unit that can take one.
+function attachBlock(u) {
+  const insts = instances().filter((i) => i.key.startsWith(u.name + "#"));
+  return insts.map((inst) => {
+    const groups = groupsFor(inst);
+    if (!groups.length) return "";
+    const chosen = state.attach[inst.key] || {};
+    return `<div class="attach">${insts.length > 1 ? `<div class="src">${esc(inst.label)}</div>` : ""}${groups.map((g) => {
+      const subs = [...new Set(attachables().filter((e) => topGroup(e) === g).map((e) => e.group))];
+      return `<select data-attach="${esc(inst.key)}|${esc(g)}"><option value="">${esc(g)}: none</option>${subs.map((sg) =>
+        `<optgroup label="${esc(sg.split(" / ").pop())}">${attachables().filter((e) => e.group === sg).map((e) =>
+          `<option value="${esc(enhKey(e))}" ${chosen[g] === enhKey(e) ? "selected" : ""}>${esc(e.name)}</option>`).join("")}</optgroup>`).join("")}</select>`;
+    }).join("")}</div>`;
+  }).join("");
+}
+
 function setupView() {
   const a = army();
   return `
@@ -122,14 +150,14 @@ function setupView() {
   <div class="forms">${a.formations.map((x, i) => `<div class="form ${i === state.formation ? "sel" : ""}" data-form="${i}">
     <div class="name">${esc(x.name)}</div>${x.abilities.map((ab) => `<div class="fab"><b>${esc(ab.name)}</b>${ab.timing ? ` <i>(${esc(ab.timing)})</i>` : ""}<div class="txt">${esc(ab.text)}</div></div>`).join("") || `<div class="txt muted">No ability text.</div>`}</div>`).join("")}</div>
   <h2>Your army${state.units.length ? " (" + state.units.reduce((n, u) => n + u.count, 0) + " units)" : ""}</h2>
-  ${state.units.length ? `<div class="chips">${state.units.map((u) => { const sz = sizeOf(u.name); return `<div class="unit sel"><span class="uname">${esc(u.name)}<small>${sz > 1 ? u.count * sz + " models" : u.count > 1 ? "x" + u.count : ""}</small></span>
-    <span class="cnt"><button data-dec="${esc(u.name)}">−${sz > 1 ? sz : ""}</button><button data-inc="${esc(u.name)}">+${sz > 1 ? sz : ""}</button><button data-rm="${esc(u.name)}" title="Remove">✕</button></span></div>`; }).join("")}</div>` : `<p class="muted">No units yet. Search below and tap to add.</p>`}
+  ${state.units.length ? `<div class="chips">${state.units.map((u) => { const sz = sizeOf(u.name); return `<div class="ucard"><div class="unit sel"><span class="uname">${esc(u.name)}<small>${sz > 1 ? u.count * sz + " models" : u.count > 1 ? "x" + u.count : ""}</small></span>
+    <span class="cnt"><button data-dec="${esc(u.name)}">−${sz > 1 ? sz : ""}</button><button data-inc="${esc(u.name)}">+${sz > 1 ? sz : ""}</button><button data-rm="${esc(u.name)}" title="Remove">✕</button></span></div>${attachBlock(u)}</div>`; }).join("")}</div>` : `<p class="muted">No units yet. Search below and tap to add.</p>`}
   <h2>Add units</h2>
   <input id="filter" placeholder="Search units" value="${esc(state.filter)}">
   ${unitGroups(a)}
-  <h2>Enhancements, lores, traits${state.enh.length ? " (" + state.enh.length + ")" : ""}</h2>
-  ${[...new Set(a.enhancements.map((e) => e.group))].map((g) => `<details><summary>${esc(g)}</summary>${a.enhancements.filter((e) => e.group === g).map((e) =>
-    `<label class="enh"><input type="checkbox" data-enh="${esc(enhKey(e))}" ${state.enh.includes(enhKey(e)) ? "checked" : ""}> ${esc(e.name)}</label>`).join("")}</details>`).join("")}
+  <h2>Spell &amp; prayer lores (whole army)${state.enh.length ? " (" + state.enh.length + ")" : ""}</h2>
+  ${[...new Set(a.enhancements.filter((e) => isLore(e.group)).map((e) => e.group))].map((g) => `<details><summary>${esc(g)}</summary>${a.enhancements.filter((e) => e.group === g).map((e) =>
+    `<label class="enh"><input type="checkbox" data-enh="${esc(enhKey(e))}" ${state.enh.includes(enhKey(e)) ? "checked" : ""}> ${esc(e.name)}<small class="muted"> · ${e.abilities.map((x) => esc(x.name)).join(", ")}</small></label>`).join("")}</details>`).join("")}
   <button class="big" data-go="play">Start battle</button>
   <button class="link" id="reset">Reset game</button>`;
 }
@@ -230,8 +258,9 @@ function customView() {
 function bind() {
   const on = (sel, fn) => document.querySelectorAll(sel).forEach(fn);
   const flt = $("#filter"); if (flt) flt.oninput = () => { state.filter = flt.value; const p = flt.selectionStart; render(); const f = $("#filter"); f.focus(); f.setSelectionRange(p, p); };
+  on("[data-attach]", (s) => s.onchange = () => { const [k, g] = s.dataset.attach.split("|"); state.attach[k] = { ...(state.attach[k] || {}), [g]: s.value }; if (!s.value) delete state.attach[k][g]; render(); });
   on("[data-enh]", (c) => c.onchange = () => { const k = c.dataset.enh, i = state.enh.indexOf(k); if (i >= 0) state.enh.splice(i, 1); else state.enh.push(k); save(); });
-  on("[data-army]", (b) => b.onclick = () => { const i = +b.dataset.army; if (i === state.armyIdx) return; state.armyIdx = i; state.formation = -1; state.units = []; state.enh = []; state.summons = []; state.pledges = {}; render(); });
+  on("[data-army]", (b) => b.onclick = () => { const i = +b.dataset.army; if (i === state.armyIdx) return; state.armyIdx = i; state.formation = -1; state.units = []; state.enh = []; state.attach = {}; state.summons = []; state.pledges = {}; render(); });
   on("[data-form]", (d) => d.onclick = () => { state.formation = state.formation === +d.dataset.form ? -1 : +d.dataset.form; render(); });
   on("[data-unit]", (b) => b.onclick = () => { state.units.push({ name: b.dataset.unit, count: 1 }); state.filter = ""; render(); });
   on("[data-inc]", (b) => b.onclick = () => { state.units.find((u) => u.name === b.dataset.inc).count++; render(); });

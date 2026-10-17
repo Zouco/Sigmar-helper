@@ -67,3 +67,7 @@ header #sym{margin-left:auto;color:var(--gold);display:flex}
 .chip.on{background:var(--gold);color:var(--on);border:0;font-weight:700}
 .cmdmeta{font-size:12px;color:var(--muted)}
 .spend{margin-top:8px;font-size:14px}.spend:disabled{opacity:.4}
+.ucard{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:4px 8px}
+.ucard .unit{margin:0}
+.attach{padding:2px 0 8px}
+.attach select{margin-bottom:6px;font-size:14px;padding:8px}
