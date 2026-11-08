@@ -43,7 +43,8 @@ function easyOf(ab) {
   const e = typeof EASY !== "undefined" ? EASY[hashTxt(ab.text || "")] : null;
   return e ? (state.lang === "el" && e.el ? e.el : e.en) : null;
 }
-const abText = (ab) => (state.easy && easyOf(ab)) || ab.text;
+const simple = () => state.easy || state.lang === "el"; // Greek only exists as simple wording
+const abText = (ab) => (simple() && easyOf(ab)) || ab.text;
 
 function load() { try { return JSON.parse(localStorage.getItem(KEY)); } catch { return null; } }
 function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch {} }
@@ -136,7 +137,7 @@ function render() {
   applyTheme();
   document.querySelectorAll("nav button").forEach((b) => { b.classList.toggle("on", b.dataset.v === state.view); b.textContent = t({ setup: "Army", play: "Battle", custom: "Custom" }[b.dataset.v]); });
   const eb = $("#easyBtn"), lb = $("#langBtn");
-  if (eb) { eb.classList.toggle("on", state.easy); eb.textContent = t("Easy"); eb.title = t("Easy mode: plain-language rules"); }
+  if (eb) { eb.classList.toggle("on", simple()); eb.textContent = t("Easy"); eb.title = t("Easy mode: plain-language rules"); }
   if (lb) { lb.textContent = state.lang === "el" ? "ΕΛ" : "EN"; lb.classList.toggle("on", state.lang === "el"); }
   const m = $("#main");
   m.innerHTML = state.view === "setup" ? setupView() : state.view === "play" ? playView() : customView();
@@ -177,7 +178,7 @@ function setupView() {
   <div class="armies">${ARMIES.map((x, i) => `<button data-army="${i}" class="${i === state.armyIdx ? "sel" : ""}" style="--c:${themeOf(x).color}">${symbolSvg(x, 28)}<span>${esc(x.name)}</span></button>`).join("")}</div>
   <h2>${t("Formation")}</h2>
   <div class="forms">${a.formations.map((x, i) => `<div class="form ${i === state.formation ? "sel" : ""}" data-form="${i}">
-    <div class="name">${esc(x.name)}</div>${x.abilities.map((ab) => `<div class="fab"><b>${esc(ab.name)}</b>${ab.timing ? ` <i>(${esc(ab.timing)})</i>` : ""}<div class="txt ${state.easy && easyOf(ab) ? "easytxt" : ""}">${esc(abText(ab))}</div></div>`).join("") ||`<div class="txt muted">No ability text.</div>`}</div>`).join("")}</div>
+    <div class="name">${esc(x.name)}</div>${x.abilities.map((ab) => `<div class="fab"><b>${esc(ab.name)}</b>${ab.timing ? ` <i>(${esc(ab.timing)})</i>` : ""}<div class="txt ${simple() && easyOf(ab) ? "easytxt" : ""}">${esc(abText(ab))}</div></div>`).join("") ||`<div class="txt muted">No ability text.</div>`}</div>`).join("")}</div>
   <h2>${t("Your army")}${state.units.length ? " (" + state.units.reduce((n, u) => n + u.count, 0) + " " + t("units") + ")" : ""}</h2>
   ${state.units.length ? `<div class="chips">${state.units.map((u) => { const sz = sizeOf(u.name); return `<div class="ucard"><div class="unit sel"><span class="uname">${esc(u.name)}<small>${sz > 1 ? u.count * sz + " models" : u.count > 1 ? "x" + u.count : ""}</small></span>
     <span class="cnt"><button data-dec="${esc(u.name)}">−${sz > 1 ? sz : ""}</button><button data-inc="${esc(u.name)}">+${sz > 1 ? sz : ""}</button><button data-rm="${esc(u.name)}" title="Remove">✕</button></span></div>${attachBlock(u)}</div>`; }).join("")}</div>` : `<p class="muted">${t("No units yet. Search below and tap to add.")}</p>`}
@@ -243,12 +244,12 @@ function alwaysOn() {
 
 function card(ab) {
   const k = usedKey(ab), used = !!state.used[k];
-  const easy = state.easy && easyOf(ab);
+  const easy = simple() && easyOf(ab);
   return `<div class="card ${ab.kind || "passive"} ${used ? "used" : ""}">
     <div class="ctop"><span class="tag">${esc(t(ab.kind || "passive"))}${ab.when === "theirs" ? " · " + t("enemy turn") : ""}</span>
     ${ab.limit ? `<label><input type="checkbox" data-used="${esc(k)}" ${used ? "checked" : ""}> ${t("used")} (${ab.limit})</label>` : ""}</div>
     <div class="name">${esc(ab.name)}</div>${ab.kind === "command" ? `<div class="cmdmeta">${esc(ab.timing || "")} · ${ab.cost} CP</div>` : ""}<div class="txt ${easy ? "easytxt" : ""}">${esc(abText(ab))}</div>
-    ${state.easy && !easy ? `<div class="noeasy">${t("Official wording (no simple version yet)")}</div>` : ""}
+    ${simple() && !easy ? `<div class="noeasy">${t("Official wording (no simple version yet)")}</div>` : ""}
     ${ab.kind === "command" ? `<button class="spend" data-spend="${ab.cost}" ${state.cp < ab.cost ? "disabled" : ""}>${t("Use: spend")} ${ab.cost} CP</button>` : ""}
     ${ab.applies ? `<div class="applies">${t("Applies to")}: ${esc(ab.applies)}</div>` : ""}</div>`;
 }
