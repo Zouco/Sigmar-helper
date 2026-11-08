@@ -1,0 +1,197 @@
+{
+"Concealing Tide": {
+ "en": "Tidal ability: you can't use it if you used it last battle round, or if you already used another Tidal ability this round. For the rest of the battle round, -1 to hit for attacks against your Idoneth Deepkin units that did not use any Charge ability this turn.",
+ "el": "Tidal ability: δεν μπορείς να το χρησιμοποιήσεις αν το χρησιμοποίησες τον προηγούμενο γύρο ή αν έχεις ήδη χρησιμοποιήσει άλλο Tidal ability αυτόν τον γύρο. Για το υπόλοιπο του γύρου, -1 για να πετύχουν (hit) οι επιθέσεις εναντίον των Idoneth Deepkin μονάδων σου που δεν χρησιμοποίησαν Charge ability αυτή τη σειρά."},
+"Swift Tide": {
+ "en": "Tidal ability: only if you used Concealing Tide last battle round, and no other Tidal ability yet this round. For the rest of the battle round, your Idoneth Deepkin units can Run and still Shoot and/or Charge later in the turn.",
+ "el": "Tidal ability: μόνο αν χρησιμοποίησες το Concealing Tide τον προηγούμενο γύρο και δεν έχεις χρησιμοποιήσει άλλο Tidal ability αυτόν τον γύρο. Για το υπόλοιπο του γύρου, οι Idoneth Deepkin μονάδες σου μπορούν να κάνουν Run και μετά να κάνουν Shoot και/ή Charge αργότερα στη σειρά."},
+"Sea's Embrace": {
+ "en": "Tidal ability: only if you used Swift Tide last battle round, and no other Tidal ability yet this round. Your Idoneth Deepkin units have Strike-first (attack first) for the rest of the turn.",
+ "el": "Tidal ability: μόνο αν χρησιμοποίησες το Swift Tide τον προηγούμενο γύρο και δεν έχεις χρησιμοποιήσει άλλο Tidal ability αυτόν τον γύρο. Οι Idoneth Deepkin μονάδες σου έχουν Strike-first (επιτίθενται πρώτες) για το υπόλοιπο της σειράς."},
+"Unpredictable Tide": {
+ "en": "Tidal ability: you can't use it if you used it last battle round, or if you already used another Tidal ability this round. Pick one of your Idoneth Deepkin units that is not in combat. Take it off the table and set it up again fully within 7\" of a table edge and more than 9\" from all enemies.",
+ "el": "Tidal ability: δεν μπορείς να το χρησιμοποιήσεις αν το χρησιμοποίησες τον προηγούμενο γύρο ή αν έχεις ήδη χρησιμοποιήσει άλλο Tidal ability αυτόν τον γύρο. Διάλεξε μία Idoneth Deepkin μονάδα σου που δεν είναι σε μάχη. Βγάλε την από το τραπέζι και βάλε την πάλι ολόκληρη μέσα σε 7\" από την άκρη του τραπεζιού και πάνω από 9\" μακριά από όλους τους εχθρούς."},
+"Inexorable Tide": {
+ "en": "Tidal ability: only if you used Unpredictable Tide last battle round, and no other Tidal ability yet this round. For the rest of the battle round, subtract 1 from the Rend of weapons used in attacks against your Idoneth Deepkin units.",
+ "el": "Tidal ability: μόνο αν χρησιμοποίησες το Unpredictable Tide τον προηγούμενο γύρο και δεν έχεις χρησιμοποιήσει άλλο Tidal ability αυτόν τον γύρο. Για το υπόλοιπο του γύρου, αφαίρεσε 1 από το Rend των όπλων που χρησιμοποιούνται σε επιθέσεις εναντίον των Idoneth Deepkin μονάδων σου."},
+"Storm's Wrath": {
+ "en": "Tidal ability: only if you used Inexorable Tide last battle round, and no other Tidal ability yet this round. For the rest of the turn, the melee weapons of your Idoneth Deepkin units have Crit (Mortal).",
+ "el": "Tidal ability: μόνο αν χρησιμοποίησες το Inexorable Tide τον προηγούμενο γύρο και δεν έχεις χρησιμοποιήσει άλλο Tidal ability αυτόν τον γύρο. Για το υπόλοιπο της σειράς, τα όπλα σώμα με σώμα των Idoneth Deepkin μονάδων σου έχουν Crit (Mortal)."},
+"Twin Tides": {
+ "en": "Pick a visible Namarti unit of yours that has not used an Attack ability this phase. If another unit of yours just finished a Shoot ability, the Namarti unit can then use a Shoot ability as if it were your shooting phase. If another unit of yours just finished a Fight ability, the Namarti unit can then use a Fight ability: for the rest of the phase it gets +1 Attacks on its weapons, but it can only attack enemy units that this unit's attacks already damaged this phase.",
+ "el": "Διάλεξε μια ορατή Namarti μονάδα σου που δεν έχει χρησιμοποιήσει Attack ability αυτή τη φάση. Αν μια άλλη μονάδα σου μόλις τελείωσε ένα Shoot ability, η Namarti μονάδα μπορεί να κάνει Shoot σαν να ήταν η φάση βολής σου. Αν μια άλλη μονάδα σου μόλις τελείωσε ένα Fight ability, η Namarti μονάδα μπορεί να κάνει Fight: για το υπόλοιπο της φάσης παίρνει +1 Attacks στα όπλα της, αλλά μπορεί να επιτεθεί μόνο σε εχθρικές μονάδες που έχουν ήδη πάρει ζημιά αυτή τη φάση από τις επιθέσεις της μονάδας που μόλις πολέμησε."},
+"Soul-raid Ambushers::Fade Like Mist": {
+ "en": "When you use Unpredictable Tide, you can pick up to 2 units instead of 1.",
+ "el": "Όταν χρησιμοποιείς το Unpredictable Tide, μπορείς να διαλέξεις μέχρι 2 μονάδες αντί για 1."},
+"Namarti Corps::Surge Forward": {
+ "en": "You can re-roll Run rolls and Charge rolls for your Namarti units while they are fully within 12\" of one of your Akhelian units.",
+ "el": "Μπορείς να ξαναρίξεις τα ζάρια Run και Charge για τις Namarti μονάδες σου όσο είναι ολόκληρες μέσα σε 12\" από μια Akhelian μονάδα σου."},
+"Isharann Council::Wisdom of the Deep": {
+ "en": "+1 to casting rolls, Isharann ritual rolls and lurelight rolls for your Isharann units while they are within combat range of another one of your Isharann units.",
+ "el": "+1 στα casting rolls, στα Isharann ritual rolls και στα lurelight rolls των Isharann μονάδων σου όσο είναι μέσα στην εμβέλεια μάχης (combat range) άλλης Isharann μονάδας σου."},
+"Akhelian Beastmasters::Ferocious Predators": {
+ "en": "+1 to hit for combat attacks made with Companion weapons by your Akhelian units.",
+ "el": "+1 για να πετύχουν (hit) οι επιθέσεις μάχης με Companion όπλα των Akhelian μονάδων σου."},
+"Akhelian Allopex::Bloodthirsty Predators": {
+ "en": "+1 Attacks on the Allopex's Ferocious Bite while this unit is within 6\" of a damaged enemy unit, or within 6\" of an enemy unit that had models slain this turn.",
+ "el": "+1 Attacks στο Ferocious Bite του Allopex όσο η μονάδα είναι σε 6\" από εχθρική μονάδα με ζημιά, ή σε 6\" από εχθρική μονάδα που έχασε μοντέλα αυτή τη σειρά."},
+"Akhelian Allopex::Ensnared": {
+ "en": "Pick an enemy Monster or Cavalry unit that this unit's shooting attacks damaged this turn. Roll a dice. On a 3+, until the start of your next turn, that unit rolls 1 fewer dice for its Charge rolls (minimum 1 dice).",
+ "el": "Διάλεξε μια εχθρική μονάδα Monster ή Cavalry που έπαθε ζημιά αυτή τη σειρά από τις βολές αυτής της μονάδας. Ρίξε ένα ζάρι. Με 3+, μέχρι την αρχή της επόμενης σειράς σου, η μονάδα ρίχνει 1 ζάρι λιγότερο στα Charge rolls της (τουλάχιστον 1 ζάρι)."},
+"Akhelian Ishlaen Guard::Biovoltaic Barrier": {
+ "en": "Pick an enemy unit in combat with this unit. Roll a dice. On a 3+, subtract 1 from the Attacks of that unit's weapons for the rest of the turn.",
+ "el": "Διάλεξε μια εχθρική μονάδα σε μάχη με αυτή τη μονάδα. Ρίξε ένα ζάρι. Με 3+, αφαίρεσε 1 από τα Attacks των όπλων της για το υπόλοιπο της σειράς."},
+"Akhelian Ishlaen Guard::Galv-shields": {
+ "en": "This unit has Ward (5+) if it charged this turn.",
+ "el": "Αυτή η μονάδα έχει Ward (5+) αν έκανε Charge αυτή τη σειρά."},
+"Akhelian King::Wave Rider": {
+ "en": "If this unit charged this phase, pick an enemy unit within 1\" of it. Roll a D3. On a 2+: the target takes mortal damage equal to the roll, and this unit's Akhelian Royal Weapons get +1 Rend against that unit for the rest of the turn.",
+ "el": "Αν αυτή η μονάδα έκανε Charge αυτή τη φάση, διάλεξε μια εχθρική μονάδα σε 1\" από αυτήν. Ρίξε D3. Με 2+: ο στόχος παίρνει θανάσιμη ζημιά ίση με το ζάρι και τα Akhelian Royal Weapons αυτής της μονάδας παίρνουν +1 Rend εναντίον της για το υπόλοιπο της σειράς."},
+"Akhelian King::Crest of the Wave": {
+ "en": "If this unit charged this turn, other Idoneth Deepkin units of yours get +1 Rend on melee weapons for attacks against enemy units in combat with this unit.",
+ "el": "Αν αυτή η μονάδα έκανε Charge αυτή τη σειρά, οι άλλες Idoneth Deepkin μονάδες σου παίρνουν +1 Rend στα όπλα σώμα με σώμα για επιθέσεις εναντίον εχθρικών μονάδων σε μάχη με αυτή τη μονάδα."},
+"Akhelian Leviadon::Battle Damaged": {
+ "en": "At 10 or more damage, the Leviadon's Scythed Fins and Crushing Jaws have 5 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, τα όπλα Scythed Fins και Crushing Jaws του Leviadon έχουν 5 Attacks."},
+"Akhelian Leviadon::Crushing Charge": {
+ "en": "If this unit charged this phase, pick an enemy Infantry unit within 1\" of it. Roll a dice (add 1 if the target has more than 10 models). On a 3+, the target takes mortal damage equal to the roll.",
+ "el": "Αν αυτή η μονάδα έκανε Charge αυτή τη φάση, διάλεξε μια εχθρική μονάδα Infantry σε 1\" από αυτήν. Ρίξε ένα ζάρι (πρόσθεσε 1 αν ο στόχος έχει πάνω από 10 μοντέλα). Με 3+, ο στόχος παίρνει θανάσιμη ζημιά ίση με το ζάρι."},
+"Akhelian Leviadon::Void Drum": {
+ "en": "Your Idoneth Deepkin units have Ward (5+) while they are fully within 6\" of this unit.",
+ "el": "Οι Idoneth Deepkin μονάδες σου έχουν Ward (5+) όσο είναι ολόκληρες μέσα σε 6\" από αυτή τη μονάδα."},
+"Akhelian Morrsarr Guard::Biovoltaic Blast": {
+ "en": "If this unit charged this phase, pick an enemy unit within 1\" of it. Roll one dice for each model in this unit. Add 1 to each roll if the target has more models than this unit. For each 3+, the target takes 1 mortal damage.",
+ "el": "Αν αυτή η μονάδα έκανε Charge αυτή τη φάση, διάλεξε μια εχθρική μονάδα σε 1\" από αυτήν. Ρίξε ένα ζάρι για κάθε μοντέλο αυτής της μονάδας. Πρόσθεσε 1 σε κάθε ζάρι αν ο στόχος έχει περισσότερα μοντέλα από αυτή τη μονάδα. Για κάθε 3+, ο στόχος παίρνει 1 θανάσιμη ζημιά."},
+"Akhelian Thrallmaster::Thrallmaster": {
+ "en": "Pick a Namarti Thralls unit of yours within this unit's combat range that has not used a Fight ability this turn. It can use a Fight ability right after this unit's Fight ability is finished.",
+ "el": "Διάλεξε μια Namarti Thralls μονάδα σου μέσα στην εμβέλεια μάχης (combat range) αυτής της μονάδας που δεν έχει κάνει Fight αυτή τη σειρά. Μπορεί να κάνει Fight αμέσως μόλις τελειώσει το Fight αυτής της μονάδας."},
+"Akhelian Thrallmaster::Akhelian Insights": {
+ "en": "Melee weapons of your Namarti units have Crit (2 Hits) while the units are fully within 12\" of this unit.",
+ "el": "Τα όπλα σώμα με σώμα των Namarti μονάδων σου έχουν Crit (2 Hits) όσο οι μονάδες είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα."},
+"Eidolon of Mathlann, Aspect of the Sea::Dormant Energies": {
+ "en": "+1 to casting rolls for this unit.",
+ "el": "+1 στα casting rolls αυτής της μονάδας."},
+"Eidolon of Mathlann, Aspect of the Sea::Tranquillity of the Abyss": {
+ "en": "Ignore negative modifiers to the control scores of your Idoneth Deepkin units while they are fully within 12\" of this unit.",
+ "el": "Αγνόησε τους αρνητικούς τροποποιητές στο control score των Idoneth Deepkin μονάδων σου όσο είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα."},
+"Eidolon of Mathlann, Aspect of the Sea::Vengeful Waves": {
+ "en": "If this unit has not charged this turn, pick an enemy unit in combat with it. Roll a dice. On a 3+, that unit cannot use commands for the rest of the turn.",
+ "el": "Αν αυτή η μονάδα δεν έκανε Charge αυτή τη σειρά, διάλεξε μια εχθρική μονάδα σε μάχη μαζί της. Ρίξε ένα ζάρι. Με 3+, η μονάδα δεν μπορεί να χρησιμοποιήσει commands για το υπόλοιπο της σειράς."},
+"Eidolon of Mathlann, Aspect of the Sea::Tsunami of Terror": {
+ "en": "Spell (7). Pick up to 3 different visible enemy units within 12\" of this unit and cast with 2D6. Until the start of your next turn, -1 to save rolls for combat attacks against those units.",
+ "el": "Ξόρκι (7). Διάλεξε μέχρι 3 διαφορετικές ορατές εχθρικές μονάδες σε 12\" από αυτή τη μονάδα και ρίξε 2D6 για το ξόρκι. Μέχρι την αρχή της επόμενης σειράς σου, -1 στα save rolls για επιθέσεις μάχης εναντίον αυτών των μονάδων."},
+"Eidolon of Mathlann, Aspect of the Storm::Drench With Hate": {
+ "en": "+1 to wound for combat attacks made by your Idoneth Deepkin units while they are fully within 12\" of this unit.",
+ "el": "+1 για να τραυματίσουν (wound) οι επιθέσεις μάχης των Idoneth Deepkin μονάδων σου όσο είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα."},
+"Eidolon of Mathlann, Aspect of the Storm::Crashing Upon the Foe": {
+ "en": "This unit can Charge even if it Retreated this turn. Also, Retreat abilities do not inflict mortal damage on this unit.",
+ "el": "Αυτή η μονάδα μπορεί να κάνει Charge ακόμη κι αν έκανε Retreat αυτή τη σειρά. Επίσης, τα Retreat abilities δεν της προκαλούν θανάσιμη ζημιά."},
+"Eidolon of Mathlann, Aspect of the Storm::Pulled Into the Depths": {
+ "en": "Pick an enemy Hero in combat with this unit. Roll a dice. On a 3+, it has Strike-last (attacks last) for the rest of the turn.",
+ "el": "Διάλεξε έναν εχθρικό Ήρωα σε μάχη με αυτή τη μονάδα. Ρίξε ένα ζάρι. Με 3+, έχει Strike-last (επιτίθεται τελευταίος) για το υπόλοιπο της σειράς."},
+"Gloomtide Shipwreck::Rise from the Depths": {
+ "en": "Deployment, before round 1. Use this instead of 'Deploy Faction Terrain'. Set it up as 1 terrain feature made of 2 pieces (within 3\" of each other) or as 2 separate terrain features. Each must be fully in your territory and more than 3\" from objectives and other terrain. If set up as 1 feature of 2 pieces, its Health is 14 instead of 7.",
+ "el": "Deployment, πριν τον γύρο 1. Χρησιμοποίησέ το αντί για το 'Deploy Faction Terrain'. Βάλε το ως 1 στοιχείο εδάφους με 2 κομμάτια (σε απόσταση μέχρι 3\" μεταξύ τους) ή ως 2 ξεχωριστά στοιχεία εδάφους. Κάθε στοιχείο πρέπει να είναι ολόκληρο στην περιοχή σου και πάνω από 3\" από στόχους και άλλο έδαφος. Αν μπει ως 1 στοιχείο με 2 κομμάτια, έχει Health 14 αντί για 7."},
+"Gloomtide Shipwreck::Guardians of the Deep": {
+ "en": "+1 to save rolls for your Idoneth Deepkin Infantry and Cavalry units while they are fully within 6\" of this terrain.",
+ "el": "+1 στα save rolls των Idoneth Deepkin Infantry και Cavalry μονάδων σου όσο είναι ολόκληρες μέσα σε 6\" από αυτό το έδαφος."},
+"Gloomtide Shipwreck::Phantasmal Ruin": {
+ "en": "Models can pass through this terrain but can't be set up on it or end a move on it. Each time an enemy unit ends a move that went through or across it, roll a D3. On a 2+, that unit takes mortal damage equal to the roll.",
+ "el": "Τα μοντέλα μπορούν να περάσουν μέσα από αυτό το έδαφος αλλά δεν μπορούν να τοποθετηθούν πάνω του ούτε να τελειώσουν κίνηση πάνω του. Κάθε φορά που μια εχθρική μονάδα τελειώνει κίνηση που πέρασε μέσα ή πάνω από αυτό, ρίξε D3. Με 2+, η μονάδα παίρνει θανάσιμη ζημιά ίση με το ζάρι."},
+"Ikon of the Sea::The Surging Sea": {
+ "en": "Pick this unit and up to 1 of your Idoneth Deepkin units within this unit's combat range. For the rest of the turn, they roll 1 extra dice for Charge rolls (maximum 3 dice).",
+ "el": "Διάλεξε αυτή τη μονάδα και μέχρι 1 Idoneth Deepkin μονάδα σου μέσα στην εμβέλεια μάχης (combat range) αυτής της μονάδας. Για το υπόλοιπο της σειράς, ρίχνουν 1 επιπλέον ζάρι στα Charge rolls (το πολύ 3 ζάρια)."},
+"Ikon of the Sea::Rapid Approach": {
+ "en": "This unit can Run and still Charge later in the turn.",
+ "el": "Αυτή η μονάδα μπορεί να κάνει Run και μετά να κάνει Charge αργότερα στη σειρά."},
+"Ikon of the Storm::Storm of Blades": {
+ "en": "This unit can use 2 Fight abilities this phase. After the first one, it has Strike-last for the rest of the turn.",
+ "el": "Αυτή η μονάδα μπορεί να κάνει 2 Fight abilities αυτή τη φάση. Μετά το πρώτο, έχει Strike-last (επιτίθεται τελευταία) για το υπόλοιπο της σειράς."},
+"Ikon of the Storm::Whirlpool's Fury": {
+ "en": "Enemy units in combat with this unit cannot Retreat. Your units that Retreat while fully within 12\" of this unit can still Shoot and/or Charge later in the turn. Retreat abilities do not inflict mortal damage on your Idoneth Deepkin units while they are fully within 12\" of this unit.",
+ "el": "Οι εχθρικές μονάδες σε μάχη με αυτή τη μονάδα δεν μπορούν να κάνουν Retreat. Οι μονάδες σου που κάνουν Retreat ενώ είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα μπορούν να κάνουν Shoot και/ή Charge αργότερα στη σειρά. Τα Retreat abilities δεν προκαλούν θανάσιμη ζημιά στις Idoneth Deepkin μονάδες σου όσο είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα."},
+"Isharann Soulrender::Lurelight": {
+ "en": "Pick up to 3 different Namarti units of yours fully within 12\" of this unit (the same unit only once per turn). For each one, roll a D3 (lurelight roll). On a 2+, return that many slain models to the unit.",
+ "el": "Διάλεξε μέχρι 3 διαφορετικές Namarti μονάδες σου ολόκληρες μέσα σε 12\" από αυτή τη μονάδα (την ίδια μονάδα μόνο μία φορά ανά σειρά). Για κάθε μία ρίξε D3 (lurelight roll). Με 2+, φέρε πίσω τόσα σκοτωμένα μοντέλα στη μονάδα όσο το ζάρι."},
+"Isharann Soulrender::Hangman's Knot": {
+ "en": "Pick an enemy Hero in combat with this unit. Roll 2D6. If the roll is higher than its Health, it is destroyed.",
+ "el": "Διάλεξε έναν εχθρικό Ήρωα σε μάχη με αυτή τη μονάδα. Ρίξε 2D6. Αν το αποτέλεσμα είναι μεγαλύτερο από το Health του, καταστρέφεται αυτόματα."},
+"Isharann Soulscryer::Finder of Ways": {
+ "en": "Instead of the normal set-up in the ability you used, set the targets up fully within 12\" of this unit and more than 7\" from all enemies.",
+ "el": "Αντί για την κανονική τοποθέτηση του ability που χρησιμοποίησες, τοποθέτησε τους στόχους ολόκληρους μέσα σε 12\" από αυτή τη μονάδα και πάνω από 7\" μακριά από όλους τους εχθρούς."},
+"Isharann Tidecaster::Master of the Ethersea": {
+ "en": "Roll a D6 (Isharann ritual roll). On a 3+, pick 1 effect until the start of your next turn. Creeping Mist: your Idoneth Deepkin units can't be shot at unless the attacker is within 12\" of them. Surging Stream: +1 to Run rolls and Charge rolls for your Idoneth Deepkin units. Spiteful Riptide: each time an enemy unit Retreats, after the Retreat it takes D3 mortal damage.",
+ "el": "Ρίξε ένα D6 (Isharann ritual roll). Με 3+, διάλεξε 1 αποτέλεσμα μέχρι την αρχή της επόμενης σειράς σου. Creeping Mist: οι Idoneth Deepkin μονάδες σου δεν μπορούν να δεχτούν βολές εκτός αν το μοντέλο που πυροβολεί είναι σε 12\" από αυτές. Surging Stream: +1 στα Run και Charge rolls των Idoneth Deepkin μονάδων σου. Spiteful Riptide: κάθε φορά που μια εχθρική μονάδα κάνει Retreat, μετά το Retreat παίρνει D3 θανάσιμη ζημιά."},
+"Lotann, Warden of the Soul Ledgers::Fount of Willpower": {
+ "en": "Remove 1 of this unit's soul-quota tokens. Then you can re-roll the casting roll.",
+ "el": "Αφαίρεσε 1 από τους soul-quota δείκτες αυτής της μονάδας. Μετά μπορείς να ξαναρίξεις το casting roll."},
+"Lotann, Warden of the Soul Ledgers::Catalogue of Souls": {
+ "en": "Each time an enemy unit is destroyed, give this unit a soul-quota token.",
+ "el": "Κάθε φορά που καταστρέφεται μια εχθρική μονάδα, δώσε σε αυτή τη μονάδα έναν soul-quota δείκτη."},
+"Lotann, Warden of the Soul Ledgers::Empowered by Memory": {
+ "en": "Spell (7). Pick a visible Idoneth Deepkin unit of yours fully within 18\" of this unit and cast with 2D6. For the rest of the turn, its melee weapons have Crit (Auto-wound).",
+ "el": "Ξόρκι (7). Διάλεξε μια ορατή Idoneth Deepkin μονάδα σου ολόκληρη μέσα σε 18\" από αυτή τη μονάδα και ρίξε 2D6 για το ξόρκι. Για το υπόλοιπο της σειράς, τα όπλα σώμα με σώμα της έχουν Crit (Auto-wound)."},
+"Mathaela, Oracle of the Abyss::Siren Song of The Abyss": {
+ "en": "Pick up to 3 Idoneth Deepkin units of yours fully within 12\" of this unit. For the rest of the turn, +1 Attacks on their Companion weapons.",
+ "el": "Διάλεξε μέχρι 3 Idoneth Deepkin μονάδες σου ολόκληρες μέσα σε 12\" από αυτή τη μονάδα. Για το υπόλοιπο της σειράς, +1 Attacks στα Companion όπλα τους."},
+"Mathaela, Oracle of the Abyss::Crushing Pressure": {
+ "en": "Spell (7). Pick a visible enemy unit within 18\" of this unit and cast with 2D6. Roll one dice for each point of the target's Health (maximum 10 dice). For each 4+, it takes 1 mortal damage.",
+ "el": "Ξόρκι (7). Διάλεξε μια ορατή εχθρική μονάδα σε 18\" από αυτή τη μονάδα και ρίξε 2D6 για το ξόρκι. Ρίξε ένα ζάρι για κάθε πόντο Health του στόχου (το πολύ 10 ζάρια). Για κάθε 4+, παίρνει 1 θανάσιμη ζημιά."},
+"Namarti Reavers::Strike On the Move": {
+ "en": "This unit can Shoot even if it Ran or Retreated this turn.",
+ "el": "Αυτή η μονάδα μπορεί να κάνει Shoot ακόμη κι αν έκανε Run ή Retreat αυτή τη σειρά."},
+"Namarti Thralls::Sweeping Blows": {
+ "en": "If damage from attacks of that Fight ability is given to any enemy units, subtract 1 from wound rolls for attacks made by those enemy units for the rest of the turn.",
+ "el": "Αν η ζημιά από τις επιθέσεις αυτού του Fight ability δοθεί σε εχθρικές μονάδες, αφαίρεσε 1 από τα wound rolls των επιθέσεων αυτών των εχθρικών μονάδων για το υπόλοιπο της σειράς."},
+"Volturnos, High King of the Deep::First Among Akhelians": {
+ "en": "+1 to hit for combat attacks made by other Akhelian units of yours while they are fully within 12\" of this unit.",
+ "el": "+1 για να πετύχουν (hit) οι επιθέσεις μάχης των άλλων Akhelian μονάδων σου όσο είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα."},
+"Volturnos, High King of the Deep::Cealith, the High King's Shield": {
+ "en": "This unit has Ward (3+) against mortal damage from Spell abilities, Prayer abilities or abilities used by Manifestations.",
+ "el": "Αυτή η μονάδα έχει Ward (3+) ενάντια σε θανάσιμη ζημιά από Spell abilities, Prayer abilities ή abilities Manifestations."},
+"Volturnos, High King of the Deep::Supreme Lord of Tides": {
+ "en": "Pick up to 3 other Idoneth Deepkin units of yours fully within 12\" of this unit. For the rest of the turn, +1 Attacks on their melee weapons.",
+ "el": "Διάλεξε μέχρι 3 άλλες Idoneth Deepkin μονάδες σου ολόκληρες μέσα σε 12\" από αυτή τη μονάδα. Για το υπόλοιπο της σειράς, +1 Attacks στα όπλα σώμα με σώμα τους."},
+"Abyssal Tendril::Crushing Coil": {
+ "en": "+1 to hit for attacks made by your Idoneth Deepkin Manifestations against an ensnared enemy unit.",
+ "el": "+1 για να πετύχουν (hit) οι επιθέσεις των Idoneth Deepkin Manifestations σου εναντίον μιας εχθρικής μονάδας που είναι ensnared."},
+"Abyssal Tendril::Watery Clutch": {
+ "en": "Pick an enemy unit in combat with this Manifestation. Roll a dice. If the roll is higher than its Health, it is ensnared for the rest of the turn. A unit can't use commands while ensnared.",
+ "el": "Διάλεξε μια εχθρική μονάδα σε μάχη με αυτό το Manifestation. Ρίξε ένα ζάρι. Αν το ζάρι είναι μεγαλύτερο από το Health της, είναι ensnared για το υπόλοιπο της σειράς. Μια μονάδα δεν μπορεί να χρησιμοποιήσει commands όσο είναι ensnared."},
+"Incarnate of the Deep::Surrender to the Sea": {
+ "en": "When this Manifestation is removed from play, every Abyssal Tendril of yours on the table is removed too.",
+ "el": "Όταν αυτό το Manifestation αφαιρεθεί από το παιχνίδι, αφαιρείται αυτόματα και κάθε Abyssal Tendril σου που είναι στο τραπέζι."},
+"Incarnate of the Deep::Grasping Tendrils": {
+ "en": "Roll a dice (add 1 if it is your turn). On a 4+: you can remove 1 of your Abyssal Tendrils from the table; and if you have fewer than 2 Abyssal Tendrils on the table, you can set one up fully within 9\" of this Manifestation.",
+ "el": "Ρίξε ένα ζάρι (πρόσθεσε 1 αν είναι η σειρά σου). Με 4+: μπορείς να αφαιρέσεις 1 Abyssal Tendril σου από το τραπέζι· και αν έχεις λιγότερα από 2 Abyssal Tendrils στο τραπέζι, μπορείς να βάλεις ένα ολόκληρο μέσα σε 9\" από αυτό το Manifestation."},
+"Incarnate of the Deep::Wild Form": {
+ "en": "Each time this Manifestation would be banished by 'Banish Manifestation', it is not banished. Instead it takes 6 damage (no ward rolls for that damage).",
+ "el": "Κάθε φορά που αυτό το Manifestation θα εξορίζονταν από το 'Banish Manifestation', δεν εξορίζεται. Αντί γι' αυτό παίρνει 6 πόντους ζημιάς (χωρίς ward rolls για αυτή τη ζημιά)."},
+"Lifekelp Pod::Lifekelp Pod": {
+ "en": "Any Movement Phase: Heal (D3) each Idoneth Deepkin Cavalry unit of yours within this unit's combat range.",
+ "el": "Οποιαδήποτε Φάση Κίνησης: Heal (D3) σε κάθε Idoneth Deepkin Cavalry μονάδα σου μέσα στην εμβέλεια μάχης (combat range) αυτής της μονάδας."},
+"Dritchleech::Dritchleech": {
+ "en": "-1 to casting rolls for enemy Wizards while they are within 18\" of this unit. Also, each time an enemy spell fails, after it is resolved, Heal (1) this unit.",
+ "el": "-1 στα casting rolls των εχθρικών Wizards όσο είναι σε 18\" από αυτή τη μονάδα. Επίσης, κάθε φορά που ένα εχθρικό ξόρκι αποτυγχάνει, μετά την επίλυσή του, κάνε Heal (1) σε αυτή τη μονάδα."},
+"Armour of the Cythai::Armour of the Cythai": {
+ "en": "If this unit has not charged this turn, -1 to hit for combat attacks made by enemy units while they are in combat with this unit.",
+ "el": "Αν αυτή η μονάδα δεν έκανε Charge αυτή τη σειρά, -1 για να πετύχουν (hit) οι επιθέσεις μάχης των εχθρικών μονάδων όσο είναι σε μάχη με αυτή τη μονάδα."},
+"Form of the Fangmora::Form of the Fangmora": {
+ "en": "If the unmodified hit roll of an attack against this unit is 1-3, the attack fails and ends.",
+ "el": "Αν το hit roll (χωρίς τροποποιητές) μιας επίθεσης εναντίον αυτής της μονάδας είναι 1-3, η επίθεση αποτυγχάνει και τελειώνει."},
+"Nightmare Legacy::Nightmare Legacy": {
+ "en": "Subtract 3 from the control scores of enemy units while they are within 6\" of this unit.",
+ "el": "Αφαίρεσε 3 από το control score των εχθρικών μονάδων όσο είναι σε 6\" από αυτή τη μονάδα."},
+"Hunter of Souls::Hunter of Souls": {
+ "en": "Pick 1 weapon ability for this unit's melee weapons to have for the whole battle: Anti-Cavalry (+1 Rend), Anti-Infantry (+1 Rend) or Anti-Monster (+1 Rend).",
+ "el": "Διάλεξε 1 weapon ability που θα έχουν τα όπλα σώμα με σώμα αυτής της μονάδας για όλη τη μάχη: Anti-Cavalry (+1 Rend), Anti-Infantry (+1 Rend) ή Anti-Monster (+1 Rend)."},
+"Lore of the Deeps::Counter-current": {
+ "en": "Spell (7). Pick one of your Idoneth Deepkin Wizards to cast it, pick a visible enemy unit within 18\" of it and cast with 2D6. Until the start of your next turn, halve Run rolls and Charge rolls for the target.",
+ "el": "Ξόρκι (7). Διάλεξε έναν Idoneth Deepkin Wizard σου να το ρίξει, διάλεξε μια ορατή εχθρική μονάδα σε 18\" από αυτόν και ρίξε 2D6 για το ξόρκι. Μέχρι την αρχή της επόμενης σειράς σου, υποδιπλασίασε τα Run και Charge rolls του στόχου."},
+"Lore of the Deeps::Pressure of the Deep": {
+ "en": "Spell (7). Pick one of your Idoneth Deepkin Wizards to cast it, pick a visible enemy unit within 18\" of it and cast with 2D6. Roll a dice for each model in the target unit. For each 5+, it takes 1 mortal damage.",
+ "el": "Ξόρκι (7). Διάλεξε έναν Idoneth Deepkin Wizard σου να το ρίξει, διάλεξε μια ορατή εχθρική μονάδα σε 18\" από αυτόν και ρίξε 2D6 για το ξόρκι. Ρίξε ένα ζάρι για κάθε μοντέλο της μονάδας-στόχου. Για κάθε 5+, παίρνει 1 θανάσιμη ζημιά."},
+"Lore of the Deeps::Steed of Tides": {
+ "en": "Spell (6). Pick one of your Idoneth Deepkin Wizards to cast it, pick a visible Idoneth Deepkin unit of yours fully within 12\" of it and not in combat, and cast with 2D6. Take the target off the table and set it up again more than 9\" from all enemies.",
+ "el": "Ξόρκι (6). Διάλεξε έναν Idoneth Deepkin Wizard σου να το ρίξει, διάλεξε μια ορατή Idoneth Deepkin μονάδα σου ολόκληρη μέσα σε 12\" από αυτόν που δεν είναι σε μάχη και ρίξε 2D6 για το ξόρκι. Βγάλε τον στόχο από το τραπέζι και βάλε τον πάλι πάνω από 9\" μακριά από όλους τους εχθρούς."}
+}

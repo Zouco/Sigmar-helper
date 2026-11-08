@@ -1,0 +1,311 @@
+{
+"Pledge to Chaos": {
+ "en": "Pick one of your non-Unique Slaves to Darkness units that has no Pledge keyword yet. Choose one: Pledged to Khorne, Tzeentch, Nurgle or Slaanesh. The unit keeps that keyword for the rest of the battle.",
+ "el": "Διάλεξε μία μη-Unique μονάδα Slaves to Darkness σου που δεν έχει ακόμα Pledge keyword. Διάλεξε ένα: Pledged to Khorne, Tzeentch, Nurgle ή Slaanesh. Η μονάδα κρατά αυτό το keyword για το υπόλοιπο της μάχης."},
+"Eye of the Gods": {
+ "en": "At deployment, before round 1: pick one of your non-Unique Warriors of Chaos or Darkoath Heroes. It collects Dark Apotheosis points: D3 each time it uses a Fight ability, and D3 at the end of each of your turns if it is contesting an objective wholly outside your territory.",
+ "el": "Στην ανάπτυξη, πριν τον γύρο 1: διάλεξε έναν μη-Unique Ήρωα Warriors of Chaos ή Darkoath σου. Μαζεύει πόντους Dark Apotheosis: D3 κάθε φορά που χρησιμοποιεί Fight ability και D3 στο τέλος κάθε σειράς σου αν διεκδικεί στόχο εντελώς έξω από την επικράτειά σου."},
+"Dark Apotheosis": {
+ "en": "Pick one of your units with 8 or more Dark Apotheosis points. Choose one. Aura of Chaos: Heal all its damage, and it has Ward (5+) for the rest of the battle. Daemonhood: Place a Daemon Prince within 1\" of it, then remove the unit. If it was your general, the Daemon Prince becomes your general. The Daemon Prince gets its enhancements and its Pledge keyword (or you pick one Pledge keyword if it had none). Manifestations it summoned are removed from play.",
+ "el": "Διάλεξε μία μονάδα σου με 8 ή περισσότερους πόντους Dark Apotheosis. Διάλεξε ένα. Aura of Chaos: Heal όλη τη ζημιά της και αποκτά Ward (5+) για το υπόλοιπο της μάχης. Daemonhood: Βάλε έναν Daemon Prince σε 1\" από αυτή και μετά αφαίρεσε τη μονάδα. Αν ήταν ο general σου, ο Daemon Prince γίνεται ο general σου. Ο Daemon Prince παίρνει τα enhancements της και το Pledge keyword της (ή διαλέγεις ένα Pledge keyword αν δεν είχε). Τα Manifestations που είχε καλέσει αφαιρούνται από το παιχνίδι."},
+"Pledged to Tzeentch": {
+ "en": "Pick one of your Pledged to Tzeentch units. Roll 2D6, then pick a point that many inches from it. Remove the unit and place it again wholly within 6\" of that point and more than 9\" from all enemies.",
+ "el": "Διάλεξε μία μονάδα Pledged to Tzeentch σου. Ρίξε 2D6 και διάλεξε ένα σημείο σε τόσες ίντσες από αυτή. Αφαίρεσε τη μονάδα και τοποθέτησέ την ξανά εντελώς μέσα σε 6\" από το σημείο και πάνω από 9\" μακριά από όλους τους εχθρούς."},
+"Pledged to Khorne": {
+ "en": "Your Pledged to Khorne units have +1 Attacks on their melee weapons.",
+ "el": "Οι μονάδες Pledged to Khorne σου έχουν +1 Attacks στα όπλα σώμα με σώμα τους."},
+"Pledged to Nurgle": {
+ "en": "Your Pledged to Nurgle units have Ward (6+). If a unit already has Ward (6+), it has Ward (5+) instead.",
+ "el": "Οι μονάδες Pledged to Nurgle σου έχουν Ward (6+). Αν μια μονάδα έχει ήδη Ward (6+), έχει Ward (5+)."},
+"Pledged to Slaanesh": {
+ "en": "For the rest of the turn, when you make charge rolls for your Pledged to Slaanesh units, you can roll 1 extra dice (max 3 dice). If you do, discard 1 dice of your choice.",
+ "el": "Για το υπόλοιπο της σειράς, όταν ρίχνεις charge για τις μονάδες Pledged to Slaanesh σου, μπορείς να ρίξεις 1 επιπλέον ζάρι (μέγιστο 3 ζάρια). Αν το κάνεις, πέταξε 1 ζάρι της επιλογής σου."},
+"Darkoath Horde::Rally the Tribes": {
+ "en": "You need a Darkoath Hero on the table. Pick one of your destroyed non-Hero, non-Unique Darkoath units. Place a new unit with half the models (round up) wholly within 6\" of a table edge and more than 3\" from all enemies.",
+ "el": "Χρειάζεσαι έναν Ήρωα Darkoath στο τραπέζι. Διάλεξε μία κατεστραμμένη μη-ήρωα, μη-Unique μονάδα Darkoath σου. Βάλε νέα μονάδα με τα μισά μοντέλα (στρογγυλοποίηση προς τα πάνω) εντελώς μέσα σε 6\" από την άκρη του τραπεζιού και πάνω από 3\" από όλους τους εχθρούς."},
+"Legion of Chaos::United in Darkness": {
+ "en": "If you have a Warriors of Chaos Hero and another Daemon Hero or Darkoath Hero on the table: your Slaves to Darkness units get +2 control score while contesting an objective wholly outside your territory.",
+ "el": "Αν έχεις έναν Ήρωα Warriors of Chaos και έναν άλλο Ήρωα Daemon ή Darkoath στο τραπέζι: οι μονάδες Slaves to Darkness σου παίρνουν +2 control score όσο διεκδικούν στόχο εντελώς έξω από την επικράτειά σου."},
+"Despoilers::You Will Serve!": {
+ "en": "Pick one of your Daemon Princes to use this. Pick a visible non-Daemon, non-Unique Slaves to Darkness unit of yours wholly within 12\" of it that has no Ensorcelled Banner. Remove its Pledge keywords. It then gets the Pledge keywords the Daemon Prince has.",
+ "el": "Διάλεξε έναν Daemon Prince σου να το χρησιμοποιήσει. Διάλεξε μια ορατή μη-Daemon, μη-Unique μονάδα Slaves to Darkness σου εντελώς μέσα σε 12\" από αυτόν, που δεν έχει Ensorcelled Banner. Αφαίρεσε τα Pledge keywords της. Μετά παίρνει τα Pledge keywords του Daemon Prince."},
+"Godswrath Warband::Ironclad Onslaught": {
+ "en": "Pick an objective contested by any of your units and put a defiled token next to it. Then roll a D3 for each enemy unit contesting an objective that has your defiled token. On a 2+, that unit takes mortal damage equal to the roll.",
+ "el": "Διάλεξε έναν στόχο που διεκδικείται από μονάδες σου και βάλε δίπλα του έναν defiled token. Μετά ρίξε D3 για κάθε εχθρική μονάδα που διεκδικεί στόχο με δικό σου defiled token. Με 2+, η μονάδα παίρνει θανάσιμη ζημιά ίση με το ζάρι."},
+"Abraxia, Spear of the Everchosen::Battle Damaged": {
+ "en": "At 10 or more damage, the Thanatorg's Claws and Fangs have 4 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, τα Thanatorg's Claws and Fangs έχουν 4 Attacks."},
+"Abraxia, Spear of the Everchosen::Warlord of the First Circle": {
+ "en": "When your Varanguard unit wholly within 12\" of this unit uses Relentless Killers, it does not get Strike-last from it.",
+ "el": "Όταν μια μονάδα Varanguard σου εντελώς μέσα σε 12\" από αυτή τη μονάδα χρησιμοποιεί το Relentless Killers, δεν παίρνει Strike-last από αυτό."},
+"Abraxia, Spear of the Everchosen::Gorbolga the Accurs'd": {
+ "en": "If this unit is in combat, roll a dice. 1: it takes 1 damage. 2: nothing happens. 3-5: its Gorbolga has +1 Damage for the rest of the turn. 6: same as 3-5, and its Gorbolga also has Crit (Mortal) for the rest of the turn.",
+ "el": "Αν αυτή η μονάδα είναι σε μάχη, ρίξε ένα ζάρι. 1: παίρνει 1 ζημιά. 2: τίποτα. 3-5: το Gorbolga της έχει +1 Damage για το υπόλοιπο της σειράς. 6: το ίδιο με 3-5 και το Gorbolga της έχει επιπλέον Crit (Mortal) για το υπόλοιπο της σειράς."},
+"Abraxia, Spear of the Everchosen::Blood of Molten Varanite": {
+ "en": "Each time a damage point from a combat attack is given to this unit, roll a dice. On a 4+, the attacking unit takes 1 mortal damage after the Fight ability is finished.",
+ "el": "Κάθε φορά που ένας πόντος ζημιάς από επίθεση σώμα με σώμα δίνεται σε αυτή τη μονάδα, ρίξε ένα ζάρι. Με 4+, η μονάδα που επιτέθηκε παίρνει 1 θανάσιμη ζημιά αφού τελειώσει η Fight ability."},
+"Abraxia, Spear of the Everchosen::Roar of Domination": {
+ "en": "Pick an enemy Hero in combat with this unit. Roll a dice. On a 3+, its melee weapons have -1 Attacks for the rest of the turn.",
+ "el": "Διάλεξε έναν εχθρικό Ήρωα σε μάχη με αυτή τη μονάδα. Ρίξε ένα ζάρι. Με 3+, τα όπλα σώμα με σώμα του έχουν -1 Attacks για το υπόλοιπο της σειράς."},
+"Archaon, the Everchosen::Battle Damaged": {
+ "en": "At 10 or more damage, the Dorghar's Claws and Tails have 4 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, τα Dorghar's Claws and Tails έχουν 4 Attacks."},
+"The Slayer of Kings": {
+ "en": "Each time this unit fights: if 2 or more attacks with The Slayer of Kings against the same Hero have an unmodified wound roll of 6, that Hero is destroyed automatically.",
+ "el": "Κάθε φορά που αυτή η μονάδα πολεμά: αν 2 ή περισσότερες επιθέσεις με το The Slayer of Kings εναντίον του ίδιου Ήρωα έχουν unmodified wound roll 6, ο Ήρωας καταστρέφεται αυτόματα."},
+"The Eye of Sheerian": {
+ "en": "Roll a dice. It replaces the priority roll of the next battle round. 1-3: your opponent goes first. 4-6: you go first. You cannot use this if an enemy Archaon is on the table.",
+ "el": "Ρίξε ένα ζάρι. Αντικαθιστά το priority roll του επόμενου γύρου. 1-3: ο αντίπαλος παίζει πρώτος. 4-6: παίζεις εσύ πρώτος. Δεν μπορείς να το χρησιμοποιήσεις αν υπάρχει εχθρικός Archaon στο τραπέζι."},
+"Three-headed Titan": {
+ "en": "Choose one. Filth-spewer: pick an enemy unit within 6\" and roll 1 dice per model in it (max 7). Each 3+ is 1 mortal damage. Skull-gorger: pick an enemy unit in combat with this unit and roll a dice. If it is higher than that unit's Health, 1 model of it is slain and you Heal this unit by that Health. Spell-eater: pick a Manifestation within 12\" and roll a dice. On a 2+ it is banished (removed from play), and the unit that summoned it takes D3 mortal damage.",
+ "el": "Διάλεξε ένα. Filth-spewer: διάλεξε εχθρική μονάδα σε 6\" και ρίξε 1 ζάρι ανά μοντέλο της (μέγιστο 7). Κάθε 3+ είναι 1 θανάσιμη ζημιά. Skull-gorger: διάλεξε εχθρική μονάδα σε μάχη με αυτή τη μονάδα και ρίξε ένα ζάρι. Αν είναι μεγαλύτερο από την Health της μονάδας, 1 μοντέλο της σκοτώνεται και κάνεις Heal σε αυτή τη μονάδα όσο η Health εκείνη. Spell-eater: διάλεξε ένα Manifestation σε 12\" και ρίξε ένα ζάρι. Με 2+ εξορίζεται (αφαιρείται από το παιχνίδι) και η μονάδα που το κάλεσε παίρνει D3 θανάσιμη ζημιά."},
+"Athol Khul::Tribal Warleader": {
+ "en": "If this unit destroyed an enemy Hero this turn, it has Ward (4+) for the rest of the battle.",
+ "el": "Αν αυτή η μονάδα κατέστρεψε εχθρικό Ήρωα αυτή τη σειρά, έχει Ward (4+) για το υπόλοιπο της μάχης."},
+"Athol Khul::Oath of Murder": {
+ "en": "For the rest of the turn, your units with no Pledge keyword count as Pledged to Khorne while wholly within 12\" of this unit.",
+ "el": "Για το υπόλοιπο της σειράς, οι μονάδες σου χωρίς Pledge keyword θεωρούνται Pledged to Khorne όσο είναι εντελώς μέσα σε 12\" από αυτή τη μονάδα."},
+"Be'lakor, the Dark Master::Battle Damaged": {
+ "en": "At 10 or more damage, the Blade of Shadows has 6 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, το Blade of Shadows έχει 6 Attacks."},
+"Shadow Form": {
+ "en": "Ignore all modifiers (plus and minus) to this unit's save rolls.",
+ "el": "Αγνόησε όλους τους τροποποιητές (θετικούς και αρνητικούς) στα save rolls αυτής της μονάδας."},
+"The Dark Master": {
+ "en": "Pick a visible enemy unit. Until the start of your next turn, each time it is picked to use an ability, roll a dice. On a 3+, that ability does nothing.",
+ "el": "Διάλεξε μια ορατή εχθρική μονάδα. Μέχρι την αρχή της επόμενης σειράς σου, κάθε φορά που διαλέγεται να χρησιμοποιήσει ability, ρίξε ένα ζάρι. Με 3+, η ability δεν κάνει τίποτα."},
+"Enfeeble Foe": {
+ "en": "Spell (6). Pick a visible enemy unit within 18\" and cast with 2D6. Until the start of your next turn: -1 to hit for its combat attacks, and its combat attacks cannot score critical hits (they count as normal hits).",
+ "el": "Ξόρκι (6). Διάλεξε ορατή εχθρική μονάδα σε 18\" και ρίξε 2D6 για το ξόρκι. Μέχρι την αρχή της επόμενης σειράς σου: -1 για να πετύχει (hit) στις επιθέσεις σώμα με σώμα της και δεν μπορούν να σκοράρουν critical hits (μετράνε ως κανονικά hits)."},
+"Deadly Trap": {
+ "en": "Pick this unit and up to 2 of your Slaves to Darkness units within this unit's combat range. Roll a dice for each. On a 4+, that unit has Strike-first for the rest of the turn.",
+ "el": "Διάλεξε αυτή τη μονάδα και έως 2 μονάδες Slaves to Darkness σου εντός της εμβέλειας μάχης αυτής της μονάδας. Ρίξε ένα ζάρι για καθεμία. Με 4+, η μονάδα έχει Strike-first για το υπόλοιπο της σειράς."},
+"Marshal of the Legions": {
+ "en": "Pick one of your non-Hero Daemon or Chaos Legionnaires units that has not fought this turn and is within this unit's combat range. It can fight right after this unit's Fight ability ends. If it does, it gets +1 to hit for the rest of the turn.",
+ "el": "Διάλεξε μία μη-ήρωα μονάδα Daemon ή Chaos Legionnaires σου που δεν έχει πολεμήσει αυτή τη σειρά και είναι εντός της εμβέλειας μάχης αυτής της μονάδας. Μπορεί να πολεμήσει αμέσως μετά το τέλος της Fight ability αυτής της μονάδας. Αν το κάνει, παίρνει +1 για να πετύχει (hit) για το υπόλοιπο της σειράς."},
+"Swift Death": {
+ "en": "If this unit charged this phase, pick an enemy unit within 1\". Roll a D3. On a 2+, it takes mortal damage equal to the roll.",
+ "el": "Αν αυτή η μονάδα έκανε Charge σε αυτή τη φάση, διάλεξε εχθρική μονάδα σε 1\". Ρίξε D3. Με 2+, παίρνει θανάσιμη ζημιά ίση με το ζάρι."},
+"Heralds of Ruination": {
+ "en": "This unit can use 2 Fight abilities this phase. After the first, it has Strike-last for the rest of the turn.",
+ "el": "Αυτή η μονάδα μπορεί να χρησιμοποιήσει 2 Fight abilities σε αυτή τη φάση. Μετά την πρώτη, έχει Strike-last για το υπόλοιπο της σειράς."},
+"Sneaky Little Devils": {
+ "en": "If this unit is in combat, roll a dice. On a 3+, it can immediately Retreat as if it were your movement phase, without taking any mortal damage.",
+ "el": "Αν αυτή η μονάδα είναι σε μάχη, ρίξε ένα ζάρι. Με 3+, μπορεί αμέσως να κάνει Retreat σαν να ήταν η φάση κίνησής σου, χωρίς να πάρει θανάσιμη ζημιά."},
+"Impaling Charge": {
+ "en": "If this unit charged this turn, its Cursed Lances have +1 Rend for the rest of the turn.",
+ "el": "Αν αυτή η μονάδα έκανε Charge αυτή τη σειρά, τα Cursed Lances της έχουν +1 Rend για το υπόλοιπο της σειράς."},
+"Sow Confusion": {
+ "en": "Pick an enemy unit within 6\". Roll a dice. On a 4+, it cannot use commands for the rest of the turn.",
+ "el": "Διάλεξε εχθρική μονάδα σε 6\". Ρίξε ένα ζάρι. Με 4+, δεν μπορεί να χρησιμοποιήσει commands για το υπόλοιπο της σειράς."},
+"Glory in Battle": {
+ "en": "Pick one of your non-Hero Warriors of Chaos Infantry units that has not fought this turn and is within this unit's combat range. It can fight right after this unit's Fight ability ends. If it does, it gets +1 to wound for the rest of the turn.",
+ "el": "Διάλεξε μία μη-ήρωα μονάδα Warriors of Chaos Infantry σου που δεν έχει πολεμήσει αυτή τη σειρά και είναι εντός της εμβέλειας μάχης αυτής της μονάδας. Μπορεί να πολεμήσει αμέσως μετά το τέλος της Fight ability αυτής της μονάδας. Αν το κάνει, παίρνει +1 για να τραυματίσει (wound) για το υπόλοιπο της σειράς."},
+"The Knights of Chaos": {
+ "en": "Pick one of your non-Hero Warriors of Chaos Cavalry units that has not fought this turn and is within this unit's combat range. It can fight right after this unit's Fight ability ends. If it does, it gets +1 to wound for the rest of the turn.",
+ "el": "Διάλεξε μία μη-ήρωα μονάδα Warriors of Chaos Cavalry σου που δεν έχει πολεμήσει αυτή τη σειρά και είναι εντός της εμβέλειας μάχης αυτής της μονάδας. Μπορεί να πολεμήσει αμέσως μετά το τέλος της Fight ability αυτής της μονάδας. Αν το κάνει, παίρνει +1 για να τραυματίσει (wound) για το υπόλοιπο της σειράς."},
+"Drive the Legions Forward": {
+ "en": "Pick this unit and up to 2 of your non-Hero, non-Cavalry Warriors of Chaos units wholly within 12\" of it. They get +2 to charge rolls for the rest of the turn.",
+ "el": "Διάλεξε αυτή τη μονάδα και έως 2 μη-ήρωες, μη-Cavalry μονάδες Warriors of Chaos σου εντελώς μέσα σε 12\" από αυτή. Παίρνουν +2 στα charge rolls για το υπόλοιπο της σειράς."},
+"Brutish Rampage": {
+ "en": "If this unit charged this phase, pick up to 3 enemy units within 1\". Roll a D3 for each. On a 2+, that unit takes mortal damage equal to the roll.",
+ "el": "Αν αυτή η μονάδα έκανε Charge σε αυτή τη φάση, διάλεξε έως 3 εχθρικές μονάδες σε 1\". Ρίξε D3 για καθεμία. Με 2+, η μονάδα παίρνει θανάσιμη ζημιά ίση με το ζάρι."},
+"Oracular Visions": {
+ "en": "Pick one of your Warriors of Chaos units wholly within 12\" of this unit. If this unit cast a spell successfully this phase, the target has Ward (5+) until the start of your next turn. If not, it has Ward (6+) until then.",
+ "el": "Διάλεξε μία μονάδα Warriors of Chaos σου εντελώς μέσα σε 12\" από αυτή τη μονάδα. Αν αυτή η μονάδα έριξε ξόρκι με επιτυχία σε αυτή τη φάση, ο στόχος έχει Ward (5+) μέχρι την αρχή της επόμενης σειράς σου. Αλλιώς έχει Ward (6+) μέχρι τότε."},
+"Drawn to Power": {
+ "en": "While this unit is wholly within 12\" of your Daemon Prince, you can re-roll the random rolls for its Move and Attacks characteristics.",
+ "el": "Όσο αυτή η μονάδα είναι εντελώς μέσα σε 12\" από Daemon Prince σου, μπορείς να ξαναρίξεις τα τυχαία ζάρια για τα Move και Attacks της."},
+"Bringers of Desolation": {
+ "en": "While this unit is contesting an objective you control, its Rune-etched Weapons have +1 Attacks.",
+ "el": "Όσο αυτή η μονάδα διεκδικεί στόχο που ελέγχεις, τα Rune-etched Weapons της έχουν +1 Attacks."},
+"Immortal Champion": {
+ "en": "Roll a dice. On a 4+, this unit has Strike-first for the rest of the turn.",
+ "el": "Ρίξε ένα ζάρι. Με 4+, αυτή η μονάδα έχει Strike-first για το υπόλοιπο της σειράς."},
+"Airborne Horror": {
+ "en": "If this unit has Wings, it has Move 10\" and Fly.",
+ "el": "Αν αυτή η μονάδα έχει Wings, έχει Move 10\" και Fly."},
+"The Mounted Skulls of the Fallen": {
+ "en": "If this unit has a Trophy Rack, its Hellforged Weapons also have Anti-Hero (+1 Rend).",
+ "el": "Αν αυτή η μονάδα έχει Trophy Rack, τα Hellforged Weapons της έχουν επίσης Anti-Hero (+1 Rend)."},
+"Darkoath Chieftain::Tribal Warleader": {
+ "en": "Pick one of your non-Hero Darkoath Infantry units that has not fought this turn and is within this unit's combat range. It can fight right after this unit's Fight ability ends. If it does, its melee weapons get +1 Attacks for the rest of the turn.",
+ "el": "Διάλεξε μία μη-ήρωα μονάδα Darkoath Infantry σου που δεν έχει πολεμήσει αυτή τη σειρά και είναι εντός της εμβέλειας μάχης αυτής της μονάδας. Μπορεί να πολεμήσει αμέσως μετά το τέλος της Fight ability αυτής της μονάδας. Αν το κάνει, τα όπλα σώμα με σώμα της παίρνουν +1 Attacks για το υπόλοιπο της σειράς."},
+"Darkoath Chieftain::Oath of Murder": {
+ "en": "If this unit destroyed an enemy Hero or Monster this turn, it has Strike-first for the rest of the battle.",
+ "el": "Αν αυτή η μονάδα κατέστρεψε εχθρικό Ήρωα ή Monster αυτή τη σειρά, έχει Strike-first για το υπόλοιπο της μάχης."},
+"Darkoath Chieftain on Warsteed::Cavalry Warleader": {
+ "en": "You can re-roll charge rolls for your Darkoath Cavalry units while they are wholly within 12\" of this unit.",
+ "el": "Μπορείς να ξαναρίξεις τα charge rolls των μονάδων Darkoath Cavalry σου όσο είναι εντελώς μέσα σε 12\" από αυτή τη μονάδα."},
+"Darkoath Chieftain on Warsteed::Oath of Murder": {
+ "en": "If this unit destroyed an enemy Hero or Monster this turn, it has Strike-first for the rest of the battle.",
+ "el": "Αν αυτή η μονάδα κατέστρεψε εχθρικό Ήρωα ή Monster αυτή τη σειρά, έχει Strike-first για το υπόλοιπο της μάχης."},
+"Swift Attackers": {
+ "en": "Shooting attacks against this unit get -1 to hit.",
+ "el": "Οι επιθέσεις με βολές εναντίον αυτής της μονάδας έχουν -1 για να πετύχουν (hit)."},
+"Oath of the Raider": {
+ "en": "If this unit charged this phase, is in combat with only 1 enemy unit, and that enemy unit is in combat only with this unit: its weapons have +1 Rend for the rest of the battle.",
+ "el": "Αν αυτή η μονάδα έκανε Charge σε αυτή τη φάση, είναι σε μάχη με μόνο 1 εχθρική μονάδα και εκείνη η εχθρική μονάδα είναι σε μάχη μόνο με αυτήν: τα όπλα της έχουν +1 Rend για το υπόλοιπο της μάχης."},
+"Oath of the Marauder": {
+ "en": "If this unit charged this phase and the unmodified charge roll was 8+, its weapons have +1 Rend for the rest of the battle.",
+ "el": "Αν αυτή η μονάδα έκανε Charge σε αυτή τη φάση και το unmodified charge roll ήταν 8+, τα όπλα της έχουν +1 Rend για το υπόλοιπο της μάχης."},
+"Glorious Death": {
+ "en": "While this unit is wholly within 12\" of a friendly Darkoath Hero: each time a model of this unit is slain by a combat attack and it was in combat with the attacking model, roll a dice. On a 5+, the attacking unit takes 1 mortal damage after the Fight ability is finished.",
+ "el": "Όσο αυτή η μονάδα είναι εντελώς μέσα σε 12\" από Ήρωα Darkoath σου: κάθε φορά που ένα μοντέλο της σκοτώνεται από επίθεση σώμα με σώμα και ήταν σε μάχη με το μοντέλο που επιτέθηκε, ρίξε ένα ζάρι. Με 5+, η μονάδα που επιτέθηκε παίρνει 1 θανάσιμη ζημιά αφού τελειώσει η Fight ability."},
+"Oath of Conquest": {
+ "en": "If this unit is contesting an objective you control that is not in your territory, it has Ward (5+) for the rest of the battle.",
+ "el": "Αν αυτή η μονάδα διεκδικεί στόχο που ελέγχεις και δεν είναι μέσα στην επικράτειά σου, έχει Ward (5+) για το υπόλοιπο της μάχης."},
+"Ruin-blessed Conqueror": {
+ "en": "Pick an objective this unit is contesting. Roll a dice. On a 3+, for the rest of the turn your Darkoath units have Ward (5+) while contesting that objective.",
+ "el": "Διάλεξε έναν στόχο που διεκδικεί αυτή η μονάδα. Ρίξε ένα ζάρι. Με 3+, για το υπόλοιπο της σειράς οι μονάδες Darkoath σου έχουν Ward (5+) όσο διεκδικούν αυτόν τον στόχο."},
+"Oath of Supremacy": {
+ "en": "If this unit is wholly within enemy territory and charged this phase: for the rest of the battle, your Darkoath units wholly within 12\" of this unit get +1 to hit with combat attacks.",
+ "el": "Αν αυτή η μονάδα είναι εντελώς μέσα σε εχθρική επικράτεια και έκανε Charge σε αυτή τη φάση: για το υπόλοιπο της μάχης, οι μονάδες Darkoath σου εντελώς μέσα σε 12\" από αυτή παίρνουν +1 για να πετύχουν (hit) στις επιθέσεις σώμα με σώμα."},
+"Feed on Flesh": {
+ "en": "Each time a model (friendly or enemy) is slain within 12\" of this unit, give this unit 1 sacrifice point (max 6). If several of your Darkoath Wilderfiend units are within 12\" of the slain model, only 1 of them gets the point.",
+ "el": "Κάθε φορά που ένα μοντέλο (δικό σου ή εχθρικό) σκοτώνεται σε 12\" από αυτή τη μονάδα, δώσε στη μονάδα 1 sacrifice point (μέγιστο 6). Αν περισσότερες από μία μονάδες Darkoath Wilderfiend σου είναι σε 12\" από το σκοτωμένο μοντέλο, μόνο μία παίρνει τον πόντο."},
+"Primal Sorcery": {
+ "en": "Choose one. Mind Shroud: pick an enemy unit within 12\" and roll 1 dice per sacrifice point this unit has. If any is a 5+, it cannot use commands for the rest of the turn. Warping Balefire: pick an enemy unit within 12\" and roll 1 dice per sacrifice point. Each 3+ is 1 mortal damage. Dark Might: Heal this unit by its number of sacrifice points. After the effect, reset the sacrifice points to 0.",
+ "el": "Διάλεξε ένα. Mind Shroud: διάλεξε εχθρική μονάδα σε 12\" και ρίξε 1 ζάρι ανά sacrifice point αυτής της μονάδας. Αν κάποιο είναι 5+, δεν μπορεί να χρησιμοποιήσει commands για το υπόλοιπο της σειράς. Warping Balefire: διάλεξε εχθρική μονάδα σε 12\" και ρίξε 1 ζάρι ανά sacrifice point. Κάθε 3+ είναι 1 θανάσιμη ζημιά. Dark Might: κάνε Heal σε αυτή τη μονάδα όσο ο αριθμός των sacrifice points της. Μετά το εφέ, μηδένισε τα sacrifice points."},
+"Network of Spies": {
+ "en": "Roll a dice. Add 1 if the enemy unit is in combat with your Chaos Legionnaires or Chaos Furies unit. On a 5+, that command has no effect. It still counts as used and the CP are still lost.",
+ "el": "Ρίξε ένα ζάρι. Πρόσθεσε 1 αν η εχθρική μονάδα είναι σε μάχη με μονάδα Chaos Legionnaires ή Chaos Furies σου. Με 5+, το command δεν έχει εφέ. Μετράει ως χρησιμοποιημένο και τα CP χάνονται."},
+"Veins of Black Lightning": {
+ "en": "This unit can use this even if it was destroyed. Roll 2D6, +1 if your Be'lakor is on the table. On an 8+, place a replacement unit on the table more than 9\" from all enemies.",
+ "el": "Αυτή η μονάδα μπορεί να το χρησιμοποιήσει ακόμα κι αν έχει καταστραφεί. Ρίξε 2D6, +1 αν ο Be'lakor σου είναι στο τραπέζι. Με 8+, βάλε μια μονάδα αντικατάστασης στο τραπέζι πάνω από 9\" από όλους τους εχθρούς."},
+"Glory-seeker": {
+ "en": "This unit's melee weapons have +1 Damage against Heroes and Monsters.",
+ "el": "Τα όπλα σώμα με σώμα αυτής της μονάδας έχουν +1 Damage εναντίον Ηρώων και Monsters."},
+"Cursed Destroyers": {
+ "en": "Pick a terrain feature within 1\" of this unit. Then pick every other unit (friendly and enemy) within 3\" of that terrain. Roll a D3 for each. On a 2+, that unit takes mortal damage equal to the roll.",
+ "el": "Διάλεξε ένα στοιχείο εδάφους σε 1\" από αυτή τη μονάδα. Μετά διάλεξε κάθε άλλη μονάδα (δική σου και εχθρική) σε 3\" από αυτό το έδαφος. Ρίξε D3 για καθεμία. Με 2+, η μονάδα παίρνει θανάσιμη ζημιά ίση με το ζάρι."},
+"Minions of the Silver Tower": {
+ "en": "At deployment, before round 1: pick one of your units not yet deployed. It is placed in reserve in a Silver Tower and counts as deployed.",
+ "el": "Στην ανάπτυξη, πριν τον γύρο 1: διάλεξε μία μονάδα σου που δεν έχει αναπτυχθεί ακόμα. Μπαίνει σε αναμονή (reserve) σε ένα Silver Tower και θεωρείται αναπτυγμένη."},
+"Book of Profane Secrets": {
+ "en": "Pick one of your units in a Silver Tower. Place it on the table wholly within 12\" of this unit and more than 9\" from all enemies.",
+ "el": "Διάλεξε μία μονάδα σου σε Silver Tower. Βάλε την στο τραπέζι εντελώς μέσα σε 12\" από αυτή τη μονάδα και πάνω από 9\" από όλους τους εχθρούς."},
+"Divert Realmgate": {
+ "en": "Spell (7). Cast with 2D6. Units placed this turn with this unit's Book of Profane Secrets can be placed wholly within 18\" of this unit and more than 7\" from all enemies instead.",
+ "el": "Ξόρκι (7). Ρίξε 2D6 για το ξόρκι. Οι μονάδες που τοποθετούνται αυτή τη σειρά με το Book of Profane Secrets αυτής της μονάδας μπορούν να μπουν εντελώς μέσα σε 18\" από αυτή και πάνω από 7\" από όλους τους εχθρούς."},
+"Arcane Imprisonment": {
+ "en": "Spell (7). Pick an enemy Hero in combat with this unit and cast with 2D6. If the unmodified casting roll is higher than its Health, it is destroyed automatically. For the rest of the battle, that unit cannot be the target of an ability that sets up a replacement unit.",
+ "el": "Ξόρκι (7). Διάλεξε εχθρικό Ήρωα σε μάχη με αυτή τη μονάδα και ρίξε 2D6 για το ξόρκι. Αν το unmodified casting roll είναι μεγαλύτερο από την Health του, καταστρέφεται αυτόματα. Για το υπόλοιπο της μάχης, εκείνη η μονάδα δεν μπορεί να είναι στόχος ability που τοποθετεί μονάδα αντικατάστασης."},
+"Brutal Momentum": {
+ "en": "When this unit uses the Power Through command, the target takes an extra D3 mortal damage and this unit can move 3\" further as part of it.",
+ "el": "Όταν αυτή η μονάδα χρησιμοποιεί το command Power Through, ο στόχος παίρνει επιπλέον D3 θανάσιμη ζημιά και η μονάδα μπορεί να κινηθεί 3\" παραπάνω στο πλαίσιο του command."},
+"Carve a Path to Glory": {
+ "en": "Only usable if this unit is in combat with an enemy Hero. This unit can use 2 Fight abilities this phase. After the first, it has Strike-last for the rest of the turn. In the second Fight, all its attacks must target an enemy Hero.",
+ "el": "Μπορεί να χρησιμοποιηθεί μόνο αν αυτή η μονάδα είναι σε μάχη με εχθρικό Ήρωα. Μπορεί να χρησιμοποιήσει 2 Fight abilities σε αυτή τη φάση. Μετά την πρώτη, έχει Strike-last για το υπόλοιπο της σειράς. Στη δεύτερη Fight, όλες οι επιθέσεις της πρέπει να στοχεύουν εχθρικό Ήρωα."},
+"Oath of Bloodshed": {
+ "en": "Only usable if this unit's combat attacks slew an enemy Hero this turn. Your Gunnar's Oathsworn units have Ward (4+) for the rest of the battle.",
+ "el": "Μπορεί να χρησιμοποιηθεί μόνο αν οι επιθέσεις σώμα με σώμα αυτής της μονάδας σκότωσαν εχθρικό Ήρωα αυτή τη σειρά. Οι μονάδες Gunnar's Oathsworn σου έχουν Ward (4+) για το υπόλοιπο της μάχης."},
+"Dominate Mind": {
+ "en": "Pick an enemy unit within 6\". Roll a dice. If it is higher than the target's Control characteristic, the target has Strike-last for the rest of the turn.",
+ "el": "Διάλεξε εχθρική μονάδα σε 6\". Ρίξε ένα ζάρι. Αν είναι μεγαλύτερο από το Control του στόχου, ο στόχος έχει Strike-last για το υπόλοιπο της σειράς."},
+"Mutalith Vortex Beast::Battle Damaged": {
+ "en": "At 10 or more damage, the Betentacled Maw has 8 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, το Betentacled Maw έχει 8 Attacks."},
+"Aura of Mutation": {
+ "en": "Pick a visible enemy unit within 12\" and roll a dice. If this unit is wholly within 12\" of your Pledged to Tzeentch Wizard, you can roll 2 dice and pick either result. 1 Untouched: nothing. 2 Hideous Disfigurement: -3 control score for the target until the start of your next turn. 3 Troggbrains: the target cannot use commands for the rest of the turn. 4 Gift of Mutations: -1\" Move for the target for the rest of the battle. 5 Horrific Absorption: the target takes D6 mortal damage, then Heal (D6) this unit. 6 Transmogrification: pick any other effect.",
+ "el": "Διάλεξε ορατή εχθρική μονάδα σε 12\" και ρίξε ένα ζάρι. Αν αυτή η μονάδα είναι εντελώς μέσα σε 12\" από Wizard Pledged to Tzeentch σου, μπορείς να ρίξεις 2 ζάρια και να διαλέξεις όποιο αποτέλεσμα θες. 1 Untouched: τίποτα. 2 Hideous Disfigurement: -3 control score στον στόχο μέχρι την αρχή της επόμενης σειράς σου. 3 Troggbrains: ο στόχος δεν μπορεί να χρησιμοποιήσει commands για το υπόλοιπο της σειράς. 4 Gift of Mutations: -1\" Move στον στόχο για το υπόλοιπο της μάχης. 5 Horrific Absorption: ο στόχος παίρνει D6 θανάσιμη ζημιά και μετά κάνε Heal (D6) σε αυτή τη μονάδα. 6 Transmogrification: διάλεξε οποιοδήποτε άλλο εφέ."},
+"Mutant Regeneration": {
+ "en": "Heal (D3) this unit.",
+ "el": "Κάνε Heal (D3) σε αυτή τη μονάδα."},
+"Draw Power": {
+ "en": "Roll a dice. Give this terrain feature that many power points. It can hold at most 12 power points.",
+ "el": "Ρίξε ένα ζάρι. Δώσε σε αυτό το στοιχείο εδάφους τόσους πόντους power. Μπορεί να έχει το πολύ 12 πόντους power."},
+"Corrupt the Realms": {
+ "en": "If this terrain feature has 9 or more power points: pick an objective or terrain feature within 24\" as the source. Pick any number of enemy units within 3\" of the source. Remove 9 power points, then roll a D3 for each target. On a 2+, it takes mortal damage equal to the roll.",
+ "el": "Αν αυτό το στοιχείο εδάφους έχει 9 ή περισσότερους πόντους power: διάλεξε έναν στόχο ή στοιχείο εδάφους σε 24\" ως πηγή. Διάλεξε όσες εχθρικές μονάδες θες σε 3\" από την πηγή. Αφαίρεσε 9 πόντους power και ρίξε D3 για κάθε στόχο. Με 2+, παίρνει θανάσιμη ζημιά ίση με το ζάρι."},
+"Infernal Sorcery": {
+ "en": "If this terrain feature has 3 or more power points: pick one of your Slaves to Darkness Wizards within 3\" of it. Remove 3 power points. The Wizard gets +1 to casting rolls for the rest of the turn.",
+ "el": "Αν αυτό το στοιχείο εδάφους έχει 3 ή περισσότερους πόντους power: διάλεξε έναν Wizard Slaves to Darkness σου σε 3\" από αυτό. Αφαίρεσε 3 πόντους power. Ο Wizard παίρνει +1 στα casting rolls για το υπόλοιπο της σειράς."},
+"Myrmidon Rage": {
+ "en": "While this unit is damaged, its melee weapons have +2 Attacks.",
+ "el": "Όσο αυτή η μονάδα έχει υποστεί ζημιά, τα όπλα σώμα με σώμα της έχουν +2 Attacks."},
+"Pit Master": {
+ "en": "Pick one of your Ogroid Theridons units that has not fought this turn and is within this unit's combat range. It can fight right after this unit's Fight ability ends. If it does, it gets +1 to hit for the rest of the turn.",
+ "el": "Διάλεξε μία μονάδα Ogroid Theridons σου που δεν έχει πολεμήσει αυτή τη σειρά και είναι εντός της εμβέλειας μάχης αυτής της μονάδας. Μπορεί να πολεμήσει αμέσως μετά το τέλος της Fight ability αυτής της μονάδας. Αν το κάνει, παίρνει +1 για να πετύχει (hit) για το υπόλοιπο της σειράς."},
+"Unleashed Savagery": {
+ "en": "This unit's melee weapons have +1 Damage for the rest of the turn.",
+ "el": "Τα όπλα σώμα με σώμα αυτής της μονάδας έχουν +1 Damage για το υπόλοιπο της σειράς."},
+"Crazed Flock": {
+ "en": "If this unit charged this turn, its melee weapons (including Companion weapons) have +1 Attacks for the rest of the turn.",
+ "el": "Αν αυτή η μονάδα έκανε Charge αυτή τη σειρά, τα όπλα σώμα με σώμα της (και τα Companion weapons) έχουν +1 Attacks για το υπόλοιπο της σειράς."},
+"Swift as the Wind": {
+ "en": "Against shooting attacks that target this unit, only critical hits count as successful hits.",
+ "el": "Στις επιθέσεις με βολές που στοχεύουν αυτή τη μονάδα, μόνο τα critical hits μετράνε ως επιτυχημένα hits."},
+"Uncanny Shot": {
+ "en": "Singri's Warbow has +1 Rend against enemy units within 6\" of your Gunnar Brand.",
+ "el": "Το Singri's Warbow έχει +1 Rend εναντίον εχθρικών μονάδων σε 6\" από τον Gunnar Brand σου."},
+"Slaughterbrute::Battle Damaged": {
+ "en": "At 10 or more damage, the Razor-tipped Claws have 5 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, τα Razor-tipped Claws έχουν 5 Attacks."},
+"Rampaging Charge": {
+ "en": "If this unit charged this phase, pick an enemy unit within 1\". Roll a D3. On a 2+, it takes mortal damage equal to the roll. If the target is Infantry, the mortal damage is doubled.",
+ "el": "Αν αυτή η μονάδα έκανε Charge σε αυτή τη φάση, διάλεξε εχθρική μονάδα σε 1\". Ρίξε D3. Με 2+, παίρνει θανάσιμη ζημιά ίση με το ζάρι. Αν ο στόχος είναι Infantry, η θανάσιμη ζημιά διπλασιάζεται."},
+"Sigils of Domination": {
+ "en": "At deployment, before round 1: pick one of your Slaves to Darkness Heroes within this unit's combat range as its master. For the rest of the battle, while this unit is within its master's combat range: +1 dice on its charge rolls (max 3 dice), and it ignores the Companion weapon ability on its weapons.",
+ "el": "Στην ανάπτυξη, πριν τον γύρο 1: διάλεξε έναν Ήρωα Slaves to Darkness σου εντός της εμβέλειας μάχης αυτής της μονάδας ως master της. Για το υπόλοιπο της μάχης, όσο αυτή η μονάδα είναι εντός της εμβέλειας μάχης του master της: +1 ζάρι στα charge rolls της (μέγιστο 3 ζάρια) και αγνοεί το Companion weapon ability στα όπλα της."},
+"Broken Nadja": {
+ "en": "While this unit's Broken Nadja is on the table, it has Wizard (1).",
+ "el": "Όσο το Broken Nadja αυτής της μονάδας είναι στο τραπέζι, έχει Wizard (1)."},
+"Withering Death": {
+ "en": "Spell (5). Pick a visible enemy Hero within 18\" and cast with 2D6. It takes 1 mortal damage and its melee weapons have -1 Attacks until the start of your next turn.",
+ "el": "Ξόρκι (5). Διάλεξε ορατό εχθρικό Ήρωα σε 18\" και ρίξε 2D6 για το ξόρκι. Παίρνει 1 θανάσιμη ζημιά και τα όπλα σώμα με σώμα του έχουν -1 Attacks μέχρι την αρχή της επόμενης σειράς σου."},
+"Relentless Killers": {
+ "en": "This unit can use 2 Fight abilities this phase. After the first, it has Strike-last for the rest of the turn.",
+ "el": "Αυτή η μονάδα μπορεί να χρησιμοποιήσει 2 Fight abilities σε αυτή τη φάση. Μετά την πρώτη, έχει Strike-last για το υπόλοιπο της σειράς."},
+"Empowered by Atrocity": {
+ "en": "If 2 or more units (friendly or enemy) were destroyed this turn: for the rest of the turn, your Slaves to Darkness units wholly within 12\" of this Manifestation have +1 Attacks on their melee weapons.",
+ "el": "Αν 2 ή περισσότερες μονάδες (δικές σου ή εχθρικές) καταστράφηκαν αυτή τη σειρά: για το υπόλοιπο της σειράς, οι μονάδες Slaves to Darkness σου εντελώς μέσα σε 12\" από αυτό το Manifestation έχουν +1 Attacks στα όπλα σώμα με σώμα τους."},
+"Debilitating Shockwave": {
+ "en": "If this Manifestation charged this phase, pick an enemy unit within 1\". Roll 1 dice per model in it. Each 6 is 1 mortal damage. If any model is slain by this, its attacks have -1 to hit for the rest of the turn.",
+ "el": "Αν αυτό το Manifestation έκανε Charge σε αυτή τη φάση, διάλεξε εχθρική μονάδα σε 1\". Ρίξε 1 ζάρι ανά μοντέλο της. Κάθε 6 είναι 1 θανάσιμη ζημιά. Αν κάποιο μοντέλο σκοτωθεί έτσι, οι επιθέσεις της μονάδας έχουν -1 για να πετύχουν (hit) για το υπόλοιπο της σειράς."},
+"Fuelled by Sorcery": {
+ "en": "Each time a unit within 12\" of this Manifestation casts a spell successfully, give it 1 ruinous energy point (max 6). Each time it uses a Shoot ability, its Darkfire Torrent has +1 Attacks per ruinous energy point. If it is removed from play, all its points are lost.",
+ "el": "Κάθε φορά που μια μονάδα σε 12\" από αυτό το Manifestation ρίχνει ξόρκι με επιτυχία, δώσε του 1 ruinous energy point (μέγιστο 6). Κάθε φορά που χρησιμοποιεί Shoot ability, το Darkfire Torrent του έχει +1 Attacks ανά ruinous energy point. Αν αφαιρεθεί από το παιχνίδι, χάνει όλους τους πόντους."},
+"Binding Damnation": {
+ "en": "Spell (7). A Slaves to Darkness Wizard picks a visible enemy unit within 12\" and casts with 2D6. The target has Strike-last until the start of your next turn.",
+ "el": "Ξόρκι (7). Ένας Wizard Slaves to Darkness διαλέγει ορατή εχθρική μονάδα σε 12\" και ρίχνει 2D6 για το ξόρκι. Ο στόχος έχει Strike-last μέχρι την αρχή της επόμενης σειράς σου."},
+"Daemonic Speed": {
+ "en": "Spell (7). A Slaves to Darkness Wizard picks a visible friendly Slaves to Darkness unit wholly within 12\" of it and casts with 2D6. For the rest of the turn, the target rolls 1 extra dice on charge rolls (max 3 dice).",
+ "el": "Ξόρκι (7). Ένας Wizard Slaves to Darkness διαλέγει μια ορατή δική σου μονάδα Slaves to Darkness εντελώς μέσα σε 12\" από αυτόν και ρίχνει 2D6 για το ξόρκι. Για το υπόλοιπο της σειράς, ο στόχος ρίχνει 1 επιπλέον ζάρι στα charge rolls (μέγιστο 3 ζάρια)."},
+"Spite-tongue Curse": {
+ "en": "Spell (5). A Slaves to Darkness Wizard picks a visible enemy unit within 12\" and casts with 2D6. If the cast fails or is unbound, the caster takes D3 mortal damage. The target takes 3 mortal damage.",
+ "el": "Ξόρκι (5). Ένας Wizard Slaves to Darkness διαλέγει ορατή εχθρική μονάδα σε 12\" και ρίχνει 2D6 για το ξόρκι. Αν το ξόρκι αποτύχει ή γίνει unbound, ο caster παίρνει D3 θανάσιμη ζημιά. Ο στόχος παίρνει 3 θανάσιμη ζημιά."},
+"The Conquerer's Crown": {
+ "en": "Enemy Infantry units in combat with this unit have -5 control score.",
+ "el": "Οι εχθρικές μονάδες Infantry σε μάχη με αυτή τη μονάδα έχουν -5 control score."},
+"Realmwarper's Twist-rune": {
+ "en": "Pick a terrain feature within 12\" of this unit. If it does not have Obscuring, it gains Obscuring until the start of your next turn. Then roll a dice for each model (friendly and enemy) within 1\" of that terrain. For each 5+, that model's unit takes 1 mortal damage.",
+ "el": "Διάλεξε ένα στοιχείο εδάφους σε 12\" από αυτή τη μονάδα. Αν δεν έχει Obscuring, το αποκτά μέχρι την αρχή της επόμενης σειράς σου. Μετά ρίξε ένα ζάρι για κάθε μοντέλο (δικό σου και εχθρικό) σε 1\" από αυτό το έδαφος. Για κάθε 5+, η μονάδα εκείνου του μοντέλου παίρνει 1 θανάσιμη ζημιά."},
+"Infernal Puppet": {
+ "en": "Pick a visible enemy Wizard within 24\". For the rest of the turn, each time it is picked to use a Spell ability, it takes D3 mortal damage as a reaction. If it is destroyed by this, the Spell ability has no effect.",
+ "el": "Διάλεξε ορατό εχθρικό Wizard σε 24\". Για το υπόλοιπο της σειράς, κάθε φορά που διαλέγεται να χρησιμοποιήσει Spell ability, παίρνει D3 θανάσιμη ζημιά ως αντίδραση. Αν καταστραφεί έτσι, η Spell ability δεν έχει εφέ."},
+"Favoured of the Pantheon": {
+ "en": "If this unit is the target of Eye of the Gods, it gets 3 Dark Apotheosis points.",
+ "el": "Αν αυτή η μονάδα είναι ο στόχος του Eye of the Gods, παίρνει 3 πόντους Dark Apotheosis."},
+"Deathmonger": {
+ "en": "This unit can use 2 Fight abilities this phase. After the first, it has Strike-last for the rest of the turn.",
+ "el": "Αυτή η μονάδα μπορεί να χρησιμοποιήσει 2 Fight abilities σε αυτή τη φάση. Μετά την πρώτη, έχει Strike-last για το υπόλοιπο της σειράς."},
+"Radiance of Dark Glory": {
+ "en": "Pick each damaged friendly unit wholly within 12\" of this unit. Roll a dice for each. On a 3+, Heal (1) it, or Heal (3) if it is a Monster.",
+ "el": "Διάλεξε κάθε δική σου μονάδα με ζημιά εντελώς μέσα σε 12\" από αυτή τη μονάδα. Ρίξε ένα ζάρι για καθεμία. Με 3+, κάνε Heal (1), ή Heal (3) αν είναι Monster."},
+"The Eroding Icon": {
+ "en": "This unit has the Pledged to Nurgle keyword. While it includes any standard bearers, attacks that target it cannot score critical hits (they count as normal hits).",
+ "el": "Αυτή η μονάδα έχει το keyword Pledged to Nurgle. Όσο περιλαμβάνει standard bearers, οι επιθέσεις που τη στοχεύουν δεν μπορούν να σκοράρουν critical hits (μετράνε ως κανονικά hits)."},
+"The Banner of Rage": {
+ "en": "This unit has the Pledged to Khorne keyword. While it includes any standard bearers, its combat attacks get +1 to wound.",
+ "el": "Αυτή η μονάδα έχει το keyword Pledged to Khorne. Όσο περιλαμβάνει standard bearers, οι επιθέσεις σώμα με σώμα της έχουν +1 για να τραυματίσουν (wound)."},
+"The Banner of Screaming Flesh": {
+ "en": "This unit has the Pledged to Slaanesh keyword. While it includes any standard bearers, if it charged this turn, its melee weapons have +1 Attacks for the rest of the turn.",
+ "el": "Αυτή η μονάδα έχει το keyword Pledged to Slaanesh. Όσο περιλαμβάνει standard bearers, αν έκανε Charge αυτή τη σειρά, τα όπλα σώμα με σώμα της έχουν +1 Attacks για το υπόλοιπο της σειράς."},
+"The Blasted Standard": {
+ "en": "This unit has the Pledged to Tzeentch keyword. While it includes any standard bearers, it has Ward (4+) against damage from shooting attacks.",
+ "el": "Αυτή η μονάδα έχει το keyword Pledged to Tzeentch. Όσο περιλαμβάνει standard bearers, έχει Ward (4+) κατά της ζημιάς από επιθέσεις με βολές."},
+"The Dread Banner": {
+ "en": "While this unit includes any standard bearers, enemy units in combat with it cannot use commands.",
+ "el": "Όσο αυτή η μονάδα περιλαμβάνει standard bearers, οι εχθρικές μονάδες σε μάχη με αυτή δεν μπορούν να χρησιμοποιήσουν commands."}
+}

@@ -1,0 +1,482 @@
+{
+"Heavens-sent": {
+ "en": "Pick one of your destroyed Stormcast Eternals Infantry or Cavalry units that is not Unique and started the battle with 2 or more models. Set up a new unit with half the models (round up), more than 9\" from all enemy units.",
+ "el": "Διάλεξε μια κατεστραμμένη μονάδα Stormcast Eternals Infantry ή Cavalry δική σου, που δεν είναι Unique και ξεκίνησε τη μάχη με 2 ή περισσότερα μοντέλα. Βάλε νέα μονάδα με τα μισά μοντέλα (στρογγυλοποίηση προς τα πάνω), πάνω από 9\" μακριά από όλες τις εχθρικές μονάδες."},
+"Their Finest Hour": {
+ "en": "Pick one of your Stormcast Eternals units that has not used this ability this battle. For the rest of the turn: add 1 to its wound rolls for combat attacks and add 1 to its save rolls.",
+ "el": "Διάλεξε μια μονάδα Stormcast Eternals σου που δεν έχει χρησιμοποιήσει αυτή την ικανότητα σε αυτή τη μάχη. Για το υπόλοιπο της σειράς: πρόσθεσε 1 στα wound rolls των επιθέσεων μάχης της και πρόσθεσε 1 στα save rolls της."},
+"Scions of the Storm": {
+ "en": "Pick one of your Stormcast Eternals units that is in the Celestial Realm. Set it up anywhere on the battlefield, more than 9\" from all enemy units.",
+ "el": "Διάλεξε μια μονάδα Stormcast Eternals σου που είναι στο Celestial Realm. Βάλ' την οπουδήποτε στο πεδίο μάχης, πάνω από 9\" μακριά από όλες τις εχθρικές μονάδες."},
+"The Celestial Realm": {
+ "en": "(Deployment, before round 1) If you have more Stormcast Eternals units on the battlefield than in reserve, pick one of your Stormcast Eternals units that is not deployed yet. Put it in reserve in the Celestial Realm. It counts as deployed.",
+ "el": "(Παράταξη, πριν τον γύρο 1) Αν έχεις περισσότερες μονάδες Stormcast Eternals στο πεδίο μάχης απ' ό,τι σε εφεδρεία, διάλεξε μια μονάδα Stormcast Eternals σου που δεν έχει παραταχθεί ακόμα. Βάλ' την σε εφεδρεία στο Celestial Realm. Θεωρείται ότι έχει παραταχθεί."},
+"Peerless Manoeuvres": {
+ "en": "Pick one of your Vanguard Chamber units that did not use a Move ability this turn and is not in combat. Roll a dice. On a 3+, take it off the battlefield and set it up again anywhere, more than 9\" from all enemy units.",
+ "el": "Διάλεξε μια μονάδα Vanguard Chamber σου που δεν χρησιμοποίησε Move ability αυτή τη σειρά και δεν είναι σε μάχη. Ρίξε ένα ζάρι. Με 3+, βγάλ' την από το πεδίο μάχης και βάλ' την ξανά οπουδήποτε, πάνω από 9\" μακριά από όλες τις εχθρικές μονάδες."},
+"Ancient Aura": {
+ "en": "Pick one of your Ruination Chamber units. It has Ward (5+) for the rest of the turn.",
+ "el": "Διάλεξε μια μονάδα Ruination Chamber σου. Έχει Ward (5+) για το υπόλοιπο της σειράς."},
+"Synchronised Strikes": {
+ "en": "Add 1 to hit rolls for combat attacks of your Warrior Chamber units while they are wholly within 12\" of any of your Stormcast Eternals units that are not Hero, not Beast and do not have the Warrior Chamber keyword.",
+ "el": "Πρόσθεσε 1 στα hit rolls των επιθέσεων μάχης των μονάδων Warrior Chamber σου όσο βρίσκονται ολόκληρες μέσα σε 12\" από οποιαδήποτε μονάδα Stormcast Eternals σου που δεν είναι Ήρωας, δεν είναι Beast και δεν έχει το keyword Warrior Chamber."},
+"Oncoming Storm": {
+ "en": "Pick one of your Extremis Chamber units that charged this turn. Roll a dice. On a 3+, it has Strike-first for the rest of the turn.",
+ "el": "Διάλεξε μια μονάδα Extremis Chamber σου που έκανε Charge αυτή τη σειρά. Ρίξε ένα ζάρι. Με 3+, έχει Strike-first για το υπόλοιπο της σειράς."},
+"Cycle of the Storm": {
+ "en": "Pick one of your Sacrosanct Chamber units that had models slain this turn. Return 1 slain model to that unit.",
+ "el": "Διάλεξε μια μονάδα Sacrosanct Chamber σου που έχασε μοντέλα αυτή τη σειρά. Φέρε πίσω 1 σκοτωμένο μοντέλο σε αυτή τη μονάδα."},
+"Marked for Destruction": {
+ "en": "Add 1 to hit rolls for shooting attacks of your Vanguard Chamber units if the target is within 9\" of this unit.",
+ "el": "Πρόσθεσε 1 στα hit rolls των επιθέσεων με βολές των μονάδων Vanguard Chamber σου αν ο στόχος είναι μέσα σε 9\" από αυτή τη μονάδα."},
+"Brace for Impact": {
+ "en": "Pick an enemy unit that charged this turn and is in combat with this unit. Roll a dice for each model in this unit. If any roll is a 6, the target has Strike-last for the rest of the turn.",
+ "el": "Διάλεξε μια εχθρική μονάδα που έκανε Charge αυτή τη σειρά και είναι σε μάχη με αυτή τη μονάδα. Ρίξε ένα ζάρι για κάθε μοντέλο αυτής της μονάδας. Αν κάποιο ζάρι είναι 6, ο στόχος έχει Strike-last για το υπόλοιπο της σειράς."},
+"Blazing Impact": {
+ "en": "If this unit was set up this turn with 'Scions of the Storm', pick up to 3 enemy units within 10\". Roll a D3 for each. On a 2+, inflict mortal damage equal to the roll on that unit.",
+ "el": "Αν αυτή η μονάδα τοποθετήθηκε αυτή τη σειρά με το 'Scions of the Storm', διάλεξε μέχρι 3 εχθρικές μονάδες μέσα σε 10\". Ρίξε D3 για καθεμία. Με 2+, προκάλεσε θανάσιμη ζημιά ίση με το ζάρι σε εκείνη τη μονάδα."},
+"Force of a Falling Star": {
+ "en": "If this unit charged this phase and the unmodified charge roll was 8+, pick an enemy unit within 1\". It has Strike-last for the rest of the turn.",
+ "el": "Αν αυτή η μονάδα έκανε Charge σε αυτή τη φάση και το charge roll (χωρίς τροποποιητές) ήταν 8+, διάλεξε μια εχθρική μονάδα μέσα σε 1\". Έχει Strike-last για το υπόλοιπο της σειράς."},
+"Lightning Pulse": {
+ "en": "Casting value 6. Pick up to 3 enemy units in combat with this unit, then make a casting roll of 2D6. 1 unit picked: 3 mortal damage to it. 2 units: 2 mortal damage to each. 3 units: 1 mortal damage to each.",
+ "el": "Casting value 6. Διάλεξε μέχρι 3 εχθρικές μονάδες σε μάχη με αυτή τη μονάδα και κάνε casting roll 2D6. Αν διάλεξες 1 μονάδα: 3 θανάσιμη ζημιά σε αυτήν. 2 μονάδες: 2 θανάσιμη ζημιά σε καθεμία. 3 μονάδες: 1 θανάσιμη ζημιά σε καθεμία."},
+"Thunderous Pounce": {
+ "en": "Add 2 to charge rolls for your Sacrosanct Chamber Cavalry units while they are wholly within 12\" of this unit.",
+ "el": "Πρόσθεσε 2 στα charge rolls των μονάδων Sacrosanct Chamber Cavalry σου όσο βρίσκονται ολόκληρες μέσα σε 12\" από αυτή τη μονάδα."},
+"Soul Energy of the First Host": {
+ "en": "Pick a visible Sacrosanct Chamber unit of yours that is wholly within 12\" of this unit. Add 1 to its wound rolls for the rest of the turn.",
+ "el": "Διάλεξε μια ορατή μονάδα Sacrosanct Chamber σου που είναι ολόκληρη μέσα σε 12\" από αυτή τη μονάδα. Πρόσθεσε 1 στα wound rolls των επιθέσεών της για το υπόλοιπο της σειράς."},
+"Pyroelectric Blast": {
+ "en": "Casting value 6. Pick a visible enemy unit within 12\". Inflict 3 mortal damage on it, then 1 mortal damage on each other enemy unit within 3\" of it.",
+ "el": "Casting value 6. Διάλεξε μια ορατή εχθρική μονάδα μέσα σε 12\". Προκάλεσε 3 θανάσιμη ζημιά σε αυτήν και μετά 1 θανάσιμη ζημιά σε κάθε άλλη εχθρική μονάδα μέσα σε 3\" από αυτήν."},
+"Comet Trail": {
+ "en": "Pick an enemy unit in combat with this unit. For the rest of the phase, add 1 to hit rolls for combat attacks that target it.",
+ "el": "Διάλεξε μια εχθρική μονάδα σε μάχη με αυτή τη μονάδα. Για το υπόλοιπο της φάσης, πρόσθεσε 1 στα hit rolls των επιθέσεων μάχης που την στοχεύουν."},
+"Thunderhead Crown": {
+ "en": "Heal (3) this unit.",
+ "el": "Heal (3) σε αυτή τη μονάδα (γιατρεύει 3 πόντους ζημιάς)."},
+"Dependable Gryph-hound": {
+ "en": "This unit's Gryph-hound is a token. If it has been removed, this unit cannot use 'Scouting Companion'.",
+ "el": "Το Gryph-hound αυτής της μονάδας είναι δείκτης (token). Αν έχει αφαιρεθεί, αυτή η μονάδα δεν μπορεί να χρησιμοποιήσει το 'Scouting Companion'."},
+"Castigator Aetheric Channelling": {
+ "en": "If this unit did not use a Move ability this turn and was not set up this turn, its shooting attacks score critical hits (Crit) on unmodified hit rolls of 5+ for the rest of the turn.",
+ "el": "Αν αυτή η μονάδα δεν χρησιμοποίησε Move ability αυτή τη σειρά και δεν τοποθετήθηκε αυτή τη σειρά, οι επιθέσεις της με βολές κάνουν critical hit (Crit) με hit roll 5+ (χωρίς τροποποιητές) για το υπόλοιπο της σειράς."},
+"Scouting Companion": {
+ "en": "Until the Shoot ability is done, add 3\" to the Range of this unit's Thunderhead Greatbows and add 1 to hit rolls for its shooting attacks. After Shoot is done, remove this unit's Gryph-hound from the battlefield.",
+ "el": "Μέχρι να ολοκληρωθεί η Shoot ability, πρόσθεσε 3\" στο Range των Thunderhead Greatbows αυτής της μονάδας και 1 στα hit rolls των επιθέσεών της με βολές. Μετά το Shoot, αφαίρεσε το Gryph-hound αυτής της μονάδας από το πεδίο μάχης."},
+"Cometstrike Sceptre": {
+ "en": "Each time this unit attacks with its Cometstrike Sceptre and the attack hits, inflict D3 mortal damage on the target.",
+ "el": "Κάθε φορά που αυτή η μονάδα επιτίθεται με το Cometstrike Sceptre της και η επίθεση πετυχαίνει (hit), προκάλεσε D3 θανάσιμη ζημιά στον στόχο."},
+"Retribution From on High": {
+ "en": "Pick this unit if it is in the Celestial Realm. Subtract the current battle round number from 10. That is its strike zone. Set up this unit on the battlefield more than that many inches from all enemy units.",
+ "el": "Διάλεξε αυτή τη μονάδα αν είναι στο Celestial Realm. Αφαίρεσε τον αριθμό του τρέχοντος γύρου από το 10. Αυτό είναι το strike zone της. Βάλε τη μονάδα στο πεδίο μάχης πάνω από τόσες ίντσες μακριά από όλες τις εχθρικές μονάδες."},
+"Stormbolt Tempest": {
+ "en": "Pick an enemy unit that charged this turn and is in combat with this unit. Roll a dice. On a 2+, inflict mortal damage equal to the roll on it.",
+ "el": "Διάλεξε μια εχθρική μονάδα που έκανε Charge αυτή τη σειρά και είναι σε μάχη με αυτή τη μονάδα. Ρίξε ένα ζάρι. Με 2+, προκάλεσε θανάσιμη ζημιά ίση με το ζάρι."},
+"Decimating Blow": {
+ "en": "Add 1 to the Damage of this unit's Decimator Thunderaxes if the target unit has 10 or more models.",
+ "el": "Πρόσθεσε 1 στο Damage των Decimator Thunderaxes αυτής της μονάδας αν η στοχευόμενη μονάδα έχει 10 ή περισσότερα μοντέλα."},
+"Thunderstruck": {
+ "en": "Pick an enemy unit in combat with this unit. Roll a dice. On a 3+, it cannot use commands for the rest of the turn.",
+ "el": "Διάλεξε μια εχθρική μονάδα σε μάχη με αυτή τη μονάδα. Ρίξε ένα ζάρι. Με 3+, δεν μπορεί να χρησιμοποιήσει commands για το υπόλοιπο της σειράς."},
+"Cleaving Blow": {
+ "en": "Add 1 to the Damage of this unit's Thunderaxes if the target unit has 10 or more models.",
+ "el": "Πρόσθεσε 1 στο Damage των Thunderaxes αυτής της μονάδας αν η στοχευόμενη μονάδα έχει 10 ή περισσότερα μοντέλα."},
+"Impaling Strikes": {
+ "en": "If this unit charged this phase, pick an enemy unit within 1\". Roll a D3. On a 2+, inflict mortal damage equal to the roll on it.",
+ "el": "Αν αυτή η μονάδα έκανε Charge σε αυτή τη φάση, διάλεξε μια εχθρική μονάδα μέσα σε 1\". Ρίξε D3. Με 2+, προκάλεσε θανάσιμη ζημιά ίση με το ζάρι."},
+"Overwhelming Volleystorm": {
+ "en": "Pick an enemy unit that took any damage this turn from this unit's Volleystorm Crossbows. Roll a dice. On a 2+, it cannot use the 'All-out Defence' command in the next combat phase.",
+ "el": "Διάλεξε μια εχθρική μονάδα που δέχτηκε ζημιά αυτή τη σειρά από τα Volleystorm Crossbows αυτής της μονάδας. Ρίξε ένα ζάρι. Με 2+, δεν μπορεί να χρησιμοποιήσει το command 'All-out Defence' στην επόμενη φάση μάχης."},
+"Monstrous Challenge": {
+ "en": "Pick an enemy Monster in combat with this unit. Roll a dice. On a 2+, for the rest of the turn: add 1 to the Damage of this unit's Stardrake's Cavernous Jaws for attacks against that Monster. If that Monster is also a Hero, add 1 to the Damage of this unit's Templar Weapons for attacks against it.",
+ "el": "Διάλεξε ένα εχθρικό Monster σε μάχη με αυτή τη μονάδα. Ρίξε ένα ζάρι. Με 2+, για το υπόλοιπο της σειράς: πρόσθεσε 1 στο Damage των Cavernous Jaws του Stardrake αυτής της μονάδας για επιθέσεις εναντίον εκείνου του Monster. Αν το Monster είναι και Ήρωας, πρόσθεσε 1 στο Damage των Templar Weapons αυτής της μονάδας για επιθέσεις εναντίον του."},
+"Drakesworn Templar::Battle Damaged": {
+ "en": "While this unit has 10 or more damage points, the Attacks of its Stardrake's Cavernous Jaws is 4.",
+ "el": "Όσο αυτή η μονάδα έχει 10 ή περισσότερους πόντους ζημιάς, τα Attacks των Cavernous Jaws του Stardrake της είναι 4."},
+"Ionus Cryptborn, Warden of Lost Souls::Battle Damaged": {
+ "en": "While this unit has 10 or more damage points, the Attacks of Cthorak's Ancient Claws is 4.",
+ "el": "Όσο αυτή η μονάδα έχει 10 ή περισσότερους πόντους ζημιάς, τα Attacks των Ancient Claws του Cthorak είναι 4."},
+"Krondys, Son of Dracothion::Battle Damaged": {
+ "en": "While this unit has 10 or more damage points, the Attacks of its Apex Maw is 2.",
+ "el": "Όσο αυτή η μονάδα έχει 10 ή περισσότερους πόντους ζημιάς, τα Attacks του Apex Maw της είναι 2."},
+"Lord-Celestant on Stardrake::Battle Damaged": {
+ "en": "While this unit has 10 or more damage points, the Attacks of its Stardrake's Cavernous Jaws is 4.",
+ "el": "Όσο αυτή η μονάδα έχει 10 ή περισσότερους πόντους ζημιάς, τα Attacks των Cavernous Jaws του Stardrake της είναι 4."},
+"Warrior Mages": {
+ "en": "This unit can use Unbind abilities as if it were a Wizard (1).",
+ "el": "Αυτή η μονάδα μπορεί να χρησιμοποιεί Unbind abilities σαν να ήταν Wizard (1)."},
+"Empower": {
+ "en": "If this unit is contesting an objective you control, pick a visible Stormcast Eternals Infantry unit of yours (not a Hero) within 12\". Add 1 to its wound rolls for combat attacks for the rest of the turn.",
+ "el": "Αν αυτή η μονάδα διεκδικεί (contesting) έναν στόχο που ελέγχεις, διάλεξε μια ορατή μονάδα Stormcast Eternals Infantry σου (όχι Ήρωα) μέσα σε 12\". Πρόσθεσε 1 στα wound rolls των επιθέσεων μάχης της για το υπόλοιπο της σειράς."},
+"Dracoline Fury": {
+ "en": "While this unit is contesting an objective you do not control, it has Strike-first.",
+ "el": "Όσο αυτή η μονάδα διεκδικεί (contesting) έναν στόχο που δεν ελέγχεις, έχει Strike-first."},
+"Aura of Purity": {
+ "en": "If this unit charged this turn, then for the rest of the turn your Stormcast Eternals units have Ward (5+) while wholly within 12\" of this unit.",
+ "el": "Αν αυτή η μονάδα έκανε Charge αυτή τη σειρά, τότε για το υπόλοιπο της σειράς οι μονάδες Stormcast Eternals σου έχουν Ward (5+) όσο είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα."},
+"Saintly Assault": {
+ "en": "Pick up to 3 visible Stormcast Eternals Infantry units of yours wholly within 6\". For the rest of the turn: add 1 to their charge rolls and add 1 to the Attacks of their melee weapons.",
+ "el": "Διάλεξε μέχρι 3 ορατές μονάδες Stormcast Eternals Infantry σου που είναι ολόκληρες μέσα σε 6\". Για το υπόλοιπο της σειράς: πρόσθεσε 1 στα charge rolls τους και 1 στα Attacks των όπλων μάχης τους."},
+"Once More, For Sigmar, Charge!": {
+ "en": "Pick this unit and another visible Warrior Chamber unit of yours within 3\". For the rest of the phase, when making their charge rolls, roll 1 extra dice, then remove 1 dice of your choice and use the rest as the charge roll.",
+ "el": "Διάλεξε αυτή τη μονάδα και μια άλλη ορατή μονάδα Warrior Chamber σου μέσα σε 3\". Για το υπόλοιπο της φάσης, όταν κάνετε charge rolls, ρίξε 1 ζάρι παραπάνω, μετά βγάλε 1 ζάρι της επιλογής σου και χρησιμοποίησε τα υπόλοιπα για το charge roll."},
+"Sigmarite Thundershield": {
+ "en": "Each time you make an unmodified save roll of 6 against a combat attack on this unit, inflict 1 mortal damage on the attacking unit after the Fight ability is done.",
+ "el": "Κάθε φορά που κάνεις save roll 6 (χωρίς τροποποιητές) εναντίον επίθεσης μάχης σε αυτή τη μονάδα, προκάλεσε 1 θανάσιμη ζημιά στην επιτιθέμενη μονάδα αφού ολοκληρωθεί η Fight ability."},
+"Warning Cry": {
+ "en": "Pick an enemy unit within 12\" that was set up this turn. Then pick up to 3 of your Stormcast Eternals units with ranged weapons within 12\" of that enemy unit. Roll a D3 for each of them. On a 2+, inflict mortal damage equal to the roll on that enemy unit.",
+ "el": "Διάλεξε μια εχθρική μονάδα μέσα σε 12\" που τοποθετήθηκε αυτή τη σειρά. Μετά διάλεξε μέχρι 3 μονάδες Stormcast Eternals σου με όπλα βολής που είναι μέσα σε 12\" από εκείνη την εχθρική μονάδα. Ρίξε D3 για καθεμία. Με 2+, προκάλεσε θανάσιμη ζημιά ίση με το ζάρι στην εχθρική μονάδα."},
+"Lightning Tempest": {
+ "en": "Chanting value 5. Pick a visible enemy unit within 12\" and make a chanting roll of D6. Inflict D3 mortal damage on it, then roll a dice. On 1-2, it ends. On 3+, pick another enemy unit within 3\" of that unit and inflict D3 mortal damage on it. If the chanting roll was 10+, you can use 6\" instead of 3\". Keep rolling like this until it ends or no enemy unit can be picked. A unit can be struck only once per turn.",
+ "el": "Chanting value 5. Διάλεξε μια ορατή εχθρική μονάδα μέσα σε 12\" και κάνε chanting roll D6. Προκάλεσε D3 θανάσιμη ζημιά σε αυτήν και μετά ρίξε ένα ζάρι. Με 1-2, τελειώνει. Με 3+, διάλεξε άλλη εχθρική μονάδα μέσα σε 3\" από εκείνη και προκάλεσε D3 θανάσιμη ζημιά. Αν το chanting roll ήταν 10+, μπορείς να χρησιμοποιήσεις 6\" αντί για 3\". Συνέχισε να ρίχνεις έτσι μέχρι να τελειώσει ή να μην υπάρχει άλλη εχθρική μονάδα. Μια μονάδα χτυπιέται μόνο μία φορά ανά σειρά."},
+"Spirit-scouring Flames": {
+ "en": "Pick an enemy unit that took any damage this turn from this unit's Spirit-scouring Flames. It gets the Soulburned keyword for the rest of the battle.",
+ "el": "Διάλεξε μια εχθρική μονάδα που δέχτηκε ζημιά αυτή τη σειρά από τα Spirit-scouring Flames αυτής της μονάδας. Αποκτά το keyword Soulburned για το υπόλοιπο της μάχης."},
+"Soulburned": {
+ "en": "This unit can use this ability even if it is destroyed. Pick any number of Soulburned enemy units. Roll a D3 for each. On a 2+, inflict mortal damage equal to the roll on that unit.",
+ "el": "Αυτή η μονάδα μπορεί να χρησιμοποιήσει αυτή την ικανότητα ακόμα και αν έχει καταστραφεί. Διάλεξε όσες εχθρικές μονάδες Soulburned θέλεις. Ρίξε D3 για καθεμία. Με 2+, προκάλεσε θανάσιμη ζημιά ίση με το ζάρι."},
+"Prayer of the Witness": {
+ "en": "Chanting value 4. Make a chanting roll of D6. For the rest of the turn, each time one of your Ruination Chamber units uses a Fight ability while wholly within 18\" of this unit, after it is done: Heal (D3) that unit (if the chanting roll was 8+, Heal (3) instead), and that unit has Ward (6+) for the rest of the turn.",
+ "el": "Chanting value 4. Κάνε chanting roll D6. Για το υπόλοιπο της σειράς, κάθε φορά που μια μονάδα Ruination Chamber σου χρησιμοποιεί Fight ability ενώ είναι ολόκληρη μέσα σε 18\" από αυτή τη μονάδα, μετά το τέλος της: Heal (D3) σε εκείνη τη μονάδα (αν το chanting roll ήταν 8+, Heal (3) αντί γι' αυτό) και εκείνη η μονάδα έχει Ward (6+) για το υπόλοιπο της σειράς."},
+"Dark Flight": {
+ "en": "Pick an enemy unit in combat with this unit. Roll a dice. If the roll is higher than the target's Health: 1 model in it is slain, and this unit can immediately use 'Retreat' without taking mortal damage.",
+ "el": "Διάλεξε μια εχθρική μονάδα σε μάχη με αυτή τη μονάδα. Ρίξε ένα ζάρι. Αν το ζάρι είναι μεγαλύτερο από την Health του στόχου: 1 μοντέλο της σκοτώνεται και αυτή η μονάδα μπορεί αμέσως να χρησιμοποιήσει 'Retreat' χωρίς να πάθει θανάσιμη ζημιά."},
+"Hail of Bolts": {
+ "en": "Pick a visible enemy Infantry unit that had any models slain this phase by this unit's shooting attacks. Roll a dice. On a 3+, for the rest of the turn, subtract 1 from the number of dice rolled for its charge rolls (minimum 1).",
+ "el": "Διάλεξε μια ορατή εχθρική μονάδα Infantry που έχασε μοντέλα σε αυτή τη φάση από τις βολές αυτής της μονάδας. Ρίξε ένα ζάρι. Με 3+, για το υπόλοιπο της σειράς αφαίρεσε 1 από τον αριθμό των ζαριών στα charge rolls της (ελάχιστο 1)."},
+"Subduing Shots": {
+ "en": "Pick a visible enemy Monster that took any damage this phase from this unit's shooting attacks. Roll a dice. On a 3+, it cannot use Rampage abilities until the start of your next turn.",
+ "el": "Διάλεξε ένα ορατό εχθρικό Monster που δέχτηκε ζημιά σε αυτή τη φάση από τις βολές αυτής της μονάδας. Ρίξε ένα ζάρι. Με 3+, δεν μπορεί να χρησιμοποιήσει Rampage abilities μέχρι την αρχή της επόμενης σειράς σου."},
+"Calamitous Tail Sweep": {
+ "en": "Pick an enemy unit in combat with this unit. Roll a dice for each model in it. For each 5+, inflict 1 mortal damage on it.",
+ "el": "Διάλεξε μια εχθρική μονάδα σε μάχη με αυτή τη μονάδα. Ρίξε ένα ζάρι για κάθε μοντέλο της. Για κάθε 5+, προκάλεσε 1 θανάσιμη ζημιά σε αυτήν."},
+"Fires of Retribution": {
+ "en": "While this unit has 5-9 damage points, add 1 to the Attacks of its melee weapons. While it has 10 or more damage points, add 2 instead.",
+ "el": "Όσο αυτή η μονάδα έχει 5-9 πόντους ζημιάς, πρόσθεσε 1 στα Attacks των όπλων μάχης της. Όσο έχει 10 ή περισσότερους, πρόσθεσε 2 αντί γι' αυτό."},
+"Ancient Master of War": {
+ "en": "Pick an enemy unit within this unit's combat range. Subtract 1 from the Attacks of its melee weapons for the rest of the turn.",
+ "el": "Διάλεξε μια εχθρική μονάδα μέσα στην εμβέλεια μάχης (combat range) αυτής της μονάδας. Αφαίρεσε 1 από τα Attacks των όπλων μάχης της για το υπόλοιπο της σειράς."},
+"Indomitable Loreseekers": {
+ "en": "Add 1 to this unit's casting rolls when it uses a Summon ability, and add 1 to its banishment rolls. Enemy Manifestations cannot pass through or end a move within this unit's combat range, unless they started that move there. This unit has Ward (4+) against mortal damage from Manifestations.",
+ "el": "Πρόσθεσε 1 στα casting rolls αυτής της μονάδας όταν χρησιμοποιεί Summon ability και πρόσθεσε 1 στα banishment rolls της. Οι εχθρικές Manifestations δεν μπορούν να περάσουν μέσα ή να τελειώσουν κίνηση μέσα στην εμβέλεια μάχης αυτής της μονάδας, εκτός αν ξεκίνησαν εκείνη την κίνηση εκεί. Αυτή η μονάδα έχει Ward (4+) εναντίον θανάσιμης ζημιάς από Manifestations."},
+"Light in the Dark": {
+ "en": "Pick one of your Prosecutors units wholly within 12\". Roll a dice. On a 3+, pick 1 effect: if it is in combat, it can immediately 'Retreat' as if it were your movement phase, without mortal damage; if it is not in combat, it can immediately use 'Normal Move' as if it were your movement phase.",
+ "el": "Διάλεξε μια μονάδα Prosecutors σου που είναι ολόκληρη μέσα σε 12\". Ρίξε ένα ζάρι. Με 3+, διάλεξε 1 αποτέλεσμα: αν είναι σε μάχη, μπορεί αμέσως να κάνει 'Retreat' σαν να ήταν η φάση κίνησής σου, χωρίς θανάσιμη ζημιά. Αν δεν είναι σε μάχη, μπορεί αμέσως να χρησιμοποιήσει 'Normal Move' σαν να ήταν η φάση κίνησής σου."},
+"The Light of Sigmar": {
+ "en": "Roll a dice. On a 3+, pick 1 effect: for the rest of the turn, subtract 1 from hit rolls for attacks by enemy units while in combat with this unit; OR Heal (D3) each of your Stormcast Eternals units within this unit's combat range.",
+ "el": "Ρίξε ένα ζάρι. Με 3+, διάλεξε 1 αποτέλεσμα: για το υπόλοιπο της σειράς, αφαίρεσε 1 από τα hit rolls των επιθέσεων των εχθρικών μονάδων όσο είναι σε μάχη με αυτή τη μονάδα. Ή Heal (D3) σε κάθε μονάδα Stormcast Eternals σου μέσα στην εμβέλεια μάχης αυτής της μονάδας."},
+"Arcane Heritage": {
+ "en": "If this unit, or a Stormdrake Guard unit of yours wholly within 12\", was picked as the target of a spell, roll a dice. On a 4+, ignore the spell's effect on that unit. This unit can use this ability more than once per phase, but only once per Spell ability.",
+ "el": "Αν αυτή η μονάδα ή μια μονάδα Stormdrake Guard σου που είναι ολόκληρη μέσα σε 12\" επιλέχθηκε ως στόχος ενός spell, ρίξε ένα ζάρι. Με 4+, αγνόησε το αποτέλεσμα του spell σε εκείνη τη μονάδα. Αυτή η μονάδα μπορεί να χρησιμοποιήσει αυτή την ικανότητα πάνω από μία φορά ανά φάση, αλλά μόνο μία φορά ανά Spell ability."},
+"Wrath of the Draconith": {
+ "en": "Pick a Stormdrake Guard unit of yours within this unit's combat range. Roll a dice. On a 2+, add 1 to the Attacks of the Draconith's Fangs and Talons of both this unit and that unit for the rest of the turn.",
+ "el": "Διάλεξε μια μονάδα Stormdrake Guard σου μέσα στην εμβέλεια μάχης αυτής της μονάδας. Ρίξε ένα ζάρι. Με 2+, πρόσθεσε 1 στα Attacks των Draconith's Fangs and Talons και αυτής της μονάδας και της άλλης για το υπόλοιπο της σειράς."},
+"Thunderblast": {
+ "en": "Pick a visible faction terrain feature within 18\". Roll a dice. On a 2+, inflict mortal damage equal to the roll on it.",
+ "el": "Διάλεξε ένα ορατό faction terrain feature μέσα σε 18\". Ρίξε ένα ζάρι. Με 2+, προκάλεσε θανάσιμη ζημιά ίση με το ζάρι σε αυτό."},
+"Call to Battle": {
+ "en": "If a Warrior Chamber unit of yours wholly within 12\" of this unit uses the 'Rally' command, you can make 3 extra rally rolls of D6.",
+ "el": "Αν μια μονάδα Warrior Chamber σου που είναι ολόκληρη μέσα σε 12\" από αυτή τη μονάδα χρησιμοποιήσει το command 'Rally', μπορείς να κάνεις 3 επιπλέον rally rolls με D6."},
+"Voidstorm Scroll": {
+ "en": "The spell is unbound and its effect does not happen.",
+ "el": "Το spell γίνεται unbound και το αποτέλεσμά του δεν εφαρμόζεται."},
+"Aetheric Destabilisation": {
+ "en": "While within 30\" of this unit, enemy units subtract 1 from their casting rolls when they use Summon abilities.",
+ "el": "Όσο βρίσκονται μέσα σε 30\" από αυτή τη μονάδα, οι εχθρικές μονάδες αφαιρούν 1 από τα casting rolls τους όταν χρησιμοποιούν Summon abilities."},
+"Faithful Gryph-hounds": {
+ "en": "This unit's Gryph-hounds are tokens. After setting up this unit on the battlefield for the first time, place both Gryph-hounds next to it.",
+ "el": "Τα Gryph-hounds αυτής της μονάδας είναι δείκτες (tokens). Αφού τοποθετήσεις αυτή τη μονάδα στο πεδίο μάχης για πρώτη φορά, βάλε και τα δύο Gryph-hounds δίπλα της."},
+"Hunting Hounds": {
+ "en": "If this unit was not set up this turn and any of its Gryph-hounds are on the battlefield, pick an enemy unit within 12\". Roll a dice. On a 1, remove 1 of its Gryph-hounds. On a 2+, move 1 of its Gryph-hounds that is next to this unit or next to an enemy unit to be next to the target. While any of its Gryph-hounds are next to an enemy unit, add 1 to hit rolls and wound rolls for this unit's shooting attacks against that unit. If that enemy unit is destroyed or removed, put those Gryph-hounds next to this unit.",
+ "el": "Αν αυτή η μονάδα δεν τοποθετήθηκε αυτή τη σειρά και κάποιο από τα Gryph-hounds της είναι στο πεδίο μάχης, διάλεξε μια εχθρική μονάδα μέσα σε 12\". Ρίξε ένα ζάρι. Με 1, αφαίρεσε 1 από τα Gryph-hounds της. Με 2+, διάλεξε 1 Gryph-hound που είναι δίπλα σε αυτή τη μονάδα ή δίπλα σε εχθρική μονάδα και βάλ' το δίπλα στον στόχο. Όσο κάποιο Gryph-hound είναι δίπλα σε εχθρική μονάδα, πρόσθεσε 1 στα hit rolls και wound rolls των βολών αυτής της μονάδας εναντίον της. Αν εκείνη η εχθρική μονάδα καταστραφεί ή αφαιρεθεί, βάλε αυτά τα Gryph-hounds δίπλα σε αυτή τη μονάδα."},
+"Ordained Quest": {
+ "en": "(Deployment, before round 1) Pick an objective wholly outside your territory. You treat it as questmarked.",
+ "el": "(Παράταξη, πριν τον γύρο 1) Διάλεξε έναν στόχο που είναι ολόκληρος εκτός της δικής σου περιοχής. Θεωρείται από σένα questmarked."},
+"His Will Be Done": {
+ "en": "While this unit is contesting a questmarked objective: add 3 to this unit's control score, and it has Ward (5+).",
+ "el": "Όσο αυτή η μονάδα διεκδικεί (contesting) έναν questmarked στόχο: πρόσθεσε 3 στο control score της και έχει Ward (5+)."},
+"Heroic Retribution": {
+ "en": "Pick a Questor Soulsworn unit of yours within this unit's combat range that has not used a Fight ability this turn. It can be picked to use a Fight ability right after this unit's Fight ability is done.",
+ "el": "Διάλεξε μια μονάδα Questor Soulsworn σου μέσα στην εμβέλεια μάχης αυτής της μονάδας που δεν έχει χρησιμοποιήσει Fight ability αυτή τη σειρά. Μπορεί να επιλεγεί να χρησιμοποιήσει Fight ability αμέσως μετά το τέλος της Fight ability αυτής της μονάδας."},
+"Relic Censer": {
+ "en": "Pick an enemy unit within 12\". Roll a dice. On a 2+, subtract 1 from its ward rolls for the rest of the turn.",
+ "el": "Διάλεξε μια εχθρική μονάδα μέσα σε 12\". Ρίξε ένα ζάρι. Με 2+, αφαίρεσε 1 από τα ward rolls της για το υπόλοιπο της σειράς."},
+"Star-fated Arrow": {
+ "en": "Pick a visible enemy unit within 24\". If it is not a Monster, inflict D6 mortal damage on it. If it is a Monster, inflict D6+3 mortal damage on it.",
+ "el": "Διάλεξε μια ορατή εχθρική μονάδα μέσα σε 24\". Αν δεν είναι Monster, προκάλεσε D6 θανάσιμη ζημιά. Αν είναι Monster, προκάλεσε D6+3 θανάσιμη ζημιά."},
+"The Banner of the Reforged": {
+ "en": "Pick up to D3 of your Stormcast Eternals units wholly within 12\" of this unit. For the rest of the turn, add 3 to each one's control score. Also Heal (D3) each of them.",
+ "el": "Διάλεξε μέχρι D3 μονάδες Stormcast Eternals σου που είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα. Για το υπόλοιπο της σειράς, πρόσθεσε 3 στο control score καθεμιάς. Επίσης Heal (D3) σε καθεμία."},
+"Tireless Hunter": {
+ "en": "Take this unit off the battlefield and set it up again, more than 9\" from all enemy units.",
+ "el": "Βγάλε αυτή τη μονάδα από το πεδίο μάχης και βάλ' την ξανά, πάνω από 9\" μακριά από όλες τις εχθρικές μονάδες."},
+"Soul-shaking Roar": {
+ "en": "Pick an enemy unit in combat with this unit. Roll a dice. On a 3+, it cannot use commands for the rest of the turn.",
+ "el": "Διάλεξε μια εχθρική μονάδα σε μάχη με αυτή τη μονάδα. Ρίξε ένα ζάρι. Με 3+, δεν μπορεί να χρησιμοποιήσει commands για το υπόλοιπο της σειράς."},
+"Regalia Fulmentarus": {
+ "en": "Add 2 to this unit's casting rolls.",
+ "el": "Πρόσθεσε 2 στα casting rolls αυτής της μονάδας."},
+"Atavistic Tempest": {
+ "en": "Casting value 8. Pick a visible enemy unit within 18\" of the caster, then make a casting roll of 2D6. Pick 1 effect on it until the start of your next turn: Blinding Gales: subtract 1 from its hit rolls. Meteor-hail: subtract 1 from the Rend of its weapons. Flash-freezing Blizzard: subtract 1 from its save rolls.",
+ "el": "Casting value 8. Διάλεξε μια ορατή εχθρική μονάδα μέσα σε 18\" από αυτόν που κάνει το spell και κάνε casting roll 2D6. Διάλεξε 1 αποτέλεσμα στη μονάδα μέχρι την αρχή της επόμενης σειράς σου: Blinding Gales: αφαίρεσε 1 από τα hit rolls της. Meteor-hail: αφαίρεσε 1 από το Rend των όπλων της. Flash-freezing Blizzard: αφαίρεσε 1 από τα save rolls της."},
+"Stalwart Defenders": {
+ "en": "Add 3 to this unit's control score while it is contesting an objective wholly within your territory.",
+ "el": "Πρόσθεσε 3 στο control score αυτής της μονάδας όσο διεκδικεί (contesting) έναν στόχο που είναι ολόκληρος μέσα στην περιοχή σου."},
+"Aquatic Illusions": {
+ "en": "Subtract 1 from hit rolls for attacks that target this unit.",
+ "el": "Αφαίρεσε 1 από τα hit rolls των επιθέσεων που στοχεύουν αυτή τη μονάδα."},
+"Nebulous Sea-fog": {
+ "en": "Casting value 6. Make a casting roll of 2D6. Until the start of your next turn, while one of your The Blacktalons units is wholly within 6\" of this unit, if the unmodified hit roll of a shooting attack against that unit is 1-5, the attack fails and the attack sequence ends.",
+ "el": "Casting value 6. Κάνε casting roll 2D6. Μέχρι την αρχή της επόμενης σειράς σου, όσο μια μονάδα The Blacktalons σου είναι ολόκληρη μέσα σε 6\" από αυτή τη μονάδα, αν το hit roll (χωρίς τροποποιητές) μιας επίθεσης με βολές εναντίον της είναι 1-5, η επίθεση αποτυγχάνει και η ακολουθία επίθεσης τελειώνει."},
+"Ride the Winds Aetheric": {
+ "en": "If this unit is not in combat, you can pick up to 2 Vanguard-Palladors units of yours that are not in combat. Take this unit and the targets off the battlefield. Set this unit up again more than 9\" from all enemy units. Then set up each target wholly within 12\" of this unit and more than 9\" from all enemy units.",
+ "el": "Αν αυτή η μονάδα δεν είναι σε μάχη, μπορείς να διαλέξεις μέχρι 2 μονάδες Vanguard-Palladors σου που δεν είναι σε μάχη. Βγάλε αυτή τη μονάδα και τους στόχους από το πεδίο μάχης. Βάλε αυτή τη μονάδα ξανά πάνω από 9\" μακριά από όλες τις εχθρικές μονάδες. Μετά βάλε κάθε στόχο ολόκληρο μέσα σε 12\" από αυτή τη μονάδα και πάνω από 9\" μακριά από όλες τις εχθρικές μονάδες."},
+"Magical Mending": {
+ "en": "Pick a visible Manifestation of yours wholly within 12\". Heal (D6) it.",
+ "el": "Διάλεξε μια ορατή Manifestation σου που είναι ολόκληρη μέσα σε 12\". Heal (D6) σε αυτήν."},
+"Aetheric Manipulation": {
+ "en": "Add 1 to this unit's casting rolls when it uses a SUMMON ability.",
+ "el": "Πρόσθεσε 1 στα casting rolls αυτής της μονάδας όταν χρησιμοποιεί SUMMON ability."},
+"Storm Wave": {
+ "en": "Pick a visible Sacrosanct Chamber Cavalry unit of yours that charged this phase and is wholly within 12\". Inflict D3 mortal damage on each enemy unit in combat with it.",
+ "el": "Διάλεξε μια ορατή μονάδα Sacrosanct Chamber Cavalry σου που έκανε Charge σε αυτή τη φάση και είναι ολόκληρη μέσα σε 12\". Προκάλεσε D3 θανάσιμη ζημιά σε κάθε εχθρική μονάδα σε μάχη με αυτήν."},
+"Pack Alpha": {
+ "en": "If this unit is in combat, pick this unit and up to 1 other visible Sacrosanct Chamber Cavalry unit of yours within its combat range. Add 1 to the Attacks of their Companion melee weapons for the rest of the turn.",
+ "el": "Αν αυτή η μονάδα είναι σε μάχη, διάλεξε αυτή τη μονάδα και μέχρι 1 άλλη ορατή μονάδα Sacrosanct Chamber Cavalry σου μέσα στην εμβέλεια μάχης της. Πρόσθεσε 1 στα Attacks των Companion όπλων μάχης τους για το υπόλοιπο της σειράς."},
+"Healing Light": {
+ "en": "Pick a visible Sacrosanct Chamber unit of yours within 12\" that is not in combat. If it is damaged, Heal (D6) it. If it is not damaged, return a slain model to it.",
+ "el": "Διάλεξε μια ορατή μονάδα Sacrosanct Chamber σου μέσα σε 12\" που δεν είναι σε μάχη. Αν έχει ζημιά, Heal (D6). Αν δεν έχει ζημιά, φέρε πίσω ένα σκοτωμένο μοντέλο σε αυτήν."},
+"On the Winds Aetheric": {
+ "en": "If this unit is not in combat, take it off the battlefield and set it up again, more than 9\" from all enemy units.",
+ "el": "Αν αυτή η μονάδα δεν είναι σε μάχη, βγάλ' την από το πεδίο μάχης και βάλ' την ξανά, πάνω από 9\" μακριά από όλες τις εχθρικές μονάδες."},
+"Trails of Astral Light": {
+ "en": "Add 1 to casting rolls of your Stormcast Eternals Wizards while they are wholly within 12\" of this unit.",
+ "el": "Πρόσθεσε 1 στα casting rolls των Wizards Stormcast Eternals σου όσο είναι ολόκληροι μέσα σε 12\" από αυτή τη μονάδα."},
+"Starlight Mantle": {
+ "en": "If this unit is in combat, pick each visible Stormcast Eternals unit of yours within its combat range. For the rest of the turn, they have Ward (5+) and this unit has Strike-last.",
+ "el": "Αν αυτή η μονάδα είναι σε μάχη, διάλεξε κάθε ορατή μονάδα Stormcast Eternals σου μέσα στην εμβέλεια μάχης της. Για το υπόλοιπο της σειράς, αυτές έχουν Ward (5+) και αυτή η μονάδα έχει Strike-last."},
+"Aetheric Deflection": {
+ "en": "Pick a visible enemy Wizard within 30\" that used a Spell ability this phase. Let X be its power level. Roll X+1 dice. For each 2+, inflict 1 mortal damage on it.",
+ "el": "Διάλεξε έναν ορατό εχθρικό Wizard μέσα σε 30\" που χρησιμοποίησε Spell ability σε αυτή τη φάση. Έστω X το power level του. Ρίξε X+1 ζάρια. Για κάθε 2+, προκάλεσε 1 θανάσιμη ζημιά σε αυτόν."},
+"Loyal Companion": {
+ "en": "For the rest of the turn, this unit has Ward (4+). At the end of the turn, remove this unit's Gryph-hound from the battlefield.",
+ "el": "Για το υπόλοιπο της σειράς, αυτή η μονάδα έχει Ward (4+). Στο τέλος της σειράς, αφαίρεσε το Gryph-hound αυτής της μονάδας από το πεδίο μάχης."},
+"Dutiful Gryph-hound": {
+ "en": "This unit's Gryph-hound is a token. If it has been removed, it can no longer attack with the Gryph-hound's Beak and this unit cannot use 'Loyal Companion'.",
+ "el": "Το Gryph-hound αυτής της μονάδας είναι δείκτης (token). Αν έχει αφαιρεθεί, δεν μπορεί πια να επιτεθεί με το Beak του Gryph-hound και αυτή η μονάδα δεν μπορεί να χρησιμοποιήσει το 'Loyal Companion'."},
+"Warding Lantern": {
+ "en": "Pick an objective within 12\". For the rest of the turn: your Stormcast Eternals units have Ward (6+) while contesting it, and enemy units cannot make ward rolls while contesting it.",
+ "el": "Διάλεξε έναν στόχο μέσα σε 12\". Για το υπόλοιπο της σειράς: οι μονάδες Stormcast Eternals σου έχουν Ward (6+) όσο τον διεκδικούν (contesting) και οι εχθρικές μονάδες δεν μπορούν να κάνουν ward rolls όσο τον διεκδικούν."},
+"Furious Retribution": {
+ "en": "Pick a non-Hero Warrior Chamber Infantry unit of yours within this unit's combat range that has not used a Fight ability this turn. It can be picked to use a Fight ability right after this unit's Fight ability is done. If it does, add 1 to its wound rolls for the rest of the turn.",
+ "el": "Διάλεξε μια μονάδα Warrior Chamber Infantry σου (όχι Ήρωα) μέσα στην εμβέλεια μάχης αυτής της μονάδας που δεν έχει χρησιμοποιήσει Fight ability αυτή τη σειρά. Μπορεί να επιλεγεί να χρησιμοποιήσει Fight ability αμέσως μετά το τέλος της Fight ability αυτής της μονάδας. Αν το κάνει, πρόσθεσε 1 στα wound rolls της για το υπόλοιπο της σειράς."},
+"Righteous Avengers": {
+ "en": "Pick a non-Hero Extremis Chamber Cavalry unit of yours within this unit's combat range that has not used a Fight ability this turn. It can be picked to use a Fight ability right after this unit's Fight ability is done.",
+ "el": "Διάλεξε μια μονάδα Extremis Chamber Cavalry σου (όχι Ήρωα) μέσα στην εμβέλεια μάχης αυτής της μονάδας που δεν έχει χρησιμοποιήσει Fight ability αυτή τη σειρά. Μπορεί να επιλεγεί να χρησιμοποιήσει Fight ability αμέσως μετά το τέλος της Fight ability αυτής της μονάδας."},
+"Cavernous Jaws": {
+ "en": "Pick an enemy unit in combat with this unit. Roll 3 dice. For each roll equal to or higher than its Health, 1 model in that unit is slain.",
+ "el": "Διάλεξε μια εχθρική μονάδα σε μάχη με αυτή τη μονάδα. Ρίξε 3 ζάρια. Για κάθε ζάρι ίσο ή μεγαλύτερο από την Health της, 1 μοντέλο εκείνης της μονάδας σκοτώνεται."},
+"Lord of the Host": {
+ "en": "Add 1 to the Attacks of your other Extremis Chamber units wholly within 12\" of this unit for the rest of the turn.",
+ "el": "Πρόσθεσε 1 στα Attacks των άλλων μονάδων Extremis Chamber σου που είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα για το υπόλοιπο της σειράς."},
+"Voice of Thunder": {
+ "en": "Each time your Stormcast Eternals unit wholly within 12\" of this unit uses the 'All-out Attack' command, it costs no command points.",
+ "el": "Κάθε φορά που μια μονάδα Stormcast Eternals σου που είναι ολόκληρη μέσα σε 12\" από αυτή τη μονάδα χρησιμοποιεί το command 'All-out Attack', δεν ξοδεύεται κανένα command point."},
+"Castellan of Azyr": {
+ "en": "(Deployment, before round 1) Pick up to 3 of your Stormcast Eternals Infantry units. Each can use 'Normal Move' as if it were your movement phase.",
+ "el": "(Παράταξη, πριν τον γύρο 1) Διάλεξε μέχρι 3 μονάδες Stormcast Eternals Infantry σου. Καθεμία μπορεί να χρησιμοποιήσει 'Normal Move' σαν να ήταν η φάση κίνησής σου."},
+"Mantle of the First Storm": {
+ "en": "If any enemy models were slain by this unit's attacks this turn, Heal (4) this unit.",
+ "el": "Αν κάποια εχθρικά μοντέλα σκοτώθηκαν από τις επιθέσεις αυτής της μονάδας αυτή τη σειρά, Heal (4) σε αυτή τη μονάδα."},
+"Purifying Blast": {
+ "en": "Pick a visible enemy Priest within 18\". Roll a dice. On a 2+: if it has ritual points, remove that many ritual points from it (equal to the roll); if it has none, inflict D3 mortal damage on it.",
+ "el": "Διάλεξε έναν ορατό εχθρικό Priest μέσα σε 18\". Ρίξε ένα ζάρι. Με 2+: αν έχει ritual points, αφαίρεσε από αυτόν τόσους ritual points όσο το ζάρι. Αν δεν έχει ritual points, προκάλεσε D3 θανάσιμη ζημιά σε αυτόν."},
+"Redemptor Casket": {
+ "en": "Models cannot be returned to enemy units within 12\" of this unit.",
+ "el": "Δεν μπορούν να επιστραφούν μοντέλα σε εχθρικές μονάδες μέσα σε 12\" από αυτή τη μονάδα."},
+"Guided by Lightning": {
+ "en": "Pick up to 3 of your Stormcast Eternals units wholly within 12\" that were set up this turn with 'Scions of the Storm'. Each can immediately move D3\". They cannot move into combat during that move.",
+ "el": "Διάλεξε μέχρι 3 μονάδες Stormcast Eternals σου που είναι ολόκληρες μέσα σε 12\" και τοποθετήθηκαν αυτή τη σειρά με το 'Scions of the Storm'. Καθεμία μπορεί αμέσως να κινηθεί D3\". Δεν μπορούν να μπουν σε μάχη κατά τη διάρκεια αυτής της κίνησης."},
+"Loyal Gryph-hound": {
+ "en": "This unit's Gryph-hound is a token. This unit has Ward (5+) while its Gryph-hound is on the battlefield. If you make an unmodified save roll of 1 for this unit, remove its Gryph-hound after the Attack ability is done (the damage point is still inflicted).",
+ "el": "Το Gryph-hound αυτής της μονάδας είναι δείκτης (token). Αυτή η μονάδα έχει Ward (5+) όσο το Gryph-hound της είναι στο πεδίο μάχης. Αν κάνεις save roll 1 (χωρίς τροποποιητές) για αυτή τη μονάδα, αφαίρεσε το Gryph-hound της αφού ολοκληρωθεί η Attack ability (ο πόντος ζημιάς εξακολουθεί να προκαλείται)."},
+"Arcane Engineer": {
+ "en": "Pick a visible Sacrosanct Chamber War Machine of yours wholly within 12\". Its attacks score critical hits (Crit) on unmodified hit rolls of 4+ for the rest of the phase.",
+ "el": "Διάλεξε ένα ορατό Sacrosanct Chamber War Machine σου που είναι ολόκληρο μέσα σε 12\". Οι επιθέσεις του κάνουν critical hit (Crit) με hit roll 4+ (χωρίς τροποποιητές) για το υπόλοιπο της φάσης."},
+"Mortis Priest": {
+ "en": "Add 1 to this unit's chanting rolls.",
+ "el": "Πρόσθεσε 1 στα chanting rolls αυτής της μονάδας."},
+"Earn an Honourable Death": {
+ "en": "Pick a non-Hero Ruination Chamber Infantry unit of yours within this unit's combat range that has not used a Fight ability this turn. It can be picked to use a Fight ability right after this unit's Fight ability is done. If it does, add 1 to its hit rolls for the rest of the turn.",
+ "el": "Διάλεξε μια μονάδα Ruination Chamber Infantry σου (όχι Ήρωα) μέσα στην εμβέλεια μάχης αυτής της μονάδας που δεν έχει χρησιμοποιήσει Fight ability αυτή τη σειρά. Μπορεί να επιλεγεί να χρησιμοποιήσει Fight ability αμέσως μετά το τέλος της Fight ability αυτής της μονάδας. Αν το κάνει, πρόσθεσε 1 στα hit rolls της για το υπόλοιπο της σειράς."},
+"Memorian": {
+ "en": "This unit's Memorian is a token. While it is on the battlefield, add 3 to the control scores of your Ruination Chamber units wholly within 12\" of this unit. If you make an unmodified save roll of 1 for this unit, remove its Memorian after the Attack ability is done (the damage point is still inflicted).",
+ "el": "Το Memorian αυτής της μονάδας είναι δείκτης (token). Όσο είναι στο πεδίο μάχης, πρόσθεσε 3 στα control scores των μονάδων Ruination Chamber σου που είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα. Αν κάνεις save roll 1 (χωρίς τροποποιητές) για αυτή τη μονάδα, αφαίρεσε το Memorian της αφού ολοκληρωθεί η Attack ability (ο πόντος ζημιάς εξακολουθεί να προκαλείται)."},
+"Sense Unholy Sorcery": {
+ "en": "This unit's Gryph-crow is a token. While it is on the battlefield, enemy units within 12\" of this unit subtract 1 from their casting rolls and chanting rolls. If you make an unmodified save roll of 1 for this unit, remove its Gryph-crow after the Attack ability is done (the damage point is still inflicted).",
+ "el": "Το Gryph-crow αυτής της μονάδας είναι δείκτης (token). Όσο είναι στο πεδίο μάχης, οι εχθρικές μονάδες μέσα σε 12\" από αυτή τη μονάδα αφαιρούν 1 από τα casting rolls και chanting rolls τους. Αν κάνεις save roll 1 (χωρίς τροποποιητές) για αυτή τη μονάδα, αφαίρεσε το Gryph-crow της αφού ολοκληρωθεί η Attack ability (ο πόντος ζημιάς εξακολουθεί να προκαλείται)."},
+"Staff of Abjuration": {
+ "en": "This unit can use Unbind abilities as if it were a Wizard (1).",
+ "el": "Αυτή η μονάδα μπορεί να χρησιμοποιεί Unbind abilities σαν να ήταν Wizard (1)."},
+"Deliver Judgement": {
+ "en": "Pick a non-Hero Ruination Chamber unit of yours wholly within 12\". It can use 2 Fight abilities this phase. After the first one, it has Strike-last for the rest of the turn.",
+ "el": "Διάλεξε μια μονάδα Ruination Chamber σου (όχι Ήρωα) ολόκληρη μέσα σε 12\". Μπορεί να χρησιμοποιήσει 2 Fight abilities σε αυτή τη φάση. Μετά την πρώτη, έχει Strike-last για το υπόλοιπο της σειράς."},
+"Direct the Assault": {
+ "en": "Pick a non-Hero Ruination Chamber unit of yours wholly within 12\". For the rest of the turn, while it is wholly within 12\" of this unit, add 5 to its control score.",
+ "el": "Διάλεξε μια μονάδα Ruination Chamber σου (όχι Ήρωα) ολόκληρη μέσα σε 12\". Για το υπόλοιπο της σειράς, όσο είναι ολόκληρη μέσα σε 12\" από αυτή τη μονάδα, πρόσθεσε 5 στο control score της."},
+"Vice-like Grip": {
+ "en": "Pick an enemy Hero (not a Monster) in combat with this unit. Roll 2D6. If the result is higher than its Health, for the rest of the turn it has Strike-last and cannot use commands.",
+ "el": "Διάλεξε έναν εχθρικό Ήρωα (που δεν είναι Monster) σε μάχη με αυτή τη μονάδα. Ρίξε 2D6. Αν το αποτέλεσμα είναι μεγαλύτερο από την Health του, για το υπόλοιπο της σειράς έχει Strike-last και δεν μπορεί να χρησιμοποιήσει commands."},
+"Justice From Azyr": {
+ "en": "Add 1 to the Damage of this unit's Whirlwind Axes for attacks that target a Hero.",
+ "el": "Πρόσθεσε 1 στο Damage των Whirlwind Axes αυτής της μονάδας για επιθέσεις που στοχεύουν Ήρωα."},
+"Windrider": {
+ "en": "If this unit is in combat or charged this turn, it can make a pile-in move. Then, if it is in combat, you must pick 1 or more enemy units as targets of its attacks. Resolve combat attacks against them. Then roll a dice. On a 3+, take this unit off the battlefield and set it up again more than 3\" from all enemy units and wholly within the combat range of a The Blacktalons unit of yours that is not in combat.",
+ "el": "Αν αυτή η μονάδα είναι σε μάχη ή έκανε Charge αυτή τη σειρά, μπορεί να κάνει pile-in move. Μετά, αν είναι σε μάχη, πρέπει να διαλέξεις 1 ή περισσότερες εχθρικές μονάδες ως στόχους των επιθέσεών της. Εκτέλεσε τις επιθέσεις μάχης εναντίον τους. Μετά ρίξε ένα ζάρι. Με 3+, βγάλε αυτή τη μονάδα από το πεδίο μάχης και βάλ' την ξανά πάνω από 3\" μακριά από όλες τις εχθρικές μονάδες και ολόκληρη μέσα στην εμβέλεια μάχης μιας μονάδας The Blacktalons σου που δεν είναι σε μάχη."},
+"Shield of Azyr": {
+ "en": "While any The Blacktalons Heroes of yours are wholly within this unit's combat range, both this unit and those units have Ward (5+).",
+ "el": "Όσο οποιοιδήποτε Ήρωες The Blacktalons σου είναι ολόκληροι μέσα στην εμβέλεια μάχης αυτής της μονάδας, και αυτή η μονάδα και εκείνοι έχουν Ward (5+)."},
+"Soul-bonded": {
+ "en": "(Deployment, before round 1) Pick a Stormcast Eternals Hero of yours to be this unit's soul-bonded charge for the rest of the battle. This unit can use this ability while in reserve.",
+ "el": "(Παράταξη, πριν τον γύρο 1) Διάλεξε έναν Ήρωα Stormcast Eternals σου ως soul-bonded charge αυτής της μονάδας για το υπόλοιπο της μάχης. Αυτή η μονάδα μπορεί να χρησιμοποιήσει αυτή την ικανότητα ενώ είναι σε εφεδρεία."},
+"Soul-forged Guardians": {
+ "en": "While this unit's soul-bonded charge is within this unit's combat range, both this unit and that charge have Ward (5+).",
+ "el": "Όσο το soul-bonded charge αυτής της μονάδας είναι μέσα στην εμβέλεια μάχης της, και αυτή η μονάδα και εκείνο έχουν Ward (5+)."},
+"Dispersed Formation": {
+ "en": "This unit has a coherency range of 2\".",
+ "el": "Αυτή η μονάδα έχει coherency range 2\"."},
+"Heralds of Righteousness": {
+ "en": "Add 1 to the number of dice rolled for this unit's charge rolls (maximum 3 dice).",
+ "el": "Πρόσθεσε 1 στον αριθμό των ζαριών στα charge rolls αυτής της μονάδας (μέγιστο 3 ζάρια)."},
+"Shield of the Storm": {
+ "en": "While any Stormcast Eternals Infantry Heroes of yours are within this unit's combat range, both this unit and those units have Ward (5+).",
+ "el": "Όσο οποιοιδήποτε Ήρωες Stormcast Eternals Infantry σου είναι μέσα στην εμβέλεια μάχης αυτής της μονάδας, και αυτή η μονάδα και εκείνοι έχουν Ward (5+)."},
+"Relictor Soulguide": {
+ "en": "You can pick a Knight-Questor of yours within this unit's combat range. Take this unit off the battlefield and set it up again more than 9\" from all enemy units. Then, if you picked a target, take it off the battlefield and set it up again within this unit's combat range and more than 9\" from all enemy units.",
+ "el": "Μπορείς να διαλέξεις έναν Knight-Questor σου μέσα στην εμβέλεια μάχης αυτής της μονάδας. Βγάλε αυτή τη μονάδα από το πεδίο μάχης και βάλ' την ξανά πάνω από 9\" μακριά από όλες τις εχθρικές μονάδες. Μετά, αν διάλεξες στόχο, βγάλ' τον από το πεδίο μάχης και βάλ' τον ξανά μέσα στην εμβέλεια μάχης αυτής της μονάδας και πάνω από 9\" μακριά από όλες τις εχθρικές μονάδες."},
+"Memorian Descendants": {
+ "en": "This unit's Memorians are tokens. There are 2 Memorians for every 3 models in this unit. While any of its Memorians are on the battlefield, add 1 to this unit's resistance rolls when using the 'Ruination Chamber' ability. Each time you make an unmodified save roll of 1 for this unit, remove 1 Memorian after the Attack ability is done (the damage point is still inflicted).",
+ "el": "Τα Memorians αυτής της μονάδας είναι δείκτες (tokens). Υπάρχουν 2 Memorians για κάθε 3 μοντέλα της μονάδας. Όσο κάποιο από τα Memorians είναι στο πεδίο μάχης, πρόσθεσε 1 στα resistance rolls αυτής της μονάδας όταν χρησιμοποιεί την ικανότητα 'Ruination Chamber'. Κάθε φορά που κάνεις save roll 1 (χωρίς τροποποιητές) για αυτή τη μονάδα, αφαίρεσε 1 Memorian αφού ολοκληρωθεί η Attack ability (ο πόντος ζημιάς εξακολουθεί να προκαλείται)."},
+"Crushing Counter-blow": {
+ "en": "If this unit is damaged or any models in it were slain this turn, add 1 to its hit rolls for the rest of the turn.",
+ "el": "Αν αυτή η μονάδα έχει ζημιά ή έχασε μοντέλα αυτή τη σειρά, πρόσθεσε 1 στα hit rolls της για το υπόλοιπο της σειράς."},
+"Sequitor Aetheric Channelling": {
+ "en": "If this unit is contesting an objective you control, pick 1 effect for the rest of the turn: other than Companion, weapon abilities for attacks that target this unit have no effect; OR this unit's combat attacks score critical hits (Crit) on unmodified hit rolls of 5+.",
+ "el": "Αν αυτή η μονάδα διεκδικεί (contesting) έναν στόχο που ελέγχεις, διάλεξε 1 αποτέλεσμα για το υπόλοιπο της σειράς: εκτός από το Companion, οι weapon abilities των επιθέσεων που στοχεύουν αυτή τη μονάδα δεν έχουν αποτέλεσμα. Ή οι επιθέσεις μάχης αυτής της μονάδας κάνουν critical hit (Crit) με hit roll 5+ (χωρίς τροποποιητές)."},
+"Gather the Aether": {
+ "en": "Add 1 to this unit's power level while it is contesting an objective.",
+ "el": "Πρόσθεσε 1 στο power level αυτής της μονάδας όσο διεκδικεί (contesting) έναν στόχο."},
+"Aethershock": {
+ "en": "Casting value 7. Pick a visible unit within 12\" of the caster, then make a casting roll of 2D6. If it is a friendly unit, it has Strike-first for the rest of the turn. If it is an enemy unit, it has Strike-last for the rest of the turn.",
+ "el": "Casting value 7. Διάλεξε μια ορατή μονάδα μέσα σε 12\" από αυτόν που κάνει το spell και κάνε casting roll 2D6. Αν είναι δική σου μονάδα, έχει Strike-first για το υπόλοιπο της σειράς. Αν είναι εχθρική μονάδα, έχει Strike-last για το υπόλοιπο της σειράς."},
+"Draconic Onslaught": {
+ "en": "If this unit charged this turn, roll a dice. On a 3+, it can move 2D6\". It can pass through enemy combat ranges and can end that move in combat. Then pick an enemy unit it passed across during that move and inflict D3 mortal damage on it.",
+ "el": "Αν αυτή η μονάδα έκανε Charge αυτή τη σειρά, ρίξε ένα ζάρι. Με 3+, μπορεί να κινηθεί 2D6\". Μπορεί να περάσει μέσα από τις εμβέλειες μάχης εχθρικών μονάδων και να τελειώσει την κίνηση σε μάχη. Μετά διάλεξε μια εχθρική μονάδα που πέρασε από πάνω κατά την κίνηση και προκάλεσε D3 θανάσιμη ζημιά σε αυτήν."},
+"Step Into the Storm": {
+ "en": "Pick a Stormcast Eternals unit of yours (not a Monster) that is not in combat and is wholly within 6\" of this terrain feature. Take it off the battlefield and set it up again, more than 9\" from all enemy units.",
+ "el": "Διάλεξε μια μονάδα Stormcast Eternals σου (όχι Monster) που δεν είναι σε μάχη και είναι ολόκληρη μέσα σε 6\" από αυτό το terrain feature. Βγάλ' την από το πεδίο μάχης και βάλ' την ξανά πάνω από 9\" μακριά από όλες τις εχθρικές μονάδες."},
+"Celestial Blaze": {
+ "en": "When this unit uses the 'Power Through' command, inflict an extra D3 mortal damage on the target and add D6\" to the distance this unit can move as part of that ability.",
+ "el": "Όταν αυτή η μονάδα χρησιμοποιεί το command 'Power Through', προκάλεσε επιπλέον D3 θανάσιμη ζημιά στον στόχο και πρόσθεσε D6\" στην απόσταση που μπορεί να κινηθεί αυτή η μονάδα στο πλαίσιο εκείνης της ικανότητας."},
+"Azyr Unleashed": {
+ "en": "If this unit charged this phase, pick an enemy unit within 1\". Roll a D3. On a 2+, inflict mortal damage equal to the roll on it.",
+ "el": "Αν αυτή η μονάδα έκανε Charge σε αυτή τη φάση, διάλεξε μια εχθρική μονάδα μέσα σε 1\". Ρίξε D3. Με 2+, προκάλεσε θανάσιμη ζημιά ίση με το ζάρι."},
+"Ride for Vengeance": {
+ "en": "If any of your Warrior Chamber units have been destroyed this battle: you can re-roll this unit's charge rolls, and this unit has Strike-first if it charged this turn.",
+ "el": "Αν κάποια μονάδα Warrior Chamber σου έχει καταστραφεί σε αυτή τη μάχη: μπορείς να ξαναρίξεις τα charge rolls αυτής της μονάδας και αυτή η μονάδα έχει Strike-first αν έκανε Charge την ίδια σειρά."},
+"Herald of Redemption": {
+ "en": "If a Ruination Chamber unit of yours wholly within 12\" of this unit uses the 'Rally' command, you get 3 extra rally points.",
+ "el": "Αν μια μονάδα Ruination Chamber σου που είναι ολόκληρη μέσα σε 12\" από αυτή τη μονάδα χρησιμοποιήσει το command 'Rally', παίρνεις 3 επιπλέον rally points."},
+"Lord of the Hammerhands": {
+ "en": "Add 3 to the control scores of your Warrior Chamber units while wholly within 12\" of this unit.",
+ "el": "Πρόσθεσε 3 στα control scores των μονάδων Warrior Chamber σου όσο είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα."},
+"Vengeance Unleashed": {
+ "en": "Pick a non-Hero Warrior Chamber unit of yours within this unit's combat range that has not used a Fight ability this turn. It can be picked to use a Fight ability right after this unit's Fight ability is done. If it does, add 1 to its hit rolls for the rest of the turn.",
+ "el": "Διάλεξε μια μονάδα Warrior Chamber σου (όχι Ήρωα) μέσα στην εμβέλεια μάχης αυτής της μονάδας που δεν έχει χρησιμοποιήσει Fight ability αυτή τη σειρά. Μπορεί να επιλεγεί να χρησιμοποιήσει Fight ability αμέσως μετά το τέλος της Fight ability αυτής της μονάδας. Αν το κάνει, πρόσθεσε 1 στα hit rolls της για το υπόλοιπο της σειράς."},
+"Star-marked": {
+ "en": "Add 2\" to this unit's Move while a Hunted enemy unit is on the battlefield. Also add 1 to hit rolls for this unit's attacks that target a Hunted enemy unit.",
+ "el": "Πρόσθεσε 2\" στο Move αυτής της μονάδας όσο μια εχθρική μονάδα Hunted είναι στο πεδίο μάχης. Επίσης πρόσθεσε 1 στα hit rolls των επιθέσεων αυτής της μονάδας που στοχεύουν εχθρική μονάδα Hunted."},
+"Astral Compass": {
+ "en": "(Deployment, before round 1) Pick an enemy unit. It has the Hunted keyword for the rest of the battle.",
+ "el": "(Παράταξη, πριν τον γύρο 1) Διάλεξε μια εχθρική μονάδα. Έχει το keyword Hunted για το υπόλοιπο της μάχης."},
+"Shocking Strikes": {
+ "en": "If any damage is dealt to an enemy unit by this unit's Shock Handaxes, subtract 1 from the wound rolls of that enemy unit's combat attacks for the rest of the turn.",
+ "el": "Αν προκληθεί οποιαδήποτε ζημιά σε εχθρική μονάδα από τα Shock Handaxes αυτής της μονάδας, αφαίρεσε 1 από τα wound rolls των επιθέσεων μάχης εκείνης της εχθρικής μονάδας για το υπόλοιπο της σειράς."},
+"Charging Volley": {
+ "en": "If this unit charged this phase, pick an enemy unit in combat with it. This unit can immediately use a Shoot ability as if it were your shooting phase, but all its attacks must target that enemy unit. Also, its Starstrike Javelins have Shoot in Combat this phase.",
+ "el": "Αν αυτή η μονάδα έκανε Charge σε αυτή τη φάση, διάλεξε μια εχθρική μονάδα σε μάχη με αυτήν. Αυτή η μονάδα μπορεί αμέσως να χρησιμοποιήσει Shoot ability σαν να ήταν η φάση βολών σου, αλλά όλες οι επιθέσεις της πρέπει να στοχεύουν εκείνη την εχθρική μονάδα. Επίσης, τα Starstrike Javelins της έχουν Shoot in Combat σε αυτή τη φάση."},
+"Coordinated Strike": {
+ "en": "Pick an enemy unit that took any damage this turn from this unit's Hurricane Crossbows. For the rest of the turn, add 1 to wound rolls for combat attacks of your Vanguard Chamber units that target it.",
+ "el": "Διάλεξε μια εχθρική μονάδα που δέχτηκε ζημιά αυτή τη σειρά από τα Hurricane Crossbows αυτής της μονάδας. Για το υπόλοιπο της σειράς, πρόσθεσε 1 στα wound rolls των επιθέσεων μάχης των μονάδων Vanguard Chamber σου που τη στοχεύουν."},
+"Headshot": {
+ "en": "If this unit did not use a Move ability this turn and was not set up this turn, then for the rest of the turn it can ignore the 'Guarded Hero' ability (Core Rules, 25.0) when picking targets for its shooting attacks.",
+ "el": "Αν αυτή η μονάδα δεν χρησιμοποίησε Move ability αυτή τη σειρά και δεν τοποθετήθηκε αυτή τη σειρά, τότε για το υπόλοιπο της σειράς μπορεί να αγνοήσει την ικανότητα 'Guarded Hero' (Core Rules, 25.0) όταν διαλέγει στόχους για τις βολές της."},
+"Lightning Strikes": {
+ "en": "Add 1 to the Damage of this unit's Celestial Greatswords for attacks that target an enemy unit with 5 or more models.",
+ "el": "Πρόσθεσε 1 στο Damage των Celestial Greatswords αυτής της μονάδας για επιθέσεις που στοχεύουν εχθρική μονάδα με 5 ή περισσότερα μοντέλα."},
+"Navigators of the Storm": {
+ "en": "If an enemy unit took any damage this turn from this unit's shooting attacks, add 1 to hit rolls for attacks of your Stormcast Eternals units that target it for the rest of the turn.",
+ "el": "Αν μια εχθρική μονάδα δέχτηκε ζημιά αυτή τη σειρά από τις βολές αυτής της μονάδας, πρόσθεσε 1 στα hit rolls των επιθέσεων των μονάδων Stormcast Eternals σου που τη στοχεύουν για το υπόλοιπο της σειράς."},
+"Hold the Shieldwall": {
+ "en": "If this unit did not charge this turn and is in combat with an enemy unit that charged this turn, roll a dice. On a 4+, this unit has Strike-first for the rest of the turn.",
+ "el": "Αν αυτή η μονάδα δεν έκανε Charge αυτή τη σειρά και είναι σε μάχη με εχθρική μονάδα που έκανε Charge αυτή τη σειρά, ρίξε ένα ζάρι. Με 4+, αυτή η μονάδα έχει Strike-first για το υπόλοιπο της σειράς."},
+"The Prime Huntress": {
+ "en": "Double the Damage of this unit's Thengavar for attacks that target Monsters.",
+ "el": "Διπλασίασε το Damage του Thengavar αυτής της μονάδας για επιθέσεις που στοχεύουν Monsters."},
+"Dazzling Radiance": {
+ "en": "Ignore negative modifiers to the control scores of your Stormcast Eternals units while they are wholly within 12\" of this unit.",
+ "el": "Αγνόησε τους αρνητικούς τροποποιητές στα control scores των μονάδων Stormcast Eternals σου όσο είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα."},
+"On Wings of Brilliance": {
+ "en": "Add 1 to the number of dice rolled for this unit's charge rolls (maximum 3 dice).",
+ "el": "Πρόσθεσε 1 στον αριθμό των ζαριών στα charge rolls αυτής της μονάδας (μέγιστο 3 ζάρια)."},
+"Tornado of Magic": {
+ "en": "Enemy units subtract 1 from hit rolls for shooting attacks while within 12\" of this Manifestation.",
+ "el": "Οι εχθρικές μονάδες αφαιρούν 1 από τα hit rolls των επιθέσεών τους με βολές όσο είναι μέσα σε 12\" από αυτή τη Manifestation."},
+"Arcane Enhancement": {
+ "en": "While the unit targeted by 'Summon Dais Arcanum' is on this Manifestation's platform: it has Ward (5+) and Fly; if it is a Wizard, add 1 to its power level; it cannot use Move abilities and stays on the Manifestation whenever it moves; if it is picked to pile-in, move this Manifestation instead; measure range and visibility to this Manifestation instead of the unit. This Manifestation can only be targeted by Banish abilities. If it is banished, before removing it set up the unit on its platform within 3\" of it (only in combat with units it was already in combat with); if it cannot be set up, it is destroyed. If the unit on the platform is removed from the battlefield, immediately remove this Manifestation.",
+ "el": "Όσο η μονάδα που στοχεύτηκε από το 'Summon Dais Arcanum' είναι στην πλατφόρμα αυτής της Manifestation: έχει Ward (5+) και Fly. Αν είναι Wizard, πρόσθεσε 1 στο power level της. Δεν μπορεί να χρησιμοποιήσει Move abilities και μένει πάνω στη Manifestation όταν κινείται. Αν επιλεγεί για pile-in, κινήσου τη Manifestation αντί γι' αυτήν. Μέτρα εμβέλεια και ορατότητα προς αυτή τη Manifestation αντί για τη μονάδα. Αυτή η Manifestation μπορεί να στοχευτεί μόνο από Banish abilities. Αν γίνει banished, πριν τη βγάλεις βάλε τη μονάδα από την πλατφόρμα στο πεδίο μάχης μέσα σε 3\" από αυτήν (μόνο σε μάχη με μονάδες με τις οποίες ήδη μάχονταν). Αν δεν μπορεί να τοποθετηθεί, καταστρέφεται. Αν η μονάδα στην πλατφόρμα αφαιρεθεί από το πεδίο μάχης, αφαίρεσε αμέσως αυτή τη Manifestation."},
+"Burning Vengeance": {
+ "en": "If this Manifestation was summoned this phase, pick any number of enemy units within 6\" of it. Roll a D3 for each. On a 2+, inflict mortal damage equal to the roll on that unit.",
+ "el": "Αν αυτή η Manifestation κλήθηκε (summoned) σε αυτή τη φάση, διάλεξε όσες εχθρικές μονάδες θέλεις μέσα σε 6\" από αυτήν. Ρίξε D3 για καθεμία. Με 2+, προκάλεσε θανάσιμη ζημιά ίση με το ζάρι."},
+"Arcane Disruption": {
+ "en": "Enemy Wizards subtract 1 from their casting rolls while within 12\" of this Manifestation.",
+ "el": "Οι εχθρικοί Wizards αφαιρούν 1 από τα casting rolls τους όσο είναι μέσα σε 12\" από αυτή τη Manifestation."},
+"Null Pendant": {
+ "en": "Once per battle, at the end of any turn: pick an enemy unit in combat with this unit. Subtract 5 from its control score for the rest of the turn.",
+ "el": "Μία φορά ανά μάχη, στο τέλος οποιασδήποτε σειράς: διάλεξε μια εχθρική μονάδα σε μάχη με αυτή τη μονάδα. Αφαίρεσε 5 από το control score της για το υπόλοιπο της σειράς."},
+"Quicksilver Draught": {
+ "en": "This unit has Strike-first for the rest of the turn.",
+ "el": "Αυτή η μονάδα έχει Strike-first για το υπόλοιπο της σειράς."},
+"Mirrorshield": {
+ "en": "This unit cannot be targeted by shooting attacks unless the attacking model is within 9\" of it.",
+ "el": "Αυτή η μονάδα δεν μπορεί να στοχευτεί από επιθέσεις με βολές, εκτός αν το επιτιθέμενο μοντέλο είναι μέσα σε 9\" από αυτήν."},
+"Staunch Defender": {
+ "en": "While this unit is contesting an objective in your territory, add 3 to the control scores of your Stormcast Eternals units contesting that objective.",
+ "el": "Όσο αυτή η μονάδα διεκδικεί (contesting) έναν στόχο στην περιοχή σου, πρόσθεσε 3 στα control scores των μονάδων Stormcast Eternals σου που διεκδικούν εκείνον τον στόχο."},
+"Envoy of the Heavens": {
+ "en": "If one of your Stormcast Eternals units was destroyed in the previous turn, pick a visible Stormcast Eternals unit of yours wholly within 12\" of this unit. It has Ward (5+) until the start of your next turn.",
+ "el": "Αν μια μονάδα Stormcast Eternals σου καταστράφηκε στην προηγούμενη σειρά, διάλεξε μια ορατή μονάδα Stormcast Eternals σου που είναι ολόκληρη μέσα σε 12\" από αυτή τη μονάδα. Έχει Ward (5+) μέχρι την αρχή της επόμενης σειράς σου."},
+"Shock and Awe": {
+ "en": "Each time this unit is set up with 'Scions of the Storm', subtract 1 from hit rolls for attacks that target it for the rest of the battle round. Also, each time one of your Stormcast Eternals units is set up wholly within 12\" of this unit with 'Scions of the Storm', subtract 1 from hit rolls for attacks that target that unit for the rest of the battle round.",
+ "el": "Κάθε φορά που αυτή η μονάδα τοποθετείται με το 'Scions of the Storm', αφαίρεσε 1 από τα hit rolls των επιθέσεων που τη στοχεύουν για το υπόλοιπο του γύρου. Επίσης, κάθε φορά που μια μονάδα Stormcast Eternals σου τοποθετείται ολόκληρη μέσα σε 12\" από αυτή τη μονάδα με το 'Scions of the Storm', αφαίρεσε 1 από τα hit rolls των επιθέσεων που στοχεύουν εκείνη τη μονάδα για το υπόλοιπο του γύρου."},
+"Bless Weapons": {
+ "en": "Chanting value 6. Pick a Stormcast Eternals Priest of yours to chant. Pick a visible Stormcast Eternals Infantry unit of yours wholly within 12\" of it, then make a chanting roll of D6. Add 1 to the Attacks of the target's melee weapons until the start of your next turn. If the chanting roll was 12+, it affects all visible Stormcast Eternals units of yours wholly within 12\" of the chanter.",
+ "el": "Chanting value 6. Διάλεξε έναν Priest Stormcast Eternals σου να κάνει το chant. Διάλεξε μια ορατή μονάδα Stormcast Eternals Infantry σου που είναι ολόκληρη μέσα σε 12\" από αυτόν και κάνε chanting roll D6. Πρόσθεσε 1 στα Attacks των όπλων μάχης του στόχου μέχρι την αρχή της επόμενης σειράς σου. Αν το chanting roll ήταν 12+, επηρεάζονται όλες οι ορατές μονάδες Stormcast Eternals σου που είναι ολόκληρες μέσα σε 12\" από αυτόν που κάνει το chant."},
+"Translocation": {
+ "en": "Chanting value 4. Pick a Stormcast Eternals Priest of yours to chant. Pick a visible Stormcast Eternals unit of yours wholly within 12\" of it, then make a chanting roll of D6. Take the target off the battlefield and set it up again more than 9\" from all enemy units. If the chanting roll was 8+, also subtract 1 from hit rolls for attacks that target it for the rest of the battle round.",
+ "el": "Chanting value 4. Διάλεξε έναν Priest Stormcast Eternals σου να κάνει το chant. Διάλεξε μια ορατή μονάδα Stormcast Eternals σου που είναι ολόκληρη μέσα σε 12\" από αυτόν και κάνε chanting roll D6. Βγάλε τον στόχο από το πεδίο μάχης και βάλ' τον ξανά πάνω από 9\" μακριά από όλες τις εχθρικές μονάδες. Αν το chanting roll ήταν 8+, αφαίρεσε επίσης 1 από τα hit rolls των επιθέσεων που τον στοχεύουν για το υπόλοιπο του γύρου."},
+"Healing Storm": {
+ "en": "Chanting value 4. Pick a Stormcast Eternals Priest of yours to chant. Pick a visible Stormcast Eternals unit of yours wholly within 12\" of it, then make a chanting roll of D6. Heal (D3) the target. If the chanting roll was 8+, instead Heal (D3) each visible Stormcast Eternals unit of yours wholly within 12\" of the chanter.",
+ "el": "Chanting value 4. Διάλεξε έναν Priest Stormcast Eternals σου να κάνει το chant. Διάλεξε μια ορατή μονάδα Stormcast Eternals σου που είναι ολόκληρη μέσα σε 12\" από αυτόν και κάνε chanting roll D6. Heal (D3) στον στόχο. Αν το chanting roll ήταν 8+, αντί γι' αυτό Heal (D3) σε κάθε ορατή μονάδα Stormcast Eternals σου που είναι ολόκληρη μέσα σε 12\" από αυτόν που κάνει το chant."},
+"Lightning Blast": {
+ "en": "Casting value 5. Pick a Stormcast Eternals Wizard of yours to cast. Target the closest visible enemy unit to it that has not been the target of this ability this turn (if tied, you choose). Make a casting roll of 2D6. Inflict D3 mortal damage on the target.",
+ "el": "Casting value 5. Διάλεξε έναν Wizard Stormcast Eternals σου να κάνει το spell. Στόχευσε την πιο κοντινή ορατή εχθρική μονάδα που δεν έχει στοχευτεί από αυτή την ικανότητα αυτή τη σειρά (αν υπάρχει ισοπαλία, διαλέγεις εσύ). Κάνε casting roll 2D6. Προκάλεσε D3 θανάσιμη ζημιά στον στόχο."},
+"Starfall": {
+ "en": "Casting value 7. Pick a Stormcast Eternals Wizard of yours to cast. Pick a visible enemy Infantry or Cavalry unit within 18\" of it, then make a casting roll of 2D6. Until the start of your next turn, subtract 1 from the number of dice rolled for the target's charge rolls (minimum 1).",
+ "el": "Casting value 7. Διάλεξε έναν Wizard Stormcast Eternals σου να κάνει το spell. Διάλεξε μια ορατή εχθρική μονάδα Infantry ή Cavalry μέσα σε 18\" από αυτόν και κάνε casting roll 2D6. Μέχρι την αρχή της επόμενης σειράς σου, αφαίρεσε 1 από τον αριθμό των ζαριών στα charge rolls του στόχου (ελάχιστο 1)."},
+"Thundershock": {
+ "en": "Casting value 6. Pick a Stormcast Eternals Wizard of yours to cast. Pick a visible enemy unit within 12\" of it, then make a casting roll of 2D6. Subtract 1 from the target's wound rolls until the start of your next turn.",
+ "el": "Casting value 6. Διάλεξε έναν Wizard Stormcast Eternals σου να κάνει το spell. Διάλεξε μια ορατή εχθρική μονάδα μέσα σε 12\" από αυτόν και κάνε casting roll 2D6. Αφαίρεσε 1 από τα wound rolls του στόχου μέχρι την αρχή της επόμενης σειράς σου."}
+}

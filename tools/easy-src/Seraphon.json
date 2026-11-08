@@ -1,0 +1,254 @@
+{
+"Itzl the Tamer": {
+ "en": "Companion weapons of your Seraphon units have Crit (2 Hits): on a Crit, the attack counts as 2 hits.",
+ "el": "Τα Companion όπλα των μονάδων Seraphon σου έχουν Crit (2 Hits): σε Crit, η επίθεση μετράει ως 2 επιτυχίες (hits)."},
+"Further the Great Plan": {
+ "en": "Not in the first battle round. Pick an Asterism you have prophesied and have not picked earlier this battle. If you do not meet its condition, nothing happens. Itzl: 3 or more enemy units destroyed. Quetzl: no enemy units wholly in your territory. Sotek: the enemy general is in combat or destroyed. Tepok: you have a Slann on the table and no Slann is in combat or destroyed. The picked Asterism is prophesied, and works together with the other prophesied ones.",
+ "el": "Όχι τον πρώτο γύρο. Διάλεξε ένα Asterism που έχεις προφητεύσει (prophesied) και δεν έχεις διαλέξει νωρίτερα σε αυτή τη μάχη. Αν δεν πληρείς τη συνθήκη του, δεν γίνεται τίποτα. Itzl: 3 ή περισσότερες εχθρικές μονάδες έχουν καταστραφεί. Quetzl: καμία εχθρική μονάδα ολόκληρη μέσα στο έδαφός σου. Sotek: ο εχθρικός general είναι σε μάχη ή έχει καταστραφεί. Tepok: έχεις Slann στο τραπέζι και κανένας Slann δεν είναι σε μάχη ή έχει καταστραφεί. Το Asterism που διάλεξες γίνεται prophesied και ισχύει μαζί με τα άλλα prophesied."},
+"The Great Plan": {
+ "en": "At deployment, before round 1, you must use this. Pick one Asterism ability to be prophesied. You can use it for the whole battle. The others cannot be used, unless 'Further the Great Plan' prophesies them.",
+ "el": "Στην ανάπτυξη (deployment), πριν τον γύρο 1, πρέπει να το χρησιμοποιήσεις. Διάλεξε ένα Asterism να γίνει prophesied. Μπορείς να το χρησιμοποιείς σε όλη τη μάχη. Τα άλλα δεν μπορούν να χρησιμοποιηθούν, εκτός αν το 'Further the Great Plan' τα προφητεύσει."},
+"Quetzl the Preserver": {
+ "en": "Subtract 1 from Rend of melee weapons for attacks against your Seraphon units that are wholly within your territory.",
+ "el": "Αφαίρεσε 1 από το Rend των όπλων σώμα με σώμα για επιθέσεις εναντίον μονάδων Seraphon σου που είναι ολόκληρες μέσα στο έδαφός σου."},
+"Sotek the Deliverer": {
+ "en": "+2 Move for your Seraphon units.",
+ "el": "+2 Move για τις μονάδες Seraphon σου."},
+"Tepok the Seer": {
+ "en": "+1 to casting rolls for your Seraphon units.",
+ "el": "+1 στα ζάρια ξορκιού (casting rolls) των μονάδων Seraphon σου."},
+"Thunderquake Starhost::Scaly Monstrosities": {
+ "en": "+2 Health for your Seraphon Monster units.",
+ "el": "+2 Health για τις μονάδες Seraphon Monster σου."},
+"Eternal Starhost::Celestial Translocation": {
+ "en": "Pick a Seraphon unit of yours wholly within 12\" of a friendly Seraphon Wizard. Remove it from the table and set it up again more than 9\" from all enemy units.",
+ "el": "Διάλεξε μια μονάδα Seraphon σου ολόκληρη μέσα σε 12\" από δικό σου Seraphon Wizard. Βγάλ' την από το τραπέζι και τοποθέτησέ την ξανά πάνω από 9\" μακριά από όλες τις εχθρικές μονάδες."},
+"Shadowstrike Starhost::Nimble and Quick": {
+ "en": "Pick up to 3 of your Skink Infantry or Skink Cavalry units that are not in combat. Each can move D6\", but cannot move into combat.",
+ "el": "Διάλεξε μέχρι 3 μονάδες Skink Infantry ή Skink Cavalry σου που δεν είναι σε μάχη. Καθεμία μπορεί να κινηθεί D6\", αλλά δεν μπορεί να μπει σε μάχη."},
+"Sunclaw Starhost::Vengeance of Azyr": {
+ "en": "Pick up to 3 of your Saurus or Kroxigor units that are in combat. For each: do a pile-in move, then pick an enemy unit in combat with it and roll a D3. On a 2+, that enemy takes mortal damage equal to the roll.",
+ "el": "Διάλεξε μέχρι 3 μονάδες Saurus ή Kroxigor σου που είναι σε μάχη. Για καθεμία: κάνε pile-in κίνηση, μετά διάλεξε μια εχθρική μονάδα σε μάχη μαζί της και ρίξε D3. Με 2+, ο εχθρός παίρνει θανάσιμη ζημιά ίση με το ζάρι."},
+"Primal Rage": {
+ "en": "Must use every turn. If this unit used any Fight ability this turn, put a rage token next to it (max 3). If it did not fight, remove all its rage tokens. +1 Attacks on its Companion weapons for each rage token, until the end of the next turn.",
+ "el": "Πρέπει να το χρησιμοποιείς κάθε σειρά. Αν η μονάδα χρησιμοποίησε κάποιο Fight ability αυτή τη σειρά, βάλε δίπλα της έναν rage token (μέγιστο 3). Αν δεν πολέμησε, αφαίρεσε όλους τους rage tokens της. +1 Attacks στα Companion όπλα της για κάθε rage token, μέχρι το τέλος της επόμενης σειράς."},
+"Bastiladon with Ark of Sotek::Ark of Sotek": {
+ "en": "Pick up to 3 different enemy units within 9\". Roll a D3 for each. On a 2+, that unit takes mortal damage equal to the roll.",
+ "el": "Διάλεξε μέχρι 3 διαφορετικές εχθρικές μονάδες σε 9\". Ρίξε D3 για καθεμία. Με 2+, η μονάδα παίρνει θανάσιμη ζημιά ίση με το ζάρι."},
+"Bastiladon with Solar Engine::Tail Swipe": {
+ "en": "Pick an enemy unit in combat with this unit. Roll a dice for each model in it (max 8). For each 5+, it takes 1 mortal damage.",
+ "el": "Διάλεξε μια εχθρική μονάδα σε μάχη με αυτή τη μονάδα. Ρίξε ένα ζάρι για κάθε μοντέλο της (μέγιστο 8). Για κάθε 5+, παίρνει 1 θανάσιμη ζημιά."},
+"Engine of the Gods::Battle Damaged": {
+ "en": "At 10 or more damage, the Stegadon's Horns and Jaws weapon has 4 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, το όπλο Stegadon's Horns and Jaws έχει 4 Attacks."},
+"Engine of the Gods::Crest of Horns": {
+ "en": "Pick an enemy unit that charged this turn and is in combat with this unit. Roll a D3. On a 2+: it takes mortal damage equal to the roll, and +1 to save rolls for attacks by that unit against this unit for the rest of the turn.",
+ "el": "Διάλεξε μια εχθρική μονάδα που έκανε Charge αυτή τη σειρά και είναι σε μάχη με αυτή τη μονάδα. Ρίξε D3. Με 2+: παίρνει θανάσιμη ζημιά ίση με το ζάρι, και +1 στα save rolls για επιθέσεις της εναντίον αυτής της μονάδας για το υπόλοιπο της σειράς."},
+"Engine of the Gods::Cosmic Engine": {
+ "en": "Choose: reserve the power (put a cosmic power token next to this unit) OR harness it. To harness: roll a dice, add the number of cosmic power tokens, then remove all tokens and pick 1 effect. Healing Light (3+): Heal (D3) all your Seraphon units wholly within 12\". Starlight Summons (5+): pick up to 3 of your Seraphon units wholly within 12\"; return 1 slain model to each. Time Slows (6+): pick up to 3 of your Seraphon units wholly within 12\"; they have Strike-first for the rest of the turn.",
+ "el": "Διάλεξε: αποθήκευσε τη δύναμη (βάλε έναν cosmic power token δίπλα στη μονάδα) Ή αξιοποίησέ τη. Για να την αξιοποιήσεις: ρίξε ένα ζάρι, πρόσθεσε τον αριθμό των cosmic power tokens, μετά αφαίρεσε όλους τους tokens και διάλεξε 1 αποτέλεσμα. Healing Light (3+): Heal (D3) σε όλες τις μονάδες Seraphon σου ολόκληρες μέσα σε 12\". Starlight Summons (5+): διάλεξε μέχρι 3 μονάδες Seraphon σου ολόκληρες μέσα σε 12\"· φέρε πίσω 1 σκοτωμένο μοντέλο σε καθεμία. Time Slows (6+): διάλεξε μέχρι 3 μονάδες Seraphon σου ολόκληρες μέσα σε 12\"· έχουν Strike-first για το υπόλοιπο της σειράς."},
+"Hidden Hunters": {
+ "en": "At deployment, before round 1: if this unit is not deployed yet, set it up in reserve, in ambush. It now counts as deployed.",
+ "el": "Στην ανάπτυξη (deployment), πριν τον γύρο 1: αν η μονάδα δεν έχει τοποθετηθεί ακόμα, βάλ' την σε αναμονή (reserve), σε ενέδρα (ambush). Τώρα θεωρείται τοποθετημένη."},
+"Hunters of Huanchi with Dartpipes::Star-venom": {
+ "en": "Pick an enemy unit that took damage this turn from this unit's Dartpipe attacks. Roll a dice. On a 2+, subtract 1 from wound rolls for its combat attacks for the rest of the turn.",
+ "el": "Διάλεξε μια εχθρική μονάδα που έπαθε ζημιά αυτή τη σειρά από επιθέσεις Dartpipe αυτής της μονάδας. Ρίξε ένα ζάρι. Με 2+, αφαίρεσε 1 από τα wound rolls των επιθέσεων σώμα με σώμα της για το υπόλοιπο της σειράς."},
+"Chameleon Ambush": {
+ "en": "Pick this unit if it is in ambush. Set it up anywhere on the table more than 9\" from all enemy units.",
+ "el": "Διάλεξε αυτή τη μονάδα αν είναι σε ενέδρα (ambush). Τοποθέτησέ την οπουδήποτε στο τραπέζι πάνω από 9\" μακριά από όλες τις εχθρικές μονάδες."},
+"Hunters of Huanchi with Starstone Bolas::Starstone Bolas": {
+ "en": "Pick an enemy unit that this unit's Starstone Bolas targeted this turn. Roll a dice. On a 3+, until the start of your next turn, subtract 1 from the number of dice rolled for its charge rolls (minimum 1).",
+ "el": "Διάλεξε μια εχθρική μονάδα που στοχεύτηκε από τα Starstone Bolas αυτής της μονάδας αυτή τη σειρά. Ρίξε ένα ζάρι. Με 3+, μέχρι την αρχή της επόμενης σειράς σου, αφαίρεσε 1 από τον αριθμό ζαριών στα charge rolls της (ελάχιστο 1)."},
+"Kroxigor::Brutal Blows": {
+ "en": "+1 Damage on this unit's melee weapons against an enemy unit with 10 or more models.",
+ "el": "+1 Damage στα όπλα σώμα με σώμα αυτής της μονάδας εναντίον εχθρικής μονάδας με 10 ή περισσότερα μοντέλα."},
+"Kroxigor Warspawned::Spawn of Sotek": {
+ "en": "+1 Damage on this unit's melee weapons while it is wholly within 12\" of any of your Skink Infantry or Skink Cavalry units that are in combat.",
+ "el": "+1 Damage στα όπλα σώμα με σώμα αυτής της μονάδας όσο είναι ολόκληρη μέσα σε 12\" από οποιαδήποτε μονάδα Skink Infantry ή Skink Cavalry σου που είναι σε μάχη."},
+"Kroxigor Warspawned::Heavy-scaled Skin": {
+ "en": "Subtract 1 from Rend of ranged weapons in shooting attacks against this unit.",
+ "el": "Αφαίρεσε 1 από το Rend των ranged όπλων σε επιθέσεις βολής εναντίον αυτής της μονάδας."},
+"Arcane Vassal": {
+ "en": "Pick a Skink Wizard of yours wholly within 18\". Measure range and visibility for this unit's next Spell this phase from that Wizard instead. That Wizard counts as the caster for other effects, such as 'Unbind' or 'The Earth Trembles'.",
+ "el": "Διάλεξε έναν Skink Wizard σου ολόκληρο μέσα σε 18\". Μέτρησε την απόσταση και την ορατότητα του επόμενου Spell αυτής της μονάδας αυτή τη φάση από εκείνον τον Wizard αντί για τη μονάδα. Ο Wizard θεωρείται ο caster για άλλα effects, όπως 'Unbind' ή 'The Earth Trembles'."},
+"Lord Kroak::Supreme Master of Order": {
+ "en": "+2 to casting rolls, and +1 to unbinding and banishment rolls for this unit. It can use Unbind when an enemy Wizard ANYWHERE on the table casts a spell (not only within 30\"), and when it uses 'Banish Manifestation' it can pick a manifestation anywhere on the table (not only within 30\").",
+ "el": "+2 στα casting rolls, και +1 στα unbinding και banishment rolls αυτής της μονάδας. Μπορεί να χρησιμοποιήσει Unbind όταν εχθρικός Wizard ΟΠΟΥΔΗΠΟΤΕ στο τραπέζι κάνει ξόρκι (όχι μόνο μέσα σε 30\"), και όταν χρησιμοποιεί 'Banish Manifestation' μπορεί να διαλέξει manifestation οπουδήποτε στο τραπέζι (όχι μόνο μέσα σε 30\")."},
+"Lord Kroak::Dead for Innumerable Ages": {
+ "en": "Must use every turn while damaged. Roll 3D6 and add this unit's damage points. On 20+, this unit is destroyed. Otherwise, Heal (18) this unit.",
+ "el": "Πρέπει να το χρησιμοποιείς κάθε σειρά όσο η μονάδα έχει ζημιά. Ρίξε 3D6 και πρόσθεσε τους πόντους ζημιάς της μονάδας. Με 20+, η μονάδα καταστρέφεται. Αλλιώς, Heal (18) σε αυτή τη μονάδα."},
+"Lord Kroak::Celestial Deliverance": {
+ "en": "Spell (7). Can be cast more than once per phase. Pick up to 3 different visible enemy units within 18\" and cast with 2D6. Each takes D3 mortal damage.",
+ "el": "Ξόρκι (7). Μπορεί να ξορκιστεί περισσότερες από μία φορές ανά φάση. Διάλεξε μέχρι 3 διαφορετικές ορατές εχθρικές μονάδες σε 18\" και ρίξε 2D6 για το ξόρκι. Καθεμία παίρνει D3 θανάσιμη ζημιά."},
+"Raptadon Chargers::Cold-blooded Unity": {
+ "en": "+1 to hit for this unit's combat attacks against an enemy unit that a friendly Raptadon Hunters unit shot at this same turn.",
+ "el": "+1 για να πετύχει (hit) στις επιθέσεις σώμα με σώμα αυτής της μονάδας εναντίον εχθρικής μονάδας που πυροβόλησε μονάδα Raptadon Hunters σου την ίδια σειρά."},
+"Raptadon Hunters::Deadly Cohesion": {
+ "en": "If this unit is not in combat, pick a Raptadon Chargers unit of yours that charged this turn and is within 12\". This unit can Shoot as if it were your shooting phase, but must target a visible enemy unit in combat with that Chargers unit.",
+ "el": "Αν αυτή η μονάδα δεν είναι σε μάχη, διάλεξε μια μονάδα Raptadon Chargers σου που έκανε Charge αυτή τη σειρά και είναι σε 12\". Αυτή η μονάδα μπορεί να κάνει Shoot σαν να ήταν η φάση βολής σου, αλλά πρέπει να στοχεύσει ορατή εχθρική μονάδα σε μάχη με τη μονάδα Chargers."},
+"Realmshaper Engine::Fierce Guardians": {
+ "en": "+1 to hit for combat attacks by your Saurus or Kroxigor units against an enemy unit that is within 9\" of this terrain feature.",
+ "el": "+1 για να πετύχουν (hit) οι επιθέσεις σώμα με σώμα των μονάδων Saurus ή Kroxigor σου εναντίον εχθρικής μονάδας που είναι σε 9\" από αυτό το στοιχείο εδάφους."},
+"Realmshaper Engine::Power Unleashed": {
+ "en": "If a Seraphon Wizard of yours is within 3\" of this terrain feature: pick another terrain feature within 24\", then pick up to 3 enemy units within 3\" of that terrain. Roll a D3 for each. On a 2+, it takes mortal damage equal to the roll. If that terrain feature has Health, it takes D3 mortal damage too.",
+ "el": "Αν δικός σου Seraphon Wizard είναι σε 3\" από αυτό το στοιχείο εδάφους: διάλεξε άλλο στοιχείο εδάφους σε 24\", μετά διάλεξε μέχρι 3 εχθρικές μονάδες σε 3\" από εκείνο. Ρίξε D3 για καθεμία. Με 2+, παίρνει θανάσιμη ζημιά ίση με το ζάρι. Αν εκείνο το στοιχείο εδάφους έχει Health, παίρνει κι αυτό D3 θανάσιμη ζημιά."},
+"Blot Toad": {
+ "en": "At deployment, before round 1: you get 1 Blot Toad token for each Ripperdactyl Chief or Ripperdactyl Riders unit in your army (max 3). Pick that many enemy units and put a Blot Toad next to each.",
+ "el": "Στην ανάπτυξη (deployment), πριν τον γύρο 1: παίρνεις 1 Blot Toad token για κάθε μονάδα Ripperdactyl Chief ή Ripperdactyl Riders στον στρατό σου (μέγιστο 3). Διάλεξε τόσες εχθρικές μονάδες και βάλε έναν Blot Toad δίπλα σε καθεμία."},
+"Toad Rage": {
+ "en": "+1 Attacks on this unit's Ripperdactyl's Tearing Jaws while it is in combat with any unit that has a Blot Toad.",
+ "el": "+1 Attacks στο όπλο Ripperdactyl's Tearing Jaws αυτής της μονάδας όσο είναι σε μάχη με οποιαδήποτε μονάδα που έχει Blot Toad."},
+"Ripperdactyl Chief::Ripperdactyl Assault": {
+ "en": "+1 Attacks on Moonstone Warspears of your Ripperdactyl Riders units wholly within 12\" of this unit, for the rest of the turn.",
+ "el": "+1 Attacks στα Moonstone Warspears των μονάδων Ripperdactyl Riders σου που είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα, για το υπόλοιπο της σειράς."},
+"Dispersed Formation": {
+ "en": "This unit has a coherency range of 2\" (models can stay 2\" apart).",
+ "el": "Αυτή η μονάδα έχει εύρος συνοχής (coherency) 2\" (τα μοντέλα μπορούν να απέχουν 2\" μεταξύ τους)."},
+"Saurus Astrolith Bearer::Celestial Conduit": {
+ "en": "If the spell is cast successfully, for the rest of the turn +3 control score for your Seraphon units wholly within 12\" of this unit.",
+ "el": "Αν το ξόρκι πετύχει, για το υπόλοιπο της σειράς +3 control score για τις μονάδες Seraphon σου που είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα."},
+"Saurus Astrolith Bearer::Revivifying Energies": {
+ "en": "Your Seraphon Infantry units wholly within 12\" of this unit have Ward (6+). If a unit already has Ward (6+), it has Ward (5+) instead.",
+ "el": "Οι μονάδες Seraphon Infantry σου που είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα έχουν Ward (6+). Αν μια μονάδα έχει ήδη Ward (6+), έχει Ward (5+)."},
+"Saurus Guard::Selfless Protectors": {
+ "en": "While a friendly Slann is within this unit's combat range, both this unit and that Slann have Ward (5+).",
+ "el": "Όσο δικός σου Slann είναι μέσα στο εύρος μάχης (combat range) αυτής της μονάδας, και η μονάδα και ο Slann έχουν Ward (5+)."},
+"Saurus Oldblood::Predatory Exemplar": {
+ "en": "Pick a non-Hero Saurus Infantry unit of yours within this unit's combat range that has not fought this turn. It can fight immediately after this unit's Fight ability is finished.",
+ "el": "Διάλεξε μια μη-ήρωα μονάδα Saurus Infantry σου μέσα στο εύρος μάχης αυτής της μονάδας που δεν έχει πολεμήσει αυτή τη σειρά. Μπορεί να πολεμήσει αμέσως μετά το τέλος του Fight ability αυτής της μονάδας."},
+"Saurus Oldblood::Wrath of the Seraphon": {
+ "en": "For the rest of the turn, +1 to wound rolls for combat attacks by your Saurus Infantry units wholly within 12\" of this unit.",
+ "el": "Για το υπόλοιπο της σειράς, +1 στα wound rolls των επιθέσεων σώμα με σώμα των μονάδων Saurus Infantry σου που είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα."},
+"Terror": {
+ "en": "Subtract 2 from the control score of enemy units while they are in combat with this unit.",
+ "el": "Αφαίρεσε 2 από το control score των εχθρικών μονάδων όσο είναι σε μάχη με αυτή τη μονάδα."},
+"Saurus Oldblood on Carnosaur::Battle Damaged": {
+ "en": "At 10 or more damage, the Carnosaur's Massive Jaws weapon has 2 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, το όπλο Carnosaur's Massive Jaws έχει 2 Attacks."},
+"Saurus Oldblood on Carnosaur::Spearhead of the Charge": {
+ "en": "If this unit charged this turn, +1 to charge rolls for your Saurus units wholly within 18\" of it, for the rest of the turn.",
+ "el": "Αν αυτή η μονάδα έκανε Charge αυτή τη σειρά, +1 στα charge rolls των μονάδων Saurus σου που είναι ολόκληρες μέσα σε 18\" από αυτήν, για το υπόλοιπο της σειράς."},
+"Saurus Oldblood on Carnosaur::Blood Frenzy": {
+ "en": "If this unit is in combat with any damaged enemy Monster, roll a dice. On a 3+, it has Strike-first for the rest of the turn.",
+ "el": "Αν αυτή η μονάδα είναι σε μάχη με κάποιο εχθρικό Monster που έχει ζημιά, ρίξε ένα ζάρι. Με 3+, έχει Strike-first για το υπόλοιπο της σειράς."},
+"Saurus Scar-Veteran on Aggradon::Alpha Roar": {
+ "en": "Pick this unit and each Aggradon Lancers unit of yours wholly within 12\". For the rest of the turn, +1 Attacks on their Companion weapons. Also put a rage token next to each (max 3 per unit).",
+ "el": "Διάλεξε αυτή τη μονάδα και κάθε μονάδα Aggradon Lancers σου ολόκληρη μέσα σε 12\". Για το υπόλοιπο της σειράς, +1 Attacks στα Companion όπλα τους. Επίσης βάλε έναν rage token δίπλα σε καθεμία (μέγιστο 3 ανά μονάδα)."},
+"Saurus Scar-Veteran on Carnosaur::Battle Damaged": {
+ "en": "At 10 or more damage, the Carnosaur's Massive Jaws weapon has 2 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, το όπλο Carnosaur's Massive Jaws έχει 2 Attacks."},
+"Saurus Scar-Veteran on Carnosaur::Maim and Tear": {
+ "en": "Pick an enemy Hero in combat with this unit. Roll one dice for each damage point it has. For each 5+, it takes 1 mortal damage.",
+ "el": "Διάλεξε έναν εχθρικό Ήρωα σε μάχη με αυτή τη μονάδα. Ρίξε ένα ζάρι για κάθε πόντο ζημιάς που έχει. Για κάθε 5+, παίρνει 1 θανάσιμη ζημιά."},
+"Saurus Warriors::Ordered Cohorts": {
+ "en": "+1 to save rolls for this unit while every model in it is contesting an objective you control.",
+ "el": "+1 στα save rolls αυτής της μονάδας όσο κάθε μοντέλο της διεκδικεί (contest) έναν στόχο που ελέγχεις."},
+"Skink Oracle on Troglodon::Battle Damaged": {
+ "en": "At 10 or more damage, the Troglodon's Jaws weapon has 2 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, το όπλο Troglodon's Jaws έχει 2 Attacks."},
+"Skink Oracle on Troglodon::Troglodon Regeneration": {
+ "en": "Heal (D3) this unit.",
+ "el": "Heal (D3) σε αυτή τη μονάδα."},
+"Skink Oracle on Troglodon::Noxious Roar": {
+ "en": "Pick up to 3 enemy units in combat with this unit. Roll a dice for each. On a 3+, subtract 1 from hit rolls for its attacks for the rest of the turn.",
+ "el": "Διάλεξε μέχρι 3 εχθρικές μονάδες σε μάχη με αυτή τη μονάδα. Ρίξε ένα ζάρι για καθεμία. Με 3+, αφαίρεσε 1 από τα hit rolls των επιθέσεών της για το υπόλοιπο της σειράς."},
+"Skink Starpriest::Serpent Staff": {
+ "en": "Pick a visible Seraphon unit of yours wholly within 18\". Roll a dice. On a 2+, its melee weapons have Crit (Auto-wound) until the start of your next turn.",
+ "el": "Διάλεξε μια ορατή μονάδα Seraphon σου ολόκληρη μέσα σε 18\". Ρίξε ένα ζάρι. Με 2+, τα όπλα σώμα με σώμα της έχουν Crit (Auto-wound) μέχρι την αρχή της επόμενης σειράς σου."},
+"Skink Starseer::Scry the Stars": {
+ "en": "Roll as many dice as the current battle round number. For each 3+, pick a Seraphon unit of yours wholly within 18\" of this unit. It has Ward (5+) until the start of your next turn.",
+ "el": "Ρίξε τόσα ζάρια όσος ο αριθμός του τρέχοντος γύρου. Για κάθε 3+, διάλεξε μια μονάδα Seraphon σου ολόκληρη μέσα σε 18\" από αυτή τη μονάδα. Έχει Ward (5+) μέχρι την αρχή της επόμενης σειράς σου."},
+"Skink Starseer::Celestial Doom": {
+ "en": "Spell (7). Pick a visible enemy unit within 18\" and cast with 2D6. No Ward rolls can be made for it for the rest of the turn.",
+ "el": "Ξόρκι (7). Διάλεξε ορατή εχθρική μονάδα σε 18\" και ρίξε 2D6 για το ξόρκι. Δεν μπορούν να γίνουν Ward rolls για αυτήν για το υπόλοιπο της σειράς."},
+"Skinks::Swift and Nimble": {
+ "en": "When this unit uses the 'Redeploy' command, roll 2 dice instead of 1 for the move distance and pick either result.",
+ "el": "Όταν αυτή η μονάδα χρησιμοποιεί το command 'Redeploy', ρίξε 2 ζάρια αντί για 1 για την απόσταση κίνησης και διάλεξε όποιο αποτέλεσμα θες."},
+"Slann Starmaster::Masters of Order": {
+ "en": "+1 to casting rolls for this unit. It can use Unbind when an enemy Wizard ANYWHERE on the table casts a spell (not only within 30\"), and when it uses 'Banish Manifestation' it can pick a manifestation anywhere on the table (not only within 30\").",
+ "el": "+1 στα casting rolls αυτής της μονάδας. Μπορεί να χρησιμοποιήσει Unbind όταν εχθρικός Wizard ΟΠΟΥΔΗΠΟΤΕ στο τραπέζι κάνει ξόρκι (όχι μόνο μέσα σε 30\"), και όταν χρησιμοποιεί 'Banish Manifestation' μπορεί να διαλέξει manifestation οπουδήποτε στο τραπέζι (όχι μόνο μέσα σε 30\")."},
+"Slann Starmaster::Celestial Reinforcements": {
+ "en": "Pick a destroyed Seraphon unit of yours that started the battle with 3 or more models. Set up a replacement unit with half the models (round up) wholly within 12\" of this unit and more than 9\" from all enemy units.",
+ "el": "Διάλεξε μια κατεστραμμένη μονάδα Seraphon σου που ξεκίνησε τη μάχη με 3 ή περισσότερα μοντέλα. Τοποθέτησε νέα μονάδα με τα μισά μοντέλα (στρογγυλοποίηση προς τα πάνω) ολόκληρη μέσα σε 12\" από αυτή τη μονάδα και πάνω από 9\" μακριά από όλες τις εχθρικές μονάδες."},
+"Slann Starmaster::Celestial Equilibrium": {
+ "en": "Spell (6). Cast with 2D6. For the rest of the turn, +1 to casting rolls for your other Seraphon Wizards wholly within 12\" of this unit.",
+ "el": "Ξόρκι (6). Ρίξε 2D6 για το ξόρκι. Για το υπόλοιπο της σειράς, +1 στα casting rolls των άλλων Seraphon Wizards σου που είναι ολόκληροι μέσα σε 12\" από αυτή τη μονάδα."},
+"Spawn of Chotec::Acid-fuelled Flame": {
+ "en": "Each time this unit Shoots, pick either its Glob of Flame Acid or its Stream of Fire weapon. After shooting with Glob of Flame Acid, if it damaged an enemy unit, subtract 1 from that unit's save rolls for the rest of the turn.",
+ "el": "Κάθε φορά που αυτή η μονάδα κάνει Shoot, διάλεξε είτε το όπλο Glob of Flame Acid είτε το Stream of Fire. Μετά από βολή με Glob of Flame Acid, αν έκανε ζημιά σε εχθρική μονάδα, αφαίρεσε 1 από τα save rolls της για το υπόλοιπο της σειράς."},
+"Spawn of Chotec::Sun Acolytes": {
+ "en": "This unit has a crew of 3 Sun Acolytes (tokens). +1 control score for each Sun Acolyte it has. With no Sun Acolytes, its control score is at most 1 for the rest of the battle. Each time you roll an unmodified 1 on a save roll for this unit, remove 1 Sun Acolyte after the attack is resolved (the damage is still dealt).",
+ "el": "Αυτή η μονάδα έχει πλήρωμα 3 Sun Acolytes (tokens). +1 control score για κάθε Sun Acolyte που έχει. Χωρίς Sun Acolytes, το control score της είναι το πολύ 1 για το υπόλοιπο της μάχης. Κάθε φορά που ρίχνεις αρχικό (unmodified) 1 σε save roll αυτής της μονάδας, αφαίρεσε 1 Sun Acolyte μετά το τέλος της επίθεσης (η ζημιά παραμένει)."},
+"Stegadon::Battle Damaged": {
+ "en": "At 10 or more damage, the Stegadon's Horns and Jaws weapon has 4 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, το όπλο Stegadon's Horns and Jaws έχει 4 Attacks."},
+"Stegadon::Unstoppable Stampede": {
+ "en": "If this unit charged this phase, pick an enemy Infantry unit in combat with it. It takes D3 mortal damage. Then this unit can move 2D6\", passing through models of that unit, but it must end the move in combat.",
+ "el": "Αν αυτή η μονάδα έκανε Charge αυτή τη φάση, διάλεξε μια εχθρική μονάδα Infantry σε μάχη μαζί της. Παίρνει D3 θανάσιμη ζημιά. Μετά αυτή η μονάδα μπορεί να κινηθεί 2D6\", περνώντας μέσα από μοντέλα εκείνης της μονάδας, αλλά πρέπει να τελειώσει την κίνηση σε μάχη."},
+"Stegadon Chief::Skink Coordination": {
+ "en": "If a non-Monster Skink unit of yours wholly within 18\" of this unit uses the 'Redeploy' command, it costs no command points.",
+ "el": "Αν μια μη-Monster μονάδα Skink σου ολόκληρη μέσα σε 18\" από αυτή τη μονάδα χρησιμοποιήσει το command 'Redeploy', δεν ξοδεύονται command points."},
+"Stegadon Chief::Battle Damaged": {
+ "en": "At 10 or more damage, the Stegadon's Horns and Jaws weapon has 4 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, το όπλο Stegadon's Horns and Jaws έχει 4 Attacks."},
+"Stegadon Chief::Crushing Stomps": {
+ "en": "Pick an enemy unit in combat with this unit. Roll a D3. On a 2+, it takes mortal damage equal to the roll. If this unit charged this turn and damage is dealt, add 2 to it.",
+ "el": "Διάλεξε μια εχθρική μονάδα σε μάχη με αυτή τη μονάδα. Ρίξε D3. Με 2+, παίρνει θανάσιμη ζημιά ίση με το ζάρι. Αν αυτή η μονάδα έκανε Charge αυτή τη σειρά και γίνεται ζημιά, πρόσθεσε 2 σε αυτήν."},
+"Sunblood Pack::Starspawned": {
+ "en": "Each phase, ignore the first damage point that would be given to each of your Saurus and Kroxigor units wholly within 12\" of this unit.",
+ "el": "Σε κάθε φάση, αγνόησε τον πρώτο πόντο ζημιάς που θα έπαιρνε κάθε μονάδα Saurus και Kroxigor σου ολόκληρη μέσα σε 12\" από αυτή τη μονάδα."},
+"Sunblood Pack::Venomite Swarm": {
+ "en": "Pick an enemy unit in combat with this unit. If this unit's Venomites token is on the table, roll a D3. On a 1, remove the Venomites token. On a 2+, the enemy takes mortal damage equal to the roll.",
+ "el": "Διάλεξε μια εχθρική μονάδα σε μάχη με αυτή τη μονάδα. Αν ο Venomites token αυτής της μονάδας είναι στο τραπέζι, ρίξε D3. Με 1, αφαίρεσε τον Venomites token. Με 2+, ο εχθρός παίρνει θανάσιμη ζημιά ίση με το ζάρι."},
+"Sunblood Pack::Scaled Protectors": {
+ "en": "Ignore all modifiers (plus and minus) to save rolls for this unit.",
+ "el": "Αγνόησε όλους τους τροποποιητές (θετικούς και αρνητικούς) στα save rolls αυτής της μονάδας."},
+"Terradon Chief::Chief's Deadly Cargo": {
+ "en": "Pick an enemy unit this unit flew over this phase. Roll a dice, +2 if this unit is within the combat range of any of your Terradon Riders. On a 5+: the enemy takes D3 mortal damage, and if damage was dealt and it does not have Fly, it cannot Run until the start of your next turn.",
+ "el": "Διάλεξε μια εχθρική μονάδα πάνω από την οποία πέταξε αυτή η μονάδα αυτή τη φάση. Ρίξε ένα ζάρι, +2 αν αυτή η μονάδα είναι μέσα στο εύρος μάχης οποιασδήποτε μονάδας Terradon Riders σου. Με 5+: ο εχθρός παίρνει D3 θανάσιμη ζημιά, και αν έγινε ζημιά και δεν έχει Fly, δεν μπορεί να κάνει Run μέχρι την αρχή της επόμενης σειράς σου."},
+"Attack from On High": {
+ "en": "Subtract 1 from hit rolls for shooting attacks against this unit.",
+ "el": "Αφαίρεσε 1 από τα hit rolls των επιθέσεων βολής εναντίον αυτής της μονάδας."},
+"Terradon Riders::Deadly Cargo": {
+ "en": "Pick an enemy unit this unit flew over this phase. Roll a dice for each model in this unit, +2 to each roll if this unit is within the combat range of any of your Terradon Chief units. For each 5+: the enemy takes 1 mortal damage, and if damage was dealt and it does not have Fly, it cannot Run until the start of your next turn.",
+ "el": "Διάλεξε μια εχθρική μονάδα πάνω από την οποία πέταξε αυτή η μονάδα αυτή τη φάση. Ρίξε ένα ζάρι για κάθε μοντέλο της μονάδας, +2 σε κάθε ζάρι αν αυτή η μονάδα είναι μέσα στο εύρος μάχης οποιασδήποτε μονάδας Terradon Chief σου. Για κάθε 5+: ο εχθρός παίρνει 1 θανάσιμη ζημιά, και αν έγινε ζημιά και δεν έχει Fly, δεν μπορεί να κάνει Run μέχρι την αρχή της επόμενης σειράς σου."},
+"Terrawings::Nerve-shredding Screeches": {
+ "en": "Pick an enemy unit within 10\" of this unit. Roll a D3. If the roll is higher than its Control characteristic, it cannot use commands for the rest of the turn.",
+ "el": "Διάλεξε μια εχθρική μονάδα σε 10\" από αυτή τη μονάδα. Ρίξε D3. Αν το ζάρι είναι μεγαλύτερο από το Control της, δεν μπορεί να χρησιμοποιήσει commands για το υπόλοιπο της σειράς."},
+"Incandescent Rectrices": {
+ "en": "Heal (D3) this unit.",
+ "el": "Heal (D3) σε αυτή τη μονάδα."},
+"Coatl Familiar": {
+ "en": "Add D6 to the casting roll for that spell.",
+ "el": "Πρόσθεσε D6 στο casting roll αυτού του ξορκιού."},
+"Bloodrage Pendant": {
+ "en": "+1 Attacks on this unit's melee weapons. +2 instead if its damage points are at least half its Health (round up).",
+ "el": "+1 Attacks στα όπλα σώμα με σώμα αυτής της μονάδας. +2 αντί για +1 αν οι πόντοι ζημιάς της είναι τουλάχιστον η μισή της Health (στρογγυλοποίηση προς τα πάνω)."},
+"Being of the Stars": {
+ "en": "Ignore all modifiers (plus and minus) to save rolls for this unit.",
+ "el": "Αγνόησε όλους τους τροποποιητές (θετικούς και αρνητικούς) στα save rolls αυτής της μονάδας."},
+"Reptilian Cunning": {
+ "en": "If this unit charged this turn: when a friendly unit wholly within 12\" of it uses the 'All-out Attack' command in the combat phase, no command points are spent.",
+ "el": "Αν αυτή η μονάδα έκανε Charge αυτή τη σειρά: όταν δική σου μονάδα ολόκληρη μέσα σε 12\" από αυτήν χρησιμοποιεί το command 'All-out Attack' στη φάση μάχης, δεν ξοδεύονται command points."},
+"Beastmaster": {
+ "en": "+2\" Move for your Seraphon Cavalry and Seraphon Monster units for the rest of the phase, if they are wholly within 12\" of this unit at the start of the move.",
+ "el": "+2\" Move για τις μονάδες Seraphon Cavalry και Seraphon Monster σου για το υπόλοιπο της φάσης, αν είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα στην αρχή της κίνησης."},
+"Comet's Call": {
+ "en": "Spell (7). A Seraphon Wizard of yours casts it with 2D6 on a visible enemy unit within 18\". Roll a dice for each model in the target. For each 5+, it takes 1 mortal damage.",
+ "el": "Ξόρκι (7). Ένας Seraphon Wizard σου το ξορκίζει με 2D6 σε ορατή εχθρική μονάδα σε 18\". Ρίξε ένα ζάρι για κάθε μοντέλο του στόχου. Για κάθε 5+, παίρνει 1 θανάσιμη ζημιά."},
+"Mystical Unforging": {
+ "en": "Spell (6). A Seraphon Wizard of yours casts it with 2D6 on a visible enemy unit within 12\". Subtract 1 from Rend of its weapons until the start of your next turn.",
+ "el": "Ξόρκι (6). Ένας Seraphon Wizard σου το ξορκίζει με 2D6 σε ορατή εχθρική μονάδα σε 12\". Αφαίρεσε 1 από το Rend των όπλων της μέχρι την αρχή της επόμενης σειράς σου."},
+"Speed of Huanchi": {
+ "en": "Spell (6). A Seraphon Wizard of yours casts it with 2D6 on a visible Seraphon unit of yours wholly within 12\" of them. Until the start of your next turn, the target can Run and still Shoot and/or Charge later in the turn.",
+ "el": "Ξόρκι (6). Ένας Seraphon Wizard σου το ξορκίζει με 2D6 σε ορατή μονάδα Seraphon σου ολόκληρη μέσα σε 12\" από αυτόν. Μέχρι την αρχή της επόμενης σειράς σου, ο στόχος μπορεί να κάνει Run και να κάνει ακόμα Shoot ή/και Charge αργότερα στη σειρά."},
+"Empowered Celestite": {
+ "en": "Spell (7). A Seraphon Wizard of yours casts it with 2D6 on a visible Saurus unit of yours wholly within 12\" of them. +1 Rend on the target's melee weapons for the rest of the turn.",
+ "el": "Ξόρκι (7). Ένας Seraphon Wizard σου το ξορκίζει με 2D6 σε ορατή μονάδα Saurus σου ολόκληρη μέσα σε 12\" από αυτόν. +1 Rend στα όπλα σώμα με σώμα του στόχου για το υπόλοιπο της σειράς."},
+"Light of Chotec": {
+ "en": "Spell (6). A Seraphon Wizard of yours casts it with 2D6 on a visible Seraphon unit of yours wholly within 12\" of them. Roll one dice for each damage point the target has. For each 4+, Heal (1) the target.",
+ "el": "Ξόρκι (6). Ένας Seraphon Wizard σου το ξορκίζει με 2D6 σε ορατή μονάδα Seraphon σου ολόκληρη μέσα σε 12\" από αυτόν. Ρίξε ένα ζάρι για κάθε πόντο ζημιάς που έχει ο στόχος. Για κάθε 4+, Heal (1) στον στόχο."},
+"The Earth Trembles": {
+ "en": "Spell (8). A Seraphon Wizard of yours casts it with 2D6 on a point within 18\" of them. Draw a straight line from that point to the closest part of the caster's base. Roll a D3 for each unit (friendly or enemy) with models the line passes over. On a 2+, that unit takes mortal damage equal to the roll.",
+ "el": "Ξόρκι (8). Ένας Seraphon Wizard σου το ξορκίζει με 2D6 σε ένα σημείο σε 18\" από αυτόν. Τράβηξε ευθεία γραμμή από εκείνο το σημείο μέχρι το κοντινότερο μέρος της βάσης του Wizard. Ρίξε D3 για κάθε μονάδα (δική σου ή εχθρική) με μοντέλα που περνάει η γραμμή. Με 2+, η μονάδα παίρνει θανάσιμη ζημιά ίση με το ζάρι."}
+}

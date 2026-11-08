@@ -1,0 +1,287 @@
+{
+"Desperate Remedies": {
+ "en": "If an ability would heal or bring back slain models to a Diseased enemy unit, it does neither. Instead, that unit loses the Diseased keyword.",
+ "el": "Αν μια ability θα γιάτρευε ή θα έφερνε πίσω σκοτωμένα μοντέλα σε Diseased εχθρική μονάδα, δεν κάνει τίποτα από τα δύο. Αντί γι' αυτό, η μονάδα χάνει το keyword Diseased."},
+"Wracked with Disease": {
+ "en": "Every Diseased enemy unit takes D3 mortal damage.",
+ "el": "Κάθε Diseased εχθρική μονάδα παίρνει D3 θανάσιμη ζημιά."},
+"Blessed By the Plaguefather": {
+ "en": "Pick 1 effect. Infect: pick an enemy unit within 7\" of any of your Maggotkin of Nurgle units (not a Manifestation or terrain). If it is in combat with a Maggotkin of Nurgle unit, it becomes Diseased. If not, roll a dice: on 4+ it becomes Diseased. Spread: pick a Diseased enemy unit. Every other enemy unit within its combat range (not Manifestations or terrain) becomes Diseased. Mutate: if ALL enemy units on the table (not Manifestations or terrain) are Diseased, each of them takes 1 mortal damage.",
+ "el": "Διάλεξε 1 εφέ. Infect: διάλεξε μια εχθρική μονάδα σε 7\" από οποιαδήποτε μονάδα Maggotkin of Nurgle σου (όχι Manifestation ή έδαφος). Αν είναι σε μάχη με μονάδα Maggotkin of Nurgle, γίνεται Diseased. Αν όχι, ρίξε ζάρι: με 4+ γίνεται Diseased. Spread: διάλεξε μια Diseased εχθρική μονάδα. Κάθε άλλη εχθρική μονάδα μέσα στο combat range της (όχι Manifestations ή έδαφος) γίνεται Diseased. Mutate: αν ΟΛΕΣ οι εχθρικές μονάδες στο τραπέζι (όχι Manifestations ή έδαφος) είναι Diseased, καθεμία παίρνει 1 θανάσιμη ζημιά."},
+"Burst Pustules": {
+ "en": "When a Diseased enemy unit is destroyed, just before its last model is removed, roll a dice. On 3+, pick another enemy unit within 9\" of that model (not a Manifestation or terrain). It becomes Diseased.",
+ "el": "Όταν μια Diseased εχθρική μονάδα καταστρέφεται, λίγο πριν αφαιρεθεί το τελευταίο μοντέλο της, ρίξε ζάρι. Με 3+, διάλεξε μια άλλη εχθρική μονάδα σε 9\" από εκείνο το μοντέλο (όχι Manifestation ή έδαφος). Γίνεται Diseased."},
+"Blighted Regrowth": {
+ "en": "Only if you have no Feculent Gnarlmaw on the table. Set one up wholly within 12\" of an objective you control and more than 3\" from all enemy units, objectives and other terrain.",
+ "el": "Μόνο αν δεν έχεις κανένα Feculent Gnarlmaw στο τραπέζι. Βάλε ένα ολόκληρο μέσα σε 12\" από στόχο που ελέγχεις και πάνω από 3\" από όλες τις εχθρικές μονάδες, τους στόχους και άλλο έδαφος."},
+"Ceaseless Infectors": {
+ "en": "Pick an enemy unit (not a Manifestation or terrain) that was in combat with one of your Rotbringers units that was destroyed this turn. Roll a dice. On 3+, it becomes Diseased.",
+ "el": "Διάλεξε μια εχθρική μονάδα (όχι Manifestation ή έδαφος) που ήταν σε μάχη με μονάδα Rotbringers σου που καταστράφηκε αυτή τη σειρά. Ρίξε ζάρι. Με 3+, γίνεται Diseased."},
+"Filth-laden Daemonic Blooms": {
+ "en": "When you make a run roll for one of your non-Monster Maggotkin of Nurgle Daemon units, you can change the roll to a 4.",
+ "el": "Όταν ρίχνεις run roll για μονάδα Daemon Maggotkin of Nurgle σου που δεν είναι Monster, μπορείς να αλλάξεις το ζάρι σε 4."},
+"Plague Progenitor": {
+ "en": "At deployment, before round 1: pick an enemy unit on the table (not a Manifestation or terrain) as the plague progenitor for the whole battle. Roll 2D3. On a 6, or if the roll equals or beats its Health, it becomes Diseased. In the first battle round, if an ability would heal or bring back models to a Diseased plague progenitor, it does nothing. Each time it is the target of 'Spread' (Blessed by the Plaguefather), every other enemy unit within its combat range (not Manifestations or terrain) also takes D3 mortal damage.",
+ "el": "Στην ανάπτυξη, πριν τον γύρο 1: διάλεξε μια εχθρική μονάδα στο τραπέζι (όχι Manifestation ή έδαφος) ως plague progenitor για όλη τη μάχη. Ρίξε 2D3. Με 6, ή αν το ζάρι είναι ίσο ή μεγαλύτερο από τη Health της, γίνεται Diseased. Τον πρώτο γύρο, αν μια ability θα γιάτρευε ή θα έφερνε πίσω μοντέλα σε Diseased plague progenitor, δεν κάνει τίποτα. Κάθε φορά που γίνεται στόχος του 'Spread' (Blessed by the Plaguefather), κάθε άλλη εχθρική μονάδα μέσα στο combat range της (όχι Manifestations ή έδαφος) παίρνει επιπλέον D3 θανάσιμη ζημιά."},
+"Denizens of the Garden": {
+ "en": "Companion weapons used by your Maggotkin of Nurgle units have Crit (2 Hits).",
+ "el": "Τα Companion όπλα που χρησιμοποιούν οι μονάδες Maggotkin of Nurgle σου έχουν Crit (2 Hits)."},
+"Vectors of Contagion": {
+ "en": "Add 5 to the control score of your non-Hero Rotbringers units while they are wholly within 12\" of any of your Maggotkin of Nurgle Daemon units.",
+ "el": "Πρόσθεσε 5 στο control score των μονάδων Rotbringers σου που δεν είναι Ήρωες, όσο είναι ολόκληρες μέσα σε 12\" από οποιαδήποτε μονάδα Daemon Maggotkin of Nurgle σου."},
+"Attention Seekers": {
+ "en": "If this unit is not in combat: pick the closest enemy unit (you choose if tied). Make a 2D6 charge roll. Move this unit up to that many inches. It can move into combat and pass through models of the target, but must end within 1/2\" of the target. Then the target takes D3 mortal damage. If it does, this unit has charged.",
+ "el": "Αν αυτή η μονάδα δεν είναι σε μάχη: διάλεξε την κοντινότερη εχθρική μονάδα (αν υπάρχει ισοπαλία, διαλέγεις εσύ). Ρίξε 2D6 για charge roll. Κίνησε τη μονάδα μέχρι τόσες ίντσες. Μπορεί να μπει σε μάχη και να περάσει μέσα από μοντέλα του στόχου, αλλά πρέπει να τελειώσει σε 1/2\" από τον στόχο. Μετά ο στόχος παίρνει D3 θανάσιμη ζημιά. Αν την πάρει, η μονάδα θεωρείται ότι έκανε charge."},
+"Ruptured Cysts": {
+ "en": "Chanting value 4. Pick a visible Diseased enemy unit within 18\" and roll a D6 chanting roll. The target takes D3 mortal damage. Then each other Diseased enemy unit within 3\" of the target takes 1 mortal damage. If the roll is 9+, you can also pick one of your Plaguebearers units within 12\" of the target. For each enemy Infantry model slain by this ability this turn, bring back 1 slain model to that Plaguebearers unit.",
+ "el": "Chanting value 4. Διάλεξε ορατή Diseased εχθρική μονάδα σε 18\" και ρίξε D6 για chanting roll. Ο στόχος παίρνει D3 θανάσιμη ζημιά. Μετά κάθε άλλη Diseased εχθρική μονάδα σε 3\" από τον στόχο παίρνει 1 θανάσιμη ζημιά. Αν το ζάρι είναι 9+, μπορείς επίσης να διαλέξεις μονάδα Plaguebearers σου σε 12\" από τον στόχο. Για κάθε εχθρικό μοντέλο Infantry που σκοτώθηκε από αυτή την ability αυτή τη σειρά, φέρε πίσω 1 σκοτωμένο μοντέλο σε εκείνη τη μονάδα Plaguebearers."},
+"Scry the Filth": {
+ "en": "Pick 1 effect for the rest of the turn: +1 to casting rolls for your Maggotkin of Nurgle Wizards within 3\" of this unit, OR +1 to chanting rolls for your Maggotkin of Nurgle Priests within 3\" of this unit.",
+ "el": "Διάλεξε 1 εφέ για το υπόλοιπο της σειράς: +1 στα casting rolls των Wizards Maggotkin of Nurgle σου που είναι σε 3\" από αυτή τη μονάδα, Ή +1 στα chanting rolls των Priests Maggotkin of Nurgle σου που είναι σε 3\" από αυτή τη μονάδα."},
+"Bloab Rotspawned::Battle Damaged": {
+ "en": "At 10 or more damage, the Bilespurter's Claws weapon has 3 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, το όπλο Bilespurter's Claws έχει 3 Attacks."},
+"Daemon Flies": {
+ "en": "Pick an enemy Monster in combat with this unit and roll a dice. On 3+, subtract 1 from the Attacks of its melee weapons for the rest of the turn.",
+ "el": "Διάλεξε εχθρικό Monster σε μάχη με αυτή τη μονάδα και ρίξε ζάρι. Με 3+, αφαίρεσε 1 από τα Attacks των όπλων σώμα με σώμα του για το υπόλοιπο της σειράς."},
+"Miasma of Pestilence": {
+ "en": "Casting value 6. Pick a visible friendly unit wholly within 12\" of this unit and make a 2D6 casting roll. Until the start of your next turn, weapon abilities on attacks against that unit have no effect (except Companion).",
+ "el": "Casting value 6. Διάλεξε ορατή δική σου μονάδα ολόκληρη μέσα σε 12\" από αυτή τη μονάδα και ρίξε 2D6 για casting roll. Μέχρι την αρχή της επόμενης σειράς σου, οι weapon abilities στις επιθέσεις εναντίον εκείνης της μονάδας δεν έχουν εφέ (εκτός από το Companion)."},
+"Utter Defilement": {
+ "en": "This unit has 2 Pestilent Pollutants (tokens). Pick an objective or terrain feature within 12\" of this unit and put 2 Pestilent Pollutants next to it. If both are already on the table, pick 1, remove it and put it next to the target instead.",
+ "el": "Αυτή η μονάδα έχει 2 Pestilent Pollutants (δείκτες). Διάλεξε στόχο (objective) ή στοιχείο εδάφους σε 12\" από αυτή τη μονάδα και βάλε 2 Pestilent Pollutants δίπλα του. Αν και οι 2 είναι ήδη στο τραπέζι, διάλεξε 1, αφαίρεσέ τον και βάλ' τον δίπλα στον στόχο."},
+"From the Tainted Earth": {
+ "en": "Remove this unit from the table and set it up again more than 9\" from all enemy units and wholly within 3\" of: an objective or terrain with a friendly Pestilent Pollutant, OR a Polluted terrain feature (see Gelgus Pust's Master Contaminator), OR an objective you control.",
+ "el": "Αφαίρεσε αυτή τη μονάδα από το τραπέζι και βάλ' την ξανά πάνω από 9\" από όλες τις εχθρικές μονάδες και ολόκληρη μέσα σε 3\" από: στόχο ή έδαφος με δικό σου Pestilent Pollutant, Ή Polluted έδαφος (δες το Master Contaminator του Gelgus Pust), Ή στόχο που ελέγχεις."},
+"Entropy Endures": {
+ "en": "If this unit has 2 models and would be automatically destroyed, it is not. Instead, 1 model in it is slain.",
+ "el": "Αν αυτή η μονάδα έχει 2 μοντέλα και θα καταστρεφόταν αυτόματα, δεν καταστρέφεται. Αντί γι' αυτό, σκοτώνεται 1 μοντέλο της."},
+"Rot-Blossom": {
+ "en": "Your Rotbringers units have Ward (5+) while they are wholly within 12\" of this terrain feature.",
+ "el": "Οι μονάδες Rotbringers σου έχουν Ward (5+) όσο είναι ολόκληρες μέσα σε 12\" από αυτό το στοιχείο εδάφους."},
+"Tendrils of Corruption": {
+ "en": "For the rest of the phase, this terrain feature has Move 3\" and can move 3\" right away. It cannot move through or end within enemy combat ranges, and cannot end on an objective or another terrain feature. It cannot use Move, Run, Retreat or Charge abilities.",
+ "el": "Για το υπόλοιπο της φάσης, αυτό το στοιχείο εδάφους έχει Move 3\" και μπορεί να κινηθεί αμέσως 3\". Δεν μπορεί να περάσει μέσα ή να τελειώσει μέσα στο combat range εχθρικών μονάδων, ούτε να τελειώσει πάνω σε στόχο ή σε άλλο στοιχείο εδάφους. Δεν μπορεί να χρησιμοποιήσει abilities Move, Run, Retreat ή Charge."},
+"Riddled With Disease": {
+ "en": "When one of your Maggotkin of Nurgle Daemon units wholly within 12\" of this terrain feature uses the 'Rally' command, you can make 1 extra D6 rally roll. If that unit is not a Hero, make 3 extra D6 rally rolls instead.",
+ "el": "Όταν μονάδα Daemon Maggotkin of Nurgle σου, ολόκληρη μέσα σε 12\" από αυτό το στοιχείο εδάφους, χρησιμοποιεί το command 'Rally', μπορείς να ρίξεις 1 επιπλέον D6 rally roll. Αν η μονάδα δεν είναι Ήρωας, ρίχνεις 3 επιπλέον D6 rally rolls."},
+"Festus the Leechlord::Battle Damaged": {
+ "en": "At 10 or more damage, the Gathoblyt's Fanged Maw weapon has 3 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, το όπλο Gathoblyt's Fanged Maw έχει 3 Attacks."},
+"Vile Poisons and Debilitating Toxins": {
+ "en": "If this unit did not charge this turn: pick an enemy unit in combat with it (not a Manifestation or terrain). Roll off with your opponent, adding this unit's Control to your roll and the target's Control to theirs. If you win: if the target is a Hero or Monster, it takes mortal damage equal to the difference between the two rolls. If it is a non-Hero non-Monster unit, 1 model in it is slain.",
+ "el": "Αν αυτή η μονάδα δεν έκανε charge αυτή τη σειρά: διάλεξε εχθρική μονάδα σε μάχη μαζί της (όχι Manifestation ή έδαφος). Κάντε roll off με τον αντίπαλο, προσθέτοντας το Control αυτής της μονάδας στο ζάρι σου και το Control του στόχου στο δικό του. Αν κερδίσεις: αν ο στόχος είναι Ήρωας ή Monster, παίρνει θανάσιμη ζημιά ίση με τη διαφορά των δύο ζαριών. Αν είναι μονάδα που δεν είναι ούτε Ήρωας ούτε Monster, σκοτώνεται 1 μοντέλο της."},
+"Annelid Engorgement": {
+ "en": "For each enemy unit that was in combat with this unit this turn and was destroyed this turn, this unit gets D3 leech points for the rest of the battle. Until the end of the next turn, add 1 to this unit's Control for each leech point it has.",
+ "el": "Για κάθε εχθρική μονάδα που ήταν σε μάχη με αυτή τη μονάδα αυτή τη σειρά και καταστράφηκε αυτή τη σειρά, η μονάδα παίρνει D3 leech points για το υπόλοιπο της μάχης. Μέχρι το τέλος της επόμενης σειράς, πρόσθεσε 1 στο Control της για κάθε leech point που έχει τώρα."},
+"The Leechlord's Curse": {
+ "en": "Casting value 6. Pick a visible enemy unit within 18\" and make a 2D6 casting roll. This unit gets 1 leech point for the rest of the battle. Until the start of your next turn, each time the target uses a Core ability or command, after it resolves roll a dice. On 3+, the target takes 1 mortal damage. Then, if that ability caused any damage to the target, Heal (1) this unit.",
+ "el": "Casting value 6. Διάλεξε ορατή εχθρική μονάδα σε 18\" και ρίξε 2D6 για casting roll. Αυτή η μονάδα παίρνει 1 leech point για το υπόλοιπο της μάχης. Μέχρι την αρχή της επόμενης σειράς σου, κάθε φορά που ο στόχος χρησιμοποιεί Core ability ή command, αφού ολοκληρωθεί ρίξε ζάρι. Με 3+, ο στόχος παίρνει 1 θανάσιμη ζημιά. Μετά, αν η ability προκάλεσε οποιαδήποτε ζημιά στον στόχο, κάνε Heal (1) σε αυτή τη μονάδα."},
+"Grin of the Grandfather": {
+ "en": "Pick every enemy unit in combat with this unit. Roll a dice for each. If the roll equals or beats that unit's Control, pick 1 effect for the rest of the turn: -1 to hit rolls for its combat attacks, OR -1 to wound rolls for its combat attacks, OR -1 to its Control.",
+ "el": "Διάλεξε κάθε εχθρική μονάδα σε μάχη με αυτή τη μονάδα. Ρίξε ένα ζάρι για καθεμία. Αν το ζάρι είναι ίσο ή μεγαλύτερο από το Control της, διάλεξε 1 εφέ για το υπόλοιπο της σειράς: -1 στα hit rolls των επιθέσεών της σώμα με σώμα, Ή -1 στα wound rolls των επιθέσεών της σώμα με σώμα, Ή -1 στο Control της."},
+"Parasitic Infestation": {
+ "en": "Pick every enemy unit that charged this turn and is in combat with this unit. Roll a D3 for each. On 2+, that unit takes mortal damage equal to the roll.",
+ "el": "Διάλεξε κάθε εχθρική μονάδα που έκανε charge αυτή τη σειρά και είναι σε μάχη με αυτή τη μονάδα. Ρίξε D3 για καθεμία. Με 2+, η μονάδα παίρνει θανάσιμη ζημιά ίση με το ζάρι."},
+"Polluting Aura": {
+ "en": "While your Maggotkin of Nurgle unit is wholly within 6\" of a Polluted terrain feature, each time it uses or is the target of a heal ability, add 1 to the damage healed. While an enemy unit is within 6\" of a Polluted terrain feature, each time it uses or is the target of a heal ability, subtract 1 from the damage healed (minimum 0).",
+ "el": "Όσο μονάδα Maggotkin of Nurgle σου είναι ολόκληρη μέσα σε 6\" από Polluted έδαφος, κάθε φορά που χρησιμοποιεί ή είναι στόχος ability που γιατρεύει, πρόσθεσε 1 στους πόντους ζημιάς που γιατρεύονται. Όσο εχθρική μονάδα είναι μέσα σε 6\" από Polluted έδαφος, κάθε φορά που χρησιμοποιεί ή είναι στόχος ability που γιατρεύει, αφαίρεσε 1 από τους πόντους που γιατρεύονται (ελάχιστο 0)."},
+"Master Contaminator": {
+ "en": "Pick a terrain feature within 6\" of this unit. You consider it Polluted for the rest of the battle.",
+ "el": "Διάλεξε στοιχείο εδάφους σε 6\" από αυτή τη μονάδα. Θεωρείται από εσένα Polluted για το υπόλοιπο της μάχης."},
+"Bloated With Corruption": {
+ "en": "If this unit is damaged, pick up to 3 enemy units in combat with it. Roll a D3 for each. On 2+, that unit takes mortal damage equal to the roll.",
+ "el": "Αν αυτή η μονάδα έχει ζημιά, διάλεξε μέχρι 3 εχθρικές μονάδες σε μάχη μαζί της. Ρίξε D3 για καθεμία. Με 2+, η μονάδα παίρνει θανάσιμη ζημιά ίση με το ζάρι."},
+"Plague Wind": {
+ "en": "Casting value 7. Pick a visible enemy unit within 12\" (not a Manifestation or terrain) and make a 2D6 casting roll. The target becomes Diseased.",
+ "el": "Casting value 7. Διάλεξε ορατή εχθρική μονάδα σε 12\" (όχι Manifestation ή έδαφος) και ρίξε 2D6 για casting roll. Ο στόχος γίνεται Diseased."},
+"Locus of Nurgle": {
+ "en": "Pick one of your destroyed Maggotkin of Nurgle Daemon units that started the battle with 3 or more models. Set up a replacement unit with half the models (round up), wholly within 6\" of this unit or a friendly Feculent Gnarlmaw and more than 9\" from all enemy units.",
+ "el": "Διάλεξε μια κατεστραμμένη μονάδα Daemon Maggotkin of Nurgle σου που ξεκίνησε τη μάχη με 3 ή περισσότερα μοντέλα. Βάλε μια νέα μονάδα με τα μισά μοντέλα (στρογγυλοποίηση προς τα πάνω), ολόκληρη μέσα σε 6\" από αυτή τη μονάδα ή από δικό σου Feculent Gnarlmaw και πάνω από 9\" από όλες τις εχθρικές μονάδες."},
+"Great Unclean One::Battle Damaged": {
+ "en": "At 10 or more damage, the Colossal Blight Weapons have 3 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, τα Colossal Blight Weapons έχουν 3 Attacks."},
+"Pestilential Beachhead": {
+ "en": "Use this if the unit is aboard the Slime Fleet. Set it up on the table wholly within 7\" of a battlefield edge and more than 9\" from all enemy units. Then set up every other friendly unit aboard the Slime Fleet wholly within 7\" of a battlefield edge, wholly within 7\" of this unit and more than 9\" from all enemy units.",
+ "el": "Χρησιμοποίησέ το αν η μονάδα είναι πάνω στο Slime Fleet. Βάλ' την στο τραπέζι ολόκληρη μέσα σε 7\" από άκρη του τραπεζιού και πάνω από 9\" από όλες τις εχθρικές μονάδες. Μετά βάλε κάθε άλλη δική σου μονάδα πάνω στο Slime Fleet ολόκληρη μέσα σε 7\" από άκρη του τραπεζιού, ολόκληρη μέσα σε 7\" από αυτή τη μονάδα και πάνω από 9\" από όλες τις εχθρικές μονάδες."},
+"Flailing Tentacles": {
+ "en": "Pick an enemy Infantry Hero in combat with this unit and roll a dice. On 3+, it has Strike-last for the rest of the turn.",
+ "el": "Διάλεξε εχθρικό Ήρωα Infantry σε μάχη με αυτή τη μονάδα και ρίξε ζάρι. Με 3+, έχει Strike-last για το υπόλοιπο της σειράς."},
+"Master of the Slime Fleet": {
+ "en": "At deployment, before round 1: pick a regiment led by this unit, if none of its units have been deployed. Every unit in it is set up in reserve aboard the Slime Fleet. They count as deployed.",
+ "el": "Στην ανάπτυξη, πριν τον γύρο 1: διάλεξε ένα regiment που οδηγεί αυτή η μονάδα, αν καμία μονάδα του δεν έχει αναπτυχθεί. Κάθε μονάδα του μπαίνει σε αναμονή (reserve) πάνω στο Slime Fleet. Θεωρούνται αναπτυγμένες."},
+"Knell of Doom": {
+ "en": "Pick an enemy unit within 18\" and roll a D3 (roll a D6 instead if the target is within 6\" of one of your Sloven Knights units). If the roll equals or beats the target's Control, subtract 1 from wound rolls for its attacks until the start of your next turn.",
+ "el": "Διάλεξε εχθρική μονάδα σε 18\" και ρίξε D3 (ρίξε D6 αν ο στόχος είναι σε 6\" από μονάδα Sloven Knights σου). Αν το ζάρι είναι ίσο ή μεγαλύτερο από το Control του στόχου, αφαίρεσε 1 από τα wound rolls των επιθέσεών του μέχρι την αρχή της επόμενης σειράς σου."},
+"Omens of Decay": {
+ "en": "Chanting value 4. Pick a visible enemy unit within 12\" and make a D6 chanting roll. For the rest of the turn, subtract twice the current battle round number from the target's control score. If the roll was 10+, it affects all enemy units within 12\" of this unit.",
+ "el": "Chanting value 4. Διάλεξε ορατή εχθρική μονάδα σε 12\" και ρίξε D6 για chanting roll. Για το υπόλοιπο της σειράς, αφαίρεσε από το control score του στόχου το διπλάσιο του αριθμού του τρέχοντος γύρου. Αν το ζάρι ήταν 10+, επηρεάζει όλες τις εχθρικές μονάδες σε 12\" από αυτή τη μονάδα."},
+"Cultivating the Garden of Nurgle": {
+ "en": "If you have 1 or fewer Feculent Gnarlmaws on the table, set one up wholly within 12\" of this unit and more than 3\" from all enemy units, objectives and other terrain.",
+ "el": "Αν έχεις 1 ή λιγότερα Feculent Gnarlmaws στο τραπέζι, βάλε ένα ολόκληρο μέσα σε 12\" από αυτή τη μονάδα και πάνω από 3\" από όλες τις εχθρικές μονάδες, τους στόχους και άλλο έδαφος."},
+"Beast Handler": {
+ "en": "Pick one of your destroyed Beast of Nurgle units and roll a dice. On 3+, set up a replacement unit wholly within 12\" of this unit and more than 9\" from all enemy units.",
+ "el": "Διάλεξε μια κατεστραμμένη μονάδα Beast of Nurgle σου και ρίξε ζάρι. Με 3+, βάλε μια νέα μονάδα ολόκληρη μέσα σε 12\" από αυτή τη μονάδα και πάνω από 9\" από όλες τις εχθρικές μονάδες."},
+"Gnarlmaw Whisperer": {
+ "en": "Pick one of your Feculent Gnarlmaws. Remove it and set it up again wholly within 12\" of this unit and more than 3\" from all enemy units, objectives and other terrain.",
+ "el": "Διάλεξε ένα Feculent Gnarlmaw σου. Αφαίρεσέ το και βάλε το ξανά ολόκληρο μέσα σε 12\" από αυτή τη μονάδα και πάνω από 3\" από όλες τις εχθρικές μονάδες, τους στόχους και άλλο έδαφος."},
+"Master of Rot Flies": {
+ "en": "If this unit charged this turn, pick it and up to 2 of your Pusgoyle Blightlords units wholly within 12\" of it. For the rest of the turn, add 1 to the Rend of their Rot Fly's Mouthparts and Sting melee weapons.",
+ "el": "Αν αυτή η μονάδα έκανε charge αυτή τη σειρά, διάλεξε αυτήν και μέχρι 2 μονάδες Pusgoyle Blightlords σου ολόκληρες μέσα σε 12\" από αυτήν. Για το υπόλοιπο της σειράς, πρόσθεσε 1 στο Rend των όπλων σώμα με σώμα Rot Fly's Mouthparts και Sting τους."},
+"Vectors of Foulest Contagion": {
+ "en": "Pick up to 3 enemy units in combat with this unit. Roll a D3 for each. On 2+, that unit takes mortal damage equal to the roll.",
+ "el": "Διάλεξε μέχρι 3 εχθρικές μονάδες σε μάχη με αυτή τη μονάδα. Ρίξε D3 για καθεμία. Με 2+, η μονάδα παίρνει θανάσιμη ζημιά ίση με το ζάρι."},
+"Thrice-ripened Death's Heads": {
+ "en": "Pick an enemy unit that charged this turn and is in combat with this unit or with one of your Plague Drones units wholly within 12\" of this unit. Roll a D3. On 2+, it takes mortal damage equal to the roll.",
+ "el": "Διάλεξε εχθρική μονάδα που έκανε charge αυτή τη σειρά και είναι σε μάχη με αυτή τη μονάδα ή με μονάδα Plague Drones σου ολόκληρη μέσα σε 12\" από αυτή. Ρίξε D3. Με 2+, παίρνει θανάσιμη ζημιά ίση με το ζάρι."},
+"Festering Bulwark": {
+ "en": "Pick this unit and one of your Putrid Blightkings units within 3\" of it. Roll a dice. On 3+, ignore negative modifiers to save rolls for both for the rest of the turn.",
+ "el": "Διάλεξε αυτή τη μονάδα και μια μονάδα Putrid Blightkings σου σε 3\" από αυτήν. Ρίξε ζάρι. Με 3+, αγνόησε τους αρνητικούς τροποποιητές στα save rolls και των δύο για το υπόλοιπο της σειράς."},
+"Sevenfold Slaughter": {
+ "en": "Pick one of your Rotswords units that did not charge this turn and is wholly within 12\" of this unit. Roll a dice. On 2+, add 1 to the Attacks of its Ruined Master-crafted Weapons for the rest of the turn.",
+ "el": "Διάλεξε μονάδα Rotswords σου που δεν έκανε charge αυτή τη σειρά και είναι ολόκληρη μέσα σε 12\" από αυτή τη μονάδα. Ρίξε ζάρι. Με 2+, πρόσθεσε 1 στα Attacks των Ruined Master-crafted Weapons της για το υπόλοιπο της σειράς."},
+"Lord of the Infected Legions": {
+ "en": "Add 1 to wound rolls for combat attacks of your Rotswords units that did not charge this turn, while they are wholly within 12\" of this unit.",
+ "el": "Πρόσθεσε 1 στα wound rolls των επιθέσεων σώμα με σώμα των μονάδων Rotswords σου που δεν έκαναν charge αυτή τη σειρά, όσο είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα."},
+"Morbidex Twiceborn::Battle Damaged": {
+ "en": "At 10 or more damage, the Tripletongue's Claws weapon has 3 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, το όπλο Tripletongue's Claws έχει 3 Attacks."},
+"Gigantic Nurgling-kin": {
+ "en": "Heal this unit by half the damage it currently has (round up).",
+ "el": "Γιάτρεψε αυτή τη μονάδα κατά τους μισούς πόντους ζημιάς που έχει τώρα (στρογγυλοποίηση προς τα πάνω)."},
+"Tide of Nurglings": {
+ "en": "Pick up to 2 of your Nurglings units wholly within 12\" of this unit. Roll a dice for each. On 2+: if it is not in combat, it can move that many inches but cannot end the move in combat. If it is in combat, it can make a pile-in move.",
+ "el": "Διάλεξε μέχρι 2 μονάδες Nurglings σου ολόκληρες μέσα σε 12\" από αυτή τη μονάδα. Ρίξε ζάρι για καθεμία. Με 2+: αν δεν είναι σε μάχη, μπορεί να κινηθεί τόσες ίντσες όσο το ζάρι αλλά δεν μπορεί να τελειώσει την κίνηση σε μάχη. Αν είναι σε μάχη, μπορεί να κάνει pile-in move."},
+"Lord of Nurglings": {
+ "en": "While your Nurglings units are wholly within 12\" of this unit: ignore the first damage point allocated to that Nurglings unit each phase, and it can ignore the effect of the 'Beast' ability.",
+ "el": "Όσο οι μονάδες Nurglings σου είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα: αγνόησε τον πρώτο πόντο ζημιάς που θα δοθεί σε εκείνη τη μονάδα Nurglings σε κάθε φάση, και μπορεί να αγνοήσει το εφέ της ability 'Beast'."},
+"Endless Swarm": {
+ "en": "Can only be used if this unit has been destroyed. Set up a replacement unit wholly within 6\" of a friendly Feculent Gnarlmaw and more than 9\" from all enemy units.",
+ "el": "Μπορεί να χρησιμοποιηθεί μόνο αν αυτή η μονάδα έχει καταστραφεί. Βάλε μια νέα μονάδα ολόκληρη μέσα σε 6\" από δικό σου Feculent Gnarlmaw και πάνω από 9\" από όλες τις εχθρικές μονάδες."},
+"Orghotts Daemonspew::Battle Damaged": {
+ "en": "At 10 or more damage, the Whippermaw's Claws weapon has 3 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, το όπλο Whippermaw's Claws έχει 3 Attacks."},
+"Grasping Tongue": {
+ "en": "Pick an enemy unit in combat with this unit and roll a dice. On 3+, add 1 to wound rolls for combat attacks of your Maggotkin of Nurgle units that target it for the rest of the turn.",
+ "el": "Διάλεξε εχθρική μονάδα σε μάχη με αυτή τη μονάδα και ρίξε ζάρι. Με 3+, πρόσθεσε 1 στα wound rolls των επιθέσεων σώμα με σώμα των μονάδων Maggotkin of Nurgle σου που την στοχεύουν, για το υπόλοιπο της σειράς."},
+"Acid Ichor": {
+ "en": "Each time you make an unmodified save roll of 6 for a combat attack against this unit, the attacking unit takes 1 mortal damage after the Fight ability has been resolved.",
+ "el": "Κάθε φορά που ρίχνεις unmodified save roll 6 για επίθεση σώμα με σώμα εναντίον αυτής της μονάδας, η μονάδα που επιτέθηκε παίρνει 1 θανάσιμη ζημιά αφού ολοκληρωθεί η ability Fight."},
+"Bestial Desecration": {
+ "en": "Add 1 to the Rend of this unit's melee weapons while it is not within enemy territory.",
+ "el": "Πρόσθεσε 1 στο Rend των όπλων σώμα με σώμα αυτής της μονάδας όσο δεν είναι μέσα σε εχθρικό έδαφος (enemy territory)."},
+"Ripe Pastures": {
+ "en": "This unit can use Charge abilities even if it used a Retreat ability this turn. Also, Retreat abilities inflict no mortal damage on it.",
+ "el": "Αυτή η μονάδα μπορεί να χρησιμοποιήσει Charge ακόμη κι αν έκανε Retreat την ίδια σειρά. Επίσης, τα Retreat δεν της προκαλούν θανάσιμη ζημιά."},
+"Dispersed Formation": {
+ "en": "This unit has a coherency range of 2\".",
+ "el": "Αυτή η μονάδα έχει coherency range 2\"."},
+"Cloud of Flies": {
+ "en": "Subtract 1 from hit rolls for attacks against this unit while it is contesting an objective you control.",
+ "el": "Αφαίρεσε 1 από τα hit rolls των επιθέσεων εναντίον αυτής της μονάδας όσο διεκδικεί (contesting) στόχο που ελέγχεις."},
+"Mire Kelpies": {
+ "en": "This unit's Mire Kelpies are tokens. It has 6 Mire Kelpies for every 14 models in the unit.",
+ "el": "Τα Mire Kelpies αυτής της μονάδας είναι δείκτες (tokens). Έχει 6 Mire Kelpies για κάθε 14 μοντέλα της μονάδας."},
+"Contagious Catarrh": {
+ "en": "If this unit has any Mire Kelpies: pick an enemy unit in combat with it (not a Manifestation or terrain). Remove any number of its Mire Kelpies, then roll a dice, adding 1 for each Kelpie removed this phase. On an unmodified 1, nothing happens. On a 6+, the target becomes Diseased.",
+ "el": "Αν αυτή η μονάδα έχει Mire Kelpies: διάλεξε εχθρική μονάδα σε μάχη μαζί της (όχι Manifestation ή έδαφος). Αφαίρεσε όσα Mire Kelpies θέλεις, μετά ρίξε ζάρι και πρόσθεσε 1 για κάθε Kelpie που αφαίρεσες αυτή τη φάση. Με unmodified 1, δεν γίνεται τίποτα. Με 6+, ο στόχος γίνεται Diseased."},
+"Captain of the Plague Legions": {
+ "en": "Pick one of your Plaguebearers units within this unit's combat range that has not used a Fight ability this turn. It can be picked to fight right after this unit's Fight ability is resolved. If it does, add 1 to the Attacks of its melee weapons for the rest of the turn.",
+ "el": "Διάλεξε μονάδα Plaguebearers σου μέσα στο combat range αυτής της μονάδας που δεν έχει χρησιμοποιήσει Fight αυτή τη σειρά. Μπορεί να διαλεχτεί να πολεμήσει αμέσως μετά την ολοκλήρωση του Fight αυτής της μονάδας. Αν το κάνει, πρόσθεσε 1 στα Attacks των όπλων σώμα με σώμα της για το υπόλοιπο της σειράς."},
+"Relentless Attackers": {
+ "en": "Add 1 to the Rend of this unit's Flyrider's Arsenal for attacks against enemy units contesting an objective.",
+ "el": "Πρόσθεσε 1 στο Rend του Flyrider's Arsenal αυτής της μονάδας για επιθέσεις εναντίον εχθρικών μονάδων που διεκδικούν (contesting) στόχο."},
+"Discomfiting Stench": {
+ "en": "Pick a visible enemy Wizard or Priest within 12\" and roll a dice. Wizard: if the roll is higher than its power level, until the start of your next turn its spell is miscast whenever its casting roll has 2 or more 1s, 2 or more 2s, or 2 or more 3s. Priest: if the roll is higher than its power level, until the start of your next turn, whenever your opponent makes an unmodified chanting roll of 1 or 2 for it, the prayer fails, has no effect, and they remove D3 ritual points from it. They also cannot give it ritual points for the rest of the phase.",
+ "el": "Διάλεξε ορατό εχθρικό Wizard ή Priest σε 12\" και ρίξε ζάρι. Wizard: αν το ζάρι είναι μεγαλύτερο από το power level του, μέχρι την αρχή της επόμενης σειράς σου το ξόρκι του αποτυγχάνει (miscast) όποτε το casting roll έχει 2 ή περισσότερα 1, 2 ή περισσότερα 2, ή 2 ή περισσότερα 3. Priest: αν το ζάρι είναι μεγαλύτερο από το power level του, μέχρι την αρχή της επόμενης σειράς σου, όποτε ο αντίπαλος ρίχνει unmodified chanting roll 1 ή 2 γι' αυτόν, η προσευχή αποτυγχάνει, δεν έχει εφέ και ο αντίπαλος αφαιρεί D3 ritual points από αυτόν. Επίσης ο αντίπαλος δεν μπορεί να του δώσει ritual points για το υπόλοιπο της φάσης."},
+"Tainted Sorceries": {
+ "en": "Pick an enemy unit that was the target of a spell this unit successfully cast this phase. Roll a dice. On 2+, subtract 1 from ward rolls for it for the rest of the turn.",
+ "el": "Διάλεξε εχθρική μονάδα που ήταν στόχος ξορκιού που αυτή η μονάδα έριξε επιτυχώς αυτή τη φάση. Ρίξε ζάρι. Με 2+, αφαίρεσε 1 από τα ward rolls της για το υπόλοιπο της σειράς."},
+"Rotigus::Battle Damaged": {
+ "en": "At 10 or more damage, the Gnarlrod weapon has 3 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, το όπλο Gnarlrod έχει 3 Attacks."},
+"Mountain of Loathsome Flesh": {
+ "en": "If this unit charged this turn, roll a dice. On 3+, pick an enemy unit within 1\" and roll one dice for each model in it. For each 5+, it takes 1 mortal damage.",
+ "el": "Αν αυτή η μονάδα έκανε charge αυτή τη σειρά, ρίξε ζάρι. Με 3+, διάλεξε εχθρική μονάδα σε 1\" και ρίξε ένα ζάρι για κάθε μοντέλο της. Για κάθε 5+, παίρνει 1 θανάσιμη ζημιά."},
+"Bringer of Plenty": {
+ "en": "Add 1 to casting rolls for your Maggotkin of Nurgle units while they are wholly within 12\" of this unit.",
+ "el": "Πρόσθεσε 1 στα casting rolls των μονάδων Maggotkin of Nurgle σου όσο είναι ολόκληρες μέσα σε 12\" από αυτή τη μονάδα."},
+"Deluge of Nurgle": {
+ "en": "Casting value 8. Pick every enemy unit within 18\" of this unit and every friendly Maggotkin of Nurgle unit within 18\" of it. Make a 2D6 casting roll. Each enemy target takes 1 mortal damage and each friendly target is healed (Heal 1). Then, until the start of your next turn, abilities cannot heal or bring back slain models to enemy units while they are within 18\" of this unit.",
+ "el": "Casting value 8. Διάλεξε κάθε εχθρική μονάδα σε 18\" από αυτή τη μονάδα και κάθε δική σου μονάδα Maggotkin of Nurgle σε 18\" από αυτήν. Ρίξε 2D6 για casting roll. Κάθε εχθρικός στόχος παίρνει 1 θανάσιμη ζημιά και κάθε δικός σου στόχος γιατρεύεται (Heal 1). Μετά, μέχρι την αρχή της επόμενης σειράς σου, οι abilities δεν μπορούν να γιατρέψουν ή να φέρουν πίσω σκοτωμένα μοντέλα σε εχθρικές μονάδες όσο είναι μέσα σε 18\" από αυτή τη μονάδα."},
+"Virulent Concoctions": {
+ "en": "When picking a target for the 'Infect' effect of Blessed by the Plaguefather, you can pick an enemy unit (not a Manifestation or terrain) that took damage from this unit's shooting this turn, even if it is not within 7\" of your Maggotkin of Nurgle units.",
+ "el": "Όταν διαλέγεις στόχο για το εφέ 'Infect' του Blessed by the Plaguefather, μπορείς να διαλέξεις εχθρική μονάδα (όχι Manifestation ή έδαφος) που έπαθε ζημιά από τα πυρά αυτής της μονάδας αυτή τη σειρά, ακόμη κι αν δεν είναι σε 7\" από μονάδες Maggotkin of Nurgle σου."},
+"Sweat-Soaked and Reeking": {
+ "en": "Pick an enemy unit that charged this turn and is in combat with this unit. Roll a dice. On 3+, it cannot use commands for the rest of the turn.",
+ "el": "Διάλεξε εχθρική μονάδα που έκανε charge αυτή τη σειρά και είναι σε μάχη με αυτή τη μονάδα. Ρίξε ζάρι. Με 3+, δεν μπορεί να χρησιμοποιήσει commands για το υπόλοιπο της σειράς."},
+"Purulent Profusion": {
+ "en": "Casting value 7. Pick a visible enemy unit within 18\" and make a 2D6 casting roll. Subtract 1 from the Rend of its melee weapons until the start of your next turn.",
+ "el": "Casting value 7. Διάλεξε ορατή εχθρική μονάδα σε 18\" και ρίξε 2D6 για casting roll. Αφαίρεσε 1 από το Rend των όπλων σώμα με σώμα της μέχρι την αρχή της επόμενης σειράς σου."},
+"Rampant Defilement": {
+ "en": "Pick one of your Pestigors units wholly within 12\" of this unit. Roll a dice. On 3+, add 1 to the Attacks of its melee weapons for the rest of the turn.",
+ "el": "Διάλεξε μονάδα Pestigors σου ολόκληρη μέσα σε 12\" από αυτή τη μονάδα. Ρίξε ζάρι. Με 3+, πρόσθεσε 1 στα Attacks των όπλων σώμα με σώμα της για το υπόλοιπο της σειράς."},
+"Jolly Gutpipes": {
+ "en": "Pick a visible friendly Maggotkin of Nurgle Daemon unit wholly within 12\" OR a visible enemy unit within 12\". Roll a dice. If the roll equals or beats the target's Control: friendly target gets +2 to run rolls and charge rolls until the start of your next turn. Enemy target: until the start of your next turn, while this unit is on the table, the target takes D3 mortal damage each time it ends a move further from this unit than it started, or is removed and set up again further from this unit (after that ability resolves).",
+ "el": "Διάλεξε ορατή δική σου μονάδα Daemon Maggotkin of Nurgle ολόκληρη μέσα σε 12\" Ή ορατή εχθρική μονάδα σε 12\". Ρίξε ζάρι. Αν το ζάρι είναι ίσο ή μεγαλύτερο από το Control του στόχου: ο δικός σου στόχος παίρνει +2 στα run rolls και charge rolls μέχρι την αρχή της επόμενης σειράς σου. Εχθρικός στόχος: μέχρι την αρχή της επόμενης σειράς σου, όσο αυτή η μονάδα είναι στο τραπέζι, ο στόχος παίρνει D3 θανάσιμη ζημιά κάθε φορά που τελειώνει μια κίνηση πιο μακριά από αυτή τη μονάδα απ' ό,τι ξεκίνησε, ή αφαιρείται και τοποθετείται ξανά πιο μακριά από αυτή τη μονάδα (αφού ολοκληρωθεί η ability)."},
+"Pall of Exhaustion": {
+ "en": "Pick an enemy unit in combat with this unit and roll a dice. Add 1 if the target is also in combat with another of your Rotbringers units. On 3+, it has Strike-last for the rest of the turn.",
+ "el": "Διάλεξε εχθρική μονάδα σε μάχη με αυτή τη μονάδα και ρίξε ζάρι. Πρόσθεσε 1 αν ο στόχος είναι επίσης σε μάχη με άλλη μονάδα Rotbringers σου. Με 3+, έχει Strike-last για το υπόλοιπο της σειράς."},
+"Keep Counting, I'm Watching You": {
+ "en": "Pick one of your Plaguebearers units wholly within 12\" of this unit and roll a dice. On 2+, pick 1 effect until the start of your next turn. Tally of Blows: +1 to wound rolls for its combat attacks. Recorded Stamina: +5 to its control score.",
+ "el": "Διάλεξε μονάδα Plaguebearers σου ολόκληρη μέσα σε 12\" από αυτή τη μονάδα και ρίξε ζάρι. Με 2+, διάλεξε 1 εφέ μέχρι την αρχή της επόμενης σειράς σου. Tally of Blows: +1 στα wound rolls των επιθέσεών της σώμα με σώμα. Recorded Stamina: +5 στο control score της."},
+"Stupefying Sneezes": {
+ "en": "Pick an enemy Monster that was damaged by this unit's shooting attacks this phase. It cannot use Rampage abilities until the start of your next turn.",
+ "el": "Διάλεξε εχθρικό Monster που έπαθε ζημιά από τα πυρά αυτής της μονάδας αυτή τη φάση. Δεν μπορεί να χρησιμοποιήσει Rampage abilities μέχρι την αρχή της επόμενης σειράς σου."},
+"The Glottkin::Battle Damaged": {
+ "en": "At 10 or more damage, the Ghurk's Tentacle weapon has 3 Attacks.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, το όπλο Ghurk's Tentacle έχει 3 Attacks."},
+"Blighted Stampede": {
+ "en": "Pick up to 2 of your Maggotkin of Nurgle units wholly within 12\" of this unit. After this unit's 'Counter-charge' command resolves, if this unit charged, each target can use 'Counter-charge' right away, in any order you choose, without spending CP.",
+ "el": "Διάλεξε μέχρι 2 μονάδες Maggotkin of Nurgle σου ολόκληρες μέσα σε 12\" από αυτή τη μονάδα. Αφού ολοκληρωθεί το command 'Counter-charge' αυτής της μονάδας, αν η μονάδα έκανε charge, κάθε στόχος μπορεί να χρησιμοποιήσει αμέσως το 'Counter-charge', με σειρά που διαλέγεις εσύ, χωρίς να ξοδέψεις CP."},
+"Overgrowth of Flesh": {
+ "en": "Casting value 6. Pick a visible enemy unit within 12\" and make a 2D6 casting roll. Roll one dice for each point of the target's Health. For each 5+, it takes 1 mortal damage (maximum 7). If it took any mortal damage and is not a Manifestation or terrain, it becomes Diseased.",
+ "el": "Casting value 6. Διάλεξε ορατή εχθρική μονάδα σε 12\" και ρίξε 2D6 για casting roll. Ρίξε ένα ζάρι για κάθε πόντο Health του στόχου. Για κάθε 5+, παίρνει 1 θανάσιμη ζημιά (μέγιστο 7). Αν πήρε οποιαδήποτε θανάσιμη ζημιά και δεν είναι Manifestation ή έδαφος, γίνεται Diseased."},
+"Horrific Opponent": {
+ "en": "Subtract 5 from the control score of enemy units while they are in combat with this unit.",
+ "el": "Αφαίρεσε 5 από το control score των εχθρικών μονάδων όσο είναι σε μάχη με αυτή τη μονάδα."},
+"Tentacle Trap": {
+ "en": "Pick an enemy Hero or Monster in combat with this unit and roll a dice. On 4+, for the rest of the turn: it cannot move and cannot be removed and set up elsewhere by an ability, and add 1 to hit rolls for combat attacks that target it.",
+ "el": "Διάλεξε εχθρικό Ήρωα ή Monster σε μάχη με αυτή τη μονάδα και ρίξε ζάρι. Με 4+, για το υπόλοιπο της σειράς: δεν μπορεί να κινηθεί και δεν μπορεί να αφαιρεθεί και να τοποθετηθεί αλλού από ability, και πρόσθεσε 1 στα hit rolls των επιθέσεων σώμα με σώμα που τον στοχεύουν."},
+"Crippling Despair": {
+ "en": "Spell (6). A friendly Maggotkin of Nurgle Wizard picks a visible enemy unit within 18\" and casts with 2D6. The target cannot use commands for the rest of the turn.",
+ "el": "Ξόρκι (6). Ένα Wizard Maggotkin of Nurgle σου διαλέγει ορατή εχθρική μονάδα σε 18\" και ρίχνει 2D6 για το ξόρκι. Ο στόχος δεν μπορεί να χρησιμοποιήσει commands για το υπόλοιπο της σειράς."},
+"Cloying Quagmire": {
+ "en": "Spell (7). A friendly Maggotkin of Nurgle Wizard picks a visible enemy unit within 18\" and casts with 2D6. Until the start of your next turn: halve the target's Move. If its Save is 3+ or better, also subtract 1 from its run rolls and charge rolls.",
+ "el": "Ξόρκι (7). Ένα Wizard Maggotkin of Nurgle σου διαλέγει ορατή εχθρική μονάδα σε 18\" και ρίχνει 2D6 για το ξόρκι. Μέχρι την αρχή της επόμενης σειράς σου: το Move του στόχου μειώνεται στο μισό. Αν το Save του είναι 3+ ή καλύτερο, αφαίρεσε επίσης 1 από τα run rolls και charge rolls του."},
+"Fleshy Abundance": {
+ "en": "Spell (6). A friendly Maggotkin of Nurgle Wizard picks a visible friendly Maggotkin of Nurgle unit wholly within 12\" of them and casts with 2D6. Pick 1 effect: Heal (D3) the target, OR subtract 1 from wound rolls for attacks against it until the start of your next turn.",
+ "el": "Ξόρκι (6). Ένα Wizard Maggotkin of Nurgle σου διαλέγει ορατή δική σου μονάδα Maggotkin of Nurgle ολόκληρη μέσα σε 12\" από αυτό και ρίχνει 2D6 για το ξόρκι. Διάλεξε 1 εφέ: Heal (D3) τον στόχο, Ή αφαίρεσε 1 από τα wound rolls των επιθέσεων εναντίον του μέχρι την αρχή της επόμενης σειράς σου."},
+"The Carrion Dirge": {
+ "en": "Pick up to 3 enemy units within 18\" of this unit. Subtract 5 from their control scores until the start of your next turn.",
+ "el": "Διάλεξε μέχρι 3 εχθρικές μονάδες σε 18\" από αυτή τη μονάδα. Αφαίρεσε 5 από τα control scores τους μέχρι την αρχή της επόμενης σειράς σου."},
+"Rustfang": {
+ "en": "Pick an enemy Hero or Monster in combat with this unit. Subtract 1 from its save rolls for the rest of the turn.",
+ "el": "Διάλεξε εχθρικό Ήρωα ή Monster σε μάχη με αυτή τη μονάδα. Αφαίρεσε 1 από τα save rolls του για το υπόλοιπο της σειράς."},
+"The Witherstave": {
+ "en": "Pick an enemy unit that charged this turn and is in combat with this unit. Roll a dice. On 3+, subtract 1 from the Damage of its melee weapons for the rest of the turn.",
+ "el": "Διάλεξε εχθρική μονάδα που έκανε charge αυτή τη σειρά και είναι σε μάχη με αυτή τη μονάδα. Ρίξε ζάρι. Με 3+, αφαίρεσε 1 από το Damage των όπλων σώμα με σώμα της για το υπόλοιπο της σειράς."},
+"Gift of Febrile Frenzy": {
+ "en": "Pick a visible friendly non-Hero Maggotkin of Nurgle unit wholly within 12\" of this unit. Roll a dice. On 3+, add 1 to the Attacks of its melee weapons for the rest of the turn.",
+ "el": "Διάλεξε ορατή δική σου μονάδα Maggotkin of Nurgle που δεν είναι Ήρωας και είναι ολόκληρη μέσα σε 12\" από αυτή τη μονάδα. Ρίξε ζάρι. Με 3+, πρόσθεσε 1 στα Attacks των όπλων σώμα με σώμα της για το υπόλοιπο της σειράς."},
+"Grandfather's Blessing": {
+ "en": "If this unit is in combat with a Diseased enemy unit, Heal (D3) this unit.",
+ "el": "Αν αυτή η μονάδα είναι σε μάχη με Diseased εχθρική μονάδα, κάνε Heal (D3) σε αυτή τη μονάδα."},
+"Overpowering Stench": {
+ "en": "Pick an enemy unit in combat with this unit. Roll off with your opponent. If you win, pick 1 effect for the rest of the turn: ignore positive modifiers to its save rolls, OR subtract 1 from its ward rolls.",
+ "el": "Διάλεξε εχθρική μονάδα σε μάχη με αυτή τη μονάδα. Κάνε roll off με τον αντίπαλο. Αν κερδίσεις, διάλεξε 1 εφέ για το υπόλοιπο της σειράς: αγνόησε τους θετικούς τροποποιητές στα save rolls της, Ή αφαίρεσε 1 από τα ward rolls της."},
+"Bloated with Sickness": {
+ "en": "Prayer (4). A friendly Maggotkin of Nurgle Priest picks a visible friendly non-Monster Maggotkin of Nurgle unit wholly within 12\" of them and makes a D6 chanting roll. Until the start of your next turn, ignore the first damage point allocated to the target in each phase. If the roll was 10+, you can pick a second eligible unit as another target.",
+ "el": "Προσευχή (4). Ένας Priest Maggotkin of Nurgle σου διαλέγει ορατή δική σου μονάδα Maggotkin of Nurgle που δεν είναι Monster, ολόκληρη μέσα σε 12\" από αυτόν, και ρίχνει D6 για chanting roll. Μέχρι την αρχή της επόμενης σειράς σου, αγνόησε τον πρώτο πόντο ζημιάς που δίνεται στον στόχο σε κάθε φάση. Αν το ζάρι ήταν 10+, μπορείς να διαλέξεις και δεύτερη κατάλληλη μονάδα ως στόχο."},
+"Gift of Disease": {
+ "en": "Prayer (3). A friendly Maggotkin of Nurgle Priest makes a D6 chanting roll. Until the start of your next turn, subtract 1 from wound rolls for attacks by enemy units while they are in combat with the chanter. If the roll was 10+, each enemy unit in combat with the chanter (not Manifestations or terrain) also becomes Diseased.",
+ "el": "Προσευχή (3). Ένας Priest Maggotkin of Nurgle σου ρίχνει D6 για chanting roll. Μέχρι την αρχή της επόμενης σειράς σου, αφαίρεσε 1 από τα wound rolls των επιθέσεων εχθρικών μονάδων όσο είναι σε μάχη με αυτόν που κάνει την προσευχή. Αν το ζάρι ήταν 10+, κάθε εχθρική μονάδα σε μάχη μαζί του (όχι Manifestations ή έδαφος) γίνεται επίσης Diseased."},
+"Favoured Poxes": {
+ "en": "Prayer (4). A friendly Maggotkin of Nurgle Priest picks a visible enemy unit within 18\" of them and makes a D6 chanting roll. Until the start of your next turn, subtract 2 from the target's charge rolls. If the roll was 10+, instead subtract 1 from the number of dice it rolls for charge rolls (minimum 1).",
+ "el": "Προσευχή (4). Ένας Priest Maggotkin of Nurgle σου διαλέγει ορατή εχθρική μονάδα σε 18\" από αυτόν και ρίχνει D6 για chanting roll. Μέχρι την αρχή της επόμενης σειράς σου, αφαίρεσε 2 από τα charge rolls του στόχου. Αν το ζάρι ήταν 10+, αντί γι' αυτό αφαίρεσε 1 από τον αριθμό των ζαριών που ρίχνει για charge roll (ελάχιστο 1)."}
+}
