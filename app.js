@@ -16,8 +16,34 @@ state.cpBonus = state.cpBonus || 0;     // +1 when you are the underdog
 state.pledges = state.pledges || {};   // Slaves to Darkness: "Unit#i" -> god
 state.units = (state.units || []).filter((u) => u && u.name);
 state.filter = "";
+state.easy = !!state.easy;              // Easy mode: plain-language rules
+state.lang = state.lang === "el" ? "el" : "en";
 if (!ARMIES[state.armyIdx]) state.armyIdx = 0;
 const enhKey = (e) => e.group + "|" + e.name;
+
+// ---- Easy mode + Greek ----
+const GR = {
+  "Army": "Στρατός", "Battle": "Μάχη", "Custom": "Δικά μου", "Formation": "Σχηματισμός", "Your army": "Ο στρατός σου", "units": "μονάδες",
+  "Add units": "Πρόσθεσε μονάδες", "Search units": "Αναζήτηση μονάδων", "Start battle": "Ξεκίνα τη μάχη", "Reset game": "Επαναφορά παιχνιδιού",
+  "No units yet. Search below and tap to add.": "Δεν έχεις μονάδες ακόμη. Ψάξε παρακάτω και πάτα για να προσθέσεις.", "No units found.": "Δεν βρέθηκαν μονάδες.",
+  "Spell & prayer lores (whole army)": "Ξόρκια & προσευχές (όλος ο στρατός)",
+  "Battle round": "Γύρος μάχης", "Your turn": "Η σειρά σου", "Enemy turn": "Σειρά εχθρού", "enemy turn": "σειρά εχθρού", "Command points": "Command points (CP)", "Underdog +1": "Underdog +1",
+  "Next phase ›": "Επόμενη φάση ›", "Next turn ›": "Επόμενη σειρά ›", "‹ Back": "‹ Πίσω", "Nothing from your army this phase.": "Τίποτα από τον στρατό σου σε αυτή τη φάση.",
+  "Always on / no fixed phase": "Πάντα ενεργά / χωρίς συγκεκριμένη φάση", "Your army's commands": "Τα commands του στρατού σου",
+  "Summoned manifestations": "Καλεσμένα manifestations", "Applies to": "Ισχύει για", "used": "χρησιμοποιήθηκε", "Use: spend": "Χρήση: ξόδεψε",
+  "Official wording (no simple version yet)": "Επίσημο κείμενο (δεν υπάρχει ακόμη απλή εκδοχή)",
+  "Start of Turn": "Αρχή σειράς", "Hero": "Ήρωες", "Movement": "Κίνηση", "Shooting": "Βολές", "Charge": "Charge", "Combat": "Μάχη", "End of Turn": "Τέλος σειράς",
+  "Start of Turn phase": "Φάση αρχής σειράς", "Hero phase": "Φάση Ηρώων", "Movement phase": "Φάση κίνησης", "Shooting phase": "Φάση βολών", "Charge phase": "Φάση charge", "Combat phase": "Φάση μάχης", "End of Turn phase": "Φάση τέλους σειράς",
+  "passive": "παθητική", "active": "ενεργή", "reaction": "αντίδραση", "spell": "ξόρκι", "command": "command", "prayer": "προσευχή",
+  "Easy": "Απλά", "Easy mode: plain-language rules": "Απλή λειτουργία: κανόνες σε απλά λόγια",
+};
+const t = (s) => (state.lang === "el" && GR[s]) || s;
+const hashTxt = (s) => { let h = 5381; for (let i = 0; i < s.length; i++) h = ((h * 33) ^ s.charCodeAt(i)) >>> 0; return h.toString(36); };
+function easyOf(ab) {
+  const e = typeof EASY !== "undefined" ? EASY[hashTxt(ab.text || "")] : null;
+  return e ? (state.lang === "el" && e.el ? e.el : e.en) : null;
+}
+const abText = (ab) => (state.easy && easyOf(ab)) || ab.text;
 
 function load() { try { return JSON.parse(localStorage.getItem(KEY)); } catch { return null; } }
 function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch {} }
@@ -108,7 +134,10 @@ function applyTheme() {
 function render() {
   save();
   applyTheme();
-  document.querySelectorAll("nav button").forEach((b) => b.classList.toggle("on", b.dataset.v === state.view));
+  document.querySelectorAll("nav button").forEach((b) => { b.classList.toggle("on", b.dataset.v === state.view); b.textContent = t({ setup: "Army", play: "Battle", custom: "Custom" }[b.dataset.v]); });
+  const eb = $("#easyBtn"), lb = $("#langBtn");
+  if (eb) { eb.classList.toggle("on", state.easy); eb.textContent = t("Easy"); eb.title = t("Easy mode: plain-language rules"); }
+  if (lb) { lb.textContent = state.lang === "el" ? "ΕΛ" : "EN"; lb.classList.toggle("on", state.lang === "el"); }
   const m = $("#main");
   m.innerHTML = state.view === "setup" ? setupView() : state.view === "play" ? playView() : customView();
   bind();
@@ -144,22 +173,22 @@ function attachBlock(u) {
 function setupView() {
   const a = army();
   return `
-  <h2>Army</h2>
+  <h2>${t("Army")}</h2>
   <div class="armies">${ARMIES.map((x, i) => `<button data-army="${i}" class="${i === state.armyIdx ? "sel" : ""}" style="--c:${themeOf(x).color}">${symbolSvg(x, 28)}<span>${esc(x.name)}</span></button>`).join("")}</div>
-  <h2>Formation</h2>
+  <h2>${t("Formation")}</h2>
   <div class="forms">${a.formations.map((x, i) => `<div class="form ${i === state.formation ? "sel" : ""}" data-form="${i}">
-    <div class="name">${esc(x.name)}</div>${x.abilities.map((ab) => `<div class="fab"><b>${esc(ab.name)}</b>${ab.timing ? ` <i>(${esc(ab.timing)})</i>` : ""}<div class="txt">${esc(ab.text)}</div></div>`).join("") || `<div class="txt muted">No ability text.</div>`}</div>`).join("")}</div>
-  <h2>Your army${state.units.length ? " (" + state.units.reduce((n, u) => n + u.count, 0) + " units)" : ""}</h2>
+    <div class="name">${esc(x.name)}</div>${x.abilities.map((ab) => `<div class="fab"><b>${esc(ab.name)}</b>${ab.timing ? ` <i>(${esc(ab.timing)})</i>` : ""}<div class="txt ${state.easy && easyOf(ab) ? "easytxt" : ""}">${esc(abText(ab))}</div></div>`).join("") ||`<div class="txt muted">No ability text.</div>`}</div>`).join("")}</div>
+  <h2>${t("Your army")}${state.units.length ? " (" + state.units.reduce((n, u) => n + u.count, 0) + " " + t("units") + ")" : ""}</h2>
   ${state.units.length ? `<div class="chips">${state.units.map((u) => { const sz = sizeOf(u.name); return `<div class="ucard"><div class="unit sel"><span class="uname">${esc(u.name)}<small>${sz > 1 ? u.count * sz + " models" : u.count > 1 ? "x" + u.count : ""}</small></span>
-    <span class="cnt"><button data-dec="${esc(u.name)}">−${sz > 1 ? sz : ""}</button><button data-inc="${esc(u.name)}">+${sz > 1 ? sz : ""}</button><button data-rm="${esc(u.name)}" title="Remove">✕</button></span></div>${attachBlock(u)}</div>`; }).join("")}</div>` : `<p class="muted">No units yet. Search below and tap to add.</p>`}
-  <h2>Add units</h2>
-  <input id="filter" placeholder="Search units" value="${esc(state.filter)}">
+    <span class="cnt"><button data-dec="${esc(u.name)}">−${sz > 1 ? sz : ""}</button><button data-inc="${esc(u.name)}">+${sz > 1 ? sz : ""}</button><button data-rm="${esc(u.name)}" title="Remove">✕</button></span></div>${attachBlock(u)}</div>`; }).join("")}</div>` : `<p class="muted">${t("No units yet. Search below and tap to add.")}</p>`}
+  <h2>${t("Add units")}</h2>
+  <input id="filter" placeholder="${t("Search units")}" value="${esc(state.filter)}">
   ${unitGroups(a)}
-  <h2>Spell &amp; prayer lores (whole army)${state.enh.length ? " (" + state.enh.length + ")" : ""}</h2>
+  <h2>${esc(t("Spell & prayer lores (whole army)"))}${state.enh.length ? " (" + state.enh.length + ")" : ""}</h2>
   ${[...new Set(a.enhancements.filter((e) => isLore(e.group)).map((e) => e.group))].map((g) => `<details><summary>${esc(g)}</summary>${a.enhancements.filter((e) => e.group === g).map((e) =>
     `<label class="enh"><input type="checkbox" data-enh="${esc(enhKey(e))}" ${state.enh.includes(enhKey(e)) ? "checked" : ""}> ${esc(e.name)}<small class="muted"> · ${e.abilities.map((x) => esc(x.name)).join(", ")}</small></label>`).join("")}</details>`).join("")}
-  <button class="big" data-go="play">Start battle</button>
-  <button class="link" id="reset">Reset game</button>`;
+  <button class="big" data-go="play">${t("Start battle")}</button>
+  <button class="link" id="reset">${t("Reset game")}</button>`;
 }
 
 function playView() {
@@ -169,23 +198,23 @@ function playView() {
   abs.forEach((ab) => (groups[ab.src] = groups[ab.src] || []).push(ab));
   return `
   <div class="bar">
-    <button data-round="-1">‹</button><b>Battle round ${state.round}</b><button data-round="1">›</button>
-    <button class="turn ${state.turn}" id="turn">${state.turn === "mine" ? "Your turn" : "Enemy turn"}</button>
+    <button data-round="-1">‹</button><b>${t("Battle round")} ${state.round}</b><button data-round="1">›</button>
+    <button class="turn ${state.turn}" id="turn">${state.turn === "mine" ? t("Your turn") : t("Enemy turn")}</button>
   </div>
-  <div class="cpbar"><span>Command points</span><button data-cp="-1">−</button><b class="cpnum">${state.cp}</b><button data-cp="1">+</button>
+  <div class="cpbar"><span>${t("Command points")}</span><button data-cp="-1">−</button><b class="cpnum">${state.cp}</b><button data-cp="1">+</button>
     <button class="chip ${state.cpBonus ? "on" : ""}" data-under="1">Underdog +1</button></div>
-  <div class="phases">${PHASES.map((p, i) => `<button data-phase="${i}" class="${i === state.phase ? "on" : ""}">${p.name}</button>`).join("")}</div>
+  <div class="phases">${PHASES.map((p, i) => `<button data-phase="${i}" class="${i === state.phase ? "on" : ""}">${t(p.name)}</button>`).join("")}</div>
   ${pledgePanel()}
-  <h2>${ph.name} phase</h2>
-  ${abs.length === 0 ? `<p class="muted">Nothing from your army this phase.</p>` : Object.entries(groups).map(([src, list]) => list[0].lore
+  <h2>${state.lang === "el" ? t(ph.name + " phase") : ph.name + " phase"}</h2>
+  ${abs.length === 0 ? `<p class="muted">${t("Nothing from your army this phase.")}</p>` : Object.entries(groups).map(([src, list]) => list[0].lore
     ? `<details class="lore"><summary>${esc(src)} · ${list.length} spells (open if you have a wizard)</summary>${list.map(card).join("")}</details>`
     : `<div class="group"><div class="src">${esc(src)}</div>${list.map(card).join("")}</div>`).join("")}
   ${alwaysOn()}
   ${commandPanel()}
   ${summonPanel()}
   <div class="nextrow">
-    <button data-step="-1">‹ Back</button>
-    <button class="big" data-step="1">${state.phase === PHASES.length - 1 ? "Next turn ›" : "Next phase ›"}</button>
+    <button data-step="-1">${t("‹ Back")}</button>
+    <button class="big" data-step="1">${state.phase === PHASES.length - 1 ? t("Next turn ›") : t("Next phase ›")}</button>
   </div>`;
 }
 
@@ -193,12 +222,12 @@ function commandPanel() {
   const list = allAbilities().filter((ab) => ab.kind === "command");
   const groups = {};
   list.forEach((ab) => (groups[ab.src] = groups[ab.src] || []).push(ab));
-  return `<details class="always"><summary>Your army's commands (${list.length})</summary>${list.length ? Object.entries(groups).map(([src, l]) => `<div class="src">${esc(src)}</div>${l.map(card).join("")}`).join("") : '<p class="muted">No army-specific commands for the units you picked.</p>'}</details>`;
+  return `<details class="always"><summary>${t("Your army's commands")} (${list.length})</summary>${list.length ? Object.entries(groups).map(([src, l]) => `<div class="src">${esc(src)}</div>${l.map(card).join("")}`).join("") : '<p class="muted">No army-specific commands for the units you picked.</p>'}</details>`;
 }
 
 function summonPanel() {
   const man = army().manifestations || [];
-  return `<details class="always"><summary>Summoned manifestations (${state.summons.length})</summary>
+  return `<details class="always"><summary>${t("Summoned manifestations")} (${state.summons.length})</summary>
     ${state.summons.map((s) => `<div class="unit sel"><span class="uname">${esc(s.name)} #${s.n}</span><button data-unsummon="${s.n}">Banished ✕</button></div>`).join("")}
     ${man.length ? `<div class="src">Summon one</div>` + man.map((m) => `<div class="unit"><button data-summon="${esc(m.name)}">+ ${esc(m.name)}<small>${esc(m.stats)}</small></button></div>`).join("") : `<p class="muted">This army has no manifestations in the data.</p>`}</details>`;
 }
@@ -208,18 +237,20 @@ function alwaysOn() {
   if (!list.length) return "";
   const groups = {};
   list.forEach((ab) => (groups[ab.src] = groups[ab.src] || []).push(ab));
-  return `<details class="always"><summary>Always on / no fixed phase (${list.length})</summary>${Object.entries(groups).map(([src, l]) =>
+  return `<details class="always"><summary>${t("Always on / no fixed phase")} (${list.length})</summary>${Object.entries(groups).map(([src, l]) =>
     `<div class="src">${esc(src)}</div>${l.map(card).join("")}`).join("")}</details>`;
 }
 
 function card(ab) {
   const k = usedKey(ab), used = !!state.used[k];
+  const easy = state.easy && easyOf(ab);
   return `<div class="card ${ab.kind || "passive"} ${used ? "used" : ""}">
-    <div class="ctop"><span class="tag">${esc(ab.kind || "passive")}${ab.when === "theirs" ? " · enemy turn" : ""}</span>
-    ${ab.limit ? `<label><input type="checkbox" data-used="${esc(k)}" ${used ? "checked" : ""}> used (${ab.limit})</label>` : ""}</div>
-    <div class="name">${esc(ab.name)}</div>${ab.kind === "command" ? `<div class="cmdmeta">${esc(ab.timing || "")} · ${ab.cost} CP</div>` : ""}<div class="txt">${esc(ab.text)}</div>
-    ${ab.kind === "command" ? `<button class="spend" data-spend="${ab.cost}" ${state.cp < ab.cost ? "disabled" : ""}>Use: spend ${ab.cost} CP</button>` : ""}
-    ${ab.applies ? `<div class="applies">Applies to: ${esc(ab.applies)}</div>` : ""}</div>`;
+    <div class="ctop"><span class="tag">${esc(t(ab.kind || "passive"))}${ab.when === "theirs" ? " · " + t("enemy turn") : ""}</span>
+    ${ab.limit ? `<label><input type="checkbox" data-used="${esc(k)}" ${used ? "checked" : ""}> ${t("used")} (${ab.limit})</label>` : ""}</div>
+    <div class="name">${esc(ab.name)}</div>${ab.kind === "command" ? `<div class="cmdmeta">${esc(ab.timing || "")} · ${ab.cost} CP</div>` : ""}<div class="txt ${easy ? "easytxt" : ""}">${esc(abText(ab))}</div>
+    ${state.easy && !easy ? `<div class="noeasy">${t("Official wording (no simple version yet)")}</div>` : ""}
+    ${ab.kind === "command" ? `<button class="spend" data-spend="${ab.cost}" ${state.cp < ab.cost ? "disabled" : ""}>${t("Use: spend")} ${ab.cost} CP</button>` : ""}
+    ${ab.applies ? `<div class="applies">${t("Applies to")}: ${esc(ab.applies)}</div>` : ""}</div>`;
 }
 
 function pledgePanel() {
@@ -300,5 +331,8 @@ function bind() {
 }
 
 document.querySelectorAll("nav button").forEach((b) => b.onclick = () => { state.view = b.dataset.v; render(); });
+{ const eb = $("#easyBtn"), lb = $("#langBtn");
+  if (eb) eb.onclick = () => { state.easy = !state.easy; render(); };
+  if (lb) lb.onclick = () => { state.lang = state.lang === "el" ? "en" : "el"; render(); }; }
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
 render();

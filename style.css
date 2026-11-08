@@ -50,6 +50,10 @@ details.always{margin-top:16px}
 header{display:flex;align-items:center;gap:10px}
 header img{width:26px;height:26px;border-radius:6px}
 header #sym{margin-left:auto;color:var(--gold);display:flex}
+.hbtn{padding:4px 10px;font-size:13px;letter-spacing:0;text-transform:none;border-radius:14px;border:1px solid var(--line);background:transparent;color:var(--gold)}
+.hbtn.on{background:var(--gold);color:var(--on);border-color:var(--gold)}
+.easytxt{font-size:16px;line-height:1.45;color:#eadfce}
+.noeasy{font-size:12px;color:#9a8f80;margin-top:4px;font-style:italic}
 .armies{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
 .armies button{display:flex;align-items:center;gap:8px;text-align:left;color:var(--c)}
 .armies button span{color:var(--text);font-size:14px}
