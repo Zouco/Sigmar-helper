@@ -9,6 +9,7 @@ const THEMES = {
   "Seraphon":           { color: "#f08a24", on: "#1f1002", symbol: `<path d="M12 1l2.6 8.4L23 12l-8.4 2.6L12 23l-2.6-8.4L1 12l8.4-2.6z" fill="currentColor"/>` },
   "Idoneth Deepkin":    { color: "#2aa6b8", on: "#021417", symbol: `<path d="M12 1C8 7 5 11 5 15a7 7 0 0 0 14 0c0-4-3-8-7-14z" fill="currentColor"/><path d="M7.5 15c1.5-1.6 3-1.6 4.5 0s3 1.6 4.5 0" stroke="#14110f" stroke-width="1.6" fill="none"/>` },
   "Maggotkin of Nurgle": { color: "#b3bf3a", on: "#161a02", symbol: `<g fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="7.5" r="4.6"/><circle cx="7.3" cy="15.6" r="4.6"/><circle cx="16.7" cy="15.6" r="4.6"/></g>` },
+  "Nighthaunt":         { color: "#9a8cf0", on: "#0e0a22", symbol: `<path d="M12 2C7.5 2 5 5.5 5 10v12l2.4-2.2L9.7 22 12 19.8 14.3 22l2.3-2.2L19 22V10c0-4.5-2.5-8-7-8z" fill="currentColor"/><circle cx="9.5" cy="10" r="1.7" fill="#14110f"/><circle cx="14.5" cy="10" r="1.7" fill="#14110f"/>` },
   "Skaven":         { color: "#2f8a52", on: "#ffffff", symbol: `<path d="M3 2c0 6 3 9 9 9s9-3 9-9c-1 4-4 6-9 6S4 6 3 2z" fill="currentColor"/><path d="M12 10l4.5 12h-9z" fill="currentColor"/>` },
 };
 const themeOf = (army) => THEMES[army.name] || { color: "#d4a73c", on: "#1a1408", symbol: "" };

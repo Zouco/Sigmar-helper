@@ -1,0 +1,209 @@
+{
+"Ethereal": {
+ "en": "Ignore negative modifiers to save rolls for your Nighthaunt units (not Nagash).",
+ "el": "Αγνόησε τους αρνητικούς τροποποιητές στα save rolls των μονάδων Nighthaunt σου (όχι του Nagash)."},
+"Ethereal Translocation": {
+ "en": "Pick one of your Nighthaunt units that is not in combat. Take it off the table and set it up again more than 9\" from all enemy units.",
+ "el": "Διάλεξε μία μονάδα Nighthaunt σου που δεν είναι σε μάχη. Βγάλ' την από το τραπέζι και βάλ' την ξανά πάνω από 9\" μακριά από όλες τις εχθρικές μονάδες."},
+"Mounting Dread": {
+ "en": "Enemy units that are in combat with your Nighthaunt units lose control score equal to the current battle round number.",
+ "el": "Οι εχθρικές μονάδες που είναι σε μάχη με μονάδες Nighthaunt σου χάνουν control score ίσο με τον αριθμό του τρέχοντος γύρου."},
+"Sepulchral Apparitions": {
+ "en": "Deployment, before round 1: if you have a Nexus of Grief on the table, set up up to 2 more. Each must be fully outside enemy territory, more than 3\" from objectives and other terrain, and more than 12\" from your other Nexuses of Grief.",
+ "el": "Παράταξη, πριν από τον γύρο 1: αν έχεις ένα Nexus of Grief στο τραπέζι, βάλε μέχρι 2 ακόμα. Το καθένα πρέπει να είναι ολόκληρο εκτός εχθρικού εδάφους, πάνω από 3\" από στόχους και άλλο έδαφος, και πάνω από 12\" από τα άλλα Nexus of Grief σου."},
+"Vanish and Reappear": {
+ "en": "Pick one of your Nighthaunt units that is in combat. Roll a dice. It can move up to its Move plus the roll. It can pass through models and enemy combat ranges, and it can end the move in combat.",
+ "el": "Διάλεξε μία μονάδα Nighthaunt σου που είναι σε μάχη. Ρίξε ένα ζάρι. Μπορεί να κινηθεί μέχρι το Move της συν το ζάρι. Μπορεί να περάσει μέσα από μοντέλα και από την εμβέλεια μάχης των εχθρών και να τελειώσει την κίνηση σε μάχη."},
+"There Is No Escape": {
+ "en": "If there is no condemned enemy unit, pick one to be condemned. For the rest of the battle, your Nighthaunt melee attacks against the condemned unit get +1 Rend.",
+ "el": "Αν δεν υπάρχει καταδικασμένη εχθρική μονάδα, διάλεξε μία να καταδικαστεί. Για το υπόλοιπο της μάχης, οι επιθέσεις σώμα με σώμα των Nighthaunt σου εναντίον της καταδικασμένης μονάδας έχουν +1 Rend."},
+"Lethal Rancour": {
+ "en": "Pick up to 2 of your Nighthaunt units. Their melee weapons have Anti-charge (+1 Rend) for the rest of the turn.",
+ "el": "Διάλεξε μέχρι 2 μονάδες Nighthaunt σου. Τα όπλα σώμα με σώμα τους έχουν Anti-charge (+1 Rend) για το υπόλοιπο της σειράς."},
+"Petrify": {
+ "en": "Pick one of your Nighthaunt Heroes. For the rest of the turn, enemy units in combat with it cannot Retreat.",
+ "el": "Διάλεξε έναν Ήρωα Nighthaunt σου. Για το υπόλοιπο της σειράς, οι εχθρικές μονάδες που είναι σε μάχη μαζί του δεν μπορούν να κάνουν Retreat."},
+"Drifting on Spectral Tides": {
+ "en": "Roll a dice. On a 3+, this unit can immediately do a Normal Move or a Retreat, as if it were your movement phase.",
+ "el": "Ρίξε ένα ζάρι. Με 3+, αυτή η μονάδα μπορεί αμέσως να κάνει Normal Move ή Retreat, σαν να ήταν η φάση κίνησής σου."},
+"Passage Through the Underworlds": {
+ "en": "If this unit is not in combat, pick one of your non-Hero Nighthaunt units that is not in combat and is fully within 12\" of this unit. Take both off the table and set them up again fully within 6\" of each other and more than 7\" from all enemy units.",
+ "el": "Αν αυτή η μονάδα δεν είναι σε μάχη, διάλεξε μία μη-ήρωα μονάδα Nighthaunt σου που δεν είναι σε μάχη και είναι ολόκληρη μέσα σε 12\" από αυτήν. Βγάλε και τις δύο από το τραπέζι και βάλ' τες ξανά ολόκληρες μέσα σε 6\" η μία από την άλλη και πάνω από 7\" από όλες τις εχθρικές μονάδες."},
+"Runaway Coach": {
+ "en": "If this unit charged this phase, pick an enemy unit within 1\". Roll a D3. On a 2+, it takes mortal damage equal to the roll.",
+ "el": "Αν αυτή η μονάδα έκανε Charge σε αυτή τη φάση, διάλεξε μια εχθρική μονάδα σε 1\". Ρίξε D3. Με 2+, παίρνει θανάσιμη ζημιά ίση με το ζάρι."},
+"Nimbus of Power": {
+ "en": "If this unit is not in combat, take it off the table and set it up again more than 9\" from all enemy units.",
+ "el": "Αν αυτή η μονάδα δεν είναι σε μάχη, βγάλ' την από το τραπέζι και βάλ' την ξανά πάνω από 9\" μακριά από όλες τις εχθρικές μονάδες."},
+"Evocation of Death": {
+ "en": "If this unit's combat attacks put damage on an enemy unit this turn and that unit was destroyed this turn, pick one of your destroyed non-Unique Nighthaunt Heroes. Set up a replacement fully within 12\" of this unit. It must be in combat with enemy units that are in combat with this unit.",
+ "el": "Αν οι επιθέσεις σώμα με σώμα αυτής της μονάδας έβαλαν ζημιά σε εχθρική μονάδα αυτή τη σειρά και η μονάδα αυτή καταστράφηκε, διάλεξε έναν κατεστραμμένο μη-Unique Ήρωα Nighthaunt σου. Βάλε μια αντικαταστάτρια μονάδα ολόκληρη μέσα σε 12\" από αυτή τη μονάδα. Πρέπει να είναι σε μάχη με εχθρικές μονάδες που είναι σε μάχη με αυτή τη μονάδα."},
+"Thrashing Desperation": {
+ "en": "While this unit contests an objective you control, enemies cannot end a charge move within 1/2\" of its models unless the unmodified charge roll was 7 or more.",
+ "el": "Όσο αυτή η μονάδα διεκδικεί (contests) στόχο που ελέγχεις, οι εχθροί δεν μπορούν να τελειώσουν Charge μέσα σε 1/2\" από μοντέλα της, εκτός αν το charge roll χωρίς τροποποιητές ήταν 7 ή παραπάνω."},
+"Eager Death-Dealers": {
+ "en": "Pick a visible Grimghast Reapers unit of yours fully within 12\" of this unit. +1 to wound for its combat attacks for the rest of the turn.",
+ "el": "Διάλεξε μια ορατή μονάδα Grimghast Reapers σου ολόκληρη μέσα σε 12\" από αυτή τη μονάδα. +1 για να τραυματίσει (wound) στις επιθέσεις μάχης της για το υπόλοιπο της σειράς."},
+"Another Link in the Chain": {
+ "en": "Roll a dice. Add 1 if this unit is fully within 12\" of any of your Spirit Torments. On a 3+, for the rest of the turn your Nighthaunt units fully within 12\" of this unit get +1 to hit on combat attacks.",
+ "el": "Ρίξε ένα ζάρι. Πρόσθεσε 1 αν αυτή η μονάδα είναι ολόκληρη μέσα σε 12\" από Spirit Torment δικό σου. Με 3+, για το υπόλοιπο της σειράς οι μονάδες Nighthaunt σου ολόκληρες μέσα σε 12\" από αυτή τη μονάδα έχουν +1 για να πετύχουν (hit) στις επιθέσεις μάχης."},
+"Chilling Horde": {
+ "en": "Deployment, before round 1: pick up to 3 of your Chainrasps units. Each can move 6\" but cannot end the move in combat.",
+ "el": "Παράταξη, πριν από τον γύρο 1: διάλεξε μέχρι 3 μονάδες Chainrasps σου. Καθεμία μπορεί να κινηθεί 6\" αλλά δεν μπορεί να τελειώσει την κίνηση σε μάχη."},
+"Black-hearted Lackeys": {
+ "en": "Pick an enemy unit in combat with this unit. Roll a D3. On a 2+, this unit immediately does a Retreat with no mortal damage to itself, then the target takes mortal damage equal to the roll.",
+ "el": "Διάλεξε μια εχθρική μονάδα σε μάχη με αυτή τη μονάδα. Ρίξε D3. Με 2+, αυτή η μονάδα κάνει αμέσως Retreat χωρίς να πάρει θανάσιμη ζημιά, και ο στόχος παίρνει θανάσιμη ζημιά ίση με το ζάρι."},
+"Curse of Loyalty": {
+ "en": "If this unit charged this turn, add 3 to the control score of your Nighthaunt units fully within 12\" of it.",
+ "el": "Αν αυτή η μονάδα έκανε Charge αυτή τη σειρά, πρόσθεσε 3 στο control score των μονάδων Nighthaunt σου που είναι ολόκληρες μέσα σε 12\" από αυτήν."},
+"Phantasmal Discorporation": {
+ "en": "Take this unit off the table and set it up again more than 9\" from all enemy units.",
+ "el": "Βγάλε αυτή τη μονάδα από το τραπέζι και βάλ' την ξανά πάνω από 9\" μακριά από όλες τις εχθρικές μονάδες."},
+"Harrowing Shrieks": {
+ "en": "Enemy units in combat with this unit cannot be healed or have slain models returned.",
+ "el": "Οι εχθρικές μονάδες που είναι σε μάχη με αυτή τη μονάδα δεν μπορούν να γιατρευτούν (Heal) ούτε να πάρουν πίσω σκοτωμένα μοντέλα."},
+"Unerring Hunters": {
+ "en": "For the rest of the turn, each pile-in move of this unit can be 3\" longer.",
+ "el": "Για το υπόλοιπο της σειράς, κάθε pile-in move αυτής της μονάδας μπορεί να είναι 3\" μεγαλύτερο."},
+"Reaped Like Corn": {
+ "en": "Pick an enemy unit within the combat range of 5 or more models of this unit. Roll one dice per model in the target unit. Each 6 = 1 mortal damage. If the target has 20 or more models, each 5+ = 1 mortal damage instead.",
+ "el": "Διάλεξε μια εχθρική μονάδα μέσα στην εμβέλεια μάχης 5 ή περισσότερων μοντέλων αυτής της μονάδας. Ρίξε ένα ζάρι για κάθε μοντέλο της στόχου. Κάθε 6 = 1 θανάσιμη ζημιά. Αν ο στόχος έχει 20 ή περισσότερα μοντέλα, κάθε 5+ = 1 θανάσιμη ζημιά."},
+"Nightmare Lantern": {
+ "en": "Pick a visible Nighthaunt unit of yours fully within 12\" of this unit. Roll a dice. On a 3+, +1 to wound for its attacks for the rest of the turn.",
+ "el": "Διάλεξε μια ορατή μονάδα Nighthaunt σου ολόκληρη μέσα σε 12\" από αυτή τη μονάδα. Ρίξε ένα ζάρι. Με 3+, +1 για να τραυματίσει (wound) στις επιθέσεις της για το υπόλοιπο της σειράς."},
+"Spectral Hunters": {
+ "en": "If this unit charged this phase, pick an enemy unit within 1\". Roll a D3. On a 2+, it takes mortal damage equal to the roll.",
+ "el": "Αν αυτή η μονάδα έκανε Charge σε αυτή τη φάση, διάλεξε μια εχθρική μονάδα σε 1\". Ρίξε D3. Με 2+, παίρνει θανάσιμη ζημιά ίση με το ζάρι."},
+"Stolen Hours": {
+ "en": "Each time this unit uses a Fight ability, after it is resolved, Heal this unit by the number of damage points its combat attacks put on enemy units in that Fight ability.",
+ "el": "Κάθε φορά που αυτή η μονάδα χρησιμοποιεί Fight ability, αφού ολοκληρωθεί, κάνε Heal σε αυτή τη μονάδα όσο η ζημιά που έβαλαν οι επιθέσεις μάχης της σε εχθρικές μονάδες σε εκείνη τη Fight ability."},
+"Infantry Overseer": {
+ "en": "Pick a non-Hero Nighthaunt Infantry unit of yours within this unit's combat range that has not fought this turn. It can be picked to fight right after this unit's Fight ability is resolved. If it does, +1 to hit for its attacks for the rest of the turn.",
+ "el": "Διάλεξε μια μη-ήρωα μονάδα Nighthaunt Infantry σου μέσα στην εμβέλεια μάχης αυτής της μονάδας που δεν έχει πολεμήσει αυτή τη σειρά. Μπορεί να επιλεγεί να πολεμήσει αμέσως μετά την ολοκλήρωση της Fight ability αυτής της μονάδας. Αν το κάνει, +1 για να πετύχει (hit) στις επιθέσεις της για το υπόλοιπο της σειράς."},
+"Cavalry Overseer": {
+ "en": "Pick a non-Hero Nighthaunt Cavalry or War Machine unit of yours within this unit's combat range that has not fought this turn. It can be picked to fight right after this unit's Fight ability is resolved. If it does, +1 to hit for its attacks for the rest of the turn.",
+ "el": "Διάλεξε μια μη-ήρωα μονάδα Nighthaunt Cavalry ή War Machine σου μέσα στην εμβέλεια μάχης αυτής της μονάδας που δεν έχει πολεμήσει αυτή τη σειρά. Μπορεί να επιλεγεί να πολεμήσει αμέσως μετά την ολοκλήρωση της Fight ability αυτής της μονάδας. Αν το κάνει, +1 για να πετύχει (hit) στις επιθέσεις της για το υπόλοιπο της σειράς."},
+"Empowered Through Excruciation": {
+ "en": "In each phase, ignore the first damage point that would be put on each of your Nighthaunt units fully within 12\" of this unit.",
+ "el": "Σε κάθε φάση, αγνόησε τον πρώτο πόντο ζημιάς που θα έπαιρνε κάθε μονάδα Nighthaunt σου ολόκληρη μέσα σε 12\" από αυτή τη μονάδα."},
+"Hail Kurdoss! King of Nothing!": {
+ "en": "If this unit charged this phase, pick a Craventhrone Guard unit of yours that is not in combat. It can immediately use a Shoot ability as if it were your shooting phase, but all attacks must target an enemy unit in combat with this unit. It cannot Charge for the rest of the turn.",
+ "el": "Αν αυτή η μονάδα έκανε Charge σε αυτή τη φάση, διάλεξε μια μονάδα Craventhrone Guard σου που δεν είναι σε μάχη. Μπορεί αμέσως να χρησιμοποιήσει Shoot ability σαν να ήταν η φάση βολής σου, αλλά όλες οι επιθέσεις πρέπει να στοχεύουν εχθρική μονάδα σε μάχη με αυτή τη μονάδα. Δεν μπορεί να κάνει Charge για το υπόλοιπο της σειράς."},
+"If I Cannot Rule, None Shall Rule!": {
+ "en": "Used when the enemy uses a command. Roll a dice. On a 3+, unless your opponent pays 1 extra CP, the command does nothing (it still counts as used and the CP are still lost).",
+ "el": "Χρησιμοποιείται όταν ο εχθρός χρησιμοποιεί command. Ρίξε ένα ζάρι. Με 3+, αν ο αντίπαλος δεν πληρώσει 1 επιπλέον CP, το command δεν κάνει τίποτα (μετράει ως χρησιμοποιημένο και τα CP χάνονται)."},
+"No Rest for the Wicked": {
+ "en": "Pick any number of your Nighthaunt units. For each, bring back slain models with a total Health of up to D3+3.",
+ "el": "Διάλεξε όσες μονάδες Nighthaunt σου θέλεις. Για καθεμία, φέρε πίσω σκοτωμένα μοντέλα με συνολική Health μέχρι D3+3."},
+"Mortarch of Grief": {
+ "en": "If the unmodified hit roll or unmodified wound roll of an attack against this unit is 1-4, the attack fails.",
+ "el": "Αν το hit roll ή το wound roll μιας επίθεσης εναντίον αυτής της μονάδας, χωρίς τροποποιητές, είναι 1-4, η επίθεση αποτυγχάνει."},
+"Grief-stricken": {
+ "en": "Spell (6). Pick a visible enemy unit within 18\" and cast with 2D6. Ignore positive modifiers to the target's control score, hit rolls, wound rolls and save rolls for the rest of the turn.",
+ "el": "Ξόρκι (6). Διάλεξε ορατή εχθρική μονάδα σε 18\" και ρίξε 2D6 για το ξόρκι. Αγνόησε τους θετικούς τροποποιητές στο control score, στα hit rolls, wound rolls και save rolls του στόχου για το υπόλοιπο της σειράς."},
+"Ghastly Descent": {
+ "en": "Pick an enemy Infantry or Cavalry Hero that this unit's attacks put damage on this turn. Roll a dice, adding 1 if the target is Sentenced. On a 5+, the target is destroyed.",
+ "el": "Διάλεξε έναν εχθρικό Ήρωα Infantry ή Cavalry στον οποίο οι επιθέσεις αυτής της μονάδας έβαλαν ζημιά αυτή τη σειρά. Ρίξε ένα ζάρι και πρόσθεσε 1 αν ο στόχος είναι Sentenced. Με 5+, ο στόχος καταστρέφεται."},
+"Staring Death in the Face": {
+ "en": "Pick an enemy unit in combat with this unit. Roll a dice. On a 2+, -1 Attacks on its melee weapons for the rest of the turn. If it is a Hero, also -5 to its control score for the rest of the turn.",
+ "el": "Διάλεξε μια εχθρική μονάδα σε μάχη με αυτή τη μονάδα. Ρίξε ένα ζάρι. Με 2+, -1 Attacks στα όπλα σώμα με σώμα της για το υπόλοιπο της σειράς. Αν είναι Ήρωας, επιπλέον -5 στο control score του για το υπόλοιπο της σειράς."},
+"Spectral Alchemy": {
+ "en": "Pick an enemy unit within 10\". If this unit's shooting damaged it this turn, apply 1 effect below. Otherwise roll a dice: on a 3+, apply 1 effect. Phantasmal Solvent: if the target's Move is '-', 6 mortal damage. Acidic Fug: D3 mortal damage. Corrosive Mist: 1 mortal damage to each enemy unit within the target's combat range. Choking Vapours: if the target is a Wizard, -1 power level until your next turn. Fear-laced Hallucinogen: if the target is a Priest, remove D3 ritual points. Unholy Prescription: no Ward rolls for the target for the rest of the turn.",
+ "el": "Διάλεξε μια εχθρική μονάδα σε 10\". Αν η βολή αυτής της μονάδας της έβαλε ζημιά αυτή τη σειρά, εφάρμοσε 1 εφέ από τα παρακάτω. Αλλιώς ρίξε ένα ζάρι: με 3+, εφάρμοσε 1 εφέ. Phantasmal Solvent: αν το Move του στόχου είναι '-', 6 θανάσιμη ζημιά. Acidic Fug: D3 θανάσιμη ζημιά. Corrosive Mist: 1 θανάσιμη ζημιά σε κάθε εχθρική μονάδα μέσα στην εμβέλεια μάχης του στόχου. Choking Vapours: αν ο στόχος είναι Wizard, -1 power level μέχρι την επόμενη σειρά σου. Fear-laced Hallucinogen: αν ο στόχος είναι Priest, αφαίρεσε D3 ritual points. Unholy Prescription: ο στόχος δεν μπορεί να κάνει Ward rolls για το υπόλοιπο της σειράς."},
+"Spell-eaters": {
+ "en": "When a spell targets one of your Nighthaunt units fully within 12\" of this unit, this unit can Unbind as if it were Wizard (1), with +1 to the unbinding roll. If the spell is unbound, the caster takes D3 mortal damage.",
+ "el": "Όταν ένα ξόρκι στοχεύει μονάδα Nighthaunt σου ολόκληρη μέσα σε 12\" από αυτή τη μονάδα, αυτή η μονάδα μπορεί να κάνει Unbind σαν να ήταν Wizard (1), με +1 στο unbinding roll. Αν το ξόρκι γίνει unbind, ο καστ παίρνει D3 θανάσιμη ζημιά."},
+"Nagash, Supreme Lord of the Undead::Battle Damaged": {
+ "en": "At 10 or more damage, -3 to this unit's power level.",
+ "el": "Με 10 ή περισσότερους πόντους ζημιάς, -3 στο power level αυτής της μονάδας."},
+"The Staff of Power": {
+ "en": "+2 to this unit's casting rolls while it has not miscast this turn. If it miscasts, it can still cast more spells this turn.",
+ "el": "+2 στα casting rolls αυτής της μονάδας όσο δεν έχει κάνει miscast αυτή τη σειρά. Αν κάνει miscast, μπορεί παρ' όλα αυτά να ρίξει κι άλλα ξόρκια αυτή τη σειρά."},
+"Hand of Dust": {
+ "en": "Pick a visible enemy Hero or Monster in combat with this unit. Hide a dice in one hand (or under one of two containers). Your opponent picks one. If they pick the dice, nothing happens. If they pick the empty one, the target is destroyed.",
+ "el": "Διάλεξε έναν ορατό εχθρικό Ήρωα ή Monster σε μάχη με αυτή τη μονάδα. Κρύψε ένα ζάρι σε ένα χέρι (ή κάτω από ένα από δύο δοχεία). Ο αντίπαλος διαλέγει ένα. Αν διαλέξει αυτό με το ζάρι, δεν γίνεται τίποτα. Αν διαλέξει το άδειο, ο στόχος καταστρέφεται."},
+"Supreme Lord of the Undead": {
+ "en": "Pick one of your destroyed non-Hero non-Unique Death units. Set up an identical replacement unit fully within 12\" of this unit and more than 9\" from all enemy units.",
+ "el": "Διάλεξε μια κατεστραμμένη μη-ήρωα μη-Unique μονάδα Death σου. Βάλε μια πανομοιότυπη αντικαταστάτρια μονάδα ολόκληρη μέσα σε 12\" από αυτή τη μονάδα και πάνω από 9\" από όλες τις εχθρικές μονάδες."},
+"Invocation of Nagash": {
+ "en": "Spell (7). Can be cast more than once per phase. Pick a visible unit fully within 18\" that was not yet the target of this spell this turn, and cast with 2D6. Enemy target: D3 mortal damage. Friendly Death target: pick 1 effect: bring back slain models with total Health up to 3; OR, if it was not set up this turn and is not in combat, it moves up to 3\" (not into combat).",
+ "el": "Ξόρκι (7). Μπορεί να ριχτεί πάνω από μία φορά ανά φάση. Διάλεξε μια ορατή μονάδα ολόκληρη μέσα σε 18\" που δεν έχει ξαναγίνει στόχος αυτού του ξορκιού αυτή τη σειρά και ρίξε 2D6 για το ξόρκι. Εχθρικός στόχος: D3 θανάσιμη ζημιά. Δική σου μονάδα Death: διάλεξε 1 εφέ: φέρε πίσω σκοτωμένα μοντέλα με συνολική Health μέχρι 3 Ή, αν δεν τοποθετήθηκε αυτή τη σειρά και δεν είναι σε μάχη, κινείται μέχρι 3\" (όχι σε μάχη)."},
+"Awful Refashioning": {
+ "en": "Pick one of your Nexuses of Grief, then up to 3 of your Nighthaunt units fully within 12\" of it (the same unit only once per phase). For each: if damaged, Heal (D3); if not damaged, bring back slain models with total Health up to D3.",
+ "el": "Διάλεξε ένα Nexus of Grief σου και μετά μέχρι 3 μονάδες Nighthaunt σου ολόκληρες μέσα σε 12\" από αυτό (την ίδια μονάδα μία φορά ανά φάση). Για καθεμία: αν έχει ζημιά, Heal (D3). Αν δεν έχει ζημιά, φέρε πίσω σκοτωμένα μοντέλα με συνολική Health μέχρι D3."},
+"Screams of the Penitent": {
+ "en": "Enemy units cannot use commands while within 3\" of this terrain feature.",
+ "el": "Οι εχθρικές μονάδες δεν μπορούν να χρησιμοποιήσουν commands όσο είναι μέσα σε 3\" από αυτό το στοιχείο εδάφους."},
+"Hungry Crypts": {
+ "en": "Take this terrain feature off the table and set it up again within 3\" of one of your Nighthaunt units, more than 3\" from objectives and enemy units, more than 1\" from terrain, and more than 12\" from your other Nexuses of Grief.",
+ "el": "Βγάλε αυτό το στοιχείο εδάφους από το τραπέζι και βάλ' το ξανά μέσα σε 3\" από μονάδα Nighthaunt σου, πάνω από 3\" από στόχους και εχθρικές μονάδες, πάνω από 1\" από άλλο έδαφος και πάνω από 12\" από τα άλλα Nexus of Grief σου."},
+"Light a Pyre": {
+ "en": "If this unit is contesting an objective, pick a visible enemy unit within 6\". Roll a D3. On a 2+, the target takes mortal damage equal to the roll and this unit's control score gets + the roll for the rest of the turn.",
+ "el": "Αν αυτή η μονάδα διεκδικεί (contests) στόχο, διάλεξε ορατή εχθρική μονάδα σε 6\". Ρίξε D3. Με 2+, ο στόχος παίρνει θανάσιμη ζημιά ίση με το ζάρι και το control score αυτής της μονάδας αυξάνεται κατά το ζάρι για το υπόλοιπο της σειράς."},
+"Corpse Candles": {
+ "en": "Pick this unit or a visible enemy unit within 12\". If you pick this unit: it takes 1 damage (no Ward rolls) and gets +1 to casting rolls for the rest of the turn. If you pick an enemy: roll a dice. On a 3+, it takes 1 mortal damage and, for the rest of the turn, this unit gets +1 to casting rolls and +1 power level.",
+ "el": "Διάλεξε αυτή τη μονάδα ή ορατή εχθρική μονάδα σε 12\". Αν διαλέξεις αυτή τη μονάδα: παίρνει 1 ζημιά (χωρίς Ward rolls) και +1 στα casting rolls για το υπόλοιπο της σειράς. Αν διαλέξεις εχθρό: ρίξε ένα ζάρι. Με 3+, παίρνει 1 θανάσιμη ζημιά και, για το υπόλοιπο της σειράς, αυτή η μονάδα παίρνει +1 στα casting rolls και +1 power level."},
+"Grim Justice": {
+ "en": "+1 to hit and +1 to wound for this unit's Fellreaper attacks if the target is a Priest or a Wizard.",
+ "el": "+1 για να πετύχει (hit) και +1 για να τραυματίσει (wound) στις επιθέσεις του Fellreaper αυτής της μονάδας αν ο στόχος είναι Priest ή Wizard."},
+"Wraithstorm": {
+ "en": "Spell (7). Pick a visible enemy unit within 12\" and cast with 2D6. It takes D3 mortal damage. If any models are slain by this, it takes D3 more mortal damage.",
+ "el": "Ξόρκι (7). Διάλεξε ορατή εχθρική μονάδα σε 12\" και ρίξε 2D6 για το ξόρκι. Παίρνει D3 θανάσιμη ζημιά. Αν σκοτωθούν μοντέλα από αυτό, παίρνει άλλη μία D3 θανάσιμη ζημιά."},
+"Sentenced to Eternal Torment": {
+ "en": "Pick a visible enemy unit within 18\". Roll a dice. On a 3+, it takes 1 mortal damage and gets the Sentenced keyword for the rest of the battle.",
+ "el": "Διάλεξε ορατή εχθρική μονάδα σε 18\". Ρίξε ένα ζάρι. Με 3+, παίρνει 1 θανάσιμη ζημιά και αποκτά το keyword Sentenced για το υπόλοιπο της μάχης."},
+"Judge, Jury and Executioner": {
+ "en": "Each time your Nighthaunt Infantry unit uses a Fight ability, if all its attacks target the same Sentenced enemy unit, its melee weapons have Crit (Mortal) for that Fight ability.",
+ "el": "Κάθε φορά που μονάδα Nighthaunt Infantry σου χρησιμοποιεί Fight ability, αν όλες οι επιθέσεις της στοχεύουν την ίδια Sentenced εχθρική μονάδα, τα όπλα σώμα με σώμα της έχουν Crit (Mortal) για εκείνη τη Fight ability."},
+"Drawn to War": {
+ "en": "Your Nighthaunt Infantry Heroes have Ward (4+) while fully within this unit's combat range.",
+ "el": "Οι Ήρωες Nighthaunt Infantry σου έχουν Ward (4+) όσο είναι ολόκληροι μέσα στην εμβέλεια μάχης αυτής της μονάδας."},
+"Captured Soul Energy": {
+ "en": "Each time one of your Nighthaunt units fully within 12\" of this unit uses the Rally command, make 3 extra rally rolls of D6.",
+ "el": "Κάθε φορά που μονάδα Nighthaunt σου ολόκληρη μέσα σε 12\" από αυτή τη μονάδα χρησιμοποιεί το command Rally, κάνε 3 επιπλέον rally rolls με D6."},
+"Cacophony of Sorrow": {
+ "en": "While a Myrmourn Banshees unit of yours is fully within 12\" of this unit, ignore positive modifiers to the control score of enemy units within 12\" of this unit.",
+ "el": "Όσο μια μονάδα Myrmourn Banshees σου είναι ολόκληρη μέσα σε 12\" από αυτή τη μονάδα, αγνόησε τους θετικούς τροποποιητές στο control score των εχθρικών μονάδων σε 12\" από αυτή τη μονάδα."},
+"Ghostly Howl": {
+ "en": "Pick an enemy unit in combat with this unit. It takes D3 mortal damage. If any of its models are slain by this, it cannot use commands for the rest of the turn.",
+ "el": "Διάλεξε μια εχθρική μονάδα σε μάχη με αυτή τη μονάδα. Παίρνει D3 θανάσιμη ζημιά. Αν σκοτωθούν μοντέλα της από αυτό, δεν μπορεί να χρησιμοποιήσει commands για το υπόλοιπο της σειράς."},
+"Siphon Souls": {
+ "en": "Each time a model (friendly or enemy) is slain within 12\" of this Manifestation, it gets 1 soul point, up to 6.",
+ "el": "Κάθε φορά που ένα μοντέλο (δικό σου ή εχθρικό) σκοτώνεται μέσα σε 12\" από αυτό το Manifestation, παίρνει 1 soul point, μέχρι 6."},
+"Soul Eruption": {
+ "en": "If this Manifestation has 6 soul points, pick any number of enemy units within 6\". Roll 6 dice for each. Each 4+ = 1 mortal damage. Then reset its soul points to 0.",
+ "el": "Αν αυτό το Manifestation έχει 6 soul points, διάλεξε όσες εχθρικές μονάδες θέλεις σε 6\". Ρίξε 6 ζάρια για καθεμία. Κάθε 4+ = 1 θανάσιμη ζημιά. Μετά μηδένισε τα soul points του."},
+"Soulreaper": {
+ "en": "+2 Attacks on this Manifestation's Almighty Reap if it charged this turn.",
+ "el": "+2 Attacks στο Almighty Reap αυτού του Manifestation αν έκανε Charge αυτή τη σειρά."},
+"Keeper of Mortality": {
+ "en": "Pick a visible Nighthaunt unit of yours within 3\" of this Manifestation. Roll a dice. On a 2+, pick 1 effect: +1 to run rolls and charge rolls for the rest of the turn; OR Heal (3).",
+ "el": "Διάλεξε μια ορατή μονάδα Nighthaunt σου σε 3\" από αυτό το Manifestation. Ρίξε ένα ζάρι. Με 2+, διάλεξε 1 εφέ: +1 στα run rolls και charge rolls για το υπόλοιπο της σειράς Ή Heal (3)."},
+"Lightshard of the Harvest Moon": {
+ "en": "If this unit is in combat, +1 Attacks on melee weapons of your Nighthaunt units fully within 12\" of it for the rest of the turn.",
+ "el": "Αν αυτή η μονάδα είναι σε μάχη, +1 Attacks στα όπλα σώμα με σώμα των μονάδων Nighthaunt σου ολόκληρων μέσα σε 12\" από αυτήν για το υπόλοιπο της σειράς."},
+"Mirror of Echoing Failures": {
+ "en": "Pick every enemy Wizard and Priest within 12\". Roll a D3. On a 2+, for the rest of the phase: -1 to their casting rolls and chanting rolls, and each time one fails to cast a spell or chant a prayer, it takes 1 mortal damage.",
+ "el": "Διάλεξε κάθε εχθρικό Wizard και Priest σε 12\". Ρίξε D3. Με 2+, για το υπόλοιπο της φάσης: -1 στα casting rolls και chanting rolls τους, και κάθε φορά που ένας αποτυγχάνει να ρίξει ξόρκι ή να ψάλλει προσευχή, παίρνει 1 θανάσιμη ζημιά."},
+"Brazier of Nagashizzar": {
+ "en": "If you roll 1-3 when working out how far this unit can move, you can use 4 instead.",
+ "el": "Αν ρίξεις 1-3 για να βρεις πόσο μπορεί να κινηθεί αυτή η μονάδα, μπορείς να χρησιμοποιήσεις 4."},
+"Deathly Possessor": {
+ "en": "Pick an enemy Hero in combat with this unit, then pick another enemy unit within the Hero's combat range (the victim). Roll a dice. On a 3+, pick 1 of the Hero's melee weapons and immediately make combat attacks with it against the victim.",
+ "el": "Διάλεξε έναν εχθρικό Ήρωα σε μάχη με αυτή τη μονάδα και μετά μια άλλη εχθρική μονάδα μέσα στην εμβέλεια μάχης του Ήρωα (το θύμα). Ρίξε ένα ζάρι. Με 3+, διάλεξε 1 όπλο σώμα με σώμα του Ήρωα και κάνε αμέσως επιθέσεις μάχης με αυτό εναντίον του θύματος."},
+"Ruler of the Spectral Hosts": {
+ "en": "Pick up to 3 non-Hero Nighthaunt units of yours fully within 12\" of this unit. Roll a D3 for each. On a 2+: if damaged, Heal that many; if not damaged, bring back slain models with total Health up to the roll.",
+ "el": "Διάλεξε μέχρι 3 μη-ήρωα μονάδες Nighthaunt σου ολόκληρες μέσα σε 12\" από αυτή τη μονάδα. Ρίξε D3 για καθεμία. Με 2+: αν έχει ζημιά, κάνε Heal τόσο όσο το ζάρι. Αν δεν έχει ζημιά, φέρε πίσω σκοτωμένα μοντέλα με συνολική Health μέχρι το ζάρι."},
+"Shadowy Aura": {
+ "en": "While fully within 6\" of this unit, your Nighthaunt Infantry and Cavalry units cannot be seen by enemy units more than 9\" away from them.",
+ "el": "Όσο είναι ολόκληρες μέσα σε 6\" από αυτή τη μονάδα, οι μονάδες Nighthaunt Infantry και Cavalry σου δεν είναι ορατές σε εχθρικές μονάδες που βρίσκονται πάνω από 9\" μακριά τους."},
+"Fell Blades": {
+ "en": "Spell (6). A Nighthaunt Wizard of yours casts it on a visible Nighthaunt unit of yours fully within 12\" of them (cast with 2D6). Until your next turn, each time the target uses a Fight ability, if all its attacks hit the same enemy unit, after it resolves that enemy gets -1 to save rolls for the rest of the turn.",
+ "el": "Ξόρκι (6). Ένας Wizard Nighthaunt σου το ρίχνει σε ορατή μονάδα Nighthaunt σου ολόκληρη μέσα σε 12\" από αυτόν (ρίξε 2D6). Μέχρι την επόμενη σειρά σου, κάθε φορά που ο στόχος χρησιμοποιεί Fight ability, αν όλες οι επιθέσεις του στόχευσαν την ίδια εχθρική μονάδα, μετά την ολοκλήρωση εκείνη η μονάδα παίρνει -1 στα save rolls για το υπόλοιπο της σειράς."},
+"Wrench Souls": {
+ "en": "Spell (6). A Nighthaunt Wizard of yours casts it on a visible non-Hero Nighthaunt Infantry unit of yours fully within 12\" of them (cast with 2D6). The target can immediately do a Normal Move or Retreat as if it were your movement phase.",
+ "el": "Ξόρκι (6). Ένας Wizard Nighthaunt σου το ρίχνει σε ορατή μη-ήρωα μονάδα Nighthaunt Infantry σου ολόκληρη μέσα σε 12\" από αυτόν (ρίξε 2D6). Ο στόχος μπορεί αμέσως να κάνει Normal Move ή Retreat σαν να ήταν η φάση κίνησής σου."},
+"Chains of Death": {
+ "en": "Spell (7). A Nighthaunt Wizard of yours casts it on a visible enemy Hero within 18\" of them (cast with 2D6). The target has Strike-last for the rest of the turn.",
+ "el": "Ξόρκι (7). Ένας Wizard Nighthaunt σου το ρίχνει σε ορατό εχθρικό Ήρωα σε 18\" από αυτόν (ρίξε 2D6). Ο στόχος έχει Strike-last για το υπόλοιπο της σειράς."}
+}
